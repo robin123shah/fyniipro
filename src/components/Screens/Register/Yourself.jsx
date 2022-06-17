@@ -4,13 +4,16 @@ import { useNavigate } from "react-router-dom";
 import DropFormInput from "./DropFormInput"
 
 
-const Yourself = () => {
+const Yourself = (props) => {
   const [values, setValues] = useState({
     you_are: "",
     education_level: "",
     // college_school: "",
     looking_for: "",
   });
+
+  const detail = localStorage.getItem("details")
+  console.log(JSON.parse(detail))
 
   const inputs = [
     {
@@ -60,11 +63,12 @@ const Yourself = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values)
+    console.log(values,props)
   };
 
-  const onChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
+  const onChange = (e,input) => {
+    setValues({ ...values, [input.name]: e.label });
+    console.log(input.name,values)
   };
 
 
@@ -76,7 +80,7 @@ const Yourself = () => {
           <DropFormInput
             key={input.id}
             {...input}
-            value={values[input.name]}
+            // value={values[input.name]}
             onChange={onChange}
           />
         ))}

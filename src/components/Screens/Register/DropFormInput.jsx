@@ -9,8 +9,8 @@ const FormInput = (props) => {
       <label className="droplabel">{label}</label>
       <Select className="select"
         {...inputProps}
-        onChange={onChange}
         options = {actions}
+        onChange={onChange}
       />
       <span>{errorMessage}</span>
     </div>

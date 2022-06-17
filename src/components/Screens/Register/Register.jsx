@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "../../styles/app.css"
 import FormInput from "./FormInput";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  let navigate = useNavigate()
+  let navigation = useNavigate()
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -76,8 +75,8 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/Yourself")
-    console.log(values)
+    localStorage.setItem("details",JSON.stringify(values))
+    navigation("/Yourself");
   };
 
   const onChange = (e) => {
