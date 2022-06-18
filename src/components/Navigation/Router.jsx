@@ -4,22 +4,22 @@ import Register from "../Screens/Register/Register"
 import Yourself from '../Screens/Register/Yourself';
 import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
+import Checklogin from '../Screens/Register/Checklogin';
 
 const Router = () => {
-    const login = localStorage.getItem("login");
-    console.log(login);
-    let navigate = useNavigate();
-    login === true ? navigate("/Home") : navigate("/Register");
-
+    let login = localStorage.getItem("token");
+    // let navigate = useNavigate();
+    // login === true ? navigate("/Home") : navigate("/Register");
+    
   return (
     <BrowserRouter>
-    {login && <Navbar/>}
+    {login !== "0" && <Navbar/>}
     <Routes>
+      
+        <Route path='/' element={<Checklogin/>}/>
         <Route exact path='/Register' element={<Register/>}/>
         <Route exact path='/Yourself' element={<Yourself/>}/> 
-        <switch>
-          <Route exact path= "/Home" element={<h1>h1</h1>}/>
-        </switch>
+
       
     </Routes>
     </BrowserRouter>
