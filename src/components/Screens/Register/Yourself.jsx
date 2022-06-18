@@ -86,11 +86,11 @@ fetch(SignUPAPI,
       body:JSON.stringify(Data),
       mode:"no-cors"
   })
-  .then(() =>
+  .then((response) =>
   {
-      localStorage.setItem("login",false)
+      localStorage.setItem("login",1)
       localStorage.setItem("username",detail.username)
-      navigate("/Home")
+      navigate("/")
   }
 )
 .catch((error)=>{alert("Error"+error)});

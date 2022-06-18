@@ -16,32 +16,32 @@ function Navbar() {
   };
   return (
     <nav className="nav">
-      <a href="#" className="nav__brand">
+      <a href="/" className="nav__brand">
         herdoy
       </a>
       <ul className={active}>
         <li className="nav__item">
-          <a href="/home" className="nav__link">
+          <a href="/Home" className="nav__link">
             Home
           </a>
         </li>
         <li className="nav__item">
-          <a href="/Job" className="nav__link">
+          <a href="/" className="nav__link">
             Job
           </a>
         </li>
         <li className="nav__item">
-          <a href="Internship" className="nav__link">
+          <a href="/" className="nav__link">
             Internship
           </a>
         </li>
         <li className="nav__item">
-          <a href="Course" className="nav__link">
+          <a href="/" className="nav__link">
             Course
           </a>
         </li>
         <li className="nav__item">
-          <a href="Logout" className="nav__link">
+          <a href="/" className="nav__link">
             {localStorage.getItem("username")}
           </a>
         </li>
