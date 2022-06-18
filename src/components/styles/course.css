@@ -14,6 +14,47 @@ h6 {
   font-family: "Montserrat-Bold";
 }
 
+h1 {
+  font-size: 5em;
+  font-family: serif;
+  color: #96dbe2;
+  text-align: center;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+
+  /* F */
+  0% {
+    /* opacity: 0.3; */
+    color: #ef1212;
+  }
+
+  /* Y */
+  25% {
+    color: #f6a832;
+  }
+
+  /* N */
+  50% {
+    /* opacity: 1; */
+    color: #5271ff;
+  }
+
+  /* I */
+  75% {
+    color: #078596;
+  }
+
+  /* I */
+  100% {
+    /* opacity: 0.3; */
+    color: #363642;
+  }
+}
+
+
+
 hr {
   height: 10px;
   /* border: none; */
@@ -129,19 +170,6 @@ img {
 .course-box:hover{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .box {
   margin:  1% auto;

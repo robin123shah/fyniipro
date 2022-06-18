@@ -5,7 +5,8 @@ import Yourself from '../Screens/Register/Yourself';
 import Navbar from './Navbar';
 import Checklogin from '../Screens/Register/Checklogin';
 import Home from '../Screens/Home/Home';
-
+import Internship from '../Screens/internship/internship'
+import Course from '../Screens/Home/Courses/Course';
 const Router = () => {
     let login = localStorage.getItem("token");
     
@@ -18,8 +19,8 @@ const Router = () => {
         <Route exact path='/Register' element={<Register/>}/>
         <Route exact path='/Yourself' element={<Yourself/>}/> 
         <Route exact path='/Home' element={<Home/>}/>
-
-      
+        <Route exact path='/internship' element={<Internship/>}/>
+        <Route exact path='/course' element={<Course/>}/>
     </Routes>
     </BrowserRouter>
     )

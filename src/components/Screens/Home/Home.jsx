@@ -27,52 +27,6 @@ export default function Home() {
             />
           </label>
         </div>
-        {/* <!-- <div class="player">
-          <div class="upper-part">
-            <div class="play-icon">
-              <svg
-                width="20"
-                height="20"
-                fill="/2992dc"
-                stroke="/2992dc"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="feather feather-play"
-                viewBox="0 0 24 24"
-              >
-                <defs />
-                <path d="M5 3l14 9-14 9V3z" />
-              </svg>
-            </div>
-            <div class="info-area" id="test">
-              <label class="song-info" id="song-info-1">
-                <div class="title">Bunker</div>
-                <div class="sub-line">
-                  <div class="subtitle">Balthazar</div>
-                  <div class="time">4.05</div>
-                </div>
-              </label>
-              <label class="song-info" id="song-info-2">
-                <div class="title">Words Remain</div>
-                <div class="sub-line">
-                  <div class="subtitle">Moderator</div>
-                  <div class="time">4.05</div>
-                </div>
-              </label>
-              <label class="song-info" id="song-info-3">
-                <div class="title">Falling Out</div>
-                <div class="sub-line">
-                  <div class="subtitle">Otzeki</div>
-                  <div class="time">4.05</div>
-                </div>
-              </label>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <span class="progress"></span>
-          </div>
-        </div> --> */}
       </div>
     </section>
 
@@ -559,12 +513,6 @@ export default function Home() {
       </div>
     </section>
 
-    {/* <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-
-    <!--footer starts from here--> */}
     <footer class="footer">
       <div class="container bottom_border">
         <div class="row">
@@ -575,15 +523,7 @@ export default function Home() {
             >
               Contact Us
             </h5>
-            {/* <!--headin5_amrc--> */}
-{/* 
-            <!-- <a
-              href="https://www.google.com/maps/place/Wazirpur,+Wazirpur+Village,+Ashok+Vihar,+Delhi,+110052/@28.6899101,77.1694822,16z/data=!3m1!4b1!4m5!3m4!1s0x390d02151c0b2599:0x5dba53ffd547251c!8m2!3d28.6901319!4d77.1736794"
-              ><img src="img/map.png" class="map" alt=""
-            /></a> --> */}
-            {/* <!-- <p class="mb10">House No. 481, Second Floor,</p>
-            <p class="mb10">Shiv Market BLK-WP, Village Wazirpur,</p>
-            <p class="mb10">Ashok Vihar, Delhi-110052</p> --> */}
+
 
             <p style={{color: "black", "font-size": "1rem", "line-height": "28px"}}>
               <strong>
@@ -593,9 +533,7 @@ export default function Home() {
             </p>
             <p></p>
 
-            {/* <!-- <p><i class="fa fa-phone"></i> +91-96506 93384</p>
-            <p><i class="fa fa-phone"></i> +91-98914 83954</p> -->
-            <!-- <p><i class="fa fa fa-envelope"></i> sushant@fynii.com</p> --> */}
+
           </div>
 
           <div class="col-lg-1"></div>
@@ -607,15 +545,13 @@ export default function Home() {
             >
               About Us
             </h5>
-            {/* <!--headin5_amrc--> */}
             <ul class="footer_ul_amrc">
-              {/* <!-- <li><a href="aboutus.html">About Us</a></li> --> */}
               <li><a href="/">Career</a></li>
               <li><a href="/">Help-Center</a></li>
               <li><a href="/">Privacy Policy</a></li>
               <li><a href="/">Terms and Conditions</a></li>
             </ul>
-            {/* <!--footer_ul_amrc ends here--> */}
+
           </div>
 
           <div class="col-lg-1"></div>
@@ -627,7 +563,7 @@ export default function Home() {
             >
               Follow Us
             </h5>
-            {/* <!--headin5_amrc ends here--> */}
+
 
             <div class="container" id="cont">
               <div class="row">
@@ -656,30 +592,9 @@ export default function Home() {
 
       <div class="container">
         <ul class="foote_bottom_ul_amrc">
-          {/* <!-- <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="contactus.html">Help-Center</a></li> --> */}
         </ul>
-        {/* <!--foote_bottom_ul_amrc ends here--> */}
-        <p class="text-center">Copyright @2022 | <a href="/"> Fynii</a></p>
 
-        {/* <!-- 
-        <ul class="social_footer_ul text-center">
-          <li>
-            <a href="http://webenlance.com"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://webenlance.com"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="http://webenlance.com"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul> 
---> */}
+        <p class="text-center">Copyright @2022 | <a href="/"> Fynii</a></p>
       </div>
     </footer>
 
@@ -699,16 +614,11 @@ export default function Home() {
       crossorigin="anonymous"
     ></script>
 
-    {/* <!-- <script src="JS/suggestions.js"></script> --> */}
+
     <script src="JS/script.js"></script>
     <script src="JS/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/cbpHorizontalMenu.min.js"></script>
-    {/* <script>
-      $(function () {
-        cbpHorizontalMenu.init();
-      });
-    </script> */}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
