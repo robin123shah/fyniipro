@@ -12,8 +12,9 @@ const Yourself = (props) => {
     looking_for: "",
   });
 
-  const detail = localStorage.getItem("details")
-  console.log(JSON.parse(detail))
+  const detail = JSON.parse(localStorage.getItem("details"))
+
+  let navigate = useNavigate()
 
   const inputs = [
     {
@@ -63,7 +64,36 @@ const Yourself = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values,props)
+    var SignUPAPI = "http://localhost:3001/insertuser";
+    var headers ={
+      'Accept':'application/json',
+      'Content-Type':'application.json'
+  };
+  var Data={
+    username:detail.username,
+    email:detail.email,
+    number:detail.number,
+    birthday:detail.birthday,
+    password:detail.password,
+    you_are:values.you_are,
+    education_level:values.education_level,
+    looking_for:values.looking_for
+};
+fetch(SignUPAPI,
+  {
+      method:'POST',
+      headers:headers,
+      body:JSON.stringify(Data),
+      mode:"no-cors"
+  })
+  .then(() =>
+  {
+      localStorage.setItem("login",false)
+      localStorage.setItem("username",detail.username)
+      navigate("/Home")
+  }
+)
+.catch((error)=>{alert("Error"+error)});
   };
 
   const onChange = (e,input) => {

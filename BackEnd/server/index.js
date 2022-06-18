@@ -42,10 +42,10 @@ const User = mongoose.model('users', {
   number: { type: String},
   birthday: {type: Date},
   password: { type: String },
-  userID: {type: String},
   you_are: {type:String},
   education_level: {type:String},
-  looking_for: {type:String}
+  looking_for: {type:String},
+  userID: {type: String}
 });
 
 // const Admin = mongoose.model('admin', {
@@ -81,18 +81,17 @@ const User = mongoose.model('users', {
 
 app.post("/insertuser", (req, res) => {
   User.insertMany([
-    { username : req.body,
-    email: req.body.username,
+    { username : req.body.username,
+    email: req.body.email,
     number: req.body.number,
     birthday: req.body.birthday,
     password: req.body.password,
-    userID: req.body.userID,
     you_are: req.body.you_are,
     education_level: req.body.education_level,
     looking_for: req.body.looking_for}
   ]).then(function(){
     console.log("Data inserted")  // Success
-  });
+  })
 });
 
 // app.post("/checkadmin", (req, res) => {
