@@ -1,15 +1,17 @@
 // server/index.js
 
 const express = require("express");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 
 const PORT = process.env.PORT || 3001;
 const mongoURL = 'mongodb+srv://fynii:Mongo123@cluster0.6ofh0.mongodb.net/Fynii?retryWrites=true&w=majority';
 const app = express();
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
+app.use(cors());
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
@@ -17,7 +19,6 @@ app.listen(PORT, () => {
 
 app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" + req.body.name});
-  console.log(req,res)
 });
 
 app.use(express.json({
@@ -91,7 +92,11 @@ app.post("/insertuser", (req, res) => {
     looking_for: req.body.looking_for}
   ]).then(function(){
     console.log("Data inserted")  // Success
-  })
+    res.send(["true"])
+  }).catch(function(error){
+        console.log(error)      // Failure
+        res.send(["false"])
+      });
 });
 
 // app.post("/checkadmin", (req, res) => {
@@ -109,20 +114,20 @@ app.post("/insertuser", (req, res) => {
 //   });
 // });
 
-// app.post("/checklogin", (req, res) => {
-//   User.find(
-//     {$and:[
-//       {"Email":{"$eq":req.body.email}},
-//       {"Password":{"$eq":req.body.password}}
-//     ]}
-//   ).then(function(results) {
-//     if (results.length == 1) {
-//       res.send(["1",results[0].userID]);
-//     } else {
-//       res.send("2")
-//     }
-//   });
-// });
+app.post("/checklogin", (req, res) => {
+  User.find(
+    {$and:[
+      {"email":{"$eq":req.body.email}},
+      {"password":{"$eq":req.body.password}}
+    ]}
+  ).then(function(results) {
+    if (results.length >= 1) {
+      res.json(["1",results[0].username]);
+    } else {
+      res.json([2])
+    }
+  });
+});
 
 // app.post("/checkorders", (req, res) => {
 //   Orders.find(

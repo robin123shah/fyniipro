@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 export default function Checklogin() {
-    let login = localStorage.getItem("token")
+    let login = localStorage.getItem("login")
     let navigate = useNavigate()
-    React.useEffect(()=>{login !== "0" ? navigate("/Home") : navigate("/Register")})
+    React.useEffect(()=>{login === "true" ? navigate("/Home") : navigate("/SignIn")})
 }

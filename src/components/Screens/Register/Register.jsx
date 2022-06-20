@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
+import '../../styles/app.css'
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -87,7 +88,7 @@ const Register = () => {
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        <h1>Register</h1>
+        <h2>New Here?</h2>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -96,7 +97,7 @@ const Register = () => {
             onChange={onChange}
           />
         ))}
-        <button>Next</button>
+        <button className="Style1_button">Next</button>
       </form>
     </div>
   );

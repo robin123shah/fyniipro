@@ -66,8 +66,8 @@ const Yourself = (props) => {
     e.preventDefault();
     var SignUPAPI = "http://localhost:3001/insertuser";
     var headers ={
-      'Accept':'application/json',
-      'Content-Type':'application.json'
+      Accept:'application/json',
+      'Content-Type':'application/json'
   };
   var Data={
     username:detail.username,
@@ -86,9 +86,10 @@ fetch(SignUPAPI,
       body:JSON.stringify(Data),
       mode:"no-cors"
   })
+//   .then((response) => response.json())
   .then((response) =>
-  {
-      localStorage.setItem("login",1)
+  { 
+      localStorage.setItem("login",true)
       localStorage.setItem("username",detail.username)
       navigate("/")
   }
