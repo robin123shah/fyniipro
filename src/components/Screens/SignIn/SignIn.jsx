@@ -10,7 +10,6 @@ const SignIn = () => {
   });
 
   const inputs = [
-
     {
       id: 1,
       name: "email",
@@ -64,7 +63,7 @@ const SignIn = () => {
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        <h2>Already Member?</h2>
+        <h2 style={{"fontSize":"32px","margin":"20px"}}>Already Member?</h2>
         {inputs.map((input) => (
           <FormInput
             key={input.id}

@@ -33,10 +33,12 @@ function Navbar() {
     } else setIcon("nav__toggler");
   };
   return (
-    <nav className="nav">
+    <nav className="nav2" id="navbar">
       <a href="/Home" className="nav__brand">
-        F Y N I I
+      <img style = {{ "width": "80px","height": "38px","overflow": "hidden","margin-top": "6px"}} alt= "img" src={require('./logo.png')} /> 
       </a>
+      <input className="top-input" type="text" placeholder="Search" name="search"/>
+      {/* <button type="submit"><i class="fa fa-search"></i></button> */}
       <ul className={active}>
         <li className="nav__item">
           <a href="/Home" className="nav__link">
@@ -44,12 +46,12 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="/" className="nav__link">
+          <a href="/job" className="nav__link">
             Job
           </a>
         </li>
         <li className="nav__item">
-          <a href="/" className="nav__link">
+          <a href="/internship" className="nav__link">
             Internship
           </a>
         </li>

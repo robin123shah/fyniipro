@@ -83,10 +83,9 @@ fetch(SignUPAPI,
   {
       method:'POST',
       headers:headers,
-      body:JSON.stringify(Data),
-      mode:"no-cors"
+      body:JSON.stringify(Data)
   })
-//   .then((response) => response.json())
+  .then((response) => response.json())
   .then((response) =>
   { 
       localStorage.setItem("login",true)
@@ -106,7 +105,7 @@ fetch(SignUPAPI,
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        <h1>Tell us about Yourself?</h1>
+      <h2 style={{"fontSize":"32px","margin":"20px"}}>About Yourself?</h2>
         {inputs.map((input) => (
           <DropFormInput
             key={input.id}

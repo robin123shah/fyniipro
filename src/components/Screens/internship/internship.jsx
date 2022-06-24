@@ -1,16 +1,35 @@
 import React from 'react'
-import './style.css'
+// import './style.css'
+import { Helmet } from 'react-helmet'
 
 export default function intership() {
   return (
     <React.Fragment>
-    <div class="intro"></div>
+      <Helmet>
+      <script
+      src="https://kit.fontawesome.com/08e9a53b4a.js"
+      crossorigin="anonymous"
+    ></script>
+        <script
+      src="https://kit.fontawesome.com/ca07ed316a.js"
+      crossorigin="anonymous"
+    ></script>
+         {/* <script src="https://cdn.tailwindcss.com"></script> */}
+    {/* <script src="https://unpkg.com/flowbite@1.4.3/dist/flowbite.js"></script> */}
+    <script src="https://unpkg.com/flowbite@1.4.3/dist/datepicker.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    {/* <script src="./script.js" async defer></script>
+    <script src="./slide.js"></script> */}
+      </Helmet>
+      <br></br>
+      <br></br>
+      <br></br>
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <div class="filter-box">
             <h4><strong>Topic</strong></h4>
-            <div class="input-group rounded">
+            <div>
               <input
                 type="search"
                 class="form-control rounded"
@@ -18,15 +37,12 @@ export default function intership() {
                 aria-label="Search"
                 aria-describedby="search-addon"
               />
-              <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-              </span>
+              <i style={{"position":"absolute", "right":"5%","margin-top":"-35px"}} class="fas fa-search"></i>
             </div>
-
             <br />
 
             <h4><strong>Location</strong></h4>
-            <div class="input-group rounded">
+            <div>
               <input
                 type="search"
                 class="form-control rounded"
@@ -34,15 +50,14 @@ export default function intership() {
                 aria-label="Search"
                 aria-describedby="search-addon"
               />
-              <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-              </span>
+
+              <i style={{"position":"absolute", "right":"5%","margin-top":"-35px"}} class="fas fa-search"></i>
             </div>
 
             <br />
 
             <h4><strong>Company</strong></h4>
-            <div class="input-group rounded">
+            <div>
               <input
                 type="search"
                 class="form-control rounded"
@@ -50,9 +65,7 @@ export default function intership() {
                 aria-label="Search"
                 aria-describedby="search-addon"
               />
-              <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-              </span>
+              <i style={{"position":"absolute", "right":"5%","margin-top":"-35px"}} class="fas fa-search"></i>
             </div>
 
             <br />

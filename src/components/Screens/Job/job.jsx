@@ -1,11 +1,26 @@
 import React from "react";
 import './style.css'
+import {Helmet} from "react-helmet";
 
 export default function Job() {
   return (
     <React.Fragment>
-      <div class="intro"></div>
-
+      <Helmet>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.3/dist/datepicker.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ca07ed316a.js"
+      crossorigin="anonymous"
+    ></script>
+        <script
+      src="https://kit.fontawesome.com/08e9a53b4a.js"
+      crossorigin="anonymous"
+    ></script>
+      </Helmet>
+            <br></br>
+      <br></br>
+      <br></br>
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -21,9 +36,7 @@ export default function Job() {
                   aria-label="Search"
                   aria-describedby="search-addon"
                 />
-                <span class="input-group-text border-0" id="search-addon">
-                  <i class="fas fa-search"></i>
-                </span>
+                <i style={{"position":"absolute", "right":"5%","margin-top":"-35px"}} class="fas fa-search"></i>
               </div>
 
               <br />
