@@ -25,13 +25,13 @@
   .cards__items {
     margin-bottom: 24px;
     display: flex;
-    
+    overflow-x: scroll;
 
   }
   
   .cards__item {
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 31.5%;
     margin: 0 1rem;
     border-radius: 10px;
     margin-bottom: 10px;

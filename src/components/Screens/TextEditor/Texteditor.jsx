@@ -4,12 +4,8 @@ import RichTextEditor from "./RichTextEditor";
 
 export default function Texteditor() {
     const [value, setValue] = useState("");
-    const getValue = (value) => {
-    setValue(value);
-  };
   return (
     <div className='row'>
-      
             <div style={{ marginLeft: "35%", margin: "auto", marginTop: "50px" }}>
         <from className="form">
           <h2 style={{ marginLeft: "48%",marginTop:"5%" }}>Topic</h2>
@@ -20,7 +16,7 @@ export default function Texteditor() {
         <div style={{ margin:"0 auto" }}>
           <h3>Fynii Text Editor</h3>
         </div>
-        <RichTextEditor initialValue="" getValue={getValue} />
+        <RichTextEditor initialValue="" getValue={()=>{setValue(value)}} />
         <br />
         <div>{value}</div>
       </div>

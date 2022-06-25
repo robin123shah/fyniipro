@@ -37,7 +37,7 @@ function Navbar() {
       <a href="/Home" className="nav__brand">
       <img style = {{ "width": "80px","height": "38px","overflow": "hidden","margin-top": "6px"}} alt= "img" src={require('./logo.png')} /> 
       </a>
-      <input className="top-input" type="text" placeholder="Search" name="search"/>
+      <input className="top-input" style={{"backgroundColor":"#CCC","width":"20%","height":"70%","borderColor":"#fff"}} type="text" placeholder="Search" name="search"/>
       {/* <button type="submit"><i class="fa fa-search"></i></button> */}
       <ul className={active}>
         <li className="nav__item">

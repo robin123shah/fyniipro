@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 
@@ -42,6 +42,8 @@ function Cards(props) {
     },
 
   ]
+
+ 
   return (
     <div className='cards'>
       <div className='cards__container'>

@@ -131,6 +131,7 @@ export default function Home() {
           <ul>Custom</ul>
           <ul>Custom</ul>
         </div>
+        <h2 style={{"fontSize":"30px","backgroundColor":"#96DEB2","padding-left":"45%"}}>{topic}</h2>
         <Cards topic={topic} />
       </div>
 

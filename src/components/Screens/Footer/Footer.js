@@ -70,9 +70,9 @@ const Footer = () => {
         </Row>
       </Container>
       <hr/>
-      <h1 style={{ color: "green", 
+      <h1 style={{ color: "#333", 
                    textAlign: "center", 
-                   marginBottom: "0%" }}>
+                   marginBottom: "0%",fontSize:"20px" }}>
         Copyright @2022 | Fynii
       </h1>
     </Box>

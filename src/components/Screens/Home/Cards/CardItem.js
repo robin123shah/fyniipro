@@ -1,7 +1,19 @@
-import React from "react";
+import React ,{useEffect,useState}from "react";
 import { Link } from "react-router-dom";
 
 function CardItem(props) {
+  // const [active,setactive] = useState("translateX(0%)")
+  // const [next,setnext] = useState("translateX(0%)")
+  // const [prev,setprev] = useState("translateX(-104%)")
+
+  //  useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setactive(next);
+  //     setnext(prev)
+  //     setprev(active);
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // });
   return (
     <>
       {(props.topic === props.label || props.topic === "All") && (
