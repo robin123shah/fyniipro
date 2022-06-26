@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import "./internship.css";
 // import "./style.css";
@@ -49,11 +49,11 @@ export default function Intership() {
     },
   ];
 
-  const [Inttopic, setInttopic] = useState("All");
-  const [location, setlocation] = useState("All");
-  const [Company, setCompany] = useState("All");
-  const [IntType, setIntType] = useState("All");
-  const [IntDuration, setDuration] = useState("All");
+  // const [Inttopic, setInttopic] = useState("All");
+  // const [location, setlocation] = useState("All");
+  // const [Company, setCompany] = useState("All");
+  // const [IntType, setIntType] = useState("All");
+  // const [IntDuration, setDuration] = useState("All");
 
   return (
 

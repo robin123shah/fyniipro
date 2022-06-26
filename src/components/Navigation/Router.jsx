@@ -1,8 +1,7 @@
-import React,{useEffect} from 'react'
-import { BrowserRouter, Routes, Route, withRouter} from "react-router-dom";
+import React from 'react'
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Register from "../Screens/Register/Register"
 import Yourself from '../Screens/Register/Yourself';
-import Navbar from './Navbar/Navbar';
 import Checklogin from '../Screens/Register/Checklogin';
 import Home from '../Screens/Home/Home';
 import Internship from '../Screens/Internship/Internship2'
