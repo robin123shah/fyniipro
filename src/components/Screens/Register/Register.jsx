@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormInput from "./FormInput";
 import '../../styles/app.css'
 import { useNavigate } from "react-router-dom";
+import '../Courses/course.css'
 
 const Register = () => {
   let navigation = useNavigate()
