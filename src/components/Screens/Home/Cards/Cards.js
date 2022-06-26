@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import CardItem2 from './CardItem2';

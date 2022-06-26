@@ -43,11 +43,11 @@ const CoursePage = () => {
     {/* <!-- other navbar Start --> */}
 
     <nav className='nav1q'>
-      <a onClick={() => firsItemRef.current.scrollIntoView()} class="nav-link" >About</a>
-      <a onClick={() => secItemRef.current.scrollIntoView()} class="nav-link" >What you'll get</a>
-      <a onClick={() => thiItemRef.current.scrollIntoView()} class="nav-link" >Syllabus</a>
-      <a onClick={() => fouItemRef.current.scrollIntoView()} class="nav-link" >Instructors</a>
-      <a onClick={() => fifItemRef.current.scrollIntoView()} class="nav-link" >Ways To Enroll</a>
+      <div onClick={() => firsItemRef.current.scrollIntoView()} class="nav-link" >About</div>
+      <div onClick={() => secItemRef.current.scrollIntoView()} class="nav-link" >What you'll get</div>
+      <div onClick={() => thiItemRef.current.scrollIntoView()} class="nav-link" >Syllabus</div>
+      <div onClick={() => fouItemRef.current.scrollIntoView()} class="nav-link" >Instructors</div>
+      <div onClick={() => fifItemRef.current.scrollIntoView()} class="nav-link" >Ways To Enroll</div>
     </nav>
 
     {/* <!-- other navbae end --> */}

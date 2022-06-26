@@ -1,10 +1,9 @@
-import React, { Children, useState } from "react";
+import React, { useState } from "react";
 import "../../styles/navbar.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
-  const [login, setlogin] = useState(localStorage.getItem("login"));
   const [dropdown, setDropdown] = useState(false);
 
   const [active, setActive] = useState("nav__menu");
