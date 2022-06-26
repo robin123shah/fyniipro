@@ -5,7 +5,7 @@ import Yourself from '../Screens/Register/Yourself';
 import Navbar from './Navbar/Navbar';
 import Checklogin from '../Screens/Register/Checklogin';
 import Home from '../Screens/Home/Home';
-import Internship from '../Screens/Internship/Internship'
+import Internship from '../Screens/Internship/Internship2'
 import Course from '../Screens/Courses/Course';
 import Job from '../Screens/Job/job';
 import SignIn from "../Screens/SignIn/SignIn"

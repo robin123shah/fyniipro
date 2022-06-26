@@ -1,16 +1,22 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import "./CoursePage.css"
+import Navbar from "../../Navigation/Navbar/Navbar";
+import Footer from "../Footer/Footer";
 // import "./layout.css"
 
 const CoursePage = () => {
+  const firsItemRef = useRef(null)
+  const secItemRef = useRef(null)
+  const thiItemRef = useRef(null)
+  const fouItemRef = useRef(null)
+  const fifItemRef = useRef(null)
   return (
-    <div id="page1">
-        <div class="body12">
+    <div id="page1" style={{"marginTop":"5%"}}>
+      <div class="body12" style={{"backgroundColor":"green"}}>
       <div class="main21">
-        <header style={{"display":"block","width": "100%","overflow": "hidden","padding-bottom": "22px"}}>
-          <div class="wrapper12">
-            <article style={{  "background": "transparent","border": "0 none","font-size": "100%", "margin": "0", "padding": "0", "border": "0","outline": "0","vertical-align": "top"}} class="col1q pad_left2q">
-              <div class="text1q">Digital Signal Processing</div>
+          <div class="wrapper12" style={{"display":"flex","justifyContent":"space-around",gap:"10rem"}}>
+            <article style={{  "background": "transparent","border": "0 none","font-size": "100%", "marginLeft": "50%"}} class="col1q pad_left2q">
+              <div  class="text1q">Digital Signal Processing</div>
               {/* <!-- <p>
                 The Foll Stack Java Developer Job Guarantee Program is an
                 intense Bootcamp that offers a complete suite of software
@@ -21,7 +27,7 @@ const CoursePage = () => {
                 >
               </p> --> */}
 
-              <a href = "./CoursePage"class="buttnq">Enroll</a>
+              <a href = "./CoursePage"class="buttnw" style={{"backgroundColor":"yellow","padding":"5%"}}>Enroll</a>
             </article>
 
             <img
@@ -31,18 +37,17 @@ const CoursePage = () => {
               width="40%"
             />
           </div>
-        </header>
       </div>
     </div>
 
     {/* <!-- other navbar Start --> */}
 
-    <nav>
-      <a class="nav-link" href="/">About</a>
-      <a class="nav-link" href="/">What you'll get</a>
-      <a class="nav-link" href="/">Syllabus</a>
-      <a class="nav-link" href="/">Instructors</a>
-      <a class="nav-link" href="/">Ways To Enroll</a>
+    <nav className='nav1q'>
+      <a onClick={() => firsItemRef.current.scrollIntoView()} class="nav-link" >About</a>
+      <a onClick={() => secItemRef.current.scrollIntoView()} class="nav-link" >What you'll get</a>
+      <a onClick={() => thiItemRef.current.scrollIntoView()} class="nav-link" >Syllabus</a>
+      <a onClick={() => fouItemRef.current.scrollIntoView()} class="nav-link" >Instructors</a>
+      <a onClick={() => fifItemRef.current.scrollIntoView()} class="nav-link" >Ways To Enroll</a>
     </nav>
 
     {/* <!-- other navbae end --> */}
@@ -51,7 +56,7 @@ const CoursePage = () => {
       <div class="main21">
         <section id="content_top">
           <article class="col1q pad_left2q">
-            <h2 class="bighq">About</h2>
+            <h2 ref={firsItemRef} class="bighq">About</h2>
             {/* <!-- <ol class="list1">
               <li>
                 <span class="box1">1</span> You will get in this course
@@ -63,7 +68,7 @@ const CoursePage = () => {
               </li>
             </ol> --> */}
             <br />
-            <p>
+            <p className='pqw'>
               This Course provides a complete knowledge of Digital Signal
               Processing, focusing on audio processing and data transmission.
               You will start from the basic concepts of discrete-time signals
@@ -84,7 +89,7 @@ const CoursePage = () => {
       <div class="main21">
         <section id="content_top">
           <article class="col1q pad_left2q">
-            <h2 class="bigh">What you'll get</h2>
+            <h2 ref={secItemRef} class="bighq">What you'll get</h2>
             {/* <!-- <ol class="list1">
               <li>
                 <span class="box1">1</span> You will get in this course
@@ -109,7 +114,7 @@ const CoursePage = () => {
       <div class="main21">
         <section id="content_top">
           <article class="col1q pad_left2q">
-            <h2 class="bigh">Syllabus</h2>
+            <h2 ref={thiItemRef} class="bighq">Syllabus</h2>
             {/* <!-- <ol class="list1">
               <li>
                 <span class="box1">1</span> You will get in this course
@@ -122,40 +127,40 @@ const CoursePage = () => {
             </ol> --> */}
             <br />
             <ol>
-              <li>
+              <li className='liq'>
                 Review of signals and systems, Fourier transform, and random
                 processes
               </li>
-              <li>
+              <li className='liq'>
                 Lowpass representation of bandpass signals and systems:
                 downconversion and upconversion, lowpass representation of
                 bandpass systems
               </li>
-              <li>
+              <li className='liq'>
                 Analog modolation techniques: Amplitude modolation, DSB, SSB,
                 VSB modolations
-              </li>
-              <li>Angle Modolation: FM and PM</li>
-              <li>
+              </li >
+              <li className='liq'>Angle Modolation: FM and PM</li>
+              <li className='liq'>
                 Sampling, quantization, and polse modolation: Sampling and
                 polse-amplitude modolation, PCM and DPCM, Delta modolation,
                 scalar, and vector quantization
               </li>
-              <li>
+              <li className='liq'>
                 Overview of moltiplexing and moltiple access techniques: TDM(A),
                 CDMA, FDM, and OFDM(A)
               </li>
-              <li>
+              <li className='liq'>
                 Digital modolation techniques: Basics of PSK, ASK, FSK, QAM; ML
                 demodolator implementation with matched filter, decision
                 regions, and probability of error analysis.
               </li>
-              <li>
+              <li className='liq'>
                 Digital communication over bandlimited channels: Intersymbol
                 interference, Nyquist criterion for ISI-free polse, raised
                 cosine polse, ML sequence detection for bandlimited channels.
               </li>
-              <li>
+              <li className='liq'>
                 Optional topics: Hardware / Software Radio demos, PLL, and
                 Synchronization
               </li>
@@ -169,7 +174,7 @@ const CoursePage = () => {
       <div class="main21">
         <section id="content_top">
           <article class="col1q pad_left2q">
-            <h2 class="bigh">Instructors</h2>
+            <h2 ref={fouItemRef} class="bighq">Instructors</h2>
             {/* <!-- <ol class="list1">
               <li>
                 <span class="box1">1</span> You will get in this course
@@ -259,13 +264,12 @@ const CoursePage = () => {
       </section>
     </div>
 
-    <div class="button">
-      <button type="button" class="block">Enroll Now!</button>
+    <div >
+      <button ref={fifItemRef} type="button" style={{"backgroundColor":"yellow","padding":"5%",padding:"0 50%","color":"black"}}>Enroll Now!</button>
     </div>
 
-    {/* <!-- <script>
-      Cufon.now();
-    </script> --> */}
+    <Navbar/>
+    <Footer/>
     </div>
   )
 }
