@@ -265,7 +265,7 @@ const CoursePage = () => {
     </div>
 
     <div >
-      <button ref={fifItemRef} type="button" style={{"backgroundColor":"yellow","padding":"5%",padding:"0 50%","color":"black"}}>Enroll Now!</button>
+      <button ref={fifItemRef} type="button" style={{"backgroundColor":"yellow",padding:"0 50%","color":"black"}}>Enroll Now!</button>
     </div>
 
     <Navbar/>
