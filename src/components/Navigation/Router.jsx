@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React,{useEffect} from 'react'
+import { BrowserRouter, Routes, Route, withRouter} from "react-router-dom";
 import Register from "../Screens/Register/Register"
 import Yourself from '../Screens/Register/Yourself';
 import Navbar from './Navbar/Navbar';
@@ -10,10 +10,9 @@ import Course from '../Screens/Courses/Course';
 import Job from '../Screens/Job/job';
 import SignIn from "../Screens/SignIn/SignIn"
 import Texteditor from '../Screens/TextEditor/Texteditor';
+import CoursePage from '../Screens/CoursePage/CoursePage';
 // import About from "../Screens/About/About"
 const Router = () => {
-    // let login = localStorage.getItem("login");
-    
   return (
     <BrowserRouter>
 
@@ -24,15 +23,15 @@ const Router = () => {
         <Route exact path='/Register' element={<Register/>}/>
         <Route exact path='/Yourself' element={<Yourself/>}/> 
         <Route exact path='/Home' element={<Home/>}/>
-        <Route exact path='/internship' element={<Internship/>}/>
+        <Route exact path='/Internship' element={<Internship/>}/>
         <Route exact path='/course' element={<Course/>}/>
         <Route exact path='/job' element={<Job/>}/>
         <Route exact path='/texteditor' element={<Texteditor/>}/>
+        <Route exact path='/CoursePage' element={<CoursePage/>}/>
         {/* <Route exact path='/about' element={<About/>}/> */}
+        {/* {localStorage.getItem("login") === "true" && <Route path = '/*' element= {<Navbar/>}/>} */}
     </Routes>
-    <Navbar/>
-    {/* <Footer/> */}
-    {/* {login === "true" && <Navbar/>} */}
+
     </BrowserRouter>
     )
 }

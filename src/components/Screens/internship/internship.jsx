@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import "./internship.css";
 import "./style.css";
+import Navbar from "../../Navigation/Navbar/Navbar";
+import Footer from "../Footer/Footer";
 export default function Intership() {
   const InternshipData = [
     {
@@ -202,13 +204,12 @@ export default function Intership() {
               <h4>
                 <strong>Stipend</strong>
               </h4>
-              <div class="slidecontainer">
+              <div>
                 <input
                   type="range"
                   min="0"
                   max="10000"
                   value="5000"
-                  class="slider31"
                   id="myRange"
                 />
                 <p>
@@ -295,6 +296,8 @@ export default function Intership() {
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="script.js" async defer></script>
       <script src="slide.js"></script>
+      <Navbar/>
+      <Footer/>
     </React.Fragment>
   );
 }

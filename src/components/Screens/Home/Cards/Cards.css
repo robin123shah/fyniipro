@@ -12,7 +12,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
+    max-width: 1220px;
     width: 90%;
     margin: 0 auto;
   }
@@ -25,16 +25,35 @@
   .cards__items {
     margin-bottom: 24px;
     display: flex;
+    flex-wrap: wrap;
     
+
+  }
+
+
+  .cards__items2 {
+    margin-bottom: 24px;
+    display: flex;
+    overflow-x: scroll;
 
   }
   
   .cards__item {
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 47%;
     margin: 0 1rem;
     border-radius: 10px;
     margin-bottom: 10px;
+    
+  }
+
+  .cards__item2 {
+    display: flex;
+    flex: 0 0 30%;
+    margin: 0 1rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
   }
   
   .cards__item__link {

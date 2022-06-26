@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import CardItem2 from './CardItem2';
 
 function Cards(props) {
   const topic = props.topic
@@ -60,6 +61,21 @@ function Cards(props) {
               />
               ))
             }
+            </ul>
+            <div style={{"fontSize":"31px","paddingLeft":"32px"}}>{topic}</div>
+            <ul className='cards__items2'>
+              {
+                 Details.map((e)=>(
+                  <CardItem2
+                  src={e.scr}
+                  text={e.text}
+                  label={e.label}
+                  path={e.path}
+                  topic = {topic}
+                />
+                ))
+              }
+
             </ul>
         </div>
       </div>

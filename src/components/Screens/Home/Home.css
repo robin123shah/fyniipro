@@ -24,9 +24,11 @@
 
 .msg-col02 h2{
     color: #fff;
-    font-size: 90px;
+    font-size: 50px;
+    max-width: 50rem;
     font-weight: 100;
     margin: 10px 0;
+    
 }
 
 .msg-col02 p{

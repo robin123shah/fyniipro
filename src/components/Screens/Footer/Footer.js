@@ -30,11 +30,9 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink >House No. 481,</FooterLink>
-            <FooterLink >Second Floor,Shiv</FooterLink>
-            <FooterLink >Market BLK-WP,</FooterLink>
-            <FooterLink >Village Wazirpur,</FooterLink>
-            <FooterLink>Ashok Vihar, Delhi-110052</FooterLink>
+            <FooterLink >House No. 481,Second Floor,</FooterLink>
+            <FooterLink >Shiv Market BLK-WP,Village Wazirpur,</FooterLink>
+            <FooterLink >Ashok Vihar, Delhi-110052</FooterLink>
           </Column>
           <Column>
             <Heading>Social Media</Heading>

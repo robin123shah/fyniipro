@@ -98,6 +98,7 @@ const Register = () => {
           />
         ))}
         <button className="Style1_button">Next</button>
+        <a href="/SignIn">Already Regstered? SignIn Here</a>
       </form>
     </div>
   );

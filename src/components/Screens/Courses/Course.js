@@ -10,6 +10,7 @@ import {
 } from "mdb-react-ui-kit";
 
 import './course.css'
+import Navbar from "../../Navigation/Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
 export default function Course() {
@@ -35,8 +36,8 @@ export default function Course() {
   });
   return (
     <div>
-        <nav style={{marginTop:"5%"}} className="navu" id="dr"></nav>
-        <section id="title">
+        <nav style={{"marginTop":"5%"}} className="navu" id="dr"></nav>
+        <div id="title">
           <h1
             className="big-heading"
             id="blink"
@@ -49,9 +50,9 @@ export default function Course() {
           >
             Short term skill courses for your career growth!
           </h1>
-        </section>
-        <section style={{ marginTop: "-200px" }}>
-          <div className="slider2" style={{"marginTop":"20%"}}>
+        </div>
+        <div>
+          <div className="slider2" style={{}}>
             <input type="radio" name="toggle" id={item1} defaultChecked />
             <input type="radio" name="toggle" id={item2} />
             <input type="radio" name="toggle" id={item3} />
@@ -136,33 +137,36 @@ export default function Course() {
               </li>
             </ul>
           </div>
-        </section>
+        </div>
         <section className="course-container">
           <MDBCard style={{ maxWidth: "33%" }}>
             <MDBCardImage
-              src="https://images.unsplash.com/photo-1599634874901-e919c4fe1400?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWl0JTIwYm9tYmF5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
+            style={{ height: "250px", width: "400px" }}
+            src="https://images.unsplash.com/photo-1599634874901-e919c4fe1400?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWl0JTIwYm9tYmF5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
+            
               position="top"
               alt="..."
-              style={{ maxWidth: "" }}
             />
             <MDBCardBody>
-              <MDBCardTitle>
+              <MDBCardTitle >
                 Learn Web-Development from IIT Roorkee
               </MDBCardTitle>
-              <MDBCardText className="So" style={{ lineHeight: "2"}}>
+              <MDBCardText className="So">
                 <div className="fa-solid fa-user-graduate text">Begineer</div>
                 <div className="fa-solid fa-clock">3 months </div>
                 <div className="fa-solid fa-indian-rupee-sign">500</div>
               </MDBCardText>
-              <MDBBtn href="/" style={{ width: "100%" }}>
+              <MDBBtn href="./CoursePage" style={{ width: "100%" }}>
                 Enroll
               </MDBBtn>
             </MDBCardBody>
           </MDBCard>
           <MDBCard style={{ maxWidth: "33%" }}>
             <MDBCardImage
-              src="https://images.unsplash.com/photo-1599634874901-e919c4fe1400?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWl0JTIwYm9tYmF5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
-              position="top"
+             style={{ height: "250px", width: "400px" }}
+             src="https://images.unsplash.com/photo-1568792923760-d70635a89fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+             
+             position="top"
               alt="..."
             />
             <MDBCardBody>
@@ -179,7 +183,9 @@ export default function Course() {
           </MDBCard>
           <MDBCard style={{ maxWidth: "33%" }}>
             <MDBCardImage
-              src="https://images.unsplash.com/photo-1599634874901-e919c4fe1400?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWl0JTIwYm9tYmF5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
+            style={{ height: "250px", width: "400px" }}
+            src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+           
               position="top"
               alt="..."
             />
@@ -188,7 +194,7 @@ export default function Course() {
               <MDBCardText className="So" style={{ lineHeight: "2" }}>
                 <div className="fa-solid fa-user-graduate text">Begineer</div>
                 <div className="fa-solid fa-clock">3 months </div>
-                <div className="fa-solid fa-indian-rupee-sign">500</div>.
+                <div className="fa-solid fa-indian-rupee-sign">500</div>
               </MDBCardText>
               <MDBBtn href="/" style={{ width: "100%" }}>
                 Enroll
@@ -196,6 +202,7 @@ export default function Course() {
             </MDBCardBody>
           </MDBCard>
         </section>
+        <Navbar/>
           <Footer/>
     </div>
   );

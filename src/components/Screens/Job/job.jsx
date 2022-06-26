@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css'
 import {Helmet} from "react-helmet";
+import Navbar from "../../Navigation/Navbar/Navbar";
 
 export default function Job() {
   return (
@@ -431,6 +432,7 @@ export default function Job() {
       <script src="script.js" async defer></script>
       <script src="slide.js"></script>
       <script src="app.js"></script>
+      <Navbar/>
     </React.Fragment>
   );
 }

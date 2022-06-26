@@ -1,26 +1,24 @@
-import React, { useState } from "react";
-import "../../styles/navbar.css"
-import { useNavigate } from "react-router-dom";
+import React, { Children, useState } from "react";
+import "../../styles/navbar.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Navbar() {
-  const navigate = useNavigate()
-  const [dropdown,setDropdown] = useState(false)
+  const navigate = useNavigate();
+  const [login, setlogin] = useState(localStorage.getItem("login"));
+  const [dropdown, setDropdown] = useState(false);
 
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
 
-  const onNavButtonPress = () =>
-  {
-    setDropdown(!dropdown)
+  const onNavButtonPress = () => {
+    setDropdown(!dropdown);
     document.getElementById("myDropdown").classList.toggle("show");
-  }
+  };
 
-  const onLogoutPress = () =>
-  {
-    localStorage.setItem("login",false)
-    navigate("/")
-  }
-
+  const onLogoutPress = () => {
+    localStorage.setItem("login", false);
+    navigate("/");
+  };
 
   const navToggle = () => {
     if (active === "nav__menu") {
@@ -35,39 +33,102 @@ function Navbar() {
   return (
     <nav className="nav2" id="navbar">
       <a href="/Home" className="nav__brand">
-      <img style = {{ "width": "80px","height": "38px","overflow": "hidden","margin-top": "6px"}} alt= "img" src={require('./logo.png')} /> 
+        <img
+          style={{
+            width: "80px",
+            height: "38px",
+            overflow: "hidden",
+            "margin-top": "6px",
+          }}
+          alt="img"
+          src={require("./logo.png")}
+        />
       </a>
-      <input className="top-input" style={{"backgroundColor":"#CCC","width":"20%","height":"70%","borderColor":"#fff"}} type="text" placeholder="Search" name="search"/>
+      <input
+        className="top-input"
+        style={{
+          backgroundColor: "#fff",
+          width: "20%",
+          height: "50%",
+          marginLeft: "15rem",
+          borderRadius: "10px",
+          borderStyle: "Solid",
+          borderWidth: "2px",
+          borderColor: "black",
+          outline: "none",
+        }}
+        type="text"
+        placeholder="Search"
+        name="search"
+      />
       {/* <button type="submit"><i class="fa fa-search"></i></button> */}
       <ul className={active}>
-        <li className="nav__item">
-          <a href="/Home" className="nav__link">
+        <li className="nav__item"
+        style={{ 
+            
+          backgroundColor: localStorage.getItem("activeNav") === "Home" ? "rgb(71, 153, 51)" : "",
+          padding: localStorage.getItem("activeNav") === "Home" ? "10px": "",
+          borderRadius: localStorage.getItem("activeNav") === "Home" ?  "5px" : "",
+          fontWeight: localStorage.getItem("activeNav") === "Home" ? "bold" : "",
+        }}
+          
+        >
+          <a href="/Home" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Home")}} style={{ color: localStorage.getItem("activeNav") === "Home" ? "white" :"black"}}>
             Home
           </a>
         </li>
-        <li className="nav__item">
-          <a href="/job" className="nav__link">
+        <li className="nav__item"
+                    style={{ 
+            
+                      backgroundColor: localStorage.getItem("activeNav") === "Job" ? "rgb(71, 153, 51)" : "",
+                      padding: localStorage.getItem("activeNav") === "Job" ? "10px": "",
+                      borderRadius: localStorage.getItem("activeNav") === "Job" ?  "5px" : "",
+                      fontWeight: localStorage.getItem("activeNav") === "Job" ? "bold" : "",
+                    }}
+        >
+          <a href="/job" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Job")}} style={{ color: localStorage.getItem("activeNav") === "Job" ? "white" :"black"}}>
             Job
           </a>
         </li>
-        <li className="nav__item">
-          <a href="/internship" className="nav__link">
+        <li className="nav__item"
+          style={{ 
+            
+            backgroundColor: localStorage.getItem("activeNav") === "Internship" ? "rgb(71, 153, 51)" : "",
+            padding: localStorage.getItem("activeNav") === "Internship" ? "10px": "",
+            borderRadius: localStorage.getItem("activeNav") === "Internship" ?  "5px" : "",
+            fontWeight: localStorage.getItem("activeNav") === "Internship" ? "bold" : "",
+          }}
+        >
+          <a href="/Internship" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Internship")}} style={{ color: localStorage.getItem("activeNav") === "Internship" ? "white" :"black"}}>
             Internship
           </a>
         </li>
-        <li className="nav__item">
-          <a href="/course" className="nav__link">
+        <li
+          className="nav__item" 
+          style={{ 
+            
+            backgroundColor: localStorage.getItem("activeNav") === "Course" ? "rgb(71, 153, 51)" : "",
+            padding: localStorage.getItem("activeNav") === "Course" ? "10px": "",
+            borderRadius: localStorage.getItem("activeNav") === "Course" ?  "5px" : "",
+            fontWeight: localStorage.getItem("activeNav") === "Course" ? "bold" : "",
+          }}
+
+        
+        >
+          <a href="/course" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Course")}} style={{ color: localStorage.getItem("activeNav") === "Course" ? "white" :"black"}}>
             Course
           </a>
         </li>
         <li className="nav__item">
           <button onClick={onNavButtonPress} class="dropbtn">
             {localStorage.getItem("username")}
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/">Profile</a>
+            <button class="Logout-button" onClick={onLogoutPress}>
+              Logout
             </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="/">Profile</a>
-              <button class= "Logout-button" onClick={onLogoutPress}>Logout</button>
-            </div>
+          </div>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

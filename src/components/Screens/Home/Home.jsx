@@ -3,10 +3,8 @@ import "./HeroSection.css";
 import "./Home.css";
 import Cards from "./Cards/Cards";
 import Footer from "../Footer/Footer";
-// import Cards from '../../Cards/Cards'
-// import Button from '../../Button/Button'
-// import HeroSection from './HeroSection'
-//96DEB2
+import Navbar from "../../Navigation/Navbar/Navbar";
+
 export default function Home() {
   // var slider2 = document.getElementById("slider2");
   // var activeh = document.getElementById("activeh");
@@ -33,11 +31,14 @@ export default function Home() {
   // }
   const [translate, settranslate] = useState("translate(0%)");
   const [translate1, settranslate1] = useState("translate(0%)");
-  const [translate2, settranslate2] = useState("translate(-20%)");
-  const [translate3, settranslate3] = useState("translate(-40%)");
-  const [translate4, settranslate4] = useState("translate(-60%)");
-  const [translate5, settranslate5] = useState("translate(-80%)");
+  const [translate2, settranslate2] = useState("translate(-16.6%)");
+  const [translate3, settranslate3] = useState("translate(-33.2%)");
+  const [translate4, settranslate4] = useState("translate(-49.8%)");
+  const [translate5, settranslate5] = useState("translate(-66.4%)");
+  const [translate6, settranslate6] = useState("translate(-83.06%)");
   const [topic, settopic] = useState("All");
+
+  localStorage.setItem("activeNav","Home")
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,7 +47,8 @@ export default function Home() {
       settranslate2(translate3);
       settranslate3(translate4);
       settranslate4(translate5);
-      settranslate5(translate);
+      settranslate5(translate6);
+      settranslate6(translate)
     }, 5000);
     return () => clearInterval(interval);
   });
@@ -67,7 +69,7 @@ export default function Home() {
           alignContent: "center",
         }}
       >
-        <div className="Card-Right">
+        <div className="Card-Right" style={{ marginTop: "15%" }}>
           <div id="slider2" style={{ transform: translate }}>
             <div className="msg-col02">
               <h2 className="ifweeof">How to choose right career for you?</h2>
@@ -87,6 +89,19 @@ export default function Home() {
             </div>
             <div className="msg-col02">
               <h2 className="ifweeof">Higher education or JOB?</h2>
+              <a href="/">Learn More</a>
+            </div>
+            <div className="msg-col02">
+              <h2 className="ifweeof">Confused????</h2>
+              <p
+                style={{
+                  color: "white",
+                  fontFamily: "serif",
+                  fontSize: "2rem",
+                }}
+              >
+                Find all your answer here!
+              </p>
               <a href="/">Learn More</a>
             </div>
           </div>
@@ -131,7 +146,6 @@ export default function Home() {
           <ul>Custom</ul>
           <ul>Custom</ul>
         </div>
-        <h2 style={{"fontSize":"30px","backgroundColor":"#96DEB2","padding-left":"45%"}}>{topic}</h2>
         <Cards topic={topic} />
       </div>
 
@@ -164,102 +178,7 @@ export default function Home() {
             </div>
           </div>
       </div>
-
-      {/* <footer style={{ backgroundColor: "#96DEB2" }} class="footer">
-        <div class="container bottom_border">
-          <div class="row">
-            <div class="col-lg-4 col-md col-sm-4 col-12 col">
-              <h5
-                style={{fontSize:"32px", color: "black", "font-size": "2rem" }}
-                class="headin5_amrc col_white_amrc pt2"
-              >
-                Contact Us
-              </h5>
-
-              <p
-                style={{
-                  color: "black",
-                  "font-size": "1rem",
-                  "line-height": "28px",
-                }}
-              >
-                <strong>
-                  House No. 481, Second Floor,Shiv Market BLK-WP, Village
-                  Wazirpur, Ashok Vihar, Delhi-110052
-                </strong>
-              </p>
-              <p></p>
-            </div>
-
-            <div class="col-lg-1"></div>
-
-            <div class="col-lg-3 col-md-6 col-6 col">
-              <h5
-                style={{fontSize:"32px", color: "black", "font-size": "2rem" }}
-                class="headin5_amrc col_white_amrc pt2"
-              >
-                About Us
-              </h5>
-              <ul class="footer_ul_amrc">
-                <li>
-                  <a href="/">Career</a>
-                </li>
-                <li>
-                  <a href="/">Help-Center</a>
-                </li>
-                <li>
-                  <a href="/">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="/">Terms and Conditions</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-1"></div>
-            <div class="col-lg-3 col">
-              <h5
-                style={{fontSize:"32px", color: "black", "font-size": "2rem" }}
-                class="headin5_amrc col_white_amrc pt2"
-                id="fol"
-              >
-                Follow Us
-              </h5>
-
-              <div class="container" id="cont">
-                <div class="row">
-                  <ul class="social-icons-ql">
-                    <li>
-                      <a href="https://www.facebook.com/Fynii-Infotech-Private-Limited-101607735894393/">
-                        <i class="fab fa-facebook fa-2x"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/company/fynii/">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="/">
-                        <i class="fab fa-twitter fa-2x"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <ul class="foote_bottom_ul_amrc"></ul>
-
-          <p class="text-center">
-            Copyright @2022 | <a href="/"> Fynii</a>
-          </p>
-        </div>
-      </footer> */}
+      <Navbar/>
       <Footer />
     </div>
   );
