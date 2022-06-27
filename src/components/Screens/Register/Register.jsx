@@ -1,11 +1,11 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
-import '../../styles/app.css'
+import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
-import '../Courses/course.css'
+import "../Courses/course.css";
 
 const Register = () => {
-  let navigation = useNavigate()
+  let navigation = useNavigate();
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -37,13 +37,13 @@ const Register = () => {
       required: true,
     },
     {
-      id:3,
+      id: 3,
       name: "number",
       type: "number",
       placeholder: "99999 99999",
       errorMessage: "Number must be Valid!",
       label: "Phone number",
-      required:true
+      required: true,
     },
     {
       id: 4,
@@ -77,7 +77,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("details",JSON.stringify(values))
+    localStorage.setItem("details", JSON.stringify(values));
     navigation("/Yourself");
   };
 
@@ -85,11 +85,12 @@ const Register = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-
   return (
     <div className="app">
-      <form style={{padding:"0px 60px"}} onSubmit={handleSubmit}>
-        <h2 style={{"fontSize":"32px","margin":"20px"}}>New Here?</h2>
+      <form onSubmit={handleSubmit}>
+        <h2 style={{ fontSize: "32px", margin: "20px", color: "green" }}>
+          New Here?
+        </h2>
         {inputs.map((input) => (
           <FormInput
             key={input.id}

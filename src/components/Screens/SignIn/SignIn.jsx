@@ -1,9 +1,10 @@
 import { useState } from "react";
 import FormInput from "../Register/FormInput";
 import { useNavigate } from "react-router-dom";
+import "./SignIn.css";
 
 const SignIn = () => {
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -34,36 +35,36 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/checklogin",{
-    method : 'POST',
-    header : {
-      'Content-Type' : 'application/json'},
-    body : JSON.stringify({email : values.email,password : values.password})})
-      .then((response)=>response.json())
-      .then((response) =>
-          {   console.log(response);
-              if (response[0] === "1") {
-                  
-                  localStorage.setItem("login",true)
-                  localStorage.setItem("username",response[1])
-                  navigate('/');
-
-              }
-                else { alert("Incorrect Email or password");
-              }
-          }
-      );
-  }
+    fetch("http://localhost:3001/checklogin", {
+      method: "POST",
+      header: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: values.email, password: values.password }),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        if (response[0] === "1") {
+          localStorage.setItem("login", true);
+          localStorage.setItem("username", response[1]);
+          navigate("/");
+        } else {
+          alert("Incorrect Email or password");
+        }
+      });
+  };
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-
   return (
     <div className="app">
-      <form onSubmit={handleSubmit}>
-        <h2 style={{"fontSize":"32px","margin":"20px"}}>Already Member?</h2>
+      <form onSubmit={handleSubmit} style={{ height: "60%" }}>
+        <h2 style={{ fontSize: "32px", margin: "20px 35px", color: "green" }}>
+          Already Member?
+        </h2>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -73,9 +74,11 @@ const SignIn = () => {
           />
         ))}
         <button className="Style1_button">Sign In</button>
-        <a href="/Register">New Account? Register Here</a>
+        <a href="/Register">
+          New Account?<span>xRegister Here</span>
+        </a>
       </form>
     </div>
   );
-}
+};
 export default SignIn;
