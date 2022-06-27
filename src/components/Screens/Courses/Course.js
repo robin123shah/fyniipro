@@ -141,7 +141,7 @@ export default function Course() {
             </li>
           </ul>
         </div>
-        <hr />
+        <hr style={{"backgroundColor":"black",height: "10px"}}/>
       </div>
       <section className="course-container">
         <MDBCard style={{ maxWidth: "33%" }}>
