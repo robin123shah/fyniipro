@@ -10,6 +10,7 @@ import Jobs from '../Screens/Job/Jobs2';
 import SignIn from "../Screens/SignIn/SignIn"
 import Texteditor from '../Screens/TextEditor/Texteditor';
 import CoursePage from '../Screens/CoursePage/CoursePage';
+import Profile from '../Screens/Profile/Profile';
 // import About from "../Screens/About/About"
 const Router = () => {
   return (
@@ -27,6 +28,7 @@ const Router = () => {
         <Route exact path='/job' element={<Jobs/>}/>
         <Route exact path='/texteditor' element={<Texteditor/>}/>
         <Route exact path='/CoursePage' element={<CoursePage/>}/>
+        <Route exact path='/Profile' element={<Profile/>}/>
         {/* <Route exact path='/about' element={<About/>}/> */}
         {/* {localStorage.getItem("login") === "true" && <Route path = '/*' element= {<Navbar/>}/>} */}
     </Routes>

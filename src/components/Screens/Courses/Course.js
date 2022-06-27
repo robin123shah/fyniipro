@@ -70,7 +70,7 @@ export default function Course() {
             <label htmlFor="btn-5" />
           </div>
           <ul className="slides">
-            <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
+            <li className="slide">
               <div className="slide-content">
                 <h2 className="jnui">In real world, Only skill matters!</h2>
               </div>
@@ -141,12 +141,13 @@ export default function Course() {
             </li>
           </ul>
         </div>
+        <hr />
       </div>
       <section className="course-container">
         <MDBCard style={{ maxWidth: "33%" }}>
           <img src={logo} alt="" className="logo1" />
           <MDBCardImage
-            style={{ height: "250px", width: "400px" }}
+            style={{ height: "275px", width: "400px" }}
             src="https://images.unsplash.com/photo-1599634874901-e919c4fe1400?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWl0JTIwYm9tYmF5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
             position="top"
             alt="..."
