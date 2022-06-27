@@ -45,7 +45,7 @@ function Navbar() {
         />
       </a>
       <input
-        className="top-input"
+        className="top-input1"
         style={{
           backgroundColor: "#fff",
           width: "20%",
