@@ -6,7 +6,7 @@ import Checklogin from '../Screens/Register/Checklogin';
 import Home from '../Screens/Home/Home';
 import Internship from '../Screens/Internship/Internship2'
 import Course from '../Screens/Courses/Course';
-import Job from '../Screens/Job/job';
+import Jobs from '../Screens/Job/Jobs2';
 import SignIn from "../Screens/SignIn/SignIn"
 import Texteditor from '../Screens/TextEditor/Texteditor';
 import CoursePage from '../Screens/CoursePage/CoursePage';
@@ -24,7 +24,7 @@ const Router = () => {
         <Route exact path='/Home' element={<Home/>}/>
         <Route exact path='/Internship' element={<Internship/>}/>
         <Route exact path='/course' element={<Course/>}/>
-        <Route exact path='/job' element={<Job/>}/>
+        <Route exact path='/job' element={<Jobs/>}/>
         <Route exact path='/texteditor' element={<Texteditor/>}/>
         <Route exact path='/CoursePage' element={<CoursePage/>}/>
         {/* <Route exact path='/about' element={<About/>}/> */}
