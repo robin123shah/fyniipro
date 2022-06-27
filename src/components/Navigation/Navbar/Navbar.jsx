@@ -124,7 +124,7 @@ function Navbar() {
             {localStorage.getItem("username")}
           </button>
           <div id="myDropdown" class="dropdown-content">
-            <a href="/">Profile</a>
+            <a href="/Profile">Profile</a>
             <button class="Logout-button" onClick={onLogoutPress}>
               Logout
             </button>

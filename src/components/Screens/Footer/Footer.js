@@ -16,25 +16,27 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>Company</Heading>
-            <FooterLink href="#">Aim</FooterLink>
+            <FooterLink href="#">About Us</FooterLink>
             <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <FooterLink href="#">Mission</FooterLink>
+            <FooterLink href="#">Team</FooterLink>
           </Column>
           <Column>
             <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
+            <FooterLink href="#">Articles</FooterLink>
             <FooterLink href="#">Internships</FooterLink>
             <FooterLink href="#">Jobs</FooterLink>
             <FooterLink href="#">Courses</FooterLink>
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink>House No. 481, Second Floor, Shiv Market BLK-WP, Village Wazirpur, Ashok Vihar, Delhi-110052</FooterLink>
+            <FooterLink>
+              House No. 481,Second Floor,Shiv Market BLK-WP,Village
+              Wazirpur,Ashok Vihar, Delhi-110052
+            </FooterLink>
           </Column>
           <Column>
-            <Heading style={{ display: "flex", flexDirection: "column" }}>
-              Social Media
-            </Heading>
+            <Heading style={{ marginLeft: "15px" }}>Social Media</Heading>
             <FooterLink href="#">
               <i className="fab fa-facebook-f">
                 <span style={{ marginLeft: "20px" }}>Facebook</span>
