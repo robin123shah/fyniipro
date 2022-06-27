@@ -3,7 +3,7 @@ import "./profile.css";
 
 export default function Profile() {
   return (
-    <div class="container">
+    <div style= {{"backgroundColor":"grey"}}class="container">
       <div className="main">
         <div className="topbar">
           <a href="/">logout</a>
