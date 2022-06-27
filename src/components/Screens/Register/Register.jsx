@@ -88,7 +88,7 @@ const Register = () => {
 
   return (
     <div className="app">
-      <form onSubmit={handleSubmit}>
+      <form style={{padding:"0px 60px"}} onSubmit={handleSubmit}>
         <h2 style={{"fontSize":"32px","margin":"20px"}}>New Here?</h2>
         {inputs.map((input) => (
           <FormInput
