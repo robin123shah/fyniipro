@@ -1,4 +1,6 @@
 import React from "react";
+import "../Courses/course.css"
+import "../../styles/style.css"
 import { useEffect, useState } from "react";
 export default function Internship() {
   const [item1, setitem1] = useState("btn-1");
@@ -15,9 +17,9 @@ export default function Internship() {
       const temp5 = item5;
       setitem1(temp2);
       setitem2(temp3);
-      setitem3(temp1);
+      setitem3(temp4);
       setitem4(temp5);
-      setitem5(temp4);
+      setitem5(temp1);
     }, 5000);
     return () => clearInterval(interval);
   });
@@ -40,7 +42,7 @@ export default function Internship() {
           <ul className="slides">
             <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
               <div className="slide-content">
-                <h2 className="jnui">In real world, Only skill matters!</h2>
+                <h2 className="jnui">In Job, choose career growth over everything</h2>
               </div>
               <p className="slide-image">
                 <img
@@ -54,7 +56,7 @@ export default function Internship() {
             <li className="slide" style={{ backgroundColor: "#FEFBE7" }}>
               <div className="slide-content">
                 <h2 className="jnui">
-                  Build your career by building skillsets.
+                At every job you should either learn or earn . Either is fine . Both is best . But if it's neither , quit!
                 </h2>
               </div>
               <p className="slide-image">
@@ -68,7 +70,7 @@ export default function Internship() {
             </li>
             <li className="slide" style={{ backgroundColor: "#DAE5D0" }}>
               <div className="slide-content">
-                <h2 className="jnui">Every course is carefully selected.</h2>
+                <h2 className="jnui">Job selection must be based on your skillset, passion & interest.</h2>
               </div>
               <p className="slide-image">
                 <img
@@ -81,7 +83,7 @@ export default function Internship() {
             </li>
             <li className="slide" style={{ backgroundColor: "#A0BCC2" }}>
               <div className="slide-content">
-                <h2 className="jnui">Pay in EMIs.</h2>
+                <h2 className="jnui">Select a Job wisely viz. Industry, company, growth etc.</h2>
               </div>
               <p className="slide-image">
                 <img
@@ -95,7 +97,7 @@ export default function Internship() {
             <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
               <div className="slide-content">
                 <h2 className="jnui">
-                  Hassle free, Easy to find &amp; Navigate Courses.
+                Working in startups are great!
                 </h2>
               </div>
               <p className="slide-image">

@@ -49,8 +49,8 @@ function Navbar() {
         style={{
           backgroundColor: "#fff",
           width: "20%",
-          height: "60%",
-          marginTop : "5px",
+          height: "58%",
+          marginTop : "0px",
           marginLeft: "15rem",
           borderRadius: "10px",
           borderStyle: "Solid",
@@ -61,6 +61,7 @@ function Navbar() {
         type="text"
         placeholder="Search"
         name="search"
+        
       />
       {/* <button type="submit"><i class="fa fa-search"></i></button> */}
       <ul className={active}>

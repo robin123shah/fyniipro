@@ -1,6 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import "./internship.css";
+// import { Helmet } from "react-helmet";
+// import "./internship.css";
 // import "./style.css";
 import Navbar from "../../Navigation/Navbar/Navbar";
 import Internship from "./Internship";
@@ -59,7 +59,7 @@ export default function Intership() {
 
     <React.Fragment>
       <Internship/>
-      <Helmet>
+      {/* <Helmet>
         <script
           src="https://kit.fontawesome.com/08e9a53b4a.js"
           crossorigin="anonymous"
@@ -74,7 +74,7 @@ export default function Intership() {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./script.js" async defer></script>
         <script src="./slide.js"></script>
-      </Helmet>
+      </Helmet> */}
       <br></br>
       <br></br>
       <br></br>

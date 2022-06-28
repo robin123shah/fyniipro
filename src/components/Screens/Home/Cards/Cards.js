@@ -49,6 +49,7 @@ function Cards(props) {
     <div className='cards'>
       <div className='cards__container'>
         <div className='cards__wrapper'>
+        <div style={{"fontSize":"31px","paddingLeft":"32px"}}>Favourites</div>
           <ul className='cards__items'>
             {
               Details.map((e)=>(
@@ -72,6 +73,36 @@ function Cards(props) {
                   label={e.label}
                   path={e.path}
                   topic = {topic}
+                />
+                ))
+              }
+
+            </ul>
+            <div style={{"fontSize":"31px","paddingLeft":"32px"}}>Software Development</div>
+            <ul className='cards__items2'>
+              {
+                 Details.map((e)=>(
+                  <CardItem2
+                  src={e.scr}
+                  text={e.text}
+                  label={e.label}
+                  path={e.path}
+                  topic = {"Software Development"}
+                />
+                ))
+              }
+              </ul>
+
+            <div style={{"fontSize":"31px","paddingLeft":"32px"}}>Mathematics</div>
+            <ul className='cards__items2'>
+              {
+                 Details.map((e)=>(
+                  <CardItem2
+                  src={e.scr}
+                  text={e.text}
+                  label={e.label}
+                  path={e.path}
+                  topic = {"Mathematics"}
                 />
                 ))
               }

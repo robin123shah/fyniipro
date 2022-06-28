@@ -15,9 +15,9 @@ export default function Internship() {
       const temp5 = item5;
       setitem1(temp2);
       setitem2(temp3);
-      setitem3(temp1);
+      setitem3(temp4);
       setitem4(temp5);
-      setitem5(temp4);
+      setitem5(temp1);
     }, 5000);
     return () => clearInterval(interval);
   });
