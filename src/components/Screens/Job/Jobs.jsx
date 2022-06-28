@@ -38,9 +38,9 @@ export default function Internship() {
             <label htmlFor="btn-5" />
           </div>
           <ul className="slides">
-            <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
+            <li className="slide" style={{ backgroundColor: "#3CB371" }}>
               <div className="slide-content">
-                <h2 className="jnui">In real world, Only skill matters!</h2>
+                <h2 className="jnui">In Job, choose career growth over everything</h2>
               </div>
               <p className="slide-image">
                 <img
@@ -51,10 +51,10 @@ export default function Internship() {
                 />
               </p>
             </li>
-            <li className="slide" style={{ backgroundColor: "#FEFBE7" }}>
+            <li className="slide" style={{ backgroundColor: "#FFD700" }}>
               <div className="slide-content">
                 <h2 className="jnui">
-                  Build your career by building skillsets.
+                At every job you should either learn or earn . Either is fine . Both is best . But if it's neither , quit!
                 </h2>
               </div>
               <p className="slide-image">
@@ -66,9 +66,9 @@ export default function Internship() {
                 />
               </p>
             </li>
-            <li className="slide" style={{ backgroundColor: "#DAE5D0" }}>
+            <li className="slide" style={{ backgroundColor: "#FFC0CB" }}>
               <div className="slide-content">
-                <h2 className="jnui">Every course is carefully selected.</h2>
+                <h2 className="jnui">Job selection must be based on your skillset, passion & interest.</h2>
               </div>
               <p className="slide-image">
                 <img
@@ -81,7 +81,7 @@ export default function Internship() {
             </li>
             <li className="slide" style={{ backgroundColor: "#A0BCC2" }}>
               <div className="slide-content">
-                <h2 className="jnui">Pay in EMIs.</h2>
+                <h2 className="jnui">Select a Job wisely viz. Industry, company, growth etc.</h2>
               </div>
               <p className="slide-image">
                 <img
@@ -95,7 +95,7 @@ export default function Internship() {
             <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
               <div className="slide-content">
                 <h2 className="jnui">
-                  Hassle free, Easy to find &amp; Navigate Courses.
+                Working in startups are great!
                 </h2>
               </div>
               <p className="slide-image">
