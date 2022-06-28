@@ -33,16 +33,16 @@ export default function Course() {
       const temp5 = item5;
       setitem1(temp2);
       setitem2(temp3);
-      setitem3(temp1);
+      setitem3(temp4);
       setitem4(temp5);
-      setitem5(temp4);
+      setitem5(temp1);
     }, 5000);
     return () => clearInterval(interval);
   });
   return (
     <div>
       <nav style={{ marginTop: "5%" }} className="navu" id="dr"></nav>
-      <div id="title">
+      <div id="title" >
         <h1
           className="big-heading"
           id="blink"
@@ -51,13 +51,14 @@ export default function Course() {
             fontSize: "4rem",
             backgroundColor: "#96DEB2",
             color: "black",
+            
           }}
         >
           Short term skill courses for your career growth!
         </h1>
       </div>
-      <div>
-        <div className="slider2" style={{}}>
+      <div style={{backgroundColor:"#C19A6B", "padding":"10px 0"}}>
+        <div className="slider2">
           <input type="radio" name="toggle" id={item1} defaultChecked />
           <input type="radio" name="toggle" id={item2} />
           <input type="radio" name="toggle" id={item3} />
@@ -71,7 +72,7 @@ export default function Course() {
             <label htmlFor="btn-5" />
           </div>
           <ul className="slides">
-            <li className="slide">
+            <li className="slide" style={{ backgroundColor: "#DAEE01" }}>
               <div className="slide-content">
                 <h2 className="jnui">In real world, Only skill matters!</h2>
               </div>
@@ -84,7 +85,7 @@ export default function Course() {
                 />
               </p>
             </li>
-            <li className="slide" style={{ backgroundColor: "#FEFBE7" }}>
+            <li className="slide" style={{ backgroundColor: "#77DD77" }}>
               <div className="slide-content">
                 <h2 className="jnui">
                   Build your career by building skillsets.
@@ -142,70 +143,190 @@ export default function Course() {
             </li>
           </ul>
         </div>
-        <hr style={{"backgroundColor":"black",height: "10px"}}/>
       </div>
 
-{/* Course section */}
+      {/* Course section */}
 
-
-      <section className="course-container">
-        
-        <MDBCard style={{ maxWidth: "33%","borderStyle":"groove","borderRadius":"12px" }}>
+      <section className="course-container" style={{"padding":" 10px 0px","backgroundColor":"#333"}}>
+        <MDBCard
+          style={{
+            maxWidth: "33%",
+            borderStyle: "groove",
+            borderRadius: "12px",
+          }}
+        >
           <MDBCardImage
             style={{ height: "250px", width: "400px" }}
             src="https://images.unsplash.com/photo-1568792923760-d70635a89fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             position="top"
             alt="..."
           />
-          <img src={logo1} alt="" className="logo1" style={{position:"absolute"}}/>
+          <img
+            src={logo1}
+            alt=""
+            className="logo1"
+            style={{ position: "absolute" }}
+          />
           <MDBCardBody>
-            <MDBCardTitle style={{"margin":"20px","fontSize":"20px","color":"#2a6496"}}>Learn Quantum Computing from IBM</MDBCardTitle>
+            <MDBCardTitle
+              style={{ margin: "20px", fontSize: "20px", color: "#2a6496" }}
+            >
+              Learn Quantum Computing from IBM
+            </MDBCardTitle>
             <MDBCardText className="So" style={{ lineHeight: "2" }}>
-              <i style= {{"margin":"10px","marginLeft":"30px",color:"#2a6496"}}className="fa-solid fa-user-graduate"> Begineer</i>
-              <div style= {{"margin":"10px", "marginLeft":"30px",color:"#2a6496"}} className="fa-solid fa-clock">  3 months </div>
-              <div style= {{"margin":"10px","marginLeft":"30px",color:"#2a6496"}} className="fa-solid fa-indian-rupee-sign">  500</div>
+              <i
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-user-graduate"
+              >
+                {" "}
+                Begineer
+              </i>
+              <div
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-clock"
+              >
+                {" "}
+                3 months{" "}
+              </div>
+              <div
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-indian-rupee-sign"
+              >
+                {" "}
+                500
+              </div>
             </MDBCardText>
-            <MDBBtn href="/" style={{width: "100%","margin":" 0 38%","padding":"0 10%", "backgroundColor":"yellow" }}>
+            <MDBBtn
+              href="/"
+              style={{
+                width: "100%",
+                margin: " 0 38%",
+                padding: "0 10%",
+                backgroundColor: "yellow",
+              }}
+            >
               Enroll
             </MDBBtn>
           </MDBCardBody>
         </MDBCard>
-        <MDBCard style={{ maxWidth: "33%","borderStyle":"groove","borderRadius":"12px" }}>
+        <MDBCard
+          style={{
+            maxWidth: "33%",
+            borderStyle: "groove",
+            borderRadius: "12px",
+          }}
+        >
           <MDBCardImage
             style={{ height: "250px", width: "400px" }}
             src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             position="top"
             alt="..."
           />
-          <img src={logo2} alt="" className="logo1" style={{position:"absolute"}}/>
+          <img
+            src={logo2}
+            alt=""
+            className="logo1"
+            style={{ position: "absolute" }}
+          />
           <MDBCardBody>
-            <MDBCardTitle style={{"margin":"20px","fontSize":"20px","color":"#2a6496"}}>Learn Data Science from Google</MDBCardTitle>
+            <MDBCardTitle
+              style={{ margin: "20px", fontSize: "20px", color: "#2a6496" }}
+            >
+              Learn Data Science from Google
+            </MDBCardTitle>
             <MDBCardText className="So" style={{ lineHeight: "2" }}>
-            <i style= {{"margin":"10px","marginLeft":"30px",color:"#2a6496"}}className="fa-solid fa-user-graduate"> Begineer</i>
-              <div style= {{"margin":"10px", "marginLeft":"30px",color:"#2a6496"}} className="fa-solid fa-clock">  3 months </div>
-              <div style= {{"margin":"10px","marginLeft":"30px",color:"#2a6496"}} className="fa-solid fa-indian-rupee-sign">  500</div>
+              <i
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-user-graduate"
+              >
+                {" "}
+                Begineer
+              </i>
+              <div
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-clock"
+              >
+                {" "}
+                3 months{" "}
+              </div>
+              <div
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-indian-rupee-sign"
+              >
+                {" "}
+                500
+              </div>
             </MDBCardText>
-            <MDBBtn href="/" style={{width: "100%","margin":" 0 38%","padding":"0 10%", "backgroundColor":"yellow" }}>
+            <MDBBtn
+              href="/"
+              style={{
+                width: "100%",
+                margin: " 0 38%",
+                padding: "0 10%",
+                backgroundColor: "yellow",
+              }}
+            >
               Enroll
             </MDBBtn>
           </MDBCardBody>
         </MDBCard>
-        <MDBCard style={{ maxWidth: "33%","borderStyle":"groove","borderRadius":"12px" }}>
+        <MDBCard
+          style={{
+            maxWidth: "33%",
+            borderStyle: "groove",
+            borderRadius: "12px",
+          }}
+        >
           <MDBCardImage
             style={{ height: "250px", width: "400px" }}
             src="https://images.unsplash.com/photo-1547653872-052e3539decc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             position="top"
             alt="..."
           />
-          <img src={logo1} alt="" className="logo1" style={{position:"absolute"}}/>
+          <img
+            src={logo1}
+            alt=""
+            className="logo1"
+            style={{ position: "absolute" }}
+          />
           <MDBCardBody>
-            <MDBCardTitle style={{"margin":"20px","fontSize":"20px","color":"#2a6496"}}>Learn Quantum Computing from IBM</MDBCardTitle>
+            <MDBCardTitle
+              style={{ margin: "20px", fontSize: "20px", color: "#2a6496" }}
+            >
+              Learn Quantum Computing from IBM
+            </MDBCardTitle>
             <MDBCardText className="So" style={{ lineHeight: "2" }}>
-            <i style= {{"margin":"10px","marginLeft":"30px",color:"#2a6496"}}className="fa-solid fa-user-graduate"> Begineer</i>
-              <div style= {{"margin":"10px", "marginLeft":"30px",color:"#2a6496"}} className="fa-solid fa-clock">  3 months </div>
-              <div style= {{"margin":"10px","marginLeft":"30px",color:"#2a6496"}} className="fa-solid fa-indian-rupee-sign">  500</div>
+              <i
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-user-graduate"
+              >
+                {" "}
+                Begineer
+              </i>
+              <div
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-clock"
+              >
+                {" "}
+                3 months{" "}
+              </div>
+              <div
+                style={{ margin: "10px", marginLeft: "30px", color: "#2a6496" }}
+                className="fa-solid fa-indian-rupee-sign"
+              >
+                {" "}
+                500
+              </div>
             </MDBCardText>
-            <MDBBtn href="/" style={{width: "100%","margin":" 0 38%","padding":"0 10%", "backgroundColor":"yellow" }}>
+            <MDBBtn
+              href="/"
+              style={{
+                width: "100%",
+                margin: " 0 38%",
+                padding: "0 10%",
+                backgroundColor: "yellow",
+              }}
+            >
               Enroll
             </MDBBtn>
           </MDBCardBody>
