@@ -35,7 +35,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/checklogin", {
+    fetch("https://fynii.herokuapp.com/checklogin", {
       method: "POST",
       header: {
         "Content-Type": "application/json",

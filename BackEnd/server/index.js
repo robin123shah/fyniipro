@@ -18,7 +18,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" + req.body.name});
+  res.send({ message: "Hello from server!" + req.body.name});
 });
 
 app.use(express.json({
