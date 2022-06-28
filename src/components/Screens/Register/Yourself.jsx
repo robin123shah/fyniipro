@@ -19,13 +19,13 @@ const Yourself = (props) => {
   const inputschool = [
     {
       id: 1,
-      name: "Enter you College or School name: ",
+      name: "college_school",
       type: "text",
       placeholder: "School/College",
       errorMessage:
-        "Name should be 3-16 characters and shouldn't include any special character!",
-      label: "School/College",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+        "Name should be 3-50 characters and shouldn't include any special character!",
+      label: "Enter School/College",
+      pattern: "^[A-Za-z0-9 ]{3,50}$",
       required: true,
     }]
 
@@ -88,6 +88,7 @@ const Yourself = (props) => {
       you_are: values.you_are,
       education_level: values.education_level,
       looking_for: values.looking_for,
+      // college_school: values.college_school
     };
     fetch(SignUPAPI, {
       method: "POST",

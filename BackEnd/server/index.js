@@ -1,7 +1,7 @@
 // server/index.js
 
 const express = require("express");
-// const bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const cors = require('cors');
 
@@ -9,7 +9,9 @@ const cors = require('cors');
 const PORT = process.env.PORT || 3001;
 const mongoURL = 'mongodb+srv://fynii:Mongo123@cluster0.6ofh0.mongodb.net/Fynii?retryWrites=true&w=majority';
 const app = express();
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(cors());
 

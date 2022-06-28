@@ -35,10 +35,10 @@ function Navbar() {
       <a href="/Home" className="nav__brand">
         <img
           style={{
-            width: "80px",
-            height: "38px",
-            overflow: "hidden",
-            "margin-top": "6px",
+            width: "100px",
+            // height: "38px",
+            // overflow: "hidden",
+            "margin-top": "15px",
           }}
           alt="img"
           src={require("./logo.png")}
@@ -49,7 +49,8 @@ function Navbar() {
         style={{
           backgroundColor: "#fff",
           width: "20%",
-          height: "50%",
+          height: "60%",
+          marginTop : "5px",
           marginLeft: "15rem",
           borderRadius: "10px",
           borderStyle: "Solid",
@@ -120,7 +121,7 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <button onClick={onNavButtonPress} class="dropbtn">
+          <button style={{"margin":"0"}} onClick={onNavButtonPress} class="dropbtn">
             {localStorage.getItem("username")}
           </button>
           <div id="myDropdown" class="dropdown-content">
