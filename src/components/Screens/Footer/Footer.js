@@ -38,16 +38,16 @@ const Footer = () => {
           <Column>
             <Heading style={{ marginLeft: "15px" }}>Follow us</Heading>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: visible,"vertical-align": "-.125em", "margin-left": "15px"}}>
+              <i className="fab fa-facebook-f" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
                 <span style={{ marginLeft: "20px" }}>Facebook</span>
               </i>
-              <i className="fab fa-instagram" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: visible,"vertical-align": "-.125em", "margin-left": "15px"}}>
+              <i className="fab fa-instagram" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
                 <span style={{ marginLeft: "20px" }}>Instagram</span>
               </i>
-              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: visible,"vertical-align": "-.125em", "margin-left": "15px"}}>
+              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
                 <span style={{ marginLeft: "20px" }}>Twitter</span>
               </i>
-              <i className="fab fa-youtube" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: visible,"vertical-align": "-.125em", "margin-left": "15px"}}>
+              <i className="fab fa-youtube" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
                 <span style={{ marginLeft: "20px" }}>Youtube</span>
               </i>
             </FooterLink>
