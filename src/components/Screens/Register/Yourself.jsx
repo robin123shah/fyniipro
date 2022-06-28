@@ -3,6 +3,7 @@ import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
 import DropFormInput from "./DropFormInput";
 import "./yourself.css";
+import FormInput from "./FormInput";
 const Yourself = (props) => {
   const [values, setValues] = useState({
     you_are: "",
@@ -14,6 +15,19 @@ const Yourself = (props) => {
   const detail = JSON.parse(localStorage.getItem("details"));
 
   let navigate = useNavigate();
+
+  const inputschool = [
+    {
+      id: 1,
+      name: "Enter you College or School name: ",
+      type: "text",
+      placeholder: "School/College",
+      errorMessage:
+        "Name should be 3-16 characters and shouldn't include any special character!",
+      label: "School/College",
+      pattern: "^[A-Za-z0-9]{3,16}$",
+      required: true,
+    }]
 
   const inputs = [
     {
@@ -102,6 +116,14 @@ const Yourself = (props) => {
         <h2 style={{ fontSize: "32px", margin: "20px", color: "green" }}>
           About Yourself?
         </h2>
+        {inputschool.map((input) => (
+          <FormInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
         {inputs.map((input) => (
           <DropFormInput
             key={input.id}
