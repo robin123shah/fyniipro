@@ -162,7 +162,7 @@ export default function Course() {
             alt="..."
           />
           <img
-            src={logo1}
+            src={logo}
             alt=""
             className="logo1"
             style={{ position: "absolute" }}
