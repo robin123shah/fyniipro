@@ -197,7 +197,7 @@ export default function Course() {
               </div>
             </MDBCardText>
             <MDBBtn
-              href="/"
+              href="/CoursePage"
               style={{
                 width: "100%",
                 margin: " 0 38%",
