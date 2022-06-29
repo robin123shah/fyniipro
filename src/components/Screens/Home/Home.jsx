@@ -130,21 +130,19 @@ export default function Home() {
           <ul onClick={settopic("Favourites")}>Favourites</ul>
           <ul onClick={settopic("Software Development")}>Software Development</ul>
           <ul onClick={settopic("Mathematics")}>Mathematics</ul> */}
-          <ul onClick={() => settopic("All")}>All</ul>
-          <ul>Favourites</ul>
+          <ul onClick={() => settopic("All")}>Engineering</ul>
+          <ul>Civil Services</ul>
           <ul onClick={() => settopic("Software Development")}>
-            Software Development
+            Medical Science
           </ul>
-          <ul onClick={() => settopic("Mathematics")}>Mathematics</ul>
-          <ul>Business</ul>
-          <ul onClick={() => settopic("Management")}>Management</ul>
-          <ul>Startup</ul>
-          <ul>Web Development</ul>
-          <ul>WordPress</ul>
-          <ul>Data Science</ul>
-          <ul>Custom</ul>
-          <ul>Custom</ul>
-          <ul>Custom</ul>
+          <ul onClick={() => settopic("Mathematics")}>Teacher</ul>
+          <ul>Scientist</ul>
+          <ul onClick={() => settopic("Management")}>Quantum Computing</ul>
+          <ul>Artificial Intelligence</ul>
+          <ul>Biotechnology</ul>
+          <ul>Machine Learning</ul>
+          <ul>Natural Science</ul>
+          <ul>Developer</ul>
         </div>
         <Cards topic={topic} />
       </div>
