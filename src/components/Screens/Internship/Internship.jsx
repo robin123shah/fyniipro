@@ -1,6 +1,11 @@
 import React from "react";
 import "../Courses/course.css"
 import "../../styles/style.css"
+import Internship1 from "./Internship1.jpg"
+import Internship2 from "./Internship2.jpg"
+import Internship3 from "./Internship3.jpeg"
+import Internship4 from "./Internship4.png"
+import Internship5 from "./Internship5.jpg"
 import { useEffect, useState } from "react";
 export default function Internship() {
   const [item1, setitem1] = useState("btn-1");
@@ -51,10 +56,10 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1616337865743-bd29011bc36d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={Internship1}
                   alt="stuff"
-                  width={320}
-                  height={240}
+                  style={{width : "100%"}}
+                  height={260}
                 />
               </p>
             </li>
@@ -66,10 +71,12 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1513258496099-48168024aec0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={Internship2}
                   alt="stuff"
                   width={320}
-                  height={240}
+                  style={{width : "80%", marginLeft:"20%"}}
+                  
+                  height={260}
                 />
               </p>
             </li>
@@ -79,10 +86,10 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y291cnNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
+                  src={Internship3}
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+                  width={320}
+                  height={260}
                 />
               </p>
             </li>
@@ -92,10 +99,11 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={Internship4}
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+                  width={320}
+                  style={{width : "70%", marginLeft:"30%"}}
+                  height={260}
                 />
               </p>
             </li>
@@ -107,10 +115,10 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1615752865424-62638daceeae?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZWFzeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={Internship5}
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+                  width={320}
+                  height={260}
                 />
               </p>
             </li>

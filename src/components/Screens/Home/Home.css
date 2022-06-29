@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;700&family=Playfair+Display&display=swap');
 .Card-Right{
     height: 450px;
     width: 35%;
@@ -98,4 +99,8 @@
 
 .Article-container{
     margin: 0%;
+}
+.ifweeof{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700 !important;
 }

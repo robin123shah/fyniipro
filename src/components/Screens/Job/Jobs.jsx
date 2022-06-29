@@ -1,5 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import img from "./Job1.jpg";
+import img1 from "./Job2.jpeg"
+import img5 from "./job5.jpg"
+import img6 from "./job6.jpg"
+
 export default function Internship() {
   const [item1, setitem1] = useState("btn-1");
   const [item2, setitem2] = useState("btn-2");
@@ -44,7 +49,7 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1616337865743-bd29011bc36d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={img}
                   alt="stuff"
                   width={320}
                   height={240}
@@ -59,7 +64,7 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1513258496099-48168024aec0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={img1}
                   alt="stuff"
                   width={320}
                   height={240}
@@ -72,10 +77,10 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y291cnNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
+                  src={img6}
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+                  width={320}
+                  height={240}
                 />
               </p>
             </li>
@@ -85,10 +90,10 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={img5}
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+                  width={320}
+                  height={240}
                 />
               </p>
             </li>
@@ -100,10 +105,10 @@ export default function Internship() {
               </div>
               <p className="slide-image">
                 <img
-                  src="https://images.unsplash.com/photo-1615752865424-62638daceeae?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZWFzeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
+                  src={img5}
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+                  width={320}
+                  height={240}
                 />
               </p>
             </li>

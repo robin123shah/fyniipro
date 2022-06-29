@@ -49,7 +49,9 @@ function Cards(props) {
     <div className='cards'>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-        <div style={{"fontSize":"31px","paddingLeft":"32px"}}>Favourites</div>
+          <hr style={{"backgroundColor":"#333","borderRadius":"10px","height":"5px"}}/>
+        <div style={{"fontSize":"31px","paddingLeft":"32px", "marginLeft":"40%","fontFamily":"serif","color":"#540323"}}>Favourites</div>
+          <hr style={{"backgroundColor":"#9A432A","borderRadius":"10px","height":"3px","marginBottom":"10px"}}/>
           <ul className='cards__items'>
             {
               Details.map((e)=>(
@@ -63,7 +65,9 @@ function Cards(props) {
               ))
             }
             </ul>
-            <div style={{"fontSize":"31px","paddingLeft":"32px"}}>{topic}</div>
+            <hr style={{"backgroundColor":"#333","borderRadius":"10px","height":"5px"}}/>
+        <div style={{"fontSize":"31px","paddingLeft":"32px", "marginLeft":"45%","fontFamily":"serif","color":"#540323"}}>{topic}</div>
+          <hr style={{"backgroundColor":"#9A432A","borderRadius":"10px","height":"3px","marginBottom":"10px"}}/>
             <ul className='cards__items2'>
               {
                  Details.map((e)=>(
@@ -78,7 +82,9 @@ function Cards(props) {
               }
 
             </ul>
-            <div style={{"fontSize":"31px","paddingLeft":"32px"}}>Software Development</div>
+            <hr style={{"backgroundColor":"#333","borderRadius":"10px","height":"5px"}}/>
+        <div style={{"fontSize":"31px","paddingLeft":"32px", "marginLeft":"40%","fontFamily":"serif","color":"#540323"}}>Software Developer</div>
+          <hr style={{"backgroundColor":"#9A432A","borderRadius":"10px","height":"3px","marginBottom":"10px"}}/>
             <ul className='cards__items2'>
               {
                  Details.map((e)=>(
@@ -93,7 +99,9 @@ function Cards(props) {
               }
               </ul>
 
-            <div style={{"fontSize":"31px","paddingLeft":"32px"}}>Mathematics</div>
+              <hr style={{"backgroundColor":"#333","borderRadius":"10px","height":"5px"}}/>
+        <div style={{"fontSize":"31px","paddingLeft":"32px", "marginLeft":"40%","fontFamily":"serif","color":"#540323"}}>Mathematics</div>
+          <hr style={{"backgroundColor":"#9A432A","borderRadius":"10px","height":"3px","marginBottom":"10px"}}/>
             <ul className='cards__items2'>
               {
                  Details.map((e)=>(

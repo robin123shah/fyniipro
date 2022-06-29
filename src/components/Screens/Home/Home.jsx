@@ -72,31 +72,32 @@ export default function Home() {
         <div className="Card-Right" style={{ marginTop: "15%" }}>
           <div id="slider2" style={{ transform: translate }}>
             <div className="msg-col02">
-              <h2 className="ifweeof">How to choose right career for you?</h2>
+              <h2 className="ifweeof" >How to choose right career for you?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Which profession to opt for?</h2>
+              <h2 className="ifweeof" >Which profession to opt for?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Which one gives decent salary?</h2>
+              <h2 className="ifweeof" >Which one gives decent salary?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Doctor, Engineer, teacher ???</h2>
+              <h2 className="ifweeof" >Doctor, Engineer, teacher ???</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Higher education or JOB?</h2>
+              <h2 className="ifweeof" >Higher education or Job?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Confused????</h2>
+              <h2 className="ifweeof" >Confused????</h2>
               <p
                 style={{
                   color: "white",
-                  fontFamily: "serif",
+                  fontFamily: "Josefin Slab",
+                  fontWeight:"700",
                   fontSize: "2rem",
                 }}
               >
@@ -171,7 +172,7 @@ export default function Home() {
         </div>
         <div className="Card-Right">
           <div style={{"position":"absolute","margin-top":"30%"}} className="msg-col02">
-              <h3 style={{"color":"#fff","fontSize":"40px"}} className="ifweeof">Want to Create your Own Blog? Start Now and Publish at Fynii</h3>
+              <h3 style={{"color":"#fff","fontSize":"40px"}} className="ifweof">Want to Create your Own Blog? Start Now and Publish at Fynii</h3>
               <a style={{"backgroundColor":"#fff","color":"#000"}}href="/texteditor">Start Now</a>
             </div>
           </div>
