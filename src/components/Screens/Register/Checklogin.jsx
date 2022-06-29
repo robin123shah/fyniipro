@@ -6,6 +6,6 @@ export default function Checklogin() {
     let login = localStorage.getItem("login")
     let navigate = useNavigate()
     
-    React.useEffect(()=>{login === "true" ? navigate("/Home") : localStorage.setItem("username","")})
-    navigate("/Home")
+    React.useEffect(()=>{login === "true" ? navigate("/Home") : navigate("/Home")})
+    
 }

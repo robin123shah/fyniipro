@@ -121,6 +121,7 @@ function Navbar() {
             Course
           </a>
         </li>
+        {localStorage.getItem("login") === "true" ?
         <li className="nav__item">
           <button style={{"margin":"0"}} onClick={onNavButtonPress} class="dropbtn">
             {localStorage.getItem("username")}
@@ -132,6 +133,13 @@ function Navbar() {
             </button>
           </div>
         </li>
+        :
+        <li className="nav_item">
+          <button style={{"margin":"0"}} onClick={()=> {navigate("/SignIn")}} class="dropbtn">
+            Sign In
+          </button>
+        </li>
+}
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
