@@ -263,7 +263,7 @@ export default function Intership() {
 
               <select class="form-select">
                 <option selected>
-                  <strong>Stipend</strong>
+                  <strong>Salary</strong>
                 </option>
                 <option value="0">Rs. 0</option>
                 <option value="100">Rs. 100</option>
