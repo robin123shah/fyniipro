@@ -261,7 +261,7 @@ export default function Intership() {
 
               <br />
 
-              <select class="form-select">
+              {/* <select class="form-select">
                 <option selected>
                   <strong>Salary</strong>
                 </option>
@@ -274,7 +274,7 @@ export default function Intership() {
                 <option value="10000">Rs. 10000</option>
                 <option value="15000">Rs. 15000</option>
                 
-              </select>
+              </select> */}
 
               <br />
 
