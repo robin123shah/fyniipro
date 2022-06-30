@@ -189,12 +189,12 @@ export default function Intership() {
 
               <div class="container">
                 <ul class="ks-cboxtags">
-                  <li>
+                  <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxOne" />
                     <label for="checkboxOne">Government</label>
                   </li>
 
-                  <li>
+                  <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
                     <label for="checkboxTwo">Non-Government</label>
                   </li>

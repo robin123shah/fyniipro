@@ -239,20 +239,20 @@ export default function Intership() {
 
               <div class="container">
                 <ul class="ks-cboxtags">
-                  <li>
+                  <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxOne" />
                     <label >Government</label>
                   </li>
 
-                  <li>
+                  <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
                     <label >Non-Government</label>
                   </li>
-                  <li>
+                  <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
                     <label >Work From Home</label>
                   </li>
-                  <li>
+                  <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
                     <label >Part Time</label>
                   </li>
