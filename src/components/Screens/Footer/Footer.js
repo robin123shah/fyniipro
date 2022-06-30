@@ -5,7 +5,7 @@ import {
   Row,
   Column,
   FooterLink,
-  Heading,
+  Heading
 } from "./FooterStyle";
 
 const Footer = () => {
@@ -21,13 +21,6 @@ const Footer = () => {
             <FooterLink href="#">Team</FooterLink>
           </Column>
           <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Articles</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Jobs</FooterLink>
-            <FooterLink href="#">Courses</FooterLink>
-          </Column>
-          <Column>
             <Heading>Contact Us</Heading>
             <FooterLink>
               House No. 481,Second Floor,Shiv Market BLK-WP,Village
@@ -35,21 +28,24 @@ const Footer = () => {
             </FooterLink>
           </Column>
           <Column>
-            <Heading style={{ marginLeft: "15px" }}>Follow us</Heading>
+            <Heading style={{ marginLeft: "60px" }}>Follow us</Heading>
+            <Column style={{"flex-direction":"Row"}}>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
-                <span style={{ marginLeft: "20px" }}>Facebook</span>
+              <i className="fab fa-facebook-f" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px", "color":"	#4267B2","backgroundColor":"white","padding":"2px"}}>
+                <span style={{ marginLeft: "20px", }}>Facebook</span>
               </i>
-              <i className="fab fa-instagram" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
-                <span style={{ marginLeft: "20px" }}>Instagram</span>
-              </i>
-              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
+              </FooterLink>
+              <FooterLink>
+              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"#00ACEE","backgroundColor":"white","padding":"2px"}}>
                 <span style={{ marginLeft: "20px" }}>Twitter</span>
               </i>
-              <i className="fab fa-youtube" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px"}}>
+              </FooterLink>
+              <FooterLink>
+              <i className="fab fa-linkedin-in" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"white","backgroundColor":"#0077B5","padding":"2px"}}>
                 <span style={{ marginLeft: "20px" }}>Youtube</span>
               </i>
             </FooterLink>
+            </Column>
           </Column>
         </Row>
       </Container>

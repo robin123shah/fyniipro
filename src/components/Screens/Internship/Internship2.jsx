@@ -97,7 +97,7 @@ export default function Intership() {
                   style={{
                     position: "absolute",
                     right: "5%",
-                    "margin-top": "-20px",
+                    "margin-top": "-25px",
                   }}
                   class="fas fa-search"
                 ></i>
@@ -120,7 +120,7 @@ export default function Intership() {
                   style={{
                     position: "absolute",
                     right: "5%",
-                    "margin-top": "-20px",
+                    "margin-top": "-25px",
                   }}
                   class="fas fa-search"
                 ></i>
@@ -143,7 +143,7 @@ export default function Intership() {
                   style={{
                     position: "absolute",
                     right: "5%",
-                    "margin-top": "-20px",
+                    "margin-top": "-25px",
                   }}
                   class="fas fa-search"
                 ></i>

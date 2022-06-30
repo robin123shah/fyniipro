@@ -93,12 +93,13 @@ export default function Intership() {
                   placeholder="e.g. Software"
                   aria-label="Search"
                   aria-describedby="search-addon"
+                  s
                 />
                 <i
                   style={{
                     position: "absolute",
                     right: "5%",
-                    "margin-top": "-20px",
+                    marginTop:"-25px",
                   }}
                   class="fas fa-search"
                 ></i>
@@ -121,7 +122,7 @@ export default function Intership() {
                   style={{
                     position: "absolute",
                     right: "5%",
-                    "margin-top": "-20px",
+                    marginTop:"-25px"
                   }}
                   class="fas fa-search"
                 ></i>
@@ -130,27 +131,75 @@ export default function Intership() {
               <br />
 
               <h4>
-                <strong>Company</strong>
+                <strong>Experience</strong>
               </h4>
               <div>
-                <input
-                  type="search"
-                  class="form-control rounded"
-                  placeholder="e.g. IBM"
-                  aria-label="Search"
-                  aria-describedby="search-addon"
-                />
-                <i
+              <select class="form-select">
+                <option selected>
+                  <strong>Work Experience</strong>
+                </option>
+                <option value="1">Part time</option>
+                <option value="2">Full time</option>
+              </select>
+                {/* <i
                   style={{
                     position: "absolute",
                     right: "5%",
                     "margin-top": "-20px",
                   }}
                   class="fas fa-search"
+                ></i> */}
+              </div>
+
+              <br />
+              <h4>
+                <strong>Subject</strong>
+              </h4>
+              <div>
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="e.g. Mathematics"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                />
+
+                <i
+                  style={{
+                    position: "absolute",
+                    right: "5%",
+                    marginTop:"-25px",
+                  }}
+                  class="fas fa-search"
                 ></i>
               </div>
 
               <br />
+              <h4>
+                <strong>Organization</strong>
+              </h4>
+              <div>
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="e.g. Google"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                />
+
+                <i
+                  style={{
+                    position: "absolute",
+                    right: "5%",
+                    "margin-top": "-25px",
+                  }}
+                  class="fas fa-search"
+                ></i>
+              </div>
+
+              <br />
+
+
 
               <h4>
                 <strong>Starting Date</strong>
@@ -159,7 +208,7 @@ export default function Intership() {
 
               <br />
 
-              <select class="form-select">
+              {/* <select class="form-select">
                 <option selected>
                   <strong>Type</strong>
                 </option>
@@ -186,7 +235,7 @@ export default function Intership() {
                 <option value="12">12 Week</option>
               </select>
 
-              <br />
+              <br /> */}
 
               <div class="container">
                 <ul class="ks-cboxtags">
