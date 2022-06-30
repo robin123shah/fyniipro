@@ -198,9 +198,7 @@ export default function Course() {
               <MDBBtn
               href="/CoursePage"
               style={{
-                width: "100%",
                 margin: " 0 38%",
-                padding: "0 10%",
                 backgroundColor: "yellow",
                 width: "75px", height: "50px", padding: "10px",border: "none","background-color": "rgb(71, 153, 51)",  color: "white","border-radius": "5px",
   "font-weight": "bold",
@@ -266,9 +264,7 @@ export default function Course() {
               <MDBBtn
               href="/"
               style={{
-                width: "100%",
                 margin: " 0 38%",
-                padding: "0 10%",
                 backgroundColor: "yellow",
                 width: "75px", height: "50px", padding: "10px",border: "none","background-color": "rgb(71, 153, 51)",  color: "white","border-radius": "5px",
   "font-weight": "bold",
@@ -334,9 +330,7 @@ export default function Course() {
               <MDBBtn
               href="/"
               style={{
-                width: "100%",
                 margin: " 0 38%",
-                padding: "0 10%",
                 backgroundColor: "yellow",
                 width: "70px", height: "50px", padding: "10px",border: "none","background-color": "rgb(71, 153, 51)",  color: "white","border-radius": "5px",
   "font-weight": "bold",
