@@ -51,7 +51,7 @@ function Navbar() {
           width: "20%",
           height: "58%",
           marginTop : "0px",
-          marginLeft: "15rem",
+          marginLeft: "20rem",
           borderRadius: "10px",
           borderStyle: "Solid",
           borderWidth: "2px",
