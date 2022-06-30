@@ -57,7 +57,7 @@ export default function Course() {
           Short term skill courses for your career growth!
         </h1>
       </div>
-      <div style={{backgroundColor:"#C19A6B", "padding":"10px 0"}}>
+      <div style={{"padding":"10px 0"}}>
         <div className="slider2">
           <input type="radio" name="toggle" id={item1} defaultChecked />
           <input type="radio" name="toggle" id={item2} />
