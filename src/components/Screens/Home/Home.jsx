@@ -170,9 +170,9 @@ export default function Home() {
             alt="img"
           />
         </div>
-        <div className="Card-Right">
+        <div className="Card-Right2">
           <div style={{"position":"absolute","margin-top":"30%"}} className="msg-col02">
-              <h3 style={{"color":"#fff","fontSize":"40px"}} className="ifweof">Want to Create your Own Blog? Start Now and Publish at Fynii</h3>
+              <h3 style={{"color":"#fff","fontSize":"3rem","width":"90%"}} className="ifweof">Want to Create your Own Blog? Start Now and Publish at Fynii</h3>
               <a style={{"backgroundColor":"#fff","color":"#000"}}href="/texteditor">Start Now</a>
             </div>
           </div>

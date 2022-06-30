@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /src/components/Screens/Internship/Modal
+/src/components/GoogleButton
 
 # testing
 /coverage

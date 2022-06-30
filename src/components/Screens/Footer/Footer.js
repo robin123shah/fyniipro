@@ -5,7 +5,7 @@ import {
   Row,
   Column,
   FooterLink,
-  Heading
+  Heading,
 } from "./FooterStyle";
 
 const Footer = () => {
@@ -28,6 +28,13 @@ const Footer = () => {
             </FooterLink>
           </Column>
           <Column>
+            <Heading>Company</Heading>
+            <FooterLink href="#">About Us</FooterLink>
+            <FooterLink href="#">Vision</FooterLink>
+            <FooterLink href="#">Mission</FooterLink>
+            <FooterLink href="#">Team</FooterLink>
+          </Column>
+          <Column>
             <Heading style={{ marginLeft: "60px" }}>Follow us</Heading>
             <Column style={{"flex-direction":"Row"}}>
             <FooterLink href="#">
@@ -35,16 +42,17 @@ const Footer = () => {
                 <span style={{ marginLeft: "20px", }}>Facebook</span>
               </i>
               </FooterLink>
-              <FooterLink>
-              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"#00ACEE","backgroundColor":"white","padding":"2px"}}>
-                <span style={{ marginLeft: "20px" }}>Twitter</span>
-              </i>
-              </FooterLink>
+
               <FooterLink>
               <i className="fab fa-linkedin-in" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"white","backgroundColor":"#0077B5","padding":"2px"}}>
                 <span style={{ marginLeft: "20px" }}>Youtube</span>
               </i>
             </FooterLink>
+            <FooterLink>
+              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"#00ACEE","backgroundColor":"white","padding":"2px"}}>
+                <span style={{ marginLeft: "20px" }}>Twitter</span>
+              </i>
+              </FooterLink>
             </Column>
           </Column>
         </Row>

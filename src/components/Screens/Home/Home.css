@@ -8,6 +8,14 @@
     flex: 1 1 0;
 }
 
+.Card-Right2{
+    height: 450px;
+    width: 35%;
+    margin-left: 5%;
+    position: absolute;
+    flex: 1 1 0;
+}
+
 .Card-Left{
     flex: 1 1 0;
 
