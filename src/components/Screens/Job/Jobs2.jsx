@@ -307,7 +307,7 @@ export default function Intership() {
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
               <a href="newpage.html">
-                <h2 class="bigg">{e.Title}</h2>
+                <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
 
                 <hr />
