@@ -28,11 +28,11 @@ const Footer = () => {
             </FooterLink>
           </Column>
           <Column>
-            <Heading>Company</Heading>
-            <FooterLink href="#">About Us</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Mission</FooterLink>
-            <FooterLink href="#">Team</FooterLink>
+            <Heading>Services</Heading>
+            <FooterLink href="#">Blogging</FooterLink>
+            <FooterLink href="#">Jobs</FooterLink>
+            <FooterLink href="#">Internship</FooterLink>
+            <FooterLink href="#">Courses</FooterLink>
           </Column>
           <Column>
             <Heading style={{ marginLeft: "60px" }}>Follow us</Heading>

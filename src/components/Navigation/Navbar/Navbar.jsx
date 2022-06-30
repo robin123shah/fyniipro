@@ -123,9 +123,11 @@ function Navbar() {
         </li>
         {localStorage.getItem("login") === "true" ?
         <li className="nav__item">
+          <div>
           <button style={{"margin":"0"}} onClick={onNavButtonPress} class="dropbtn">
             {localStorage.getItem("username")}
           </button>
+          </div>
           <div id="myDropdown" class="dropdown-content">
             <a href="/Profile">Profile</a>
             <button class="Logout-button" onClick={onLogoutPress}>
