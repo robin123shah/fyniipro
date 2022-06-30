@@ -88,7 +88,7 @@ export default function Course() {
       Pay in EMIs.
       Hassle free, Easy to find & Navigate Courses. */}
             <ul className="slides">
-              <li className="slide" style={{ backgroundColor: "/F9EBC8" }}>
+              <li className="slide">
                 <div className="slide-content">
                   <h2 className="slide-title s-t-1">
                     In real world, Only skill matters!
