@@ -241,12 +241,20 @@ export default function Intership() {
                 <ul class="ks-cboxtags">
                   <li>
                     <input type="checkbox" id="checkboxOne" />
-                    <label for="checkboxOne">Government</label>
+                    <label >+ Government</label>
                   </li>
 
                   <li>
                     <input type="checkbox" id="checkboxTwo" />
-                    <label for="checkboxTwo">Non-Government</label>
+                    <label > + Non-Government</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkboxTwo" />
+                    <label > + Work From Home</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkboxTwo" />
+                    <label > + Part Time</label>
                   </li>
                 </ul>
               </div>
@@ -278,7 +286,7 @@ export default function Intership() {
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  Internship with job offer
+                  Job offer
                 </label>
               </div>
 

@@ -21,13 +21,6 @@ const Footer = () => {
             <FooterLink href="#">Team</FooterLink>
           </Column>
           <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink>
-              House No. 481,Second Floor,Shiv Market BLK-WP,Village
-              Wazirpur,Ashok Vihar, Delhi-110052
-            </FooterLink>
-          </Column>
-          <Column>
             <Heading>Services</Heading>
             <FooterLink href="#">Blogging</FooterLink>
             <FooterLink href="#">Jobs</FooterLink>
@@ -35,10 +28,18 @@ const Footer = () => {
             <FooterLink href="#">Courses</FooterLink>
           </Column>
           <Column>
+            <Heading>Contact Us</Heading>
+            <FooterLink>
+              House No. 481,Second Floor,Shiv Market BLK-WP,Village
+              Wazirpur,Ashok Vihar, Delhi-110052
+            </FooterLink>
+          </Column>
+
+          <Column>
             <Heading style={{ marginLeft: "60px" }}>Follow us</Heading>
             <Column style={{"flex-direction":"Row"}}>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px", "color":"	#4267B2","backgroundColor":"white","padding":"2px"}}>
+              <i className="fab fa-facebook-f" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px", "color":"	#4267B2","padding":"2px"}}>
                 <span style={{ marginLeft: "20px", }}>Facebook</span>
               </i>
               </FooterLink>
@@ -49,7 +50,7 @@ const Footer = () => {
               </i>
             </FooterLink>
             <FooterLink>
-              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"#00ACEE","backgroundColor":"white","padding":"2px"}}>
+              <i className="fab fa-twitter" style={{"display": "inline-block", "font-size": "30px", height: "1em", overflow: "visible","vertical-align": "-.125em", "margin-left": "15px","color":"#00ACEE","padding":"2px"}}>
                 <span style={{ marginLeft: "20px" }}>Twitter</span>
               </i>
               </FooterLink>

@@ -195,18 +195,25 @@ export default function Course() {
                 {" "}
                 500
               </div>
-            </MDBCardText>
-            <MDBBtn
+              <MDBBtn
               href="/CoursePage"
               style={{
                 width: "100%",
                 margin: " 0 38%",
                 padding: "0 10%",
                 backgroundColor: "yellow",
+                width: "75px", height: "50px", padding: "10px",border: "none","background-color": "rgb(71, 153, 51)",  color: "white","border-radius": "5px",
+  "font-weight": "bold",
+  "font-size": "18px",
+  "cursor": "pointer",
+  "margin-top": "15px",
+  "margin-bottom": "30px"
               }}
             >
               Enroll
             </MDBBtn>
+            </MDBCardText>
+           
           </MDBCardBody>
         </MDBCard>
         <MDBCard
@@ -256,18 +263,25 @@ export default function Course() {
                 {" "}
                 500
               </div>
-            </MDBCardText>
-            <MDBBtn
+              <MDBBtn
               href="/"
               style={{
                 width: "100%",
                 margin: " 0 38%",
                 padding: "0 10%",
                 backgroundColor: "yellow",
+                width: "75px", height: "50px", padding: "10px",border: "none","background-color": "rgb(71, 153, 51)",  color: "white","border-radius": "5px",
+  "font-weight": "bold",
+  "font-size": "18px",
+  "cursor": "pointer",
+  "margin-top": "15px",
+  "margin-bottom": "30px"
               }}
             >
               Enroll
             </MDBBtn>
+            </MDBCardText>
+            
           </MDBCardBody>
         </MDBCard>
         <MDBCard
@@ -317,18 +331,25 @@ export default function Course() {
                 {" "}
                 500
               </div>
-            </MDBCardText>
-            <MDBBtn
+              <MDBBtn
               href="/"
               style={{
                 width: "100%",
                 margin: " 0 38%",
                 padding: "0 10%",
                 backgroundColor: "yellow",
+                width: "70px", height: "50px", padding: "10px",border: "none","background-color": "rgb(71, 153, 51)",  color: "white","border-radius": "5px",
+  "font-weight": "bold",
+  "font-size": "18px",
+  "cursor": "pointer",
+  "margin-top": "15px",
+  "margin-bottom": "30px",
               }}
             >
               Enroll
             </MDBBtn>
+            </MDBCardText>
+            
           </MDBCardBody>
         </MDBCard>
       </section>
