@@ -286,7 +286,7 @@ export default function Intership() {
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  Job offer
+                Future Jobs
                 </label>
               </div>
 
@@ -298,7 +298,7 @@ export default function Intership() {
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  Work from home
+                  Woman Friendly
                 </label>
               </div>
             </div>
