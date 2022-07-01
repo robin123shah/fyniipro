@@ -337,7 +337,7 @@ export default function Intership() {
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
               <a href="/">
-              <img style={{position:"absolute","height":"50px","width":"50px","right":"10%"}} src = {e.img_src} alt = {e.alt} />
+              <img style={{position:"absolute","height":"50px","width":"50px","right":"17%"}} src = {e.img_src} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
 
@@ -368,7 +368,7 @@ export default function Intership() {
                 <div class="grid-container">
                   
                   <div class="btnn">
-                    <i class="fa-regular fa-hand"></i><a href={e.Link}> Apply  </a>
+                    <i class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link}> Apply  </a>
                   </div>
                  
                   <div class="btnn">
