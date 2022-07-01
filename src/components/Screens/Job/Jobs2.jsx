@@ -1,6 +1,9 @@
 import React from "react";
 // import { Helmet } from "react-helmet";
 import "./Jobs.css";
+import Aiimslogo from "./img/aiimslogo.png"
+import PEClogo from "./img/PEClogo.png"
+import ICMRlogo from "./img/ICMRlogo.jpg"
 
 import "./style.css";
 import Navbar from "../../Navigation/Navbar/Navbar";
@@ -8,25 +11,45 @@ import Jobs from "./Jobs";
 import Footer from "../Footer/Footer";
 export default function Intership() {
   const InternshipData = [
+
+    {
+      id: "0",
+      Title: "Stenographer",
+      Company: "Aims",
+      Location: "Bilaspur",
+      Date: "27-1-2023",
+      Stipend: "18750",
+      WorkType: "Full Time",
+      About: "Aims is government Medical Institute",
+      Link:"https://becilregistration.com/Home/ListofExam.aspx",
+      img_src : Aiimslogo,
+      alt:"Aiimslogo"
+    },
     {
       id: "1",
-      Title: "Software Engineer",
-      Company: "Crema",
-      Location: "Delhi",
-      Date: "27-1-2023",
-      Stipend: "10000",
-      WorkType: "Part Time",
-      About: "Crema is a multibillionare Company",
+      Title: "Proffesor/ Associate Professor",
+      Company: "Punjab Engineering College",
+      Location: "Chandigarh",
+      Date: "11-07-2022",
+      Stipend: "may vary",
+      WorkType: "Full Time",
+      About: "PEC is an engineering institute ..",
+      Link:"https://pec.ac.in/jobs/advt-pec-recruitment-faculty-01-2022",
+      img_src : PEClogo,
+      alt:"Aiimslogo"
     },
     {
       id: "2",
-      Title: "Mechnical Engineer",
-      Company: "Marble Palace",
-      Location: "Deoria",
-      Date: "27-1-2023",
-      Stipend: "0",
+      Title: "Assistance Professor",
+      Company: "ICMR",
+      Location: "New Delhi",
+      Date: "18-07-2022",
+      Stipend: "may vary",
       WorkType: "Full Time",
-      About: "Marble Palace is a millionare Company",
+      About: "ICMR is a medical research institute.",
+      Link:"https://recruit.icmr.org.in/",
+      img_src : ICMRlogo,
+      alt:"Logo"
     },
     {
       id: "3",
@@ -37,6 +60,10 @@ export default function Intership() {
       Stipend: "3000",
       WorkType: "Full Time",
       About: "Marble Palace is a millionare Company",
+      Link:"/",
+      img_src : "",
+      alt:"Logo"
+      
     },
     {
       id: "4",
@@ -47,6 +74,9 @@ export default function Intership() {
       Stipend: "0",
       WorkType: "Part Time",
       About: "Marble Palace is a millionare Company",
+      Link:"/",
+      img_src : "",
+      alt:"Logo"
     },
   ];
 
@@ -306,7 +336,8 @@ export default function Intership() {
 
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
-              <a href="newpage.html">
+              <a href="/">
+              <img style={{position:"absolute","height":"50px","width":"50px","right":"10%"}} src = {e.img_src} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
 
@@ -335,9 +366,11 @@ export default function Intership() {
                 </div>
 
                 <div class="grid-container">
+                  
                   <div class="btnn">
-                    <i class="fa-regular fa-hand"></i> Apply
+                    <i class="fa-regular fa-hand"></i><a href={e.Link}> Apply  </a>
                   </div>
+                 
                   <div class="btnn">
                     <i class="fa-regular fa-bookmark"></i> Save
                   </div>

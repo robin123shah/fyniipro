@@ -61,7 +61,7 @@ const SignIn = () => {
 
   return (
     <div className="app">
-      <form onSubmit={handleSubmit} style={{ height: "60%" }}>
+      <form className="SignInForm" onSubmit={handleSubmit} >
         <h2 style={{ fontSize: "32px", margin: "20px 35px", color: "green" }}>
           Already Member?
         </h2>

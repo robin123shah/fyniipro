@@ -1,6 +1,6 @@
-*,
-*::after,
-*::before {
+.nav2,
+.nav2::after,
+.nav2::before {
   margin: 0;
   box-sizing: border-box;
 }
@@ -76,9 +76,9 @@ a {
     position: fixed;
     top: 7vh;
     right: 0;
-    height: 93vh;
-    width: 50vw;
-    background: rgb(0, 33, 65);
+    height: 5vh;
+    width: 30vw;
+    background: rgb(41, 153, 184);
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
@@ -86,9 +86,40 @@ a {
   .nav__brand {
     position: absolute;
     left: 5%;
-  
+  }
+
+  .nav__active {
+    transform: translateX(0%);
   }
 }
+
+@media screen and (max-width: 400px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 5vh;
+    width: 30vw;
+    background: rgb(41, 153, 184);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+  .nav__brand {
+    position: absolute;
+    left: 5%;
+  }
+
+  .nav__active {
+    transform: translateX(0%);
+  }
+}
+
+
  Active Class 
 .nav__active {
   transform: translateX(0%);

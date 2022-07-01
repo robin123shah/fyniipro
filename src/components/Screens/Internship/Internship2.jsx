@@ -2,6 +2,7 @@ import React from "react";
 // import { Helmet } from "react-helmet";
 // import "./internship.css";
 // import "./style.css";
+// import Aiimslogo from "./img/aiimslogo.png"
 import Navbar from "../../Navigation/Navbar/Navbar";
 import Internship from "./Internship";
 import Footer from "../Footer/Footer";
@@ -16,6 +17,9 @@ export default function Intership() {
       Stipend: "10000",
       WorkType: "Part Time",
       About: "Crema is a multibillionare Company",
+      Link:"/",
+      img_src : "",
+      alt:"Logo"
     },
     {
       id: "2",
@@ -26,6 +30,9 @@ export default function Intership() {
       Stipend: "0",
       WorkType: "Full Time",
       About: "Marble Palace is a millionare Company",
+      Link:"/",
+      img_src : "",
+      alt:"Logo"
     },
     {
       id: "3",
@@ -36,6 +43,9 @@ export default function Intership() {
       Stipend: "3000",
       WorkType: "Full Time",
       About: "Marble Palace is a millionare Company",
+      Link:"/",
+      img_src : "",
+      alt:"Logo"
     },
     {
       id: "4",
@@ -46,6 +56,9 @@ export default function Intership() {
       Stipend: "0",
       WorkType: "Part Time",
       About: "Marble Palace is a millionare Company",
+      Link:"/",
+      img_src : "",
+      alt:"Logo"
     },
   ];
 
@@ -248,7 +261,8 @@ export default function Intership() {
 
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
-              <a href="newpage.html">
+              <a href={e.Link}>
+                <img style={{position:"absolute","height":"50px","width":"50px","right":"10%"}} src = {e.img_src} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
 
