@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./../About/About"
 import {
   Box,
   Container,
@@ -15,7 +16,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>Company</Heading>
-            <FooterLink href="#">About</FooterLink>
+            <FooterLink href="/About">About</FooterLink>
             <FooterLink href="#">Career</FooterLink>
             <FooterLink href="#">Privacy Policy</FooterLink>
             <FooterLink href="#">Terms and Conditions</FooterLink>

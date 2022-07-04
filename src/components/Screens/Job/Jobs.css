@@ -475,3 +475,16 @@ ul.ks-cboxtags {
   .form-control::placeholder{
     font-size: 1.5rem;
   }
+  .img_class {
+    position:absolute;
+    height:80px;
+    width:80px;
+    left:75%;
+  }
+
+  @media screen and (max-width:770px) {
+    .img_class{
+      position: relative;
+      left: 0;
+    }
+  }
