@@ -8,14 +8,9 @@ input{
     border-radius: 5px;
     border: 1px solid transparent;
     background-color: #f1f1f1;
-    padding: 10px;
     font-size: 16px;
 }
 
-input[type="text"] {
-    background-color: #f1f1f1;
-    width: 100%;
-  }
 
   input[type="submit"] {
     background-color: DodgerBlue;
@@ -23,7 +18,6 @@ input[type="text"] {
   }
 
 .select{
-    margin: 10px 0px;
     border-radius: 5px;
     border: 1px solid gray;
 }
@@ -53,4 +47,27 @@ input:invalid[focused="true"]{
 
 input:invalid[focused="true"] ~ span{
     display: block;
+}
+
+@media screen and (max-width : 500px) {
+    .formInput{
+        width: 220px;
+    }
+    .Register_h2 {
+        font-size: 25px; 
+        margin: 10px; 
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .formInput{
+        width: 170px;
+    }
+}
+
+.Register_h2 {
+    font-size: 32px; 
+    margin: 20px; 
+    color: green;
+    align-content: center;
 }

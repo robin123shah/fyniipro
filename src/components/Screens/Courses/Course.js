@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import logo from "./iit.png";
 import logo1 from "./ibm.png";
 import logo2 from "./google.jfif";
@@ -15,7 +15,7 @@ import {
 } from "mdb-react-ui-kit";
 
 import "./course.css";
-import Navbar from "../../Navigation/Navbar/Navbar";
+import Navbar2 from "../../Navigation/Navbar/Navbar2";
 import Footer from "../Footer/Footer";
 
 export default function Course() {
@@ -39,20 +39,22 @@ export default function Course() {
     }, 5000);
     return () => clearInterval(interval);
   });
+
+  const [showNavTab,setshowNavTab] = useState(false)
+  const NavTabRef = useRef();
+
+  const closeNavTab = e => {
+    if(NavTabRef.current === e.target) {
+      setshowNavTab(false)
+    }
+  }
   return (
-    <div>
+    <div ref={NavTabRef} onClick={closeNavTab}>
       <nav style={{ marginTop: "5%" }} className="navu" id="dr"></nav>
       <div id="title" >
         <h1
           className="big-heading"
           id="blink"
-          style={{
-            width: "100%",
-            fontSize: "4rem",
-            backgroundColor: "#96DEB2",
-            color: "black",
-            
-          }}
         >
           Short term skill courses for your career growth!
         </h1>
@@ -149,14 +151,10 @@ export default function Course() {
 
       <section className="course-container" style={{"padding":" 10px 0px","backgroundColor":"#333"}}>
         <MDBCard
-          style={{
-            maxWidth: "33%",
-            borderStyle: "groove",
-            borderRadius: "12px",
-          }}
+          className="card-s"
         >
           <MDBCardImage
-            style={{ height: "250px", width: "400px" }}
+           className="card-i"
             src="https://images.unsplash.com/photo-1568792923760-d70635a89fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             position="top"
             alt="..."
@@ -215,14 +213,10 @@ export default function Course() {
           </MDBCardBody>
         </MDBCard>
         <MDBCard
-          style={{
-            maxWidth: "33%",
-            borderStyle: "groove",
-            borderRadius: "12px",
-          }}
+          className="card-s"
         >
           <MDBCardImage
-            style={{ height: "250px", width: "400px" }}
+            className="card-i"
             src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             position="top"
             alt="..."
@@ -281,14 +275,10 @@ export default function Course() {
           </MDBCardBody>
         </MDBCard>
         <MDBCard
-          style={{
-            maxWidth: "33%",
-            borderStyle: "groove",
-            borderRadius: "12px",
-          }}
+         className="card-s"
         >
           <MDBCardImage
-            style={{ height: "250px", width: "400px" }}
+            className="card-i"
             src="https://images.unsplash.com/photo-1547653872-052e3539decc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             position="top"
             alt="..."
@@ -347,7 +337,7 @@ export default function Course() {
           </MDBCardBody>
         </MDBCard>
       </section>
-      <Navbar />
+      <Navbar2 showNavTab={showNavTab} setshowNavTab= {setshowNavTab}/>
       <Footer />
     </div>
   );

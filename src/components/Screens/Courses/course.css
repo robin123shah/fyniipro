@@ -286,6 +286,10 @@ body {
   list-style: none;
   text-align: center;
 }
+.card-i{
+  height:250px ;
+  width: 400px;
+}
 
 .slider2 input[type="radio"] {
   position: absolute;
@@ -986,6 +990,12 @@ footer p {
 .face {
   margin-left: 8px;
 }
+.card-s{
+    max-width: 33%;
+    border-style: groove;
+    border-radius: 12px;
+
+}
 
 /* .social-icons-ql li:nth-child(1){
   width:50px;
@@ -998,4 +1008,41 @@ footer p {
 .social-icons-ql li i {
   color: #fff;
   font-size: 20px;
+}
+.big-heading {
+  font-size: 4rem;
+  width: 100%;
+  font-size: 4rem;
+  background-color: #96DEB2;
+  color: black;
+  text-align:center;
+}
+
+
+@media screen and (max-width:1150px) {
+  .card-i{
+    width: 100%;
+  }
+  .slider2{
+    width: 100%;
+  }
+  .card-s{
+    margin: 25px;
+  }
+  
+}
+@media screen and (max-width:700px){
+  .course-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-s{
+    max-width: 75%;
+  }
+  .jnui{
+    font-size: 21px;
+  }
+  .big-heading {
+    margin-top: 15%;
+  }
 }

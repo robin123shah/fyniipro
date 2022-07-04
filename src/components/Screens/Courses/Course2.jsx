@@ -64,7 +64,7 @@ export default function Course() {
         </ul>
         <section id="title">
           {/* colored-section */}
-          <h1 className="big-heading" id="blink" style={{ fontSize: "4rem" }}>
+          <h1 className="big-heading" id="blink">
             Short term skill courses for your career growth!
           </h1>
         </section>

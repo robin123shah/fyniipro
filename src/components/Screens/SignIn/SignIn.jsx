@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FormInput from "../Register/FormInput";
 import { useNavigate } from "react-router-dom";
+
 import "./SignIn.css";
 
 const SignIn = () => {
@@ -25,10 +26,9 @@ const SignIn = () => {
       name: "password",
       type: "password",
       placeholder: "Password",
-      errorMessage:
-        " Wrong Password",
+      errorMessage: " Wrong Password",
       label: "Password",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+      pattern: `^(?=.[0-9])(?=.[a-zA-Z])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
   ];
@@ -61,8 +61,15 @@ const SignIn = () => {
 
   return (
     <div className="app">
-      <form className="SignInForm" onSubmit={handleSubmit} >
-        <h2 style={{ fontSize: "32px", margin: "20px 35px", color: "green" }}>
+      <form onSubmit={handleSubmit} style={{ height: "60%" }}>
+        <h2
+          style={{
+            fontSize: "32px",
+            alignItems:"center",
+            padding:"20px 0",
+            color: "green",
+          }}
+        >
           Already Member?
         </h2>
         {inputs.map((input) => (

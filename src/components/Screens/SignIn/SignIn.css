@@ -6,13 +6,14 @@ input{
     border: 1px solid black;
 }
 
+/* 
 .SignInForm {
     background-color: white;
     padding: 0px 60px;
     border-radius: 10px;
     height: 50rem;
     width: 45rem;
-}
+} */
 
 /* @media screen and (max-width:900px) {
     .SignInForm{
@@ -24,13 +25,11 @@ input{
 @media screen and (max-width: 500px) {
     form {
       height: 70%;
-      width: 70%;
     }
     .formlabel {
       font-size: 15px;
     }
     input {
-      width: 70%;
       height: 35px;
     }
     input::placeholder {

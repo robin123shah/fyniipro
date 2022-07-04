@@ -114,7 +114,7 @@ const Yourself = (props) => {
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        <h2 style={{ fontSize: "32px", margin: "20px", color: "green" }}>
+        <h2 className="Register_h2">
           About Yourself?
         </h2>
         {inputschool.map((input) => (

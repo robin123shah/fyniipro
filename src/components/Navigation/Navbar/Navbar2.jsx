@@ -46,20 +46,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         />
         
       <input
-
         className="top-input1 nav__item"
-        style={{
-          backgroundColor: "#fff",
-          width: "200px",
-          height: "58%",
-          marginTop : "0px",
-          marginLeft:"250px",
-          borderRadius: "10px",
-          borderStyle: "Solid",
-          borderWidth: "2px",
-          borderColor: "black",
-          outline: "none",
-        }}
         type="text"
         placeholder="Search"
         name="search"

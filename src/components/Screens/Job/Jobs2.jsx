@@ -1,5 +1,4 @@
-import React from "react";
-// import { Helmet } from "react-helmet";
+import React,{useState,useRef} from "react";
 import "./Jobs.css";
 import Aiimslogo from "./img/aiimslogo.png"
 import PEClogo from "./img/PEClogo.png"
@@ -8,7 +7,7 @@ import ASYSlogo from "./Ansyslogo.jpg"
 import Delllogo from "./Delllogo.jpg"
 
 import "./style.css";
-import Navbar from "../../Navigation/Navbar/Navbar";
+import Navbar2 from "../../Navigation/Navbar/Navbar2";
 import Jobs from "./Jobs";
 import Footer from "../Footer/Footer";
 export default function Intership() {
@@ -107,7 +106,14 @@ export default function Intership() {
       alt:"Logo"
     },
   ];
+  const [showNavTab,setshowNavTab] = useState(false)
+  const NavTabRef = useRef();
 
+  const closeNavTab = e => {
+    if(NavTabRef.current === e.target) {
+      setshowNavTab(false)
+    }
+  }
   // const [Inttopic, setInttopic] = useState("All");
   // const [location, setlocation] = useState("All");
   // const [Company, setCompany] = useState("All");
@@ -137,7 +143,7 @@ export default function Intership() {
       <br></br>
       <br></br>
       <br></br>
-      <div class="container">
+      <div ref={NavTabRef} onClick={closeNavTab} class="container">
         <div class="row">
           <div class="col-lg-4">
             <div class="filter-box">
@@ -413,7 +419,7 @@ export default function Intership() {
       </div>
 
 
-      <Navbar/>
+      <Navbar2 showNavTab={showNavTab} setshowNavTab= {setshowNavTab}/>
       <Footer/>
     </React.Fragment>
   );

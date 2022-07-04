@@ -13,6 +13,8 @@ export default function Internship() {
   const [item3, setitem3] = useState("btn-3");
   const [item4, setitem4] = useState("btn-4");
   const [item5, setitem5] = useState("btn-5");
+
+
   // const [item6, setitem6] = useState("btn-6");
   useEffect(() => {
     const interval = setInterval(() => {

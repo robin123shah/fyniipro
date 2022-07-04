@@ -3,11 +3,20 @@ import React, { useState,useRef } from "react";
 // import "./internship.css";
 // import "./style.css";
 // import Aiimslogo from "./img/aiimslogo.png"
-import Navbar from "../../Navigation/Navbar/Navbar";
 import Internship from "./Internship";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
+import Navbar2 from "../../Navigation/Navbar/Navbar2";
 export default function Intership() {
+  const [showNavTab,setshowNavTab] = useState(false)
+  const NavTabRef = useRef();
+
+  const closeNavTab = e => {
+    if(NavTabRef.current === e.target) {
+      setshowNavTab(false)
+    }
+  }
+
   const InternshipData = [
     {
       id: "1",
@@ -103,7 +112,7 @@ export default function Intership() {
       <br></br>
       <br></br>
       <br></br>
-      <div  class="container">
+      <div  ref={NavTabRef} onClick={closeNavTab} class="container">
         <div class="row">
           <div class="col-lg-4">
             <div class="filter-box">
@@ -322,7 +331,7 @@ export default function Intership() {
       <Modal showModal= {showModal} setshowModal= {setshowModal}/>
 
 
-      <Navbar/>
+      <Navbar2 showNavTab={showNavTab} setshowNavTab= {setshowNavTab}/>
       <Footer/>
     </div>
     </React.Fragment>

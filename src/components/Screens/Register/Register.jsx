@@ -20,7 +20,7 @@ const Register = () => {
     {
       id: 1,
       name: "username",
-      type: "text",
+      type: "name",
       placeholder: "Username",
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
@@ -89,7 +89,7 @@ const Register = () => {
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        <h2 style={{ fontSize: "32px", margin: "20px", color: "green" }}>
+        <h2 className="Register_h2">
           New Here?
         </h2>
         {inputs.map((input) => (
