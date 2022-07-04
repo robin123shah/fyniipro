@@ -51,7 +51,7 @@
 h3{
   color: black;
 }
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
  .fix{
   height: 300px;
  }
@@ -60,7 +60,7 @@ h3{
   .fix{
    height: 500px;
   }
- }
+ } */
 
  .App {
   text-align: center;

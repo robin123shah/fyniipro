@@ -7,6 +7,10 @@
   /* background-color: #96dbe2; */
 }
 
+.cards__items2::-webkit-scrollbar {
+  display: none;
+}
+
 .nav-link-1 {
   color: green;
 }
@@ -758,9 +762,9 @@ hr {
   margin: 10px;
 }
 
-img {
+/* img {
   border-radius: 10px;
-}
+} */
 
 .sq-box {
   /* border: 1px solid #000; */

@@ -808,14 +808,14 @@ input[type="submit"] {
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
   .b{
     width: 70%;
   }
   .popup{
     width: 70%;
   }
-}
+} */
 
 
 #enroll{

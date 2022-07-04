@@ -4,6 +4,8 @@ import "./Jobs.css";
 import Aiimslogo from "./img/aiimslogo.png"
 import PEClogo from "./img/PEClogo.png"
 import ICMRlogo from "./img/ICMRlogo.jpg"
+import ASYSlogo from "./Ansyslogo.jpg"
+import Delllogo from "./Delllogo.jpg"
 
 import "./style.css";
 import Navbar from "../../Navigation/Navbar/Navbar";
@@ -11,16 +13,42 @@ import Jobs from "./Jobs";
 import Footer from "../Footer/Footer";
 export default function Intership() {
   const InternshipData = [
+    {
+      id: "-2",
+      Title: "Application Engineer",
+      Company: "Ansys",
+      Location: "Bengaluru",
+      Date: "11-7-2022",
+      Stipend: "50000",
+      WorkType: "Full Time",
+      About: "Ansys is a global leader in engineering simulation.",
+      Link: "https://careers.ansys.com/job/Bengaluru-Application-Engineer-II-SCBU-KA-560103/896666300/",
+      img_src: ASYSlogo,
+      alt: "Logo",
+    },
+    {
+      id: "-1",
+      Title: "Software Engineer 1",
+      Company: "Dell",
+      Location: "Bangalore",
+      Date: "01-08-2022",
+      Stipend: "100000",
+      WorkType: "Full Time",
+      About: "Dell is a manufacturer Company.",
+      Link: "https://jobs.dell.com/job/bengaluru/software-engineer-1/375/30930510064",
+      img_src: Delllogo,
+      alt: "Logo",
+    },
 
     {
       id: "0",
       Title: "Stenographer",
-      Company: "Aims",
+      Company: "Aiims",
       Location: "Bilaspur",
-      Date: "27-1-2023",
+      Date: "27-10-2022",
       Stipend: "18750",
       WorkType: "Full Time",
-      About: "Aims is government Medical Institute",
+      About: "Aiims is government Medical Institute",
       Link:"https://becilregistration.com/Home/ListofExam.aspx",
       img_src : Aiimslogo,
       alt:"Aiimslogo"
@@ -337,7 +365,7 @@ export default function Intership() {
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
               <a href="/">
-              <img style={{position:"absolute","height":"80px","width":"80px","right":"17%"}} src = {e.img_src} alt = {e.alt} />
+              <img style={{position:"absolute","height":"80px","width":"80px","left":"75%"}} src = {e.img_src} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
 

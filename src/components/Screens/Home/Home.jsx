@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./HeroSection.css";
 import "./Home.css";
 import Cards from "./Cards/Cards";
 import Footer from "../Footer/Footer";
-import Navbar from "../../Navigation/Navbar/Navbar";
+// import Navbar from "../../Navigation/Navbar/Navbar";
+import Navbar2 from "../../Navigation/Navbar/Navbar2";
 
 export default function Home() {
   // var slider2 = document.getElementById("slider2");
@@ -39,6 +40,14 @@ export default function Home() {
   const [topic, settopic] = useState("All");
 
   localStorage.setItem("activeNav","Home")
+  const [showNavTab,setshowNavTab] = useState(false)
+  const NavTabRef = useRef();
+
+  const closeNavTab = e => {
+    if(NavTabRef.current === e.target) {
+      setshowNavTab(false)
+    }
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,22 +63,9 @@ export default function Home() {
   });
 
   return (
-    <div>
-      <div
-        className="Container-card"
-        style={{
-          "margin-top": "60px",
-          height: "100%",
-          width: "100%",
-          backgroundColor: "#96DEB2",
-          display: "flex",
-          flexDirection: "row",
-          "flex-wrap": "nowrap",
-          alignItems: "center",
-          alignContent: "center",
-        }}
-      >
-        <div className="Card-Right" style={{ marginTop: "15%" }}>
+    <div >
+      <div className="Container-card" ref={NavTabRef} onClick={closeNavTab}>
+        <div className="Card-Right">
           <div id="slider2" style={{ transform: translate }}>
             <div className="msg-col02">
               <h2 className="ifweeof" >How to choose right career for you?</h2>
@@ -93,14 +89,7 @@ export default function Home() {
             </div>
             <div className="msg-col02">
               <h2 className="ifweeof" >Confused????</h2>
-              <p
-                style={{
-                  color: "white",
-                  fontFamily: "Josefin Slab",
-                  fontWeight:"700",
-                  fontSize: "2rem",
-                }}
-              >
+              <p>
                 Find all your answer here!
               </p>
               <a href="/">Learn More</a>
@@ -118,7 +107,7 @@ export default function Home() {
 
         <div className="Card-Left">
           <img
-            style={{ height: "50%", width: "50%", "margin-left": "45%" }}
+            style={{ height: "50%", width: "50%", "margin-left": "50%" }}
             src={require("./logo2.jpg")}
             alt="img"
           />
@@ -151,7 +140,6 @@ export default function Home() {
       <div className=""></div>
       <div
         style={{
-          "margin-top": "60px",
           height: "100%",
           width: "100%",
           backgroundColor: "#333",
@@ -171,14 +159,14 @@ export default function Home() {
           />
         </div>
         <div className="Card-Right2">
-          <div style={{"position":"absolute","margin-top":"30%"}} className="msg-col02">
-              <h3 style={{"color":"#fff","fontSize":"3rem","width":"90%"}} className="ifweof">Want to Join as Mentor/ Editor/ Writer.</h3>
-              <h3 style={{"color":"#fff","fontSize":"3rem","width":"90%"}} className="ifweof">Join and Publish at Fynii.</h3>
+          <div className="msg-col02m">
+              <h3 >Want to Join as Mentor/ Editor/ Writer.</h3>
+              <h3 >Join and Publish at Fynii.</h3>
               <a style={{"backgroundColor":"#fff","color":"#000"}}href="/texteditor">Join Now</a>
-            </div>
           </div>
+        </div>
       </div>
-      <Navbar/>
+      <Navbar2 showNavTab={showNavTab} setshowNavTab= {setshowNavTab}/>
       <Footer />
     </div>
   );

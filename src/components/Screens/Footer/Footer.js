@@ -13,7 +13,7 @@ const Footer = () => {
     <Box>
       <Container>
         <Row>
-          <Column style={{ marginLeft: "-100px" }}>
+          <Column>
             <Heading>Company</Heading>
             <FooterLink href="#">About</FooterLink>
             <FooterLink href="#">Career</FooterLink>
@@ -21,24 +21,23 @@ const Footer = () => {
             <FooterLink href="#">Terms and Conditions</FooterLink>
             <FooterLink href="#">Help Center</FooterLink>
           </Column>
-          <Column style={{ marginLeft: "-100px" }}>
+          <Column>
             <Heading>Services</Heading>
             <FooterLink href="#">Blogging</FooterLink>
             <FooterLink href="#">Jobs</FooterLink>
             <FooterLink href="#">Internship</FooterLink>
             <FooterLink href="#">Courses</FooterLink>
           </Column>
-          <Column style={{ marginLeft: "-140px" }}>
+          <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink style={{ width: "350px" }}>
-              House No. 481,Second Floor,Shiv Market BLK-WP,Village
-              Wazirpur,Ashok Vihar, Delhi-110052
+            <FooterLink style={{"textAlign":"justify"}}>
+              House No. 481, Second Floor, Shiv Market BLK-WP, Village Wazirpur, Ashok Vihar, Delhi-110052
             </FooterLink>
           </Column>
 
-          <Column style={{ marginLeft: "-20px" }}>
-            <Heading style={{ marginLeft: "60px" }}>Follow us</Heading>
-            <Column style={{ "flex-direction": "Row", marginLeft: "40px" }}>
+          <Column>
+            <Heading >Follow us</Heading>
+            <Column style={{ "flex-direction": "Row",marginLeft:0 }}>
               <FooterLink href="#">
                 <i
                   className="fab fa-facebook-f"
@@ -53,7 +52,6 @@ const Footer = () => {
                     padding: "2px",
                   }}
                 >
-                  <span style={{ marginLeft: "20px" }}>Facebook</span>
                 </i>
               </FooterLink>
 
@@ -72,7 +70,6 @@ const Footer = () => {
                     padding: "2px",
                   }}
                 >
-                  <span style={{ marginLeft: "20px" }}>Youtube</span>
                 </i>
               </FooterLink>
               <FooterLink>
@@ -89,7 +86,6 @@ const Footer = () => {
                     padding: "2px",
                   }}
                 >
-                  <span style={{ marginLeft: "20px" }}>Twitter</span>
                 </i>
               </FooterLink>
             </Column>

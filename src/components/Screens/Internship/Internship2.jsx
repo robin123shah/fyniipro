@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useRef } from "react";
 // import { Helmet } from "react-helmet";
 // import "./internship.css";
 // import "./style.css";
@@ -6,6 +6,7 @@ import React from "react";
 import Navbar from "../../Navigation/Navbar/Navbar";
 import Internship from "./Internship";
 import Footer from "../Footer/Footer";
+import Modal from "./Modal";
 export default function Intership() {
   const InternshipData = [
     {
@@ -67,11 +68,22 @@ export default function Intership() {
   // const [Company, setCompany] = useState("All");
   // const [IntType, setIntType] = useState("All");
   // const [IntDuration, setDuration] = useState("All");
+  const [showModal,setshowModal] = useState(false)
+  const modalRef = useRef();
 
+  const openModal = () => {
+    setshowModal(prev => !prev)
+  }
+
+  const closeModal = e => {
+    if(modalRef.current === e.target) {
+      setshowModal(false)
+    }
+  }
   return (
-
     <React.Fragment>
-      <Internship/>
+    <div ref={modalRef} onClick={closeModal}>
+      <Internship />
       {/* <Helmet>
         <script
           src="https://kit.fontawesome.com/08e9a53b4a.js"
@@ -91,7 +103,7 @@ export default function Intership() {
       <br></br>
       <br></br>
       <br></br>
-      <div class="container">
+      <div  class="container">
         <div class="row">
           <div class="col-lg-4">
             <div class="filter-box">
@@ -261,7 +273,7 @@ export default function Intership() {
 
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
-              <a href={e.Link}>
+              <div>
                 <img style={{position:"absolute","height":"50px","width":"50px","right":"10%"}} src = {e.img_src} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
@@ -297,19 +309,22 @@ export default function Intership() {
                   <div class="btnn">
                     <i class="fa-regular fa-bookmark"></i> Save
                   </div>
-                  <div class="btnn">
+                  <div onClick={openModal} class="btnn">
                     <i class="fa-solid fa-share-nodes"></i> Share
                   </div>
                 </div>
-              </a>
+              </div>
             </div>))}
           </div>
         </div>
       </div>
+      {console.log("1",showModal)}
+      <Modal showModal= {showModal} setshowModal= {setshowModal}/>
 
 
       <Navbar/>
       <Footer/>
+    </div>
     </React.Fragment>
   );
 }

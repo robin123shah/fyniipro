@@ -1,13 +1,8 @@
 .cards {
     padding: 4rem;
     background: #96DEB2;
-    border-radius: 0px 0px 30px 30px;
+    /* border-radius: 0px 0px 30px 30px; */
   }
-  
-  h1 {
-    text-align: center;
-  }
-  
   .cards__container {
     display: flex;
     flex-flow: column;
@@ -26,8 +21,6 @@
     margin-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
-    
-
   }
 
 
@@ -37,7 +30,7 @@
     overflow-x: scroll;
 
   }
-  
+
   .cards__item {
     display: flex;
     flex: 0 0 30%;
@@ -54,6 +47,10 @@
     border-radius: 10px;
     margin-bottom: 10px;
     
+  }
+
+  .cards__item2::-webkit-scrollbar {
+    display: none;
   }
   
   .cards__item__link {
@@ -130,7 +127,7 @@
   }
   
   @media only screen and (min-width: 1024px) {
-    .cards__items {
+    .cards__item {
       display: flex;
     }
   }
@@ -138,5 +135,90 @@
   @media only screen and (max-width: 1024px) {
     .cards__item {
       margin-bottom: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .cards__item {
+      flex: 0 0 44%;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .cards__item__info {
+      padding: 10px 15px 15px;
+    }
+    .cards__item__text {
+      font-size: 9px;
+      line-height: 12px;
+    }
+    .cards__item__pic-wrap::after {
+      margin-left: 5px;
+      padding: 3px 4px;
+      max-width: calc((100%) - 30px);
+      font-size: 6px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #1f98f4;
+      box-sizing: border-box;
+    }
+
+  }
+
+  @media only screen and (max-width: 550px) {
+    .cards__item {
+      flex: 0 0 100%;
+    }
+    .cards__item__info {
+      padding: 10px 15px 15px;
+    }
+    .cards__item__text {
+      font-size: 9px;
+      line-height: 12px;
+    }
+    .cards__item__pic-wrap::after {
+      margin-left: 5px;
+      padding: 3px 4px;
+      max-width: calc((100%) - 30px);
+      font-size: 6px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #1f98f4;
+      box-sizing: border-box;
+    }
+    .cards__item2 {
+      display: flex;
+      flex: 0 0 45%;
+      margin: 0 1rem;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .cards__item__info {
+      padding: 5px 7.5px 7.5px;
+    }
+    .cards__item__text {
+      font-size: 9px;
+      line-height: 12px;
+    }
+    .cards__item__pic-wrap::after {
+      margin-left: 5px;
+      padding: 3px 4px;
+      max-width: calc((100%) - 30px);
+      font-size: 6px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #1f98f4;
+      box-sizing: border-box;
+    }
+    .cards__item2 {
+      display: flex;
+      flex: 0 0 45%;
+      margin: 0 1rem;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      
     }
   }

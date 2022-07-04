@@ -46,10 +46,10 @@ button{
   margin-bottom: 30px;
 }
 
-@media screen and (max-width:"500px") {
+/* @media screen and (max-width:"500px") {
   form {
     background-color: white;
     padding: 0px 60px;
     border-radius: 10px;
 }
-}
+} */

@@ -3,15 +3,15 @@ import "../../styles/navbar.css";
 import "../../styles/app.css"
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar ({showNavTab, setshowNavTab}) {
   const navigate = useNavigate();
-  const [dropdown, setDropdown] = useState(false);
+//   const [dropdown, setDropdown] = useState(false);
 
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
 
   const onNavButtonPress = () => {
-    setDropdown(!dropdown);
+    setshowNavTab(!showNavTab);
     document.getElementById("myDropdown").classList.toggle("show");
   };
 
