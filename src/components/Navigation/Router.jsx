@@ -15,10 +15,8 @@ import About from '../Screens/About/About';
 // import ButtonPage from '../Screens/Internship/Modal/ButtonPage';
 // import About from "../Screens/About/About"
 const Router = () => {
-  return (
-    
+  return ( 
     <BrowserRouter>
-<h1>Fynii</h1>
     <Routes>
 
         <Route path='/' element={<Checklogin/>}/>
