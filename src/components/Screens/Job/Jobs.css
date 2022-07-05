@@ -482,9 +482,23 @@ ul.ks-cboxtags {
     left:85%;
   }
 
+  @media screen and (max-width:1200px) {
+    .img_class{
+      left: 80%
+    }
+  }
+
+  
+  @media screen and (max-width:1000px) {
+    .img_class{
+      left: 75%
+    }
+  }
+
   @media screen and (max-width:770px) {
     .img_class{
       position: relative;
       left: 0;
     }
   }
+
