@@ -16,8 +16,9 @@ import About from '../Screens/About/About';
 // import About from "../Screens/About/About"
 const Router = () => {
   return (
+    
     <BrowserRouter>
-
+<h1>Fynii</h1>
     <Routes>
 
         <Route path='/' element={<Checklogin/>}/>
