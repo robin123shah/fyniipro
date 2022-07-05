@@ -38,7 +38,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
             width: "100px",
             // height: "38px",
             // overflow: "hidden",
-            "margin-top": "15px",
+            "margin-top": "9px",
           }}
           href="/Home"
           alt="img"
@@ -125,7 +125,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         </li>
         :
         <li className="nav_item">
-          <button style={{"margin":"0","background-color": "rgb(0, 153, 51)"}} onClick={()=> {navigate("/SignIn")}} class="dropbtn">
+          <button style={{"margin":"0","backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/SignIn")}} class="dropbtn">
             Sign In
           </button>
         </li>

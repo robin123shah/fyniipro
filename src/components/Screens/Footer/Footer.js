@@ -1,5 +1,5 @@
 import React from "react";
-import About from "./../About/About"
+import "./Footer.css"
 import {
   Box,
   Container,
@@ -7,6 +7,7 @@ import {
   Column,
   FooterLink,
   Heading,
+  ColumnFollow,
 } from "./FooterStyle";
 
 const Footer = () => {
@@ -36,8 +37,8 @@ const Footer = () => {
             </FooterLink>
           </Column>
 
-          <Column>
-            <Heading >Follow us</Heading>
+          <ColumnFollow >
+            <Heading  >Follow us</Heading>
             <Column style={{ "flex-direction": "Row",marginLeft:0 }}>
               <FooterLink href="#">
                 <i
@@ -90,7 +91,7 @@ const Footer = () => {
                 </i>
               </FooterLink>
             </Column>
-          </Column>
+          </ColumnFollow>
         </Row>
       </Container>
       <hr />

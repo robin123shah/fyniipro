@@ -402,7 +402,7 @@ export default function Intership() {
                 <div class="grid-container">
                   
                   <div class="btnn">
-                    <i class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link}> Apply  </a>
+                    <i class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
                   </div>
                  
                   <div class="btnn">

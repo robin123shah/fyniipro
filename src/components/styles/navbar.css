@@ -34,7 +34,7 @@ a {
 }
 .nav__brand {
   position: absolute;
-  left: 2%;
+  left: 5%;
 }
 
 .top-input1 {
@@ -44,7 +44,7 @@ a {
   font-size: 17px;
   border: none;
   background-color: #fff;
-  width: 200px;
+  width: 20%;
   height: 58%;
   margin-top : 0px;
   border-radius: 10px;
@@ -101,6 +101,10 @@ a {
   .nav__active {
     transform: translateX(0%);
   }
+  .top-input1 {
+    width: 200px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -125,6 +129,9 @@ a {
 
   .nav__active {
     transform: translateX(0%);
+  }
+  .nav__brand {
+    left: 2%;
   }
 }
 

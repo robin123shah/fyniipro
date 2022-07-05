@@ -26,6 +26,16 @@ export const Column = styled.div`
   text-align: center;
 `;
 
+export const ColumnFollow = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left:30px;
+  @media (max-width: 400px) {
+    margin-left:0px;
+  }
+`;
+
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
