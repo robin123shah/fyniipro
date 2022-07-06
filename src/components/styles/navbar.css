@@ -86,8 +86,8 @@ a {
     top: 7vh;
     right: 0;
     height: 93vh;
-    width: 30vw;
-    background: rgb(41, 153, 184);
+    width: 50vw;
+    background: #fff;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
@@ -115,8 +115,7 @@ a {
     position: fixed;
     top: 7vh;
     right: 0;
-    width: 30vw;
-    background: rgb(41, 153, 184);
+    width: 50vw;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
