@@ -410,9 +410,6 @@ body {
   background-color: #ff4081;
 }
 
-.slide-image img {
-  object-fit: cover;
-}
 
 /* Slide animations */
 #btn-1:checked ~ .slides .slide:nth-child(1) {

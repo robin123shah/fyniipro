@@ -16,9 +16,9 @@ const Modal = ({showModal,setshowModal}) => {
     <>
     {showModal
     ?
-    <div>
+    <div style={{"background":"black","height":"100%","width":"100%"}}>
         {/* <div className='Background' */}
-      <div class="popup">
+      <div class="popup" >
                 
                 <div class="content">
                  

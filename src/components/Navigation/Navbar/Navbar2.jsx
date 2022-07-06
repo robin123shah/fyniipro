@@ -49,8 +49,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         className="top-input1 nav__item"
         type="text"
         placeholder="Search"
-        name="search"
-        
+        name="search" 
       />
       {/* <button type="submit"><i class="fa fa-search"></i></button> */}
       <ul className={active}>

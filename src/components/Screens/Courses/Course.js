@@ -4,6 +4,8 @@ import logo from "./iit.png";
 import logo1 from "./ibm.png";
 import logo2 from "./google.jfif";
 import "./course.css";
+import { useNavigate } from "react-router-dom";
+
 
 import {
   MDBCard,
@@ -11,7 +13,7 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBCardImage,
-  MDBBtn,
+  // MDBBtn,
 } from "mdb-react-ui-kit";
 
 import "./course.css";
@@ -19,6 +21,7 @@ import Navbar2 from "../../Navigation/Navbar/Navbar2";
 import Footer from "../Footer/Footer";
 
 export default function Course() {
+  const navigate = useNavigate();
   const [item1, setitem1] = useState("btn-1");
   const [item2, setitem2] = useState("btn-2");
   const [item3, setitem3] = useState("btn-3");
@@ -82,8 +85,6 @@ export default function Course() {
                 <img
                   src="https://images.unsplash.com/photo-1616337865743-bd29011bc36d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
                   alt="stuff"
-                  width={320}
-                  height={240}
                 />
               </p>
             </li>
@@ -97,8 +98,7 @@ export default function Course() {
                 <img
                   src="https://images.unsplash.com/photo-1513258496099-48168024aec0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
                   alt="stuff"
-                  width={320}
-                  height={240}
+
                 />
               </p>
             </li>
@@ -110,8 +110,7 @@ export default function Course() {
                 <img
                   src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y291cnNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400"
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+
                 />
               </p>
             </li>
@@ -123,8 +122,7 @@ export default function Course() {
                 <img
                   src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+
                 />
               </p>
             </li>
@@ -138,8 +136,7 @@ export default function Course() {
                 <img
                   src="https://images.unsplash.com/photo-1615752865424-62638daceeae?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZWFzeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
                   alt="stuff"
-                  // width={320}
-                  // height={240}
+
                 />
               </p>
             </li>
@@ -152,6 +149,7 @@ export default function Course() {
       <section className="course-container" style={{"padding":" 10px 0px","backgroundColor":"#333"}}>
         <MDBCard
           className="card-s"
+          onClick={()=>{navigate("/CoursePage")}}
         >
           <MDBCardImage
            className="card-i"
@@ -193,7 +191,7 @@ export default function Course() {
                 {" "}
                 500
               </div>
-              <MDBBtn
+              {/* <MDBBtn
               href="/CoursePage"
               style={{
                 margin: " 0 38%",
@@ -207,13 +205,14 @@ export default function Course() {
               }}
             >
               Enroll
-            </MDBBtn>
+            </MDBBtn> */}
             </MDBCardText>
            
           </MDBCardBody>
         </MDBCard>
         <MDBCard
           className="card-s"
+          onClick={()=>{navigate("/CoursePage")}}
         >
           <MDBCardImage
             className="card-i"
@@ -255,7 +254,7 @@ export default function Course() {
                 {" "}
                 500
               </div>
-              <MDBBtn
+              {/* <MDBBtn
               href="/"
               style={{
                 margin: " 0 38%",
@@ -269,13 +268,14 @@ export default function Course() {
               }}
             >
               Enroll
-            </MDBBtn>
+            </MDBBtn> */}
             </MDBCardText>
             
           </MDBCardBody>
         </MDBCard>
         <MDBCard
          className="card-s"
+         onClick={()=>{navigate("/CoursePage")}}
         >
           <MDBCardImage
             className="card-i"
@@ -317,7 +317,7 @@ export default function Course() {
                 {" "}
                 500
               </div>
-              <MDBBtn
+              {/* <MDBBtn
               href="/"
               style={{
                 margin: " 0 38%",
@@ -331,7 +331,7 @@ export default function Course() {
               }}
             >
               Enroll
-            </MDBBtn>
+            </MDBBtn> */}
             </MDBCardText>
             
           </MDBCardBody>

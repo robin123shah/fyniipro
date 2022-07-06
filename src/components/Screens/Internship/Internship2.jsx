@@ -7,6 +7,7 @@ import Internship from "./Internship";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
+
 export default function Intership() {
   const [showNavTab,setshowNavTab] = useState(false)
   const NavTabRef = useRef();

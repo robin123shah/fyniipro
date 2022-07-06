@@ -18,6 +18,7 @@ export default function Intership() {
       Company: "Ansys",
       Location: "Bengaluru",
       Date: "11-7-2022",
+      Type: "Non Govt.",
       Stipend: "50000",
       WorkType: "Full Time",
       About: "Ansys is a global leader in engineering simulation.",
@@ -31,6 +32,7 @@ export default function Intership() {
       Company: "Dell",
       Location: "Bangalore",
       Date: "01-08-2022",
+      Type: "Non Govt.",
       Stipend: "100000",
       WorkType: "Full Time",
       About: "Dell is a manufacturer Company.",
@@ -45,6 +47,7 @@ export default function Intership() {
       Company: "Aiims",
       Location: "Bilaspur",
       Date: "27-10-2022",
+      Type: "Govt.",
       Stipend: "18750",
       WorkType: "Full Time",
       About: "Aiims is government Medical Institute",
@@ -58,6 +61,7 @@ export default function Intership() {
       Company: "Punjab Engineering College",
       Location: "Chandigarh",
       Date: "11-07-2022",
+      Type: "Non Govt.",
       Stipend: "may vary",
       WorkType: "Full Time",
       About: "PEC is an engineering institute ..",
@@ -71,6 +75,7 @@ export default function Intership() {
       Company: "ICMR",
       Location: "New Delhi",
       Date: "18-07-2022",
+      Type: "Non Govt.",
       Stipend: "may vary",
       WorkType: "Full Time",
       About: "ICMR is a medical research institute.",
@@ -84,6 +89,7 @@ export default function Intership() {
       Company: "IBM",
       Location: "Noida",
       Date: "27-1-2023",
+      Type: "Non Govt.",
       Stipend: "3000",
       WorkType: "Full Time",
       About: "Marble Palace is a millionare Company",
@@ -98,6 +104,7 @@ export default function Intership() {
       Company: "IBM",
       Location: "Deoria",
       Date: "27-1-2023",
+      Type: "Non Govt.",
       Stipend: "0",
       WorkType: "Part Time",
       About: "Marble Palace is a millionare Company",
@@ -119,6 +126,41 @@ export default function Intership() {
   // const [Company, setCompany] = useState("All");
   // const [IntType, setIntType] = useState("All");
   // const [IntDuration, setDuration] = useState("All");
+
+
+
+//   const trigger = document.querySelector('#trigger');
+// const modalWrapper = document.querySelector('.modal__wrapper');
+// const closeBtn = document.querySelector('.close');
+
+// trigger.addEventListener('click', function(){
+//     openModal();
+// });
+
+// closeBtn.addEventListener('click', function(){
+//     closeModal();
+// });
+
+// modalWrapper.addEventListener('click', function(e){
+//     if(e.target !== this) return;
+//     closeModal();
+// });
+
+// document.addEventListener('keydown', function(e){
+//     if(e.key === 'Escape') {
+//         closeModal();
+//     }
+// })
+
+// function openModal() {
+//     modalWrapper.classList.add('active');
+// }
+// function closeModal() {
+//     modalWrapper.classList.remove('active');
+// }
+
+// closeModal();
+
 
   return (
 
@@ -305,20 +347,20 @@ export default function Intership() {
                 <ul class="ks-cboxtags">
                   <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxOne" />
-                    <label >Government</label>
+                    <label for="checkboxOne">Government</label>
                   </li>
 
                   <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
-                    <label >Non-Government</label>
+                    <label for="checkboxTwo">Non-Government</label>
                   </li>
                   <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
-                    <label >Work From Home</label>
+                    <label for="checkboxThree">Work From Home</label>
                   </li>
                   <li style={{"margin":"5px"}}>
                     <input type="checkbox" id="checkboxTwo" />
-                    <label >Part Time</label>
+                    <label for="checkboxFour">Part Time</label>
                   </li>
                 </ul>
               </div>
@@ -365,6 +407,120 @@ export default function Intership() {
                   Woman Friendly
                 </label>
               </div>
+              <button class="btn__purple" id="trigger">Set job alert</button>
+
+              <div class="modal__wrapper">
+              <div class="modal__container">
+                <button class="close">&times;</button>
+                <h2 class="bigg">Job alert</h2>
+
+                <h4>Topic</h4>
+                <div class="input-group rounded">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="e.g. Software"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+
+                <br />
+
+                <h4>Location</h4>
+                <div class="input-group rounded">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="e.g. Delhi"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+
+                <br />
+
+                <h4>Organization</h4>
+                <div class="input-group rounded">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="e.g. Google"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+
+                <br />
+
+                <div class="container">
+                  <ul class="ks-cboxtags">
+                    <li>
+                      <input type="checkbox" id="checkboxOne" /><label
+                        for="checkboxOne"
+                        >Government</label
+                      >
+                    </li>
+
+                    <li>
+                      <input type="checkbox" id="checkboxThree" /><label
+                        for="checkboxThree"
+                        >Work from home</label
+                      >
+                    </li>
+                    <li>
+                      <input type="checkbox" id="checkboxTwo" /><label
+                        for="checkboxTwo"
+                        >Non-Government</label
+                      >
+                    </li>
+                    <li>
+                      <input type="checkbox" id="checkboxFour" /><label
+                        for="checkboxFour"
+                        >Part time</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <br />
+
+                <h4>How would you like to get informed?</h4>
+                <div class="container">
+                  <ul class="ks-cboxtags">
+                    <li>
+                      <input type="checkbox" id="checkboxOne" /><label
+                        for="checkboxOne"
+                        >Message</label
+                      >
+                    </li>
+
+                    <li>
+                      <input type="checkbox" id="checkboxThree" /><label
+                        for="checkboxThree"
+                        >e-mail</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="action">
+                  <button class="btn__purple">Submit</button>
+                </div>
+              </div>
+            </div>
+
+
+
             </div>
           </div>
 

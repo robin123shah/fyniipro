@@ -21,10 +21,10 @@ const Register = () => {
       id: 1,
       name: "username",
       type: "name",
-      placeholder: "Username",
+      placeholder: "Name",
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
-      label: "Username",
+      label: "Name",
       pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
     },
