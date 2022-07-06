@@ -465,7 +465,7 @@
 
 @media screen and (max-width: 375px) {
     .msg-col02{
-        width: 120px;
+        width: 126px;
         height: 280px;
     }
     .msg-col02 h2{
@@ -475,7 +475,7 @@
         font-size: 7px;
     }
     .Card-Right{
-        margin-top: 100%;
+        margin-top: 95%;
     }
     .msg-col02 a{
         font-size: 9px;
