@@ -44,6 +44,10 @@ p {
   /* font-weight: bolder; */
 }
 
+.slide-image > img {
+  height: 100%;
+  width: 100%;
+}
 
 img {
 
@@ -360,6 +364,8 @@ body {
 .slide-content {
   width: 400px;
 }
+
+
 
 .slide-title {
   margin-bottom: 20px;
@@ -1038,6 +1044,7 @@ footer p {
   }
   .jnui{
     font-size: 21px;
+    margin-top: 60px;
   }
   .big-heading {
     margin-top: 15%;
