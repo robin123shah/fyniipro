@@ -12,7 +12,7 @@ const FormInput = (props) => {
         options = {actions}
         onChange={onChange}
       />
-      <span>{errorMessage}</span>
+      <span className="ErrorSpan">{errorMessage}</span>
     </div>
   );
 };

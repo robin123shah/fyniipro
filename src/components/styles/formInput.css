@@ -1,13 +1,41 @@
-.formInput{
-    display: flex;
-    flex-direction: column;
-    width: 280px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
+@media screen and (min-width:700px) {
+    .formInput {
+        display: flex;
+        flex-direction: row;
+        width: 442px;
+        justify-content: space-between;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .formInput>input {
+        border: none;
+    }
+    .formlabel{
+        font-size: 17px;
+        color: darkcyan;
+        margin: auto 0;
+    }
+
 }
+
+@media screen and (max-width:700px) {
+    .formInput {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+    }
+    .formlabel{
+        font-size: 17px;
+        color: darkcyan;
+    }
+}
+
 
 input{
     border-radius: 5px;
     border: 1px solid transparent;
-    background-color: #f1f1f1;
+    background-color: #E8F0fe;
     font-size: 16px;
 }
 
@@ -19,13 +47,9 @@ input{
 
 .select{
     border-radius: 5px;
-    border: 1px solid gray;
 }
 
-.formlabel{
-    font-size: 12px;
-    color: gray;
-}
+
 
 .droplabel{
     font-size: 12px;
@@ -34,7 +58,7 @@ input{
     color: gray;
 }
 
-span{
+.ErrorSpan{
     font-size: 12px;
     padding: 3px;
     color: red;
@@ -49,6 +73,60 @@ input:invalid[focused="true"] ~ span{
     display: block;
 }
 
+
+
+.Register_h2 {
+    margin: 20px; 
+    text-align: center;
+
+    font-family:system-ui;
+    font-weight:800;
+    margin-top:45px;
+    font-size:300%;
+    color:darkcyan;
+}
+
+.Register_h4 {
+    font-family:monospace;
+    text-align:center;
+    margin-top:-30px;
+    margin-bottom:45px;
+    color:midnightblue;
+}
+
+.bottoma {
+    font-style: italic;
+    margin: 43px auto;
+    display: block;
+    text-align: center;
+    margin-top: -20px;
+    color: midnightblue;
+}
+
+.my-12{margin-top:3rem;margin-bottom:3rem}
+
+.border-b{border-bottom-width:1px}
+
+.text-center{text-align:center}
+
+.leading-none{line-height:1}
+
+.px-2{padding-left:.5rem;padding-right:.5rem}
+
+.inline-block{display:inline-block}
+
+.text-sm{font-size:.875rem}
+
+.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}
+
+.tracking-wide{letter-spacing:.025em}
+
+.font-medium{font-weight:500}
+
+.transform{--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))}
+
+.translate-y-1{--transform-translate-y:0.25rem}
+
 @media screen and (max-width : 500px) {
     .formInput{
         width: 220px;
@@ -57,17 +135,8 @@ input:invalid[focused="true"] ~ span{
         font-size: 25px; 
         margin: 10px; 
     }
-}
-
-@media screen and (max-width : 400px) {
-    .formInput{
-        width: 170px;
+    .Register_h4 {
+        margin-top:0px;
     }
 }
 
-.Register_h2 {
-    font-size: 32px; 
-    margin: 20px; 
-    color: green;
-    align-content: center;
-}

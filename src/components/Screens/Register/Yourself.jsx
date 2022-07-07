@@ -133,7 +133,7 @@ const Yourself = (props) => {
             onChange={onChange}
           />
         ))}
-        <button>Register</button>
+        <button className="Style1_button">Register</button>
       </form>
     </div>
   );

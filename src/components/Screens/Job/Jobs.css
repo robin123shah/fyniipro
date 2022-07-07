@@ -562,14 +562,19 @@ ul.ks-cboxtags {
 
 .modal__container button.close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 8px;
   font-size: 32px;
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
 }
+
+.close {
+  color: black;
+  top : 0;
+}
+
 .modal__container button.close:hover {
   color: #6b46c1;
 }

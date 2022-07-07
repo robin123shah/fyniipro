@@ -116,8 +116,9 @@ function Navbar ({showNavTab, setshowNavTab}) {
           </button>
           </div>
           <div id="myDropdown" class="dropdown-content">
-            <a href="/Profile">Profile</a>
-            <button class="Logout-button" onClick={onLogoutPress}>
+            <a className="profiledrop" href="/Profile">Profile</a>
+            <a className="profiledrop" href="/Profile">Favourites</a>
+            <button className="Logout-button profiledrop" onClick={onLogoutPress}>
               Logout
             </button>
           </div>

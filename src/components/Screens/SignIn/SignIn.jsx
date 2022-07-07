@@ -62,13 +62,18 @@ const SignIn = () => {
   return (
     <div className="app">
       <form onSubmit={handleSubmit} style={{ height: "60%" }}>
-        <h2
+         {/* <img
           style={{
-            fontSize: "32px",
-            alignItems:"center",
-            padding:"20px 0",
-            color: "green",
+            "margin":"auto",
+            width: "120px",
+            "display":"block"
+
           }}
+          href="/Home"
+          alt="img"
+          src={require("./logo.png")}
+        /> */}
+        <h2 className="Register_h2"
         >
           Already Member?
         </h2>
@@ -81,8 +86,8 @@ const SignIn = () => {
           />
         ))}
         <button className="Style1_button">Sign In</button>
-        <a href="/Register">
-          New Account?<span>xRegister Here</span>
+        <a href="/Register" className="bottoma">
+          New Account? Register Here
         </a>
       </form>
     </div>

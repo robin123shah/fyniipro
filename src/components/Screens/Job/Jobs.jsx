@@ -5,7 +5,7 @@ import img1 from "./Job2.jpeg"
 import img5 from "./job5.jpg"
 import img6 from "./job6.jpg"
 
-export default function Internship() {
+export default function Internship ({openModal}) {
   const [item1, setitem1] = useState("btn-1");
   const [item2, setitem2] = useState("btn-2");
   const [item3, setitem3] = useState("btn-3");
@@ -35,7 +35,7 @@ export default function Internship() {
           <input type="radio" name="toggle" id={item3} />
           <input type="radio" name="toggle" id={item4} />
           <input type="radio" name="toggle" id={item5} />
-          <div className="slider-controls">
+          <div style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} className="slider-controls">
             <label htmlFor="btn-1" />
             <label htmlFor="btn-2" />
             <label htmlFor="btn-3" />

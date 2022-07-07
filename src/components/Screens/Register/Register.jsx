@@ -3,7 +3,8 @@ import FormInput from "./FormInput";
 import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
 import "../Courses/course.css";
-import '../../styles/style.css'
+import '../../styles/style.css';
+import GoogleButton from 'react-google-button'
 
 const Register = () => {
   let navigation = useNavigate();
@@ -88,10 +89,38 @@ const Register = () => {
 
   return (
     <div className="app">
+      {/* <img
+          style={{
+            "margin":"15px auto",
+            width: "120px",
+            // height: "38px",
+            // overflow: "hidden",
+
+          }}
+          href="/Home"
+          alt="img"
+          src={require("./logo.png")}
+        /> */}
       <form onSubmit={handleSubmit}>
+      
+
         <h2 className="Register_h2">
-          New Here?
+          Registration
         </h2>
+        <h4 className="Register_h4">
+          Get started with Fynii
+        </h4>
+
+        <GoogleButton style={{"margin":"auto"}}/>
+
+        <div class="my-12 border-b text-center">
+              <div
+                class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1"
+              >
+                Or sign up with e-mail
+              </div>
+        </div>  
+        
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -101,7 +130,7 @@ const Register = () => {
           />
         ))}
         <button className="Style1_button">Next</button>
-        <a href="/SignIn">Already Regstered? SignIn Here</a>
+        <a href="/SignIn" className="bottoma">Already Regstered? SignIn Here</a>
       </form>
     </div>
   );

@@ -1,4 +1,4 @@
-import React,{useState,useRef} from "react";
+import React,{useState,useRef, useEffect} from "react";
 import "./Jobs.css";
 import Aiimslogo from "./img/aiimslogo.png"
 import PEClogo from "./img/PEClogo.png"
@@ -127,45 +127,37 @@ export default function Intership() {
   // const [IntType, setIntType] = useState("All");
   // const [IntDuration, setDuration] = useState("All");
 
+  const [openModal,setopenModal] = useState("modal__wrapper")
 
 
-//   const trigger = document.querySelector('#trigger');
-// const modalWrapper = document.querySelector('.modal__wrapper');
-// const closeBtn = document.querySelector('.close');
+  const onSetjobalert = () => {
+    setopenModal("modal__wrapper active");
+  }
 
-// trigger.addEventListener('click', function(){
-//     openModal();
-// });
+  const onclosealert = () => {
+    setopenModal("modal__wrapper");
+  }
 
-// closeBtn.addEventListener('click', function(){
-//     closeModal();
-// });
 
-// modalWrapper.addEventListener('click', function(e){
-//     if(e.target !== this) return;
-//     closeModal();
-// });
+useEffect(()=>{
+  document.querySelector('.modal__wrapper').addEventListener('click', function(e){
+    if(e.target !== this) return;
+    setopenModal("modal__wrapper")
+});})
 
-// document.addEventListener('keydown', function(e){
-//     if(e.key === 'Escape') {
-//         closeModal();
-//     }
-// })
+document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') {
+        setopenModal("modal__wrapper")
+    }
+})
 
-// function openModal() {
-//     modalWrapper.classList.add('active');
-// }
-// function closeModal() {
-//     modalWrapper.classList.remove('active');
-// }
 
-// closeModal();
 
 
   return (
 
     <React.Fragment>
-      <Jobs/>
+      <Jobs openModal= {openModal}/>
       {/* <Helmet>
         <script
           src="https://kit.fontawesome.com/08e9a53b4a.js"
@@ -407,11 +399,11 @@ export default function Intership() {
                   Woman Friendly
                 </label>
               </div>
-              <button class="btn__purple" id="trigger">Set job alert</button>
+              <button class="btn__purple" onClick={onSetjobalert}>Set job alert</button>
 
-              <div class="modal__wrapper">
-              <div class="modal__container">
-                <button class="close">&times;</button>
+              <div class={openModal}>
+              <div style={{"zIndex":"1000"}}  class="modal__container">
+                <button class="close" onClick={onclosealert}>&times;</button>
                 <h2 class="bigg">Job alert</h2>
 
                 <h4>Topic</h4>
@@ -518,16 +510,13 @@ export default function Intership() {
                 </div>
               </div>
             </div>
-
-
-
             </div>
           </div>
 
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
               <a href="/">
-              <img class="img_class" src = {e.img_src} alt = {e.alt} />
+              <img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
                 
