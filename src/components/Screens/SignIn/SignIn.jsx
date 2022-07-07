@@ -28,7 +28,6 @@ const SignIn = () => {
       placeholder: "Password",
       errorMessage: " Wrong Password",
       label: "Password",
-      pattern: `^(?=.[0-9])(?=.[a-zA-Z])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
   ];
