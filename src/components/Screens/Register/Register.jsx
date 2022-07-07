@@ -87,6 +87,14 @@ const Register = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
+  const onGoogleRegister = (googleUser) => {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+
   return (
     <div className="app">
       {/* <img
@@ -111,7 +119,7 @@ const Register = () => {
           Get started with Fynii
         </h4>
 
-        <GoogleButton style={{"margin":"auto"}}/>
+        <GoogleButton onClick={onGoogleRegister} style={{"margin":"auto"}}/>
 
         <div class="my-12 border-b text-center">
               <div
