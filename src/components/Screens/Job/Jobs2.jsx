@@ -519,7 +519,10 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.map((e) => (((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "WFH") || WkTypePT === true && e.Type === "PT")) && (<div class="box2">
+            {InternshipData.map((e) => 
+            ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "WFH") || (WkTypePT === true && e.Type === "PT")) 
+            && 
+            (<div class="box2">
               <a href="/">
               <img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
