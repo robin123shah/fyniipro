@@ -39,7 +39,7 @@ export default function Home() {
   const [translate6, settranslate6] = useState("translate(-83.06%)");
   const [topic, settopic] = useState("All");
 
-  localStorage.setItem("activeNav","Home")
+
   const [showNavTab,setshowNavTab] = useState(false)
   const NavTabRef = useRef();
 

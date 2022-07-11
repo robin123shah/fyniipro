@@ -12,7 +12,10 @@ import Jobs from "./Jobs";
 import Footer from "../Footer/Footer";
 export default function Intership() {
 
-  const [WkType, setWkType] = useState("All")
+  const [WkTypeGov, setWkTypeGov] = useState(false)
+  const [WkTypeNGov, setWkTypeNGov] = useState(false)
+  const [WkTypeWFH, setWkTypeWFH] = useState(false)
+  const [WkTypePT, setWkTypePT] = useState(false)
   const InternshipData = [
     {
       id: "-2",
@@ -106,7 +109,7 @@ export default function Intership() {
       Company: "IBM",
       Location: "Deoria",
       Date: "27-1-2023",
-      Type: "Non Govt.",
+      Type: "WFH",
       Stipend: "0",
       WorkType: "Part Time",
       About: "Marble Palace is a millionare Company",
@@ -340,20 +343,20 @@ document.addEventListener('keydown', function(e){
               <div class="container">
                 <ul class="ks-cboxtags">
                   <li style={{"margin":"5px"}}>
-                    <input onClick={()=>setWkType("Govt.")} type="checkbox" id="checkboxOne" />
+                    <input onClick={()=>setWkTypeGov(!WkTypeGov)} type="checkbox" id="checkboxOne" />
                     <label for="checkboxOne">Government</label>
                   </li>
 
                   <li style={{"margin":"5px"}}>
-                    <input onClick={()=>setWkType("Non Govt.")} type="checkbox" id="checkboxTwo" />
+                    <input onClick={()=>setWkTypeNGov(!WkTypeNGov)} type="checkbox" id="checkboxTwo" />
                     <label for="checkboxTwo">Non-Government</label>
                   </li>
                   <li style={{"margin":"5px"}}>
-                    <input onClick={()=>setWkType("WRH")} type="checkbox" id="checkboxThree" />
+                    <input onClick={()=>setWkTypeWFH(!WkTypeWFH)} type="checkbox" id="checkboxThree" />
                     <label for="checkboxThree">Work From Home</label>
                   </li>
                   <li style={{"margin":"5px"}}>
-                    <input onClick={()=>setWkType("PT")} type="checkbox" id="checkboxFour" />
+                    <input onClick={()=>setWkTypePT(!WkTypePT)} type="checkbox" id="checkboxFour" />
                     <label for="checkboxFour">Part Time</label>
                   </li>
                 </ul>
@@ -516,7 +519,7 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.map((e) => (WkType === "All" || WkType === e.WorkType) && (<div class="box2">
+            {InternshipData.map((e) => (((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "WFH") || WkTypePT === true && e.Type === "PT")) && (<div class="box2">
               <a href="/">
               <img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
