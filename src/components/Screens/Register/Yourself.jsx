@@ -133,6 +133,11 @@ const Yourself = (props) => {
             onChange={onChange}
           />
         ))}
+        <div className="formInput">
+        <label className="droplabel">Career Objective</label>
+        <textarea name="Career Objective" className="CareerObjective" pattern="^[A-Za-z0-9 ]{3,50}$" style={{"width":"100%","height":"100px"}} placeholder="Write about you dreams."></textarea>
+
+        </div>
         <button className="Style1_button">Register</button>
       </form>
     </div>
