@@ -485,4 +485,14 @@ ul.ks-cboxtags {
   .fa-solid {
     margin: 0 5px;
   }  
+  
+  @media screen and (min-width:500px) {
+    .fourthimgslide {
+      width : 70%; 
+      margin-left:0
+    }
+  }
+
+
+
 

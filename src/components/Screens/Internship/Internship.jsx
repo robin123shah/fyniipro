@@ -36,7 +36,7 @@ export default function Internship() {
   return (
     <div>
       <section >
-        <div className="slider2" style={{ marginTop: "5%" }}>
+        <div className="slider2" style={{ marginTop: "10%" }}>
           <input type="radio" name="toggle" id={item1} defaultChecked />
           <input type="radio" name="toggle" id={item2} />
           <input type="radio" name="toggle" id={item3} />
@@ -76,7 +76,7 @@ export default function Internship() {
                   src={Internship2}
                   alt="stuff"
                   width={320}
-                  style={{width : "80%", marginLeft:"20%"}}
+                  // style={{width : "80%", marginLeft:"20%"}}
                   
                   height={260}
                 />
@@ -104,8 +104,9 @@ export default function Internship() {
                   src={Internship4}
                   alt="stuff"
                   width={320}
-                  style={{width : "70%", marginLeft:"30%"}}
+                  className = "fourthimgslide"
                   height={260}
+                  // style={{width : "80%", marginLeft:"20%"}}
                 />
               </p>
             </li>

@@ -58,6 +58,7 @@ export default function Course() {
         <h1
           className="big-heading"
           id="blink"
+          
         >
           Short term skill courses for your career growth!
         </h1>

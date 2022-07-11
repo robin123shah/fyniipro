@@ -1043,10 +1043,15 @@ footer p {
     max-width: 75%;
   }
   .jnui{
-    font-size: 21px;
+    font-size: 17px;
     margin-top: 60px;
   }
   .big-heading {
     margin-top: 15%;
+    font-size: 30px;
+  }
+  .slide-image > img {
+    height: 70%;
+    margin-top: 30px;
   }
 }
