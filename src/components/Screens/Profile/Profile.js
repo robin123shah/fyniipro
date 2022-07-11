@@ -3,86 +3,86 @@ import "./profile.css";
 
 export default function Profile() {
   return (
-    <div class="container">
+    <div class="containerm">
       <div className="main">
         <div className="topbar">
           <a href="/">logout</a>
         </div>
-        <div className="row">
-          <div className="col-md-4 mt-1 fix">
-            <div className="card text-center sidebar">
-              <div className="card-body">
+        <div className="rowm">
+          <div className="col-md-4m mt-1m fix">
+            <div className="cardm text-centerm sidebar">
+              <div className="card-bodym">
                 <img
                   src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
                   alt=""
-                  className="rounded-circle"
+                  className="rounded-circlem"
                   width={150}
                 />
-                <div className="mt-3">
+                <div className="mt-3m">
                   <h3>NAME</h3>
-                  <p>Aboutttttttttttttttttttttttt</p>
+                  <p style={{ color: "black" }}>Aboutttttttttttttttttttttttt</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-8 mt-1">
-            <div className="card mb-3 content">
-              <h1 className="m-3 pt-3">About</h1>
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-md-3">
+          <div className="col-md-8m mt-1m">
+            <div className="cardm mb-3m content">
+              <h1 className="m-3m pt-3m">About</h1>
+              <div className="card-bodym">
+                <div className="rowm">
+                  <div className="col-md-3m">
                     <h5>Full Name</h5>
                   </div>
-                  <div className="col-md-9 text-secondary">Blah</div>
+                  <div className="col-md-9m text-secondarym">Blah</div>
                 </div>
-                <hr />
-                <div className="row">
-                  <div className="col-md-3">
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
                     <h5>Email</h5>
                   </div>
-                  <div className="col-md-9 text-secondary">abc@gmail.com</div>
+                  <div className="col-md-9m text-secondarym">abc@gmail.com</div>
                 </div>
-                <hr />
-                <div className="row">
-                  <div className="col-md-3">
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
                     <h5>Password</h5>
                   </div>
-                  <button className="col-md-9 text-secondary">
+                  <button className="col-md-9m text-secondarym">
                     Change Password
                   </button>
                 </div>
-                <hr />
-                <div className="row">
-                  <div className="col-md-3">
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
                     <h5>Education</h5>
                   </div>
-                  <div className="col-md-9 text-secondary">Graduation</div>
+                  <div className="col-md-9m text-secondarym">Graduation</div>
                 </div>
 
-                <hr />
-                <div className="row">
-                  <div className="col-md-3">
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
                     <h5>Phone</h5>
                   </div>
-                  <div className="col-md-9 text-secondary">98488149865</div>
+                  <div className="col-md-9m text-secondarym">98488149865</div>
                 </div>
-                <hr />
-                <div className="row">
-                  <div className="col-md-3">
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
                     <h5>Address</h5>
                   </div>
-                  <div className="col-md-9 text-secondary">
+                  <div className="col-md-9m text-secondarym">
                     Street no. 2, Marble Palace
                   </div>
                 </div>
               </div>
             </div>
-            <div className="card mb-3 content">
-              <h1 className="m-3">Saved Items</h1>
-              <div className="card-body">
-                <div className="row">
+            <div className="cardm mb-3m content">
+              <h1 className="m-3m">Saved Items</h1>
+              <div className="card-bodym">
+                <div className="rowmi">
                   <div
-                    className="col-md-3"
+                    className="col-md-3m"
                     style={{
                       margin: "10px 20px",
                       backgroundColor: "#fff",
@@ -91,11 +91,11 @@ export default function Profile() {
                     }}
                   >
                     <h5>Item1</h5>
-                    <div className="col-md-9 text-secondary">Description</div>
+                    <div className="col-md-9m text-secondarym">Description</div>
                   </div>
-                  <div className="w-100"></div>
+                  <div className="w-100m"></div>
                   <div
-                    className="col-md-3"
+                    className="col-md-3m"
                     style={{
                       margin: "10px 20px",
                       backgroundColor: "#fff",
@@ -104,7 +104,7 @@ export default function Profile() {
                     }}
                   >
                     <h5>Item2</h5>
-                    <div className="col-md-9 text-secondary">Description</div>
+                    <div className="col-md-9m text-secondarym">Description</div>
                   </div>
                 </div>
               </div>

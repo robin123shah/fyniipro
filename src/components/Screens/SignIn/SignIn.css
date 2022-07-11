@@ -26,9 +26,6 @@ input{
     .formlabel {
       font-size: 15px;
     }
-    input {
-      height: 35px;
-    }
     input::placeholder {
       font-size: 10px;
     }
