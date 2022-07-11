@@ -187,7 +187,7 @@ export default function CompanyPage() {
             our continuing success as we provide the essential infrastructure
             for organizations to transform their digital futures.
           </p>
-        </div>}
+        </div>} 
       </div>
       <Navbar2 />
       <Footer />

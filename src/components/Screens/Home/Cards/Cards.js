@@ -2,22 +2,21 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 import CardItem2 from "./CardItem2";
-
 function Cards(props) {
   const topic = props.topic;
   const Details = [
     {
       id: "1",
-      scr: "../../images/img-9.jpg",
-      text: "Explore the hidden waterfall deep inside the Amazon Jungle",
-      label: "Software Development",
+      scr: "../../images/1.jpg",
+      text: "How to choose right career for you?",
+      label: "Career",
       path: "/Home",
     },
     {
       id: "2",
-      scr: "../../images/img-2.jpg",
-      text: "Travel through the Islands of Bali in a Private Cruise",
-      label: "Software Development",
+      scr: "../../images/2.jpg",
+      text: "Here's why Interest and passion will lead to great career!",
+      label: "Career",
       path: "/Home",
     },
     {
@@ -31,7 +30,7 @@ function Cards(props) {
       id: "4",
       scr: "../../images/img-3.jpg",
       text: "Set Sail in the Atlantic Ocean visiting Uncharted Waters",
-      label: "Mathematics",
+      label: "Software Development",
       path: "/Home",
     },
     {
@@ -41,6 +40,7 @@ function Cards(props) {
       label: "Management",
       path: "/Home",
     },
+    
   ];
 
   return (
@@ -62,7 +62,7 @@ function Cards(props) {
               color: "#540323",
             }}
           >
-            Favourites
+            Career
           </div>
           <hr
             style={{
@@ -139,7 +139,7 @@ function Cards(props) {
               color: "#540323",
             }}
           >
-            Software Developer
+            Software Development
           </div>
           <hr
             style={{
