@@ -11,6 +11,8 @@ import Navbar2 from "../../Navigation/Navbar/Navbar2";
 import Jobs from "./Jobs";
 import Footer from "../Footer/Footer";
 export default function Intership() {
+
+  const [WkType, setWkType] = useState("All")
   const InternshipData = [
     {
       id: "-2",
@@ -28,7 +30,7 @@ export default function Intership() {
     },
     {
       id: "-1",
-      Title: "Software Engineer 1",
+      Title: "Software Engineer",
       Company: "Dell",
       Location: "Bangalore",
       Date: "01-08-2022",
@@ -338,20 +340,20 @@ document.addEventListener('keydown', function(e){
               <div class="container">
                 <ul class="ks-cboxtags">
                   <li style={{"margin":"5px"}}>
-                    <input type="checkbox" id="checkboxOne" />
+                    <input onClick={()=>setWkType("Govt.")} type="checkbox" id="checkboxOne" />
                     <label for="checkboxOne">Government</label>
                   </li>
 
                   <li style={{"margin":"5px"}}>
-                    <input type="checkbox" id="checkboxTwo" />
+                    <input onClick={()=>setWkType("Non Govt.")} type="checkbox" id="checkboxTwo" />
                     <label for="checkboxTwo">Non-Government</label>
                   </li>
                   <li style={{"margin":"5px"}}>
-                    <input type="checkbox" id="checkboxTwo" />
+                    <input onClick={()=>setWkType("WRH")} type="checkbox" id="checkboxThree" />
                     <label for="checkboxThree">Work From Home</label>
                   </li>
                   <li style={{"margin":"5px"}}>
-                    <input type="checkbox" id="checkboxTwo" />
+                    <input onClick={()=>setWkType("PT")} type="checkbox" id="checkboxFour" />
                     <label for="checkboxFour">Part Time</label>
                   </li>
                 </ul>
@@ -514,7 +516,7 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.map((e) => (<div class="box2">
+            {InternshipData.map((e) => (WkType === "All" || WkType === e.WorkType) && (<div class="box2">
               <a href="/">
               <img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} />
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>

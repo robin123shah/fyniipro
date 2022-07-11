@@ -12,6 +12,7 @@ import Texteditor from '../Screens/TextEditor/Texteditor';
 import CoursePage from '../Screens/CoursePage/CoursePage';
 import Profile from '../Screens/Profile/Profile';
 import About from '../Screens/About/About';
+import CompanyPage from '../Screens/CompanyPage/CompanyPage';
 // import ButtonPage from '../Screens/Internship/Modal/ButtonPage';
 // import About from "../Screens/About/About"
 const Router = () => {
@@ -31,6 +32,7 @@ const Router = () => {
         <Route exact path='/CoursePage' element={<CoursePage/>}/>
         <Route exact path='/Profile' element={<Profile/>}/>
         <Route exact path='/About' element={<About/>}/>
+        <Route exact path='/Company' element={<CompanyPage/>}/>
         {/* <Route exact path='/Modal' element={<ButtonPage/>}/> */}
         {/* <Route exact path='/about' element={<About/>}/> */}
         {/* {localStorage.getItem("login") === "true" && <Route path = '/*' element= {<Navbar/>}/>} */}
