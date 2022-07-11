@@ -49,10 +49,10 @@ const Register = () => {
     },
     {
       id: 4,
-      name: "DOB",
+      name: "Birthday",
       type: "date",
       placeholder: "Birthday",
-      label: "Birthday",
+      label: "DOB",
     },
     {
       id: 5,
