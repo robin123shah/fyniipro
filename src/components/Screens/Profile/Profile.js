@@ -6,8 +6,8 @@ export default function Profile() {
   const [username, setusername] = useState("")
   const [email,setemail] = useState("")
   const [number,setnumber] = useState("")
-  const [birthday,setbirthday] = useState("")
-  const [password,setpassword] = useState("")
+  // const [birthday,setbirthday] = useState("")
+  // const [password,setpassword] = useState("")
   const [you_are,setyou_are] = useState("")
   const [education_level,seteducation_level] = useState("")
   const [looking_for,setlooking_for] = useState("")  
@@ -24,13 +24,13 @@ export default function Profile() {
     const handleMouseOut = () => setValue(false);
     useEffect(
       () => {
-        const node = ref.current;
-        if (node) {
-          node.addEventListener("mouseover", handleMouseOver);
-          node.addEventListener("mouseout", handleMouseOut);
+        // const ref.current = ref.current;
+        if (ref.current) {
+          ref.current.addEventListener("mouseover", handleMouseOver);
+          ref.current.addEventListener("mouseout", handleMouseOut);
           return () => {
-            node.removeEventListener("mouseover", handleMouseOver);
-            node.removeEventListener("mouseout", handleMouseOut);
+            ref.current.removeEventListener("mouseover", handleMouseOver);
+            ref.current.removeEventListener("mouseout", handleMouseOut);
           };
         }
       },
