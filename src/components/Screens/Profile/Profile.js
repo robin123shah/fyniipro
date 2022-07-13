@@ -57,8 +57,8 @@ export default function Profile() {
         setusername(response.username);
         setemail(response.email);
         setnumber(response.number);
-        setbirthday(response.birthday);
-        setpassword(response.password);
+        // setbirthday(response.birthday);
+        // setpassword(response.password);
         setyou_are(response.you_are);
         seteducation_level(response.education_level);
         setlooking_for(response.looking_for);
