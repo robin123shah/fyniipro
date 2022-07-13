@@ -26,7 +26,7 @@ const Register = () => {
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
       label: "Name",
-      pattern: "^[A-Za-z0-9 ]{3,16}$",
+      pattern: "^[A-Za-z0-9 ]*$",
       required: true,
     },
     {
@@ -49,10 +49,11 @@ const Register = () => {
     },
     {
       id: 4,
-      name: "Birthday",
+      name: "birthday",
       type: "date",
       placeholder: "Birthday",
       label: "DOB",
+      required: true
     },
     {
       id: 5,

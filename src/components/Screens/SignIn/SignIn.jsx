@@ -34,7 +34,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://fynii.herokuapp.com/checklogin", {
+    fetch("https://fynii.herokuapp.com/getprofileData", {
       method: "POST",
       header: {
         "Content-Type": "application/json",

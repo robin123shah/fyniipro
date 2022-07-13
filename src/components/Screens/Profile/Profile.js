@@ -1,7 +1,73 @@
-import React from "react";
+import React, { useEffect,useRef } from "react";
+import { useState } from "react";
 import "./profile.css";
 
 export default function Profile() {
+  const [username, setusername] = useState("")
+  const [email,setemail] = useState("")
+  const [number,setnumber] = useState("")
+  const [birthday,setbirthday] = useState("")
+  const [password,setpassword] = useState("")
+  const [you_are,setyou_are] = useState("")
+  const [education_level,seteducation_level] = useState("")
+  const [looking_for,setlooking_for] = useState("")  
+
+  const [file, setFile] = useState("");
+  function handleChange(e) {
+      setFile(URL.createObjectURL(e.target.files[0]));
+  }
+
+  function useHover() {
+    const [value, setValue] = useState(false);
+    const ref = useRef(null);
+    const handleMouseOver = () => setValue(true);
+    const handleMouseOut = () => setValue(false);
+    useEffect(
+      () => {
+        const node = ref.current;
+        if (node) {
+          node.addEventListener("mouseover", handleMouseOver);
+          node.addEventListener("mouseout", handleMouseOut);
+          return () => {
+            node.removeEventListener("mouseover", handleMouseOver);
+            node.removeEventListener("mouseout", handleMouseOut);
+          };
+        }
+      },
+      [ref.current] // Recall only if ref changes
+    );
+    return [ref, value];
+  }
+
+  const [hoverRef, isHovered] = useHover();
+
+  useEffect(()=> {
+    var getprofileData = "http://localhost:3001/getprofileData";
+    var headers = {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    };
+    fetch(getprofileData, {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify({username:localStorage.getItem("username")}),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        setusername(response.username);
+        setemail(response.email);
+        setnumber(response.number);
+        setbirthday(response.birthday);
+        setpassword(response.password);
+        setyou_are(response.you_are);
+        seteducation_level(response.education_level);
+        setlooking_for(response.looking_for);
+      })
+      .catch((error) => {
+        alert("Error" + error);
+      });
+  })
+
   return (
     <div class="containerm">
       <div className="main">
@@ -13,13 +79,15 @@ export default function Profile() {
             <div className="cardm text-centerm sidebar">
               <div className="card-bodym">
                 <img
-                  src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                  src = {file === "" ? "https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" : file } 
                   alt=""
                   className="rounded-circlem"
                   width={150}
+                  height={450}
                 />
+                <input ref={hoverRef} type="file" accept="image/jpeg, image/png" onClick={(e) =>handleChange(e)} style={{"opacity":isHovered ? "1" : "0"}} className="ChangeProfilePic"/>
                 <div className="mt-3m">
-                  <h3>NAME</h3>
+                  <h3>{username}</h3>
                   <p style={{ color: "black" }}>Aboutttttttttttttttttttttttt</p>
                 </div>
               </div>
@@ -31,16 +99,16 @@ export default function Profile() {
               <div className="card-bodym">
                 <div className="rowm">
                   <div className="col-md-3m">
-                    <h5>Full Name</h5>
+                    <h5>Name</h5>
                   </div>
-                  <div className="col-md-9m text-secondarym">Blah</div>
+                  <div className="col-md-9m text-secondarym">{username}</div>
                 </div>
                 <br />
                 <div className="rowm">
                   <div className="col-md-3m">
                     <h5>Email</h5>
                   </div>
-                  <div className="col-md-9m text-secondarym">abc@gmail.com</div>
+                  <div className="col-md-9m text-secondarym">{email}</div>
                 </div>
                 <br />
                 <div className="rowm">
@@ -56,23 +124,32 @@ export default function Profile() {
                   <div className="col-md-3m">
                     <h5>Education</h5>
                   </div>
-                  <div className="col-md-9m text-secondarym">Graduation</div>
+                  <div className="col-md-9m text-secondarym">{education_level}</div>
                 </div>
 
                 <br />
                 <div className="rowm">
                   <div className="col-md-3m">
-                    <h5>Phone</h5>
+                    <h5>Number</h5>
                   </div>
-                  <div className="col-md-9m text-secondarym">98488149865</div>
+                  <div className="col-md-9m text-secondarym">{number}</div>
                 </div>
                 <br />
                 <div className="rowm">
                   <div className="col-md-3m">
-                    <h5>Address</h5>
+                    <h5>Looking For</h5>
                   </div>
                   <div className="col-md-9m text-secondarym">
-                    Street no. 2, Marble Palace
+                    {looking_for}
+                  </div>
+                </div>
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
+                    <h5>You are</h5>
+                  </div>
+                  <div className="col-md-9m text-secondarym">
+                    {you_are}
                   </div>
                 </div>
               </div>

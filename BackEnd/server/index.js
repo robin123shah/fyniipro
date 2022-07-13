@@ -40,15 +40,17 @@ mongoose.connection.on('error',(err)=>{
 });
 
 const User = mongoose.model('users', {
+  userID : {type: Number},
   username : { type: String},
   email: { type: String},
   number: { type: String},
   birthday: {type: Date},
   password: { type: String },
+  college_school : {type: String},
   you_are: {type:String},
   education_level: {type:String},
   looking_for: {type:String},
-  userID: {type: String}
+  UserId: {type: String}
 });
 
 // const Admin = mongoose.model('admin', {
@@ -83,23 +85,37 @@ const User = mongoose.model('users', {
 // });
 
 app.post("/insertuser", (req, res) => {
-  User.insertMany([
-    { username : req.body.username,
-    email: req.body.email,
-    number: req.body.number,
-    birthday: req.body.birthday,
-    password: req.body.password,
-    you_are: req.body.you_are,
-    education_level: req.body.education_level,
-    looking_for: req.body.looking_for}
-  ]).then(function(){
-    console.log("Data inserted")  // Success
-    res.send(["true"])
-  }).catch(function(error){
-        console.log(error)      // Failure
-        res.send(["false"])
+  User.find(
+    {
+      "email":{"$eq":req.body.email}
+    }
+  ).then(function(results){
+    if(results.length === 0) {
+      User.insertMany([
+        { username : req.body.username,
+        email: req.body.email,
+        number: req.body.number,
+        birthday: req.body.birthday,
+        password: req.body.password,
+        college_school : req.body.college_school,
+        you_are: req.body.you_are,
+        education_level: req.body.education_level,
+        looking_for: req.body.looking_for}
+      ]).then(function(){
+        console.log("Data inserted")  // Success
+        res.send(["true"])
+      }).catch(function(error){
+            console.log(error)      // Failure
+            res.send(["false"])
       });
+    }
+    else {
+      res.send("0")
+    }
+  });
 });
+
+
 
 // app.post("/checkadmin", (req, res) => {
 //   Admin.find(
@@ -128,6 +144,16 @@ app.post("/checklogin", (req, res) => {
     } else {
       res.json([2])
     }
+  });
+});
+
+app.post("/getprofileData",(req,res) => {
+  User.find(
+    {
+      "username":{"$eq":req.body.username}
+    }
+  ).then(function(results){
+    res.send(results[0])
   });
 });
 

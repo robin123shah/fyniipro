@@ -37,17 +37,16 @@ export default function Home() {
   const [translate4, settranslate4] = useState("translate(-49.8%)");
   const [translate5, settranslate5] = useState("translate(-66.4%)");
   const [translate6, settranslate6] = useState("translate(-83.06%)");
-  const [topic, settopic] = useState("All");
+  const [topic, settopic] = useState("Career");
 
-
-  const [showNavTab,setshowNavTab] = useState(false)
+  const [showNavTab, setshowNavTab] = useState(false);
   const NavTabRef = useRef();
 
-  const closeNavTab = e => {
-    if(NavTabRef.current === e.target) {
-      setshowNavTab(false)
+  const closeNavTab = (e) => {
+    if (NavTabRef.current === e.target) {
+      setshowNavTab(false);
     }
-  }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -57,41 +56,39 @@ export default function Home() {
       settranslate3(translate4);
       settranslate4(translate5);
       settranslate5(translate6);
-      settranslate6(translate)
+      settranslate6(translate);
     }, 5000);
     return () => clearInterval(interval);
   });
 
   return (
-    <div >
+    <div>
       <div className="Container-card" ref={NavTabRef} onClick={closeNavTab}>
         <div className="Card-Right">
           <div id="slider2" style={{ transform: translate }}>
             <div className="msg-col02">
-              <h2 className="ifweeof" >How to choose right career for you?</h2>
+              <h2 className="ifweeof">How to choose right career for you?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof" >Which profession to opt for?</h2>
+              <h2 className="ifweeof">Which profession to opt for?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof" >Which one gives decent salary?</h2>
+              <h2 className="ifweeof">Which one gives decent salary?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof" >Doctor, Engineer, teacher ???</h2>
+              <h2 className="ifweeof">Doctor, Engineer, teacher ???</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof" >Higher education or Job?</h2>
+              <h2 className="ifweeof">Higher education or Job?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof" >Confused????</h2>
-              <p>
-                Find all your answer here!
-              </p>
+              <h2 className="ifweeof">Confused????</h2>
+              <p>Find all your answer here!</p>
               <a href="/">Learn More</a>
             </div>
           </div>
@@ -120,6 +117,7 @@ export default function Home() {
           <ul onClick={settopic("Favourites")}>Favourites</ul>
           <ul onClick={settopic("Software Development")}>Software Development</ul>
           <ul onClick={settopic("Mathematics")}>Mathematics</ul> */}
+          <ul onClick={() => settopic("All")}>Career</ul>
           <ul onClick={() => settopic("All")}>Engineering</ul>
           <ul>Civil Services</ul>
           <ul onClick={() => settopic("Software Development")}>
@@ -153,20 +151,25 @@ export default function Home() {
       >
         <div className="Card-Left">
           <img
-            style={{ height: "10%", width: "20%", "margin-left": "60%",}}
+            style={{ height: "10%", width: "20%", "margin-left": "60%" }}
             src={require("./writeBlogf.png")}
             alt="img"
           />
         </div>
         <div className="Card-Right2">
           <div className="msg-col02m">
-              <h3 >Want to Join as Mentor/ Editor/ Writer.</h3>
-              <h3 >Join and Publish at Fynii.</h3>
-              <a style={{"backgroundColor":"#fff","color":"#000"}}href="/texteditor">Join Now</a>
+            <h3>Want to Join as Mentor/ Editor/ Writer.</h3>
+            <h3>Join and Publish at Fynii.</h3>
+            <a
+              style={{ backgroundColor: "#fff", color: "#000" }}
+              href="/texteditor"
+            >
+              Join Now
+            </a>
           </div>
         </div>
       </div>
-      <Navbar2 showNavTab={showNavTab} setshowNavTab= {setshowNavTab}/>
+      <Navbar2 showNavTab={showNavTab} setshowNavTab={setshowNavTab} />
       <Footer />
     </div>
   );

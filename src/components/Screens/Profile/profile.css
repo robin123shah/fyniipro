@@ -38,6 +38,7 @@
 }
 .card-body {
   background-color: whitesmoke;
+  border-radius: 0 0 10px 10px;
 }
 .fix {
   height: 600px;
@@ -158,6 +159,11 @@
 .rounded-circlem {
   border-radius: 50% !important;
 }
+.rounded-circlem:hover {
+  cursor: pointer;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
 .mt-3m {
   margin-top: 1rem !important;
 }
@@ -199,6 +205,16 @@
 h3 {
   color: black;
 }
+.ChangeProfilePic {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 250px;
+  text-align: center;
+}
+
 @media screen and (max-width: 700px) {
   .fix {
     height: 300px;

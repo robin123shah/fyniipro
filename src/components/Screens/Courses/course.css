@@ -293,6 +293,7 @@ body {
 .card-i{
   height:250px ;
   width: 400px;
+  border-radius: 10px 10px 0 0;
 }
 
 .slider2 input[type="radio"] {
@@ -740,6 +741,7 @@ body {
 
 .fa-solid {
   margin: 0 8px 0 0;
+  border-radius: 10px;
 }
 
 

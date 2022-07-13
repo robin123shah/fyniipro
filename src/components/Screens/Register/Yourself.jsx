@@ -8,7 +8,7 @@ const Yourself = (props) => {
   const [values, setValues] = useState({
     you_are: "",
     education_level: "",
-    // college_school: "",
+    college_school: "",
     looking_for: "",
   });
 
@@ -20,12 +20,12 @@ const Yourself = (props) => {
     {
       id: 1,
       name: "college_school",
-      type: "text",
+      type: "name",
       placeholder: "School/College",
       errorMessage:
         "Name should be 3-50 characters and shouldn't include any special character!",
       label: "Enter School/College",
-      pattern: "^[A-Za-z0-9 ]{3,50}$",
+      pattern: "^[A-Za-z0-9 ]*$",
       required: true,
     }]
 
@@ -88,7 +88,7 @@ const Yourself = (props) => {
       you_are: values.you_are,
       education_level: values.education_level,
       looking_for: values.looking_for,
-      // college_school: values.college_school
+      college_school: values.college_school
     };
     fetch(SignUPAPI, {
       method: "POST",
@@ -97,9 +97,13 @@ const Yourself = (props) => {
     })
       .then((response) => response.json())
       .then((response) => {
-        localStorage.setItem("login", true);
-        localStorage.setItem("username", detail.username);
-        navigate("/");
+        if (response[0] === "0"){
+          alert("Email already exist")
+        }
+        if (response[0] === "true"){
+          localStorage.setItem("username", detail.username);
+          navigate("/");
+        }
       })
       .catch((error) => {
         alert("Error" + error);
@@ -121,7 +125,7 @@ const Yourself = (props) => {
           <FormInput
             key={input.id}
             {...input}
-            value={values[input.name]}
+            // value={values[input.name]}
             onChange={onChange}
           />
         ))}
