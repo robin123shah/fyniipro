@@ -16,25 +16,27 @@ export default function Profile() {
   function handleChange(e) {
       setFile(URL.createObjectURL(e.target.files[0]));
   }
+  const ref = useRef(null);
+  const node = ref.current;
 
   function useHover() {
     const [value, setValue] = useState(false);
-    const ref = useRef(null);
+    
     const handleMouseOver = () => setValue(true);
     const handleMouseOut = () => setValue(false);
+  
     useEffect(
       () => {
-        // const ref.current = ref.current;
-        if (ref.current) {
-          ref.current.addEventListener("mouseover", handleMouseOver);
-          ref.current.addEventListener("mouseout", handleMouseOut);
+        // 
+        if (node) {
+          node.addEventListener("mouseover", handleMouseOver);
+          node.addEventListener("mouseout", handleMouseOut);
           return () => {
-            ref.current.removeEventListener("mouseover", handleMouseOver);
-            ref.current.removeEventListener("mouseout", handleMouseOut);
+            node.removeEventListener("mouseover", handleMouseOver);
+            node.removeEventListener("mouseout", handleMouseOut);
           };
         }
       },
-      [ref.current] // Recall only if ref changes
     );
     return [ref, value];
   }
