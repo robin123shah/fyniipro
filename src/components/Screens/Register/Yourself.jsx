@@ -8,9 +8,12 @@ const Yourself = (props) => {
   const [values, setValues] = useState({
     you_are: "",
     education_level: "",
-    college_school: "",
     looking_for: "",
   });
+  
+  const [college_school,setcollege_school] = useState("")
+
+  // const [carObj,setcarObj] = useState("")
 
   const detail = JSON.parse(localStorage.getItem("details"));
 
@@ -21,18 +24,17 @@ const Yourself = (props) => {
       id: 1,
       name: "college_school",
       type: "name",
-      placeholder: "School/College",
+      placeholder: "School/University",
       errorMessage:
         "Name should be 3-50 characters and shouldn't include any special character!",
-      label: "Enter School/College",
-      pattern: "^[A-Za-z0-9 ]*$",
-      required: true,
+      label: "School/University",
+      pattern: "^[A-Za-z0-9 ]*$"
     }]
 
   const inputs = [
     {
       id: 1,
-      label: "You are a ",
+      label: "Who are you?* ",
       name: "you_are",
       placeholder: "Select",
       errorMessage: "Can't be remain None!",
@@ -44,7 +46,7 @@ const Yourself = (props) => {
     },
     {
       id: 2,
-      label: "Education Level",
+      label: "Your Education*",
       name: "education_level",
       placeholder: "Select",
       errorMessage: "Can't be remain None!",
@@ -58,7 +60,7 @@ const Yourself = (props) => {
     },
     {
       id: 3,
-      label: "Are you Looking for",
+      label: "Are you Looking for*",
       name: "looking_for",
       placeholder: "Select",
       errorMessage: "Can't be remain None!",
@@ -88,7 +90,8 @@ const Yourself = (props) => {
       you_are: values.you_are,
       education_level: values.education_level,
       looking_for: values.looking_for,
-      college_school: values.college_school
+      college_school: college_school,
+      // carObj:carObj
     };
     fetch(SignUPAPI, {
       method: "POST",
@@ -97,11 +100,14 @@ const Yourself = (props) => {
     })
       .then((response) => response.json())
       .then((response) => {
+        console.log(response)
         if (response[0] === "0"){
           alert("Email already exist")
         }
         if (response[0] === "true"){
-          localStorage.setItem("username", detail.username);
+          localStorage.setItem("login","true")
+          localStorage.setItem("email",response[1].email);
+          localStorage.setItem("username",detail.username);
           navigate("/");
         }
       })
@@ -126,7 +132,7 @@ const Yourself = (props) => {
             key={input.id}
             {...input}
             // value={values[input.name]}
-            onChange={onChange}
+            onChange={(e)=>{setcollege_school(e)}}
           />
         ))}
         {inputs.map((input) => (
@@ -139,8 +145,7 @@ const Yourself = (props) => {
         ))}
         <div className="formInput">
         <label className="droplabel">Career Objective</label>
-        <textarea name="Career Objective" className="CareerObjective" pattern="^[A-Za-z0-9 ]{3,50}$" style={{"width":"100%","height":"100px"}} placeholder="Write about you dreams."></textarea>
-
+        <textarea name="Career Objective"  className="CareerObjective" pattern="^[A-Za-z0-9 ]{3,50}$" style={{"width":"100%","height":"100px"}} placeholder="Write about you dreams."></textarea>
         </div>
         <button className="Style1_button">Register</button>
       </form>

@@ -50,6 +50,7 @@ const User = mongoose.model('users', {
   you_are: {type:String},
   education_level: {type:String},
   looking_for: {type:String},
+  carObj: {type:String},
   UserId: {type: String}
 });
 
@@ -100,13 +101,14 @@ app.post("/insertuser", (req, res) => {
         college_school : req.body.college_school,
         you_are: req.body.you_are,
         education_level: req.body.education_level,
-        looking_for: req.body.looking_for}
+        looking_for: req.body.looking_for,
+        carObj: req.body.carObj}
       ]).then(function(){
         console.log("Data inserted")  // Success
-        res.send(["true"])
+        res.send(["true",req.body.email])
       }).catch(function(error){
-            console.log(error)      // Failure
-            res.send(["false"])
+        console.log(error)      // Failure
+        res.send(["false"])
       });
     }
     else {
