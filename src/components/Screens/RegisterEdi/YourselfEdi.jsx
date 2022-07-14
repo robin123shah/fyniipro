@@ -2,13 +2,15 @@ import { useState } from "react";
 import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
 import "./yourself.css";
-const YourselfEdi = (props) => {
+const YourselfEdi = () => {
   const [values, setValues] = useState({
     you_are: "",
     education_level: "",
     // college_school: "",
     looking_for: "",
   });
+
+  setValues()
 
   const detail = JSON.parse(localStorage.getItem("details"));
 
