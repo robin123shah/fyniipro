@@ -162,7 +162,7 @@ export default function Home() {
             <h3>Join and Publish at Fynii.</h3>
             <a
               style={{ backgroundColor: "#fff", color: "#000" }}
-              href="/texteditor"
+              href="/registerEdi"
             >
               Join Now
             </a>
