@@ -1,6 +1,6 @@
 import React, { useState,useRef } from "react";
 // import { Helmet } from "react-helmet";
-// import "./internship.css";
+import "./internship.css";
 // import "./style.css";
 // import Aiimslogo from "./img/aiimslogo.png"
 import Internship from "./Internship";

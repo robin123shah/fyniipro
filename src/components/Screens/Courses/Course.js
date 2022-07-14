@@ -13,7 +13,6 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBCardImage,
-  // MDBBtn,
 } from "mdb-react-ui-kit";
 
 import "./course.css";
@@ -63,7 +62,7 @@ export default function Course() {
           Short term skill courses for your career growth!
         </h1>
       </div>
-      <div style={{"padding":"10px 0"}}>
+      <div>
         <div className="slider2">
           <input type="radio" name="toggle" id={item1} defaultChecked />
           <input type="radio" name="toggle" id={item2} />
@@ -80,20 +79,21 @@ export default function Course() {
           <ul className="slides">
             <li className="slide" style={{ backgroundColor: "#DAEE01" }}>
               <div className="slide-content">
-                <h2 className="jnui">In real world, Only skill matters!</h2>
+                <h4 className="jnui">In real world, Only skill matters!</h4>
               </div>
               <p className="slide-image">
                 <img
                   src="https://images.unsplash.com/photo-1616337865743-bd29011bc36d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400"
                   alt="stuff"
+                  className = "img-slide"
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#77DD77" }}>
               <div className="slide-content">
-                <h2 className="jnui">
+                <h4 className="jnui">
                   Build your career by building skillsets.
-                </h2>
+                </h4>
               </div>
               <p className="slide-image">
                 <img
@@ -105,7 +105,7 @@ export default function Course() {
             </li>
             <li className="slide" style={{ backgroundColor: "#DAE5D0" }}>
               <div className="slide-content">
-                <h2 className="jnui">Every course is carefully selected.</h2>
+                <h4 className="jnui">Every course is carefully selected.</h4>
               </div>
               <p className="slide-image">
                 <img
@@ -117,7 +117,7 @@ export default function Course() {
             </li>
             <li className="slide" style={{ backgroundColor: "#A0BCC2" }}>
               <div className="slide-content">
-                <h2 className="jnui">Pay in EMIs.</h2>
+                <h4 className="jnui">Pay in EMIs.</h4>
               </div>
               <p className="slide-image">
                 <img
@@ -129,9 +129,9 @@ export default function Course() {
             </li>
             <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
               <div className="slide-content">
-                <h2 className="jnui">
+                <h4 className="jnui">
                   Hassle free, Easy to find &amp; Navigate Courses.
-                </h2>
+                </h4>
               </div>
               <p className="slide-image">
                 <img

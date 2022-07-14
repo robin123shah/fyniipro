@@ -53,75 +53,69 @@ export default function Internship() {
           </div>
           <ul className="slides">
             <li className="slide" style={{ backgroundColor: "#3CB371" }}>
-              <div className="slide-content">
+              <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">In Internship, always choose learning over everything</h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={Internship1}
                   alt="stuff"
-                  style={{width : "100%"}}
-                  height={260}
+                  className="internslideimg"
+
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#FFD700" }}>
-              <div className="slide-content">
+              <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">
                 Try to Intern at startup or relatively newer companies like Google, Fynii etc.
                  </h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={Internship2}
                   alt="stuff"
-                  width={320}
+                  className="internslideimg"
                   // style={{width : "80%", marginLeft:"20%"}}
-                  
-                  height={260}
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#FFC0CB" }}>
-              <div className="slide-content">
+              <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">Internship will have great Impact on your career!</h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={Internship3}
                   alt="stuff"
-                  width={320}
-                  height={260}
+                  className="internslideimg"
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#A0BCC2" }}>
-              <div className="slide-content">
+              <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">Don't Intern with just any company! Be selective in choosing!!</h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={Internship4}
                   alt="stuff"
-                  width={320}
-                  className = "fourthimgslide"
-                  height={260}
+                  className="internslideimg"
                   // style={{width : "80%", marginLeft:"20%"}}
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
-              <div className="slide-content">
+              <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">
                 Pursue Internship to get ahead of your peers!
                 </h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={Internship5}
                   alt="stuff"
-                  width={320}
-                  height={260}
+                  className="internslideimg"
                 />
               </p>
             </li>

@@ -29,7 +29,7 @@ export default function Internship ({openModal}) {
   return (
     <div>
       <section >
-        <div className="slider2" style={{ marginTop: "5%" }}>
+        <div className="slider3" style={{ marginTop: "12%" }}>
           <input type="radio" name="toggle" id={item1} defaultChecked />
           <input type="radio" name="toggle" id={item2} />
           <input type="radio" name="toggle" id={item3} />
@@ -44,71 +44,66 @@ export default function Internship ({openModal}) {
           </div>
           <ul className="slides">
             <li className="slide" style={{ backgroundColor: "#3CB371" }}>
-              <div className="slide-content">
+            <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">In Job, choose career growth over everything</h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={img}
                   alt="stuff"
-                  width={320}
-                  height={240}
+                  className="internslideimg"
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#FFD700" }}>
-              <div className="slide-content">
+            <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">
                 At every job you should either learn or earn . Either is fine . Both is best . But if it's neither , quit!
                 </h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={img1}
                   alt="stuff"
-                  width={320}
-                  height={240}
+                  className="internslideimg"
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#FFC0CB" }}>
-              <div className="slide-content">
+            <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">Job selection must be based on your skillset, passion & interest.</h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={img6}
                   alt="stuff"
-                  width={320}
-                  height={240}
+                  className="internslideimg"
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#A0BCC2" }}>
-              <div className="slide-content">
+            <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">Select a Job wisely viz. Industry, company, growth etc.</h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={img5}
                   alt="stuff"
-                  width={320}
-                  height={240}
+                  className="internslideimg"
                 />
               </p>
             </li>
             <li className="slide" style={{ backgroundColor: "#F9EBC8" }}>
-              <div className="slide-content">
+            <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">
                 Working in startups are great!
                 </h2>
               </div>
-              <p className="slide-image">
+              <p className="slide-image2">
                 <img
                   src={img5}
                   alt="stuff"
-                  width={320}
-                  height={240}
+                  className="internslideimg"
                 />
               </p>
             </li>

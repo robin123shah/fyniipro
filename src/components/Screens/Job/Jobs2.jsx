@@ -1,5 +1,6 @@
 import React,{useState,useRef, useEffect} from "react";
-import "./Jobs.css";
+// import "./Jobs.css";
+import "../Courses/course.css"
 import Aiimslogo from "./img/aiimslogo.png"
 import PEClogo from "./img/PEClogo.png"
 import ICMRlogo from "./img/ICMRlogo.jpg"
