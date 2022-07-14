@@ -49,10 +49,7 @@ const YourselfEdi = (props) => {
       });
   };
 
-  const onChange = (e, input) => {
-    setValues({ ...values, [input.name]: e.label });
-    console.log(input.name, values);
-  };
+
 
   return (
     <div className="app">
