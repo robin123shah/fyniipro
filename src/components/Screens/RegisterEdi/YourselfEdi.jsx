@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
-import DropFormInput from "./DropFormInput";
 import "./yourself.css";
-import FormInput from "./FormInput";
 const YourselfEdi = (props) => {
   const [values, setValues] = useState({
     you_are: "",
@@ -16,62 +14,6 @@ const YourselfEdi = (props) => {
 
   let navigate = useNavigate();
 
-  const inputschool = [
-    {
-      id: 1,
-      name: "college_school",
-      type: "text",
-      placeholder: "School/College",
-      errorMessage:
-        "Name should be 3-50 characters and shouldn't include any special character!",
-      label: "Enter School/College",
-      pattern: "^[A-Za-z0-9 ]{3,50}$",
-      required: true,
-    },
-  ];
-
-  const inputs = [
-    {
-      id: 1,
-      label: "You are a ",
-      name: "you_are",
-      placeholder: "Select",
-      errorMessage: "Can't be remain None!",
-      required: true,
-      actions: [
-        { label: "Student", value: 1 },
-        { label: "Fresher", value: 2 },
-      ],
-    },
-    {
-      id: 2,
-      label: "Education Level",
-      name: "education_level",
-      placeholder: "Select",
-      errorMessage: "Can't be remain None!",
-      required: true,
-      actions: [
-        { label: "Highter Secondary", value: 1 },
-        { label: "Undergraduate", value: 2 },
-        { label: "Postgraduate", value: 3 },
-        { label: "Ph.D.", value: 4 },
-      ],
-    },
-    {
-      id: 3,
-      label: "Are you Looking for",
-      name: "looking_for",
-      placeholder: "Select",
-      errorMessage: "Can't be remain None!",
-      required: true,
-      actions: [
-        { label: "Job", value: 1 },
-        { label: "Internship", value: 2 },
-        { label: "Course", value: 3 },
-        { label: "Guidance", value: 4 },
-      ],
-    },
-  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
