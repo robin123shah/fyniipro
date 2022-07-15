@@ -463,27 +463,27 @@ document.addEventListener('keydown', function(e){
                 <div class="container">
                   <ul class="ks-cboxtags">
                     <li>
-                      <input type="checkbox" id="checkboxOne" /><label
-                        for="checkboxOne"
+                      <input type="checkbox" id="checkboxFive" /><label
+                        for="checkboxFive"
                         >Government</label
                       >
                     </li>
 
                     <li>
-                      <input type="checkbox" id="checkboxThree" /><label
-                        for="checkboxThree"
+                      <input type="checkbox" id="checkboxSix" /><label
+                        for="checkboxSix"
                         >Work from home</label
                       >
                     </li>
                     <li>
-                      <input type="checkbox" id="checkboxTwo" /><label
-                        for="checkboxTwo"
+                      <input type="checkbox" id="checkboxSeven" /><label
+                        for="checkboxSeven"
                         >Non-Government</label
                       >
                     </li>
                     <li>
-                      <input type="checkbox" id="checkboxFour" /><label
-                        for="checkboxFour"
+                      <input type="checkbox" id="checkboxEight" /><label
+                        for="checkboxEight"
                         >Part time</label
                       >
                     </li>
@@ -496,15 +496,15 @@ document.addEventListener('keydown', function(e){
                 <div class="container">
                   <ul class="ks-cboxtags">
                     <li>
-                      <input type="checkbox" id="checkboxOne" /><label
-                        for="checkboxOne"
+                      <input type="checkbox" id="checkboxNine" /><label
+                        for="checkboxNine"
                         >Message</label
                       >
                     </li>
 
                     <li>
-                      <input type="checkbox" id="checkboxThree" /><label
-                        for="checkboxThree"
+                      <input type="checkbox" id="checkboxTen" /><label
+                        for="checkboxTen"
                         >e-mail</label
                       >
                     </li>
