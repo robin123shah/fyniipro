@@ -791,6 +791,13 @@ input[type="submit"] {
   /* background-color: #644bff; */
 }
 
+.grid-container > a {
+  background-color: rgba(42, 4, 4, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 5%;
+}
 .grid-container > div {
   background-color: rgba(42, 4, 4, 0.8);
   color: #fff;

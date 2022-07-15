@@ -555,9 +555,9 @@ document.addEventListener('keydown', function(e){
 
                 <div class="grid-container">
                   
-                  <div class="btnn">
+                  <a  href={e.Link} rel="noreferrer" target="_blank" class="btnn">
                     <i class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
-                  </div>
+                  </a>
                  
                   <div class="btnn">
                     <i class="fa-regular fa-bookmark"></i> Save
