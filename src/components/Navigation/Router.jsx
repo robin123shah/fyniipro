@@ -15,6 +15,7 @@ import About from "../Screens/About/About";
 import CompanyPage from "../Screens/CompanyPage/CompanyPage";
 import RegisterEdi from "../Screens/RegisterEdi/RegisterEdi";
 import YourselfEdi from "../Screens/RegisterEdi/YourselfEdi";
+import Help from "../Screens/Help/Help";
 // import ButtonPage from '../Screens/Internship/Modal/ButtonPage';
 // import About from "../Screens/About/About"
 const Router = () => {
@@ -36,6 +37,7 @@ const Router = () => {
         <Route exact path="/Company" element={<CompanyPage />} />
         <Route exact path="/registerEdi" element={<RegisterEdi />} />
         <Route exact path="/YourselfEdi" element={<YourselfEdi />} />
+        <Route exact path="/Help" element={<Help />} />
         {/* <Route exact path='/Modal' element={<ButtonPage/>}/> */}
         {/* <Route exact path='/about' element={<About/>}/> */}
         {/* {localStorage.getItem("login") === "true" && <Route path = '/*' element= {<Navbar/>}/>} */}
