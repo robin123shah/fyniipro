@@ -63,7 +63,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 8rem;
+  gap: 5rem;
+}
+a.nav__link {
+  font-size: 15px;
 }
 .nav__toggler {
   display: none;
@@ -103,6 +106,7 @@ a {
   .top-input1 {
     width: 200px;
     height: 30px;
+    margin-left: 25%;
   }
   .dropdown-content{
     bottom: 100px;
