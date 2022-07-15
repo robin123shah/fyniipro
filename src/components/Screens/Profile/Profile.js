@@ -6,6 +6,7 @@ export default function Profile() {
   const [username, setusername] = useState("")
   const [email,setemail] = useState("")
   const [number,setnumber] = useState("")
+  const [college_school,setcollege_school] = useState("")
   // const [birthday,setbirthday] = useState("")
   // const [password,setpassword] = useState("")
   const [you_are,setyou_are] = useState("")
@@ -15,6 +16,18 @@ export default function Profile() {
   const [file, setFile] = useState("");
   function handleChange(e) {
       setFile(URL.createObjectURL(e.target.files[0]));
+      console.log(file)
+      const uploadpic = "http://localhost:3001/uploadpic"
+      var headers = {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      };
+      fetch(uploadpic, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify({username:localStorage.getItem("username"),testImage:file}),
+      })
+
   }
   const ref = useRef(null);
   const node = ref.current;
@@ -59,6 +72,7 @@ export default function Profile() {
         setusername(response.username);
         setemail(response.email);
         setnumber(response.number);
+        setcollege_school(response.college_school)
         // setbirthday(response.birthday);
         // setpassword(response.password);
         setyou_are(response.you_are);
@@ -120,6 +134,13 @@ export default function Profile() {
                   <button className="col-md-9m text-secondarym">
                     Change Password
                   </button>
+                </div>
+                <br />
+                <div className="rowm">
+                  <div className="col-md-3m">
+                    <h5>University/School</h5>
+                  </div>
+                  <div className="col-md-9m text-secondarym">{college_school}</div>
                 </div>
                 <br />
                 <div className="rowm">

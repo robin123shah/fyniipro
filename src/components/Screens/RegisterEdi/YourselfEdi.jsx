@@ -1,55 +1,58 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../../styles/app.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./yourself.css";
 const YourselfEdi = () => {
-  const [values, setValues] = useState({
-    you_are: "",
-    education_level: "",
-    // college_school: "",
-    looking_for: "",
-  });
+  // const [values, setValues] = useState({
+  //   you_are: "",
+  //   education_level: "",
+  //   // college_school: "",
+  //   looking_for: "",
+  // });
 
-  setValues()
+  // setValues()
 
-  const detail = JSON.parse(localStorage.getItem("details"));
+  // const detail = JSON.parse(localStorage.getItem("details"));
 
-  let navigate = useNavigate();
-
+  // let navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
-    var headers = {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    };
-    var Data = {
-      username: detail.username,
-      email: detail.email,
-      number: detail.number,
-      birthday: detail.birthday,
-      password: detail.password,
-      you_are: values.you_are,
-      education_level: values.education_level,
-      looking_for: values.looking_for,
-      // college_school: values.college_school
-    };
-    fetch(SignUPAPI, {
-      method: "POST",
-      headers: headers,
-      body: JSON.stringify(Data),
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        localStorage.setItem("login", true);
-        localStorage.setItem("username", detail.username);
-        navigate("/");
-      })
-      .catch((error) => {
-        alert("Error" + error);
-      });
-  };
+  }
+
+  // const handleSubmit = (e) => {
+  //   
+  //   var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
+  //   var headers = {
+  //     Accept: "application/json",
+  //     "Content-Type": "application/json",
+  //   };
+  //   var Data = {
+  //     username: detail.username,
+  //     email: detail.email,
+  //     number: detail.number,
+  //     birthday: detail.birthday,
+  //     password: detail.password,
+  //     you_are: values.you_are,
+  //     education_level: values.education_level,
+  //     looking_for: values.looking_for,
+  //     // college_school: values.college_school
+  //   };
+  //   fetch(SignUPAPI, {
+  //     method: "POST",
+  //     headers: headers,
+  //     body: JSON.stringify(Data),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((response) => {
+  //       localStorage.setItem("login", true);
+  //       localStorage.setItem("username", detail.username);
+  //       navigate("/");
+  //     })
+  //     .catch((error) => {
+  //       alert("Error" + error);
+  //     });
+  // };
 
 
 
@@ -81,7 +84,7 @@ const YourselfEdi = () => {
             name="Career Objective"
             className="CareerObjective"
             pattern="^[A-Za-z0-9 ]{3,50}$"
-            style={{ width: "100%", height: "50px" }}
+            // style={{ width: "100%", height: "50px" }}
             placeholder="Write your topic."
           ></textarea>
         </div>
@@ -94,7 +97,7 @@ const YourselfEdi = () => {
             name="Career Objective"
             className="CareerObjective"
             pattern="^[A-Za-z0-9 ]{3,50}$"
-            style={{ width: "100%", height: "100px" }}
+            // style={{ width: "100%", height: "100px" }}
             placeholder="Write about your thoughts."
           ></textarea>
         </div>

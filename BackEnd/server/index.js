@@ -3,7 +3,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
+const multer = require('multer');
 const cors = require('cors');
+
 
 
 const PORT = process.env.PORT || 3001;
@@ -54,6 +56,39 @@ const User = mongoose.model('users', {
   UserId: {type: String}
 });
 
+const ImageModdel = require("./image.model")
+//storage
+const Storage = multer.diskStorage({
+  destination:'uploads',
+  filename:(req,file,cb) => {
+    cb(null,file.originalname)
+  },
+});
+
+const upload = multer({
+  storage:Storage
+}).single('testImage')
+
+app.post('/uploadpic',(req,res)=>{
+  console.log(req.body)
+  upload(req,res,(err)=> {
+    if(err){
+      console.log(err)
+    }
+    else{
+      const newImage = new ImageModel({
+        name:req.body.name,
+        image:{
+          data:req.file.filename,
+          contentType:'image/jpg' || 'image/png'
+        }
+      })
+      newImage.save()
+      .then(()=>res.send("1"))
+      .catch((err)=>console.log(err));
+    }
+  })
+})
 
 app.post("/insertuser", (req, res) => {
   User.find(
@@ -114,3 +149,11 @@ app.post("/getprofileData",(req,res) => {
     res.send(results[0])
   });
 });
+
+app.post("/uploadpic",(req,res) => {
+  User.find(
+    {
+      "username":{"$eq":req.body.username}
+    }
+  )
+})
