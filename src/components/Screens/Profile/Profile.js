@@ -44,7 +44,7 @@ export default function Profile() {
   const [hoverRef, isHovered] = useHover();
 
   useEffect(()=> {
-    var getprofileData = "http://localhost:3001/getprofileData";
+    var getprofileData = "https://fynii.herokuapp.com/getprofileData";
     var headers = {
       Accept: "application/json",
       "Content-Type": "application/json",

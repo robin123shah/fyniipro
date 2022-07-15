@@ -54,36 +54,6 @@ const User = mongoose.model('users', {
   UserId: {type: String}
 });
 
-// const Admin = mongoose.model('admin', {
-//   Email: { type: String},
-//   Password: { type: String },
-// });
-
-// const Orders = mongoose.model('orders', {
-//   ID: { type: String},
-//   Name: { type: String },
-//   Order_No :{type: Number}
-// });
-
-// const Menu = mongoose.model('menu', {
-//   Name: { type: String},
-//   Status : { type: String},
-//   Cost: { type: Number },
-//   Link: {type: String},
-//   Description:{type: String}
-// });
-
-// app.post("/insertorder", (req, res) => {
-//   Orders.insertMany([
-//     { ID : req.body.userID, Name: req.body.name}
-//   ]).then(function(){
-//     console.log("Data inserted")  // Success
-//   }).catch(function(error){
-//     console.log(error)      // Failure
-//   });
-
-
-// });
 
 app.post("/insertuser", (req, res) => {
   User.find(
@@ -119,20 +89,6 @@ app.post("/insertuser", (req, res) => {
 
 
 
-// app.post("/checkadmin", (req, res) => {
-//   Admin.find(
-//     {$and:[
-//       {"Email":{"$eq":req.body.email}},
-//       {"Password":{"$eq":req.body.password}}
-//     ]}
-//   ).then(function(results) {
-//     if (results.length == 1) {
-//       res.send("1");
-//     } else {
-//       res.send("2")
-//     }
-//   });
-// });
 
 app.post("/checklogin", (req, res) => {
   User.find(
@@ -144,7 +100,7 @@ app.post("/checklogin", (req, res) => {
     if (results.length >= 1) {
       res.json(["1",results[0].username]);
     } else {
-      res.json([2])
+      res.json(["2"])
     }
   });
 });
@@ -158,21 +114,3 @@ app.post("/getprofileData",(req,res) => {
     res.send(results[0])
   });
 });
-
-// app.post("/checkorders", (req, res) => {
-//   Orders.find(
-//     {
-//       "ID":{"$eq":req.body.userID},
-//     }
-//   ).then(function(results) {
-//     res.send(results)
-//   });
-// });
-
-// app.post("/checkallorders", (req, res) => {
-//   Orders.find(
-//     {}
-//   ).then(function(results) {
-//     res.send(results)
-//   });
-// });

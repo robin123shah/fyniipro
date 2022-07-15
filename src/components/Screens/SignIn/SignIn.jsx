@@ -34,9 +34,10 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://fynii.herokuapp.com/getprofileData", {
+    fetch("https://fynii.herokuapp.com/checklogin", {
       method: "POST",
-      header: {
+      headers: {
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email: values.email, password: values.password }),
@@ -48,7 +49,7 @@ const SignIn = () => {
           localStorage.setItem("login", true);
           localStorage.setItem("username", response[1]);
           navigate("/");
-        } else {
+        } else{
           alert("Incorrect Email or password");
         }
       });
