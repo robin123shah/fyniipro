@@ -43,21 +43,21 @@ function Cards(props) {
     {
       id: "4",
       scr: "../../images/s1.jpg",
-      text: "Software development is the process of creating a piece of software.  ",
+      text: "Career in Software Development explained!\n   ", // use character map and select copy empty character and use \n and paste empty character
       label: "Software Development",
       path: "/Home",
     },
     {
       id: "5",
       scr: "../../images/s2.jpg",
-      text: "Career in Software Development explained!\n   ", // use character map and select copy empty character and use \n and paste empty character
+      text: "Top companies to work as a software developer\n ",
       label: "Software Development",
       path: "/Home",
     },
     {
       id: "6",
       scr: "../../images/s3.jpg",
-      text: "Top companies to work as a software developer\n ",
+      text: "Software development is the process of creating a piece of software.  ",
       label: "Software Development",
       path: "/Home",
     },
@@ -71,21 +71,21 @@ function Cards(props) {
     {
       id: "8",
       scr: "../../images/m3.jpg",
-      text: "Top Professions for Math Geeks!\n  ",
+      text: "Career options after Graduating in Maths",
       label: "Mathematics",
       path: "/Home",
     },
     {
       id: "9",
       scr: "../../images/m2.jpg",
-      text: "Career options after Graduating in Maths",
+      text: "Everything you should know about mathematics!",
       label: "Mathematics",
       path: "/Home",
     },
     {
       id: "3",
       scr: "../../images/m1.jpg",
-      text: "Everything you should know about mathematics!",
+      text: "Top Professions for Math Geeks!\n  ",
       label: "Mathematics",
       path: "/Home",
     },
