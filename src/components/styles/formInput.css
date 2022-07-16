@@ -10,6 +10,7 @@
     }
     .formInput>input {
         border: none;
+        width: 50%;
     }
     .formlabel{
         font-size: 17px;
@@ -130,6 +131,7 @@ input:invalid[focused="true"] ~ span{
 @media screen and (max-width : 500px) {
     .formInput{
         width: 220px;
+
     }
     .Register_h2 {
         font-size: 25px; 

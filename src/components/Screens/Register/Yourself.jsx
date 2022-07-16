@@ -3,8 +3,7 @@ import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
 import DropFormInput from "./DropFormInput";
 import "./yourself.css";
-import FormInput from "./FormInput";
-const Yourself = (props) => {
+const Yourself = () => {
   const [values, setValues] = useState({
     you_are: "",
     education_level: "",
@@ -18,18 +17,6 @@ const Yourself = (props) => {
   const detail = JSON.parse(localStorage.getItem("details"));
 
   let navigate = useNavigate();
-
-  const inputschool = [
-    {
-      id: 1,
-      name: "college_school",
-      type: "name",
-      placeholder: "School/University",
-      errorMessage:
-        "Name should be 3-50 characters and shouldn't include any special character!",
-      label: "School/University",
-      pattern: "^[A-Za-z0-9 ]*$"
-    }]
 
   const inputs = [
     {
@@ -76,7 +63,8 @@ const Yourself = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
+    // var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
+    var SignUPAPI = "http://localhost:3001/insertuser";
     var headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -90,7 +78,7 @@ const Yourself = (props) => {
       you_are: values.you_are,
       education_level: values.education_level,
       looking_for: values.looking_for,
-      college_school: college_school,
+      // college_school: college_school,
       // carObj:carObj
     };
     fetch(SignUPAPI, {
@@ -101,12 +89,12 @@ const Yourself = (props) => {
       .then((response) => response.json())
       .then((response) => {
         console.log(response)
-        if (response[0] === "0"){
-          alert("Email already exist")
-        }
+        // if (response[0] === "0"){
+        //   alert("Email already exist")
+        // }
         if (response[0] === "true"){
           localStorage.setItem("login","true")
-          localStorage.setItem("email",response[1].email);
+          // localStorage.setItem("email",response[1].email);
           localStorage.setItem("username",detail.username);
           navigate("/");
         }
@@ -127,14 +115,18 @@ const Yourself = (props) => {
         <h2 className="Register_h2">
           About Yourself?
         </h2>
-        {inputschool.map((input) => (
-          <FormInput
-            key={input.id}
-            {...input}
-            // value={values[input.name]}
-            onChange={(e)=>{setcollege_school(e)}}
-          />
-        ))}
+        <div className="formInput">
+      <label className="formlabel">School/University</label>
+      <input
+        name= "college_school"
+        type= "name"
+        placeholder= "School/University"
+        pattern= "^[A-Za-z0-9 ]*$"
+        onChange={(e)=>{setcollege_school(e)}}
+        onBlur="handleFocus"
+      />
+      <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
+    </div>
         {inputs.map((input) => (
           <DropFormInput
             key={input.id}

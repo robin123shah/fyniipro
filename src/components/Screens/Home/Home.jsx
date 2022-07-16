@@ -57,7 +57,7 @@ export default function Home() {
       settranslate4(translate5);
       settranslate5(translate6);
       settranslate6(translate);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   });
 
@@ -71,7 +71,7 @@ export default function Home() {
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Which profession to opt for?</h2>
+              <h2 className="ifweeof">700+ professions exist in the world!</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
@@ -79,7 +79,7 @@ export default function Home() {
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">
-              <h2 className="ifweeof">Doctor, Engineer, teacher ???</h2>
+              <h2 className="ifweeof">Which profession to opt for?</h2>
               <a href="/">Learn More</a>
             </div>
             <div className="msg-col02">

@@ -130,8 +130,8 @@ const RegisterEdi = () => {
           />
         ))}
         <button className="Style1_button">Next</button>
-        <a href="/SignIn" className="bottoma">
-          Already Regstered? SignIn Here
+        <a href="/Register" className="bottoma">
+          New Here? Register Here
         </a>
       </form>
     </div>

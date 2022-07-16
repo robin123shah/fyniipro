@@ -125,8 +125,8 @@ function Navbar ({showNavTab, setshowNavTab}) {
         </li>
         :
         <li className="nav_item">
-          <button style={{"margin":"0","backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/SignIn")}} class="dropbtn">
-            Sign In
+          <button style={{"margin":"0","backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/Register")}} class="dropbtn">
+            Sign Up
           </button>
         </li>
 }

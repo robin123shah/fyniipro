@@ -87,7 +87,7 @@ const SignIn = () => {
         ))}
         <button className="Style1_button">Sign In</button>
         <a href="/Register" className="bottoma">
-          New Account? Register Here
+          New Here? Register Here
         </a>
       </form>
     </div>

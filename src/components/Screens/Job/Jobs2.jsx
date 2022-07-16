@@ -180,9 +180,6 @@ document.addEventListener('keydown', function(e){
         <script src="./script.js" async defer></script>
         <script src="./slide.js"></script>
       </Helmet> */}
-      <br></br>
-      <br></br>
-      <br></br>
       <div ref={NavTabRef} onClick={closeNavTab} class="container">
         <div class="row">
           <div class="col-lg-4">

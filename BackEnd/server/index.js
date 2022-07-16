@@ -91,12 +91,13 @@ app.post('/uploadpic',(req,res)=>{
 })
 
 app.post("/insertuser", (req, res) => {
-  User.find(
-    {
-      "email":{"$eq":req.body.email}
-    }
-  ).then(function(results){
-    if(results.length === 0) {
+  // User.find(
+  //   {
+  //     "email":{"$eq":req.body.email}
+  //   }
+  // ).then(function(results){
+  //   console.log(results)
+    // if(results.length === 0) {
       User.insertMany([
         { username : req.body.username,
         email: req.body.email,
@@ -115,11 +116,11 @@ app.post("/insertuser", (req, res) => {
         console.log(error)      // Failure
         res.send(["false"])
       });
-    }
-    else {
-      res.send("0")
-    }
-  });
+  //   }
+  //   else {
+  //     res.send("0")
+  //   }
+  // });
 });
 
 
