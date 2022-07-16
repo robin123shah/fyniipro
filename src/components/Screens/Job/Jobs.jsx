@@ -29,7 +29,7 @@ export default function Internship ({openModal}) {
   return (
     <div>
       <section >
-        <div className="slider3" style={{ marginTop: "12%" }}>
+        <div className="slider3">
           <input type="radio" name="toggle" id={item1} defaultChecked />
           <input type="radio" name="toggle" id={item2} />
           <input type="radio" name="toggle" id={item3} />
