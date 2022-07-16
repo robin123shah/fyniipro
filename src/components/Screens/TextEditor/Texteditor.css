@@ -1,4 +1,4 @@
-.row {
+.rowqw {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -7,7 +7,7 @@
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > * {
+.rowqw > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -16,4 +16,4 @@
   margin-top: var(--bs-gutter-y);
 }
 
-.col-md-6{flex:0 0 auto;width:50%}
+.col-md-6qw{flex:0 0 auto;width:50%}
