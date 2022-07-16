@@ -63,8 +63,8 @@ const Yourself = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
-    var SignUPAPI = "http://localhost:3001/insertuser";
+    var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
+    // var SignUPAPI = "http://localhost:3001/insertuser";
     var headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
