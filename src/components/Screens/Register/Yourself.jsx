@@ -10,7 +10,7 @@ const Yourself = () => {
     looking_for: "",
   });
   
-  const [college_school,setcollege_school] = useState("")
+  // const [college_school,setcollege_school] = useState("")
 
   // const [carObj,setcarObj] = useState("")
 
@@ -122,7 +122,7 @@ const Yourself = () => {
         type= "name"
         placeholder= "School/University"
         pattern= "^[A-Za-z0-9 ]*$"
-        onChange={(e)=>{setcollege_school(e)}}
+        // onChange={(e)=>{setcollege_school(e)}}
         onBlur="handleFocus"
       />
       <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
