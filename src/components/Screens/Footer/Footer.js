@@ -39,7 +39,7 @@ const Footer = () => {
 
           <ColumnFollow >
             <Heading  >Follow us</Heading>
-            <Column style={{ "flex-direction": "Row",marginLeft:0 }}>
+            <Column  style={{ "flex-direction": "Row",marginLeft:"-10px" }}>
               <FooterLink target="_blank" rel="noreferrer" href="https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2FFyniiGlobal&h=AT31NCQpgGnpIC5D0bij9SVlJChEpirAC3Fmv1sJ0HfP_SBWLn2_Ujeub2wyIshbkrwoEXNogjfULsFzX0_LD2_1fu7Y6x4vIbPFe9wW38n4nBxH0csaLIUy0nI72JCMfCvAQQ">
                 <i
                   className="fab fa-facebook-f"

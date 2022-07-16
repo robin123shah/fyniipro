@@ -29,7 +29,7 @@ function CardItem2(props) {
               style={{ backgroundColor: "#fff" }}
               className="cards__item__info"
             >
-              <h5 className="cards__item__text">{props.text}</h5>
+              <h5 style={{"whiteSpace":"pre-line"}} className="cards__item__text">{props.text}</h5>
             </div>
           </Link>
         </li>

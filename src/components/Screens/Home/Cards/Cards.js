@@ -40,14 +40,6 @@ function Cards(props) {
       label: "Career",
       path: "/Home",
     },
-
-    {
-      id: "3",
-      scr: "../../images/m1.jpg",
-      text: "Mathematics is the science that deals with the logic of shape.",
-      label: "Mathematics",
-      path: "/Home",
-    },
     {
       id: "4",
       scr: "../../images/s1.jpg",
@@ -58,14 +50,14 @@ function Cards(props) {
     {
       id: "5",
       scr: "../../images/s2.jpg",
-      text: "Software development is the process of creating a piece of software.  ",
+      text: "Career in Software Development explained!\n   ", // use character map and select copy empty character and use \n and paste empty character
       label: "Software Development",
       path: "/Home",
     },
     {
       id: "6",
       scr: "../../images/s3.jpg",
-      text: "Software development is the process of creating a piece of software.  ",
+      text: "Top companies to work as a software developer\n ",
       label: "Software Development",
       path: "/Home",
     },
@@ -79,14 +71,21 @@ function Cards(props) {
     {
       id: "8",
       scr: "../../images/m3.jpg",
-      text: "Mathematics is the science that deals with the logic of shape.",
+      text: "Top Professions for Math Geeks!\n  ",
       label: "Mathematics",
       path: "/Home",
     },
     {
       id: "9",
       scr: "../../images/m2.jpg",
-      text: "Mathematics is the science that deals with the logic of shape.",
+      text: "Career options after Graduating in Maths",
+      label: "Mathematics",
+      path: "/Home",
+    },
+    {
+      id: "3",
+      scr: "../../images/m1.jpg",
+      text: "Everything you should know about mathematics!",
       label: "Mathematics",
       path: "/Home",
     },
@@ -98,9 +97,16 @@ function Cards(props) {
       path: "/Home",
     },
     {
+      id: "20",
+      scr: "../../images/15.jpeg",
+      text: "Everything about civil services!",
+      label: "Civil Services",
+      path: "/Home",
+    },
+    {
       id: "13",
       scr: "../../images/ES1.jpeg",
-      text: "Career in Engineering Sciences.",
+      text: "Career in Engineering Sciences.\n ",
       label: "Engineering Sciences",
       path: "/Home",
     },
@@ -139,6 +145,28 @@ function Cards(props) {
       label: "Data Science",
       path: "/Home",
     },
+    {
+      id: "21",
+      scr: "../../images/14.jpeg",
+      text: "Career in Artificial Intelligence\n ",
+      label: "Engineering Sciences",
+      path: "/Home",
+    },
+    {
+      id: "22",
+      scr: "../../images/13.jpeg",
+      text: "Career in ML Explained!\n ",
+      label: "Engineering Sciences",
+      path: "/Home",
+    },
+    {
+      id: "23",
+      scr: "../../images/12.jpeg",
+      text: "Career in Quantum Computing Explained",
+      label: "Engineering Sciences",
+      path: "/Home",
+    },
+
   ];
 
   return (
