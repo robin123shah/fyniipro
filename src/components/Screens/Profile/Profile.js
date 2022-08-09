@@ -11,7 +11,7 @@ export default function Profile() {
   // const [password,setpassword] = useState("")
   const [you_are,setyou_are] = useState("")
   const [education_level,seteducation_level] = useState("")
-  const [looking_for,setlooking_for] = useState("")  
+  // const [looking_for,setlooking_for] = useState("")  
 
   const [file, setFile] = useState("");
   function handleChange(e) {
