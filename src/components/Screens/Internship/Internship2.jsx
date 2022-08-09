@@ -7,8 +7,8 @@ import Internship from "./Internship";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
-import logo1 from "./img/logo1.jpeg"
-import logo2 from "./img/logo2.png"
+import logo1 from "./logo1.jpeg"
+import logo2 from "./logo2.png"
 
 export default function Intership() {
   const [showNavTab,setshowNavTab] = useState(false)
