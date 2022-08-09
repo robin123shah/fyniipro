@@ -1,0 +1,14 @@
+.droplabel {
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  color: darkcyan;
+}
+
+.select {
+  width: 220px;
+}
+.CareerObjective::placeholder {
+  color: #aaa;
+  padding: 5px;
+}

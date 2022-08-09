@@ -1,0 +1,43 @@
+
+input{
+    border: 1px solid black;
+}
+
+/* 
+.SignInForm {
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+    height: 50rem;
+    width: 45rem;
+} */
+
+/* @media screen and (max-width:900px) {
+    .SignInForm{
+        height: 50rem;
+        width: 75rem;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+    form {
+      height: 70%;
+    }
+    .formlabel {
+      font-size: 15px;
+    }
+    input::placeholder {
+      font-size: 10px;
+    }
+    .Style1_button {
+      height: 50px;
+      font-size: 15px;
+    }
+    a {
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 30px;
+      margin: 0;
+    }
+  }
