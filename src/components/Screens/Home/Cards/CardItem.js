@@ -18,7 +18,7 @@ function CardItem(props) {
     <>
       {(props.topic === props.label || props.topic === "All") && (
         <li className="cards__item">
-          <Link className="cards__item__link" to={props.path}>
+          <Link className="cards__item__link" to={props.link}>
             <figure
               className="cards__item__pic-wrap"
               data-category={props.label}
