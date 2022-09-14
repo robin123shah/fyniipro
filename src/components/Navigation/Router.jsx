@@ -16,6 +16,11 @@ import CompanyPage from "../Screens/CompanyPage/CompanyPage";
 import RegisterEdi from "../Screens/RegisterEdi/RegisterEdi";
 import YourselfEdi from "../Screens/RegisterEdi/YourselfEdi";
 import Help from "../Screens/Help/Help";
+import NextPage from "../Screens/nextpage/nextpage";
+import NextPage2 from "../Screens/nextpage/nextpage2";
+import NextPage3 from "../Screens/nextpage/nextpage3";
+import NextPage4 from "../Screens/nextpage/nextpage4";
+import NextPage5 from "../Screens/nextpage/nextpage5";
 // import ButtonPage from '../Screens/Internship/Modal/ButtonPage';
 // import About from "../Screens/About/About"
 const Router = () => {
@@ -38,6 +43,11 @@ const Router = () => {
         <Route exact path="/registerEdi" element={<RegisterEdi />} />
         <Route exact path="/YourselfEdi" element={<YourselfEdi />} />
         <Route exact path="/Help" element={<Help />} />
+        <Route exact path="/pages" element={<NextPage/>} />
+        <Route exact path="/pages1" element={<NextPage2/>} />
+        <Route exact path="/pages2" element={<NextPage3/>} />
+        <Route exact path="/pages3" element={<NextPage4/>} />
+        <Route exact path="/pages4" element={<NextPage5/>} />
         {/* <Route exact path='/Modal' element={<ButtonPage/>}/> */}
         {/* <Route exact path='/about' element={<About/>}/> */}
         {/* {localStorage.getItem("login") === "true" && <Route path = '/*' element= {<Navbar/>}/>} */}
