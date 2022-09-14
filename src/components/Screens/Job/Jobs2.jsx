@@ -17,235 +17,235 @@ export default function Intership() {
   const [WkTypeNGov, setWkTypeNGov] = useState(false)
   const [WkTypeWFH, setWkTypeWFH] = useState(false)
   const [WkTypePT, setWkTypePT] = useState(false)
-  const InternshipData = [
-    {
-      id: "0",
-      Title: "Software Engineer",
-      Company: "Dell",
-      Location: "Bangalore",
-      Date: "01-08-2022",
-      Type: "Non Govt.",
-      Experience: "0-2 Yrs",
-      WorkType: "Full Time",
-      About: "Dell is a manufacturer Company.",
-      Link: "https://jobs.dell.com/job/bengaluru/software-engineer-1/375/30930510064",
-      img_src: Delllogo,
-      alt: "Logo",
-    },
-    {
-      id: "1",
-      Title: "Application Engineer",
-      Company: "Ansys",
-      Location: "Bengaluru",
-      Date: "11-7-2022",
-      Type: "Non Govt.",
-      Experience: "0-2 Yrs",
-      WorkType: "Full Time",
-      // About: "Ansys is a global leader in engineering simulation.",
-      Link: "https://careers.ansys.com/job/Bengaluru-Application-Engineer-II-SCBU-KA-560103/896666300/",
-      img_src: ASYSlogo,
-      alt: "Logo",
-    },
+  // const InternshipData = [
+  //   {
+  //     id: "0",
+  //     Title: "Software Engineer",
+  //     Company: "Dell",
+  //     Location: "Bangalore",
+  //     Date: "01-08-2022",
+  //     Type: "Non Govt.",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Full Time",
+  //     About: "Dell is a manufacturer Company.",
+  //     Link: "https://jobs.dell.com/job/bengaluru/software-engineer-1/375/30930510064",
+  //     img_src: Delllogo,
+  //     alt: "Logo",
+  //   },
+  //   {
+  //     id: "1",
+  //     Title: "Application Engineer",
+  //     Company: "Ansys",
+  //     Location: "Bengaluru",
+  //     Date: "11-7-2022",
+  //     Type: "Non Govt.",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Full Time",
+  //     // About: "Ansys is a global leader in engineering simulation.",
+  //     Link: "https://careers.ansys.com/job/Bengaluru-Application-Engineer-II-SCBU-KA-560103/896666300/",
+  //     img_src: ASYSlogo,
+  //     alt: "Logo",
+  //   },
 
 
-    {
-      id: "2",
-      Title: "Stenographer",
-      Company: "Aiims",
-      Location: "Bilaspur",
-      Date: "27-10-2022",
-      Type: "Govt.",
-      Experience: "0-2 Yrs",
-      WorkType: "Full Time",
-      About: "Aiims is government Medical Institute",
-      Link:"https://becilregistration.com/Home/ListofExam.aspx",
-      img_src : Aiimslogo,
-      alt:"Aiimslogo"
-    },
-    {
-      id: "3",
-      Title: "Proffesor/ Associate Professor",
-      Company: "Punjab Engineering College",
-      Location: "Chandigarh",
-      Date: "11-07-2022",
-      Type: "Non Govt.",
-      Experience: "0-2 Yrs",
-      WorkType: "Full Time",
-      About: "PEC is an engineering institute ..",
-      Link:"https://pec.ac.in/jobs/advt-pec-recruitment-faculty-01-2022",
-      img_src : PEClogo,
-      alt:"Aiimslogo"
-    },
-    {
-      id: "4",
-      Title: "android developer",
-      Company: "Cred",
-      Location: "Bengaluru, Karnataka",
-      // Date: "18-07-2022",
-      // Type: "Non Govt.",
-      Experience: "0-2 Yrs",
-      WorkType: "Full Time",
-      About: "ICMR is a medical research institute.",
-      Link:"https://careers.cred.club/allJob",
-      img_src : ICMRlogo,
-      alt:"Logo"
-    },
-    {
-      id: "5",
-      Title: "Associate - Sales",
-      Company: "upGrad",
-      Location: "Indiqube, Bengaluru, Karnataka, India",
-      // Date: "27-1-2023",
-      // Type: "Non Govt.",
-      Experience: "1-3 Yrs",
-      WorkType: "Full Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://upgrad.darwinbox.in/ms/candidate/main/careers/a62fe3338e4d61",
-      img_src : "",
-      alt:"Logo"
+  //   {
+  //     id: "2",
+  //     Title: "Stenographer",
+  //     Company: "Aiims",
+  //     Location: "Bilaspur",
+  //     Date: "27-10-2022",
+  //     Type: "Govt.",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Full Time",
+  //     About: "Aiims is government Medical Institute",
+  //     Link:"https://becilregistration.com/Home/ListofExam.aspx",
+  //     img_src : Aiimslogo,
+  //     alt:"Aiimslogo"
+  //   },
+  //   {
+  //     id: "3",
+  //     Title: "Proffesor/ Associate Professor",
+  //     Company: "Punjab Engineering College",
+  //     Location: "Chandigarh",
+  //     Date: "11-07-2022",
+  //     Type: "Non Govt.",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Full Time",
+  //     About: "PEC is an engineering institute ..",
+  //     Link:"https://pec.ac.in/jobs/advt-pec-recruitment-faculty-01-2022",
+  //     img_src : PEClogo,
+  //     alt:"Aiimslogo"
+  //   },
+  //   {
+  //     id: "4",
+  //     Title: "android developer",
+  //     Company: "Cred",
+  //     Location: "Bengaluru, Karnataka",
+  //     // Date: "18-07-2022",
+  //     // Type: "Non Govt.",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Full Time",
+  //     About: "ICMR is a medical research institute.",
+  //     Link:"https://careers.cred.club/allJob",
+  //     img_src : ICMRlogo,
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "5",
+  //     Title: "Associate - Sales",
+  //     Company: "upGrad",
+  //     Location: "Indiqube, Bengaluru, Karnataka, India",
+  //     // Date: "27-1-2023",
+  //     // Type: "Non Govt.",
+  //     Experience: "1-3 Yrs",
+  //     WorkType: "Full Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://upgrad.darwinbox.in/ms/candidate/main/careers/a62fe3338e4d61",
+  //     img_src : "",
+  //     alt:"Logo"
       
-    },
-    {
-      id: "6",
-      Title: "Service Associate-HR",
-      Company: "IBM",
-      Location: "Bengaluru",
-      // Date: "27-1-2023",
-      // Type: "WFH",
-      Experience: "1 Yr",
-      // WorkType: "Part Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://careers.ibm.com/job/15825530/service-associate-hr-bangalore-in/?codes=IBM_CareerWebSite",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "7",
-      Title: "Business Development Manager",
-      Company: "classplus",
-      Location: "Multiple Cities",
-      Date: "27-1-2023",
-      Type: "WFH",
-      Experience: "0-2 Yrs",
-      WorkType: "Full Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://classplusapp.com/careers/job-description?jobId=a615c4a25d3dd8",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "8",
-      Title: "Frontend Developer",
-      Company: "ola",
-      Location: "Pune",
-      Date: "27-1-2023",
-      Type: "WFH",
-      Experience: "1-2 Yrs",
-      WorkType: "Part Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://ola.skillate.com/jobs/17120",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "9",
-      Title: "Manager",
-      Company: "Paytm",
-      Location: "Pan India",
-      Date: "27-1-2023",
-      Type: "WFH",
-      Experience: "0-2 Yrs",
-      WorkType: "Part Time",
-      About: "Marble Palace is a millionare Company",
-      Link:"https://jobs.lever.co/paytm/449ec18d-398e-4bc4-86a0-06ffc602492f",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "10",
-      Title: "UX Designer",
-      Company: "Niyo",
-      Location: "",
-      Date: "27-1-2023",
-      Type: "WFH",
-      Experience: "1+ Yrs",
-      WorkType: "Full Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://angel.co/company/niyo-sol/jobs/1132628-ux-designer",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "11",
-      Title: "Android Developer",
-      Company: "Locus",
-      Location: "Bengaluru",
-      Date: "27-1-2023",
-      Type: "WFH",
-      Experience: "1-2 Yrs",
-      WorkType: "Full Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://locus.freshteam.com/jobs/NOR4pCVRS-M_/android-developer-1-2-yrs-work-exp",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "12",
-      Title: "HR",
-      Company: "Axis Bank",
-      Location: "Remote",
-      // Date: "27-1-2023",
-      // Type: "WFH",
-      Experience: "1 Yr",
-      // WorkType: "Part Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://axisbank.ripplehire.com/candidate/?token=WIXhCuz0XRZ7H0GZCwjJ&source=CAREERSITE#detail/job/109442",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "13",
-      Title: "Customer Success",
-      Company: "Microsoft",
-      // Location: "Deoria",
-      // Date: "27-1-2023",
-      // Type: "WFH",
-      // Experience: "0-2 Yrs",
-      // WorkType: "Part Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://careers.microsoft.com/us/en/job/1452539/Customer-Success-Technology-Sales-Internship-Opportunity-for-University-Graduates",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "14",
-      Title: "ASSOCIATE- BFS",
-      Company: "HCL",
-      Location: "Noida",
-      // Date: "27-1-2023",
-      Type: "WFH",
-      Experience: "1-3 Yrs",
-      // WorkType: "Part Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"https://www.hcltech.com/jobs/associate-bfs",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "15",
-      Title: "SENIOR CUSTOMER SERVICE REPRESENTATIVE",
-      Company: "HCL",
-      Location: "Gurgaon",
-      // Date: "27-1-2023",
-      // Type: "WFH",
-      Experience: "1-3 Yrs",
-      // WorkType: "Part Time",
-      // About: "Marble Palace is a millionare Company",
-      Link:"/",
-      img_src : "",
-      alt:"Logo"
-    },
-  ];
+  //   },
+  //   {
+  //     id: "6",
+  //     Title: "Service Associate-HR",
+  //     Company: "IBM",
+  //     Location: "Bengaluru",
+  //     // Date: "27-1-2023",
+  //     // Type: "WFH",
+  //     Experience: "1 Yr",
+  //     // WorkType: "Part Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://careers.ibm.com/job/15825530/service-associate-hr-bangalore-in/?codes=IBM_CareerWebSite",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "7",
+  //     Title: "Business Development Manager",
+  //     Company: "classplus",
+  //     Location: "Multiple Cities",
+  //     Date: "27-1-2023",
+  //     Type: "WFH",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Full Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://classplusapp.com/careers/job-description?jobId=a615c4a25d3dd8",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "8",
+  //     Title: "Frontend Developer",
+  //     Company: "ola",
+  //     Location: "Pune",
+  //     Date: "27-1-2023",
+  //     Type: "WFH",
+  //     Experience: "1-2 Yrs",
+  //     WorkType: "Part Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://ola.skillate.com/jobs/17120",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "9",
+  //     Title: "Manager",
+  //     Company: "Paytm",
+  //     Location: "Pan India",
+  //     Date: "27-1-2023",
+  //     Type: "WFH",
+  //     Experience: "0-2 Yrs",
+  //     WorkType: "Part Time",
+  //     About: "Marble Palace is a millionare Company",
+  //     Link:"https://jobs.lever.co/paytm/449ec18d-398e-4bc4-86a0-06ffc602492f",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "10",
+  //     Title: "UX Designer",
+  //     Company: "Niyo",
+  //     Location: "",
+  //     Date: "27-1-2023",
+  //     Type: "WFH",
+  //     Experience: "1+ Yrs",
+  //     WorkType: "Full Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://angel.co/company/niyo-sol/jobs/1132628-ux-designer",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "11",
+  //     Title: "Android Developer",
+  //     Company: "Locus",
+  //     Location: "Bengaluru",
+  //     Date: "27-1-2023",
+  //     Type: "WFH",
+  //     Experience: "1-2 Yrs",
+  //     WorkType: "Full Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://locus.freshteam.com/jobs/NOR4pCVRS-M_/android-developer-1-2-yrs-work-exp",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "12",
+  //     Title: "HR",
+  //     Company: "Axis Bank",
+  //     Location: "Remote",
+  //     // Date: "27-1-2023",
+  //     // Type: "WFH",
+  //     Experience: "1 Yr",
+  //     // WorkType: "Part Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://axisbank.ripplehire.com/candidate/?token=WIXhCuz0XRZ7H0GZCwjJ&source=CAREERSITE#detail/job/109442",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "13",
+  //     Title: "Customer Success",
+  //     Company: "Microsoft",
+  //     // Location: "Deoria",
+  //     // Date: "27-1-2023",
+  //     // Type: "WFH",
+  //     // Experience: "0-2 Yrs",
+  //     // WorkType: "Part Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://careers.microsoft.com/us/en/job/1452539/Customer-Success-Technology-Sales-Internship-Opportunity-for-University-Graduates",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "14",
+  //     Title: "ASSOCIATE- BFS",
+  //     Company: "HCL",
+  //     Location: "Noida",
+  //     // Date: "27-1-2023",
+  //     Type: "WFH",
+  //     Experience: "1-3 Yrs",
+  //     // WorkType: "Part Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"https://www.hcltech.com/jobs/associate-bfs",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  //   {
+  //     id: "15",
+  //     Title: "SENIOR CUSTOMER SERVICE REPRESENTATIVE",
+  //     Company: "HCL",
+  //     Location: "Gurgaon",
+  //     // Date: "27-1-2023",
+  //     // Type: "WFH",
+  //     Experience: "1-3 Yrs",
+  //     // WorkType: "Part Time",
+  //     // About: "Marble Palace is a millionare Company",
+  //     Link:"/",
+  //     img_src : "",
+  //     alt:"Logo"
+  //   },
+  // ];
   const [showNavTab,setshowNavTab] = useState(false)
   const NavTabRef = useRef();
 
@@ -644,7 +644,12 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.map((e) => 
+            {fetch('data.json')
+            .then(res => {
+             return res.json();
+               })
+             .then( function(data){
+            data.map((e) => 
             ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "WFH") || (WkTypePT === true && e.Type === "PT")) 
             && 
             (<div class="box2">
@@ -691,7 +696,8 @@ document.addEventListener('keydown', function(e){
                   </div>
                 </div>
               </a>
-            </div>))}
+            </div>))})}
+
           </div>
         </div>
       </div>
