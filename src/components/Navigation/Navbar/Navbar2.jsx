@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../styles/navbar.css";
 import "../../styles/app.css"
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar ({showNavTab, setshowNavTab}) {
   const navigate = useNavigate();
@@ -62,9 +63,10 @@ function Navbar ({showNavTab, setshowNavTab}) {
         }}
           
         >
-          <a href="/Home" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Home")}} style={{ color: localStorage.getItem("activeNav") === "Home" ? "white" :"black"}}>
+          <Link to="/Home"><a className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Home")}} style={{ color: localStorage.getItem("activeNav") === "Home" ? "white" :"black"}}>
             Home
           </a>
+         </Link>
         </li>
         <li className="nav__item"
                     style={{ 
