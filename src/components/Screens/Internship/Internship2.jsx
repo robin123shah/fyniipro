@@ -298,7 +298,7 @@ export default function Intership() {
                       <i class="fa-solid fa-location-dot"></i> {e.Location}
                     </p>
                     <p>
-                      <i class="fa-solid fa-briefcase"></i> Rs. {e.Stipend}
+                      <i class="fa-solid fa-briefcase"></i> ₹ {e.Stipend}
                     </p>
                     <p>
                       <i class="fa-solid fa-building"></i> {e.About}

@@ -26,21 +26,21 @@ export default function CompanyPage() {
           />
           <img
             alt="logo"
-            src={require("./Delllogo.jpg")}
+            // src={require("./Delllogo.jpg")}
             className="CompanyLogo"
           />
           <div className="CompanyPageContentBox">
             <div className="CompanyPageContent">
-              <h1 style={{ fontFamily: "system-ui" }}>Dell Technologies</h1>
+              <h1 style={{ fontFamily: "system-ui" }}>Company Name</h1>
             </div>
             <div className="CompanyPageContent">
               <h1 style={{ fontSize: "20px", color: "darkslategray" }}>
-                We create technologies that drive human progress.
+                Company Tagline
               </h1>
             </div>
             <div className="CompanyPageContent">
               <h1 style={{ fontSize: "15px", color: "GrayText" }}>
-                IT Services and IT Consulting, Round Rock, Texas
+                Company About
               </h1>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function CompanyPage() {
             <h1 onClick={()=> {setsection("PaS")}} className="companynav">Product and services</h1>
             <h1 onClick={()=> {setsection("Job")}} className="companynav">Job</h1>
             <h1 onClick={()=> {setsection("Internship")}} className="companynav">Internship</h1>
-            <h1 onClick={()=> {setsection("Life")}} className="companynav">Life@Dell</h1>
+            <h1 onClick={()=> {setsection("Life")}} className="companynav">Life@Company</h1>
             <h1 onClick={()=> {setsection("Recog")}}className="companynav">Recognition</h1>
           </div>
         </div>
