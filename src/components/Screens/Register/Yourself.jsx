@@ -161,7 +161,7 @@ const Yourself = () => {
           name= "education_level"
           type= "name"
           placeholder= "e.g. : Msc(Maths), MBA(Finance)"
-          pattern= "^[A-Za-z]*$"
+          // pattern= "^[A-Za-z]*$"
           // onChange={(e)=>{setcollege_school(e)}}
           onBlur="handleFocus"
         />
@@ -181,7 +181,7 @@ const Yourself = () => {
         name= "your_interest"
         type= "name"
         placeholder= "e.g. : Teaching, Software"
-        pattern= "^[A-Za-z ]*$"
+        // pattern= "^[A-Za-z ]*$"
         // onChange={(e)=>{setcollege_school(e)}}
         onBlur="handleFocus"
       />
