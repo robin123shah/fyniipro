@@ -40,6 +40,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
             // height: "38px",
             // overflow: "hidden",
             "margin-top": "9px",
+            // height:"8vh",
           }}
           href="/Home"
           alt="img"

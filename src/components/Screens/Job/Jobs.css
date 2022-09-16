@@ -501,7 +501,7 @@ ul.ks-cboxtags {
     position:absolute;
     width:80px;
     max-width: 100%;
-    left:85%;
+    left:82%;
     object-fit: cover;
   }
 
@@ -511,23 +511,34 @@ ul.ks-cboxtags {
     width:150px;
   }
   @media screen and (max-width:1200px) {
+    .img-box{
+      height: 80px;
+    }
     .img_class{
-      left: 80%
+      left: 80%;
+      object-fit: cover;
     }
   }
 
   
   @media screen and (max-width:1000px) {
+    .img-box{
+      height: 80px;
+    }
     .img_class{
-      left: 75%
+      left: 75%;
+      object-fit: cover;
     }
   }
 
   @media screen and (max-width:770px) {
+    .img-box{
+      height: 80px;
+    }
     .img_class{
-      height:50px;
       width:50px;
-      left: 80%
+      left: 80%;
+      object-fit: cover;
     }
   }
   .internslideimg {

@@ -912,3 +912,23 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   align-items: center;
   height: 350px;
 }
+
+
+@media screen and (max-width:1200px) {
+  .bigg{
+
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+  .bigg{
+
+  }
+}
+
+@media screen and (max-width:770px) {
+  .bigg{
+    font-size: 1rem;
+  }
+}

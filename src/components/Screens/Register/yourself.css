@@ -11,3 +11,37 @@
 .CareerObjective::placeholder {
     color: #AAA;
 }
+
+.yourself-left{
+    width: 33%;
+    min-height: 100vh;
+  }
+.yourself-right{
+    flex: 5 1;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: inherit;
+      position: relative;
+      width: 67%;
+  }
+  .onImag {
+    font-size: 300%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-family: 'Roboto Slab', serif;
+  
+    position: absolute;
+    text-align: center;
+    align-items: center;  
+    margin: 50px;
+  
+    /* margin-top: 45px; */
+    /* margin: 70px; */
+    color: rgb(8, 47, 61);
+  }
+  form{
+    padding: 20px 30px;
+    border-radius: 10px;
+    }

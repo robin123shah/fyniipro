@@ -1,8 +1,10 @@
 // import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/app.css";
 // import { useNavigate } from "react-router-dom";
 import "./yourself.css";
 const YourselfEdi = () => {
+  const navigate = useNavigate()
   // const [values, setValues] = useState({
   //   you_are: "",
   //   education_level: "",
@@ -15,6 +17,8 @@ const YourselfEdi = () => {
   // const detail = JSON.parse(localStorage.getItem("details"));
 
   // let navigate = useNavigate();
+
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();

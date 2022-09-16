@@ -1,6 +1,6 @@
 import React,{useState,useRef, useEffect} from "react";
 import "./Jobs.css";
-import "../Courses/course.css"
+// import "../Courses/course.css"
 import InternshipData from "./Jobdata";
 import "./style.css";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";

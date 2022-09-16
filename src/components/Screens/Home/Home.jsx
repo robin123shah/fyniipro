@@ -1,12 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./HeroSection.css";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
+
 import Cards from "./Cards/Cards";
 import Footer from "../Footer/Footer";
 // import Navbar from "../../Navigation/Navbar/Navbar";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
 
 export default function Home() {
+  // let navigation = useNavigate();
+
   // var slider2 = document.getElementById("slider2");
   // var activeh = document.getElementById("activeh");
   // var lineh1 = document.getElementById("lineh1");
@@ -60,7 +64,9 @@ export default function Home() {
     }, 3000);
     return () => clearInterval(interval);
   });
-
+  // setTimeout(() => {
+  //   navigation('/register')
+  // },5000)
   return (
     <div>
       <div className="Container-card" ref={NavTabRef} onClick={closeNavTab}>
