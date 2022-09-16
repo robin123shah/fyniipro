@@ -20,18 +20,18 @@ const Yourself = () => {
   let navigate = useNavigate();
 
   const inputs = [
-    // {
-    //   id: 1,
-    //   label: "Who are you?* ",
-    //   name: "you_are",
-    //   placeholder: "Select",
-    //   errorMessage: "Can't be remain None!",
-    //   required: true,
-    //   actions: [
-    //     { label: "Student", value: 1 },
-    //     { label: "Fresher", value: 2 },
-    //   ],
-    // },
+    {
+      id: 1,
+      label: "Who are you?* ",
+      name: "you_are",
+      placeholder: "Select",
+      errorMessage: "Can't be remain None!",
+      required: true,
+      actions: [
+        { label: "Student", value: 1 },
+        { label: "Fresher", value: 2 },
+      ],
+    },
     // {
     //   id: 2,
     //   label: "Your Education*",
@@ -143,7 +143,7 @@ const Yourself = () => {
         />
         <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
       </div>
-      <div className="formInput">
+      {/* <div className="formInput">
         <label className="formlabel">Who are you</label>
         <input
           name= "college_school"
@@ -154,20 +154,8 @@ const Yourself = () => {
           onBlur="handleFocus"
         />
         <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
-      </div>
-      <div className="formInput">
-        <label className="formlabel">Your Education</label>
-        <input
-          name= "education_level"
-          type= "name"
-          placeholder= "e.g. : Msc(Maths), MBA(Finance)"
-          // pattern= "^[A-Za-z]*$"
-          // onChange={(e)=>{setcollege_school(e)}}
-          onBlur="handleFocus"
-        />
-        <span className="ErrorSpan">Education should be 3-50 characters and shouldn't include any special character!</span>
-      </div>
-    {inputs.map((input) => (
+      </div> */}
+      {inputs.map((input) => (
           <DropFormInput
             key={input.id}
             {...input}
@@ -175,6 +163,19 @@ const Yourself = () => {
             onChange={onChange}
           />
         ))}
+      <div className="formInput">
+        <label className="formlabel">Your Education</label>
+        <input
+          name= "education_level"
+          type= "name"
+          placeholder= "e.g. : Msc(Maths), MBA(Finance)"
+          pattern= "^[A-Za-z]*$"
+          // onChange={(e)=>{setcollege_school(e)}}
+          onBlur="handleFocus"
+        />
+        <span className="ErrorSpan">Education should be 3-50 characters and shouldn't include any special character!</span>
+      </div>
+    
     <div className="formInput">
     <label className="formlabel">Your Interests</label>
       <input
