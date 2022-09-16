@@ -491,12 +491,18 @@ ul.ks-cboxtags {
   }  
   .form-control::placeholder{
     font-size: 1.5rem;
+
+  }
+
+  .img-box{
+    height: 80px;
   }
   .img_class {
     position:absolute;
-    height:80px;
     width:80px;
+    max-width: 100%;
     left:85%;
+    object-fit: cover;
   }
 
   .img_class2 {
