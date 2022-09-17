@@ -16,27 +16,27 @@ export default function Intership() {
   }
 
   const InternshipData = [
-    {
-      id: "0",
-      Title: "Customer Success",
-      Company: "Microsoft",
-      Location: "Multiple",
-      Date: "Not Available",
-      // Stipend: "10000",
-      WorkType: "Full Time",
-      Link:"https://careers.microsoft.com/us/en/job/1452539/Customer-Success-Technology-Sales-Internship-Opportunity-for-University-Graduates",
-      img_src : require("../../Screens/Internship/img/internlogo/microsoft.png"),
-      alt:"Logo"
-    },
+    // {
+    //   id: "0",
+    //   Title: "Customer Success",
+    //   Company: "Microsoft",
+    //   Location: "Multiple",
+    //   Date: "Not Available",
+    //   Stipend: "Paid",
+    //   WorkType: "Full Time",
+    //   Link:"https://careers.microsoft.com/us/en/job/1452539/Customer-Success-Technology-Sales-Internship-Opportunity-for-University-Graduates",
+    //   img_src : require("../../Screens/Internship/img/internlogo/microsoft.png"),
+    //   alt:"Logo"
+    // },
     {
       id: "1",
-      Title: "Quality Analyst Intern - SheSpark",
+      Title: "Quality Analyst Intern",
       Company: "Adobe",
       Location: "Bangalore",
       Date: "Not Available",
-      // Stipend: "3000",
+      Stipend: "Paid",
       WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R123584?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
+      // Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R123584?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
       img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
       alt:"Logo"
     },
@@ -156,12 +156,12 @@ export default function Intership() {
 
               <br />
 
-              <h4>
+              {/* <h4>
                 <strong>Starting Date</strong>
               </h4>
               <input type="date" size="30" class="form-control" />
 
-              <br />
+              <br /> */}
 
               <select class="form-select">
                 <option selected>
@@ -172,9 +172,9 @@ export default function Intership() {
               </select>
 
               <br />
-              <select class="form-select">
+              <select class="form-select" placeholder="Duration">
                 <option selected>
-                  <strong>Duration</strong>
+                  <strong>Stipend</strong>
                 </option>
                 <option value="1">1 Week</option>
                 <option value="2">2 Week</option>
@@ -212,15 +212,8 @@ export default function Intership() {
                 <option selected>
                   <strong>Stipend</strong>
                 </option>
-                <option value="0">Rs. 0</option>
-                <option value="100">Rs. 100</option>
-                <option value="1000">Rs. 1000</option>
-                <option value="3000">Rs. 3000</option>
-                <option value="5000">Rs. 5000</option>
-                <option value="7000">Rs. 7000</option>
-                <option value="10000">Rs. 10000</option>
-                <option value="15000">Rs. 15000</option>
-                
+                <option value="unpaid">Unpaid</option>
+                <option value="paid">Paid</option>
               </select>
 
               <br />
