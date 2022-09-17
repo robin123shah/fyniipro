@@ -174,7 +174,7 @@ export default function Intership() {
               <br />
               <select class="form-select" placeholder="Duration">
                 <option selected>
-                  <strong>Stipend</strong>
+                  <strong>Duration</strong>
                 </option>
                 <option value="1">1 Week</option>
                 <option value="2">2 Week</option>
