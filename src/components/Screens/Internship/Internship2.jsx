@@ -1,14 +1,9 @@
 import React, { useState,useRef } from "react";
-// import { Helmet } from "react-helmet";
 import "./internship.css";
-// import "./style.css";
-// import Aiimslogo from "./img/aiimslogo.png"
 import Internship from "./Internship";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
-import logo1 from "./logo1.jpeg"
-import logo2 from "./logo2.png"
 
 export default function Intership() {
   const [showNavTab,setshowNavTab] = useState(false)
@@ -22,57 +17,30 @@ export default function Intership() {
 
   const InternshipData = [
     {
+      id: "0",
+      Title: "Customer Success",
+      Company: "Microsoft",
+      Location: "Multiple",
+      Date: "Not Available",
+      // Stipend: "10000",
+      WorkType: "Full Time",
+      Link:"https://careers.microsoft.com/us/en/job/1452539/Customer-Success-Technology-Sales-Internship-Opportunity-for-University-Graduates",
+      img_src : require("../../Screens/Internship/img/internlogo/microsoft.png"),
+      alt:"Logo"
+    },
+    {
       id: "1",
-      Title: "Machine Learning Intern",
-      Company: "Ai India Innovation centre",
-      Location: "Pune",
-      Date: "20-08-2022",
-      Stipend: "10000",
+      Title: "Quality Analyst Intern - SheSpark",
+      Company: "Adobe",
+      Location: "Bangalore",
+      Date: "Not Available",
+      // Stipend: "3000",
       WorkType: "Full Time",
-      About: "Software Company",
-      Link:"https://aiindia.ai/career-culture",
-      img_src : logo1,
-      alt:"img"
-    },
-    {
-      id: "3",
-      Title: "Physicist",
-      Company: "IBM",
-      Location: "Noida",
-      Date: "27-1-2023",
-      Stipend: "3000",
-      WorkType: "Full Time",
-      About: "Marble Palace is a millionare Company",
-      Link:"/",
-      img_src : logo2,
+      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R123584?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
+      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
       alt:"Logo"
     },
-    {
-      id: "2",
-      Title: "Mechnical Engineer",
-      Company: "Marble Palace",
-      Location: "Deoria",
-      Date: "27-1-2023",
-      Stipend: "0",
-      WorkType: "Full Time",
-      About: "Marble Palace is a millionare Company",
-      Link:"/",
-      img_src : "",
-      alt:"Logo"
-    },
-    {
-      id: "4",
-      Title: "Software Engineer",
-      Company: "IBM",
-      Location: "Deoria",
-      Date: "27-1-2023",
-      Stipend: "0",
-      WorkType: "Part Time",
-      About: "Marble Palace is a millionare Company",
-      Link:"/",
-      img_src : "",
-      alt:"Logo"
-    },
+    
   ];
 
   // const [Inttopic, setInttopic] = useState("All");
@@ -286,7 +254,7 @@ export default function Intership() {
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
               <div>
-                <img style={{position:"absolute","height":"50px","width":"50px","right":"10%"}} src = {e.img_src} alt = {e.alt} />
+                <div style={{height:"80px"}}><img style={{position:"absolute","width":"80px","max-width":"100%","left":"82%","objectFit":"cover"}} src = {e.img_src} alt = {e.alt} /></div>
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
 
@@ -298,10 +266,10 @@ export default function Intership() {
                       <i class="fa-solid fa-location-dot"></i> {e.Location}
                     </p>
                     <p>
-                      <i class="fa-solid fa-briefcase"></i> ₹ {e.Stipend}
+                      <i class="fa-solid fa-briefcase"></i> {e.Stipend}
                     </p>
                     <p>
-                      <i class="fa-solid fa-building"></i> {e.About}
+                      {/* <i class="fa-solid fa-building"></i> {e.About} */}
                     </p>
                   </div>
                   <div class="col-lg-6">

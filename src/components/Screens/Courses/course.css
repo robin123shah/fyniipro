@@ -49,17 +49,19 @@ p {
 img {
 
   text-align: center;
-  margin: 0%;
-  /* margin-top: 1%; */
-  /* display: inline; */
-  /* position: relative; */
-  /* right: 45%; */
-  /* float: left; */
-  /* z-index: -1; */
+  /* margin: 0%;
+  margin-top: 1%;
+  display: inline;
+  position: relative;
+  right: 45%;
+  float: left;
+  z-index: -1; */
   width: 100%;
   
 }
-
+.register-right img{
+  height: 100vh !important;
+}
 .logo1 {
   width: 20%;
   bottom: 53%;

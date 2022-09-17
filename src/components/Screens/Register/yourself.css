@@ -25,6 +25,9 @@
       position: relative;
       width: 67%;
   }
+.yourself-right img{
+  height: 100vh;
+}
   .onImag {
     font-size: 300%;
     font-weight: bolder;
