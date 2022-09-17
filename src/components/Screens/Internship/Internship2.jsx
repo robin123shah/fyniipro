@@ -16,27 +16,40 @@ export default function Intership() {
   }
 
   const InternshipData = [
-    // {
-    //   id: "0",
-    //   Title: "Customer Success",
-    //   Company: "Microsoft",
-    //   Location: "Multiple",
-    //   Date: "Not Available",
-    //   Stipend: "Paid",
-    //   WorkType: "Full Time",
-    //   Link:"https://careers.microsoft.com/us/en/job/1452539/Customer-Success-Technology-Sales-Internship-Opportunity-for-University-Graduates",
-    //   img_src : require("../../Screens/Internship/img/internlogo/microsoft.png"),
-    //   alt:"Logo"
-    // },
+
+    {
+      id: "0",
+      Title: "Smart manufacturing using cnc router",
+      Company: "Aicte Idea Lab - Guru Nanak Institutions Technical Campus",
+      Location: "WFH",
+      Date: "23-09-2022",
+      Stipend: "Unpaid",
+      WorkType: "Part Time",
+      Link:"https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_16632020596322730b435de",
+      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
+      alt:"Logo"
+    },
     {
       id: "1",
-      Title: "Quality Analyst Intern",
-      Company: "Adobe",
-      Location: "Bangalore",
+      Title: "Web Development",
+      Company: "Zed Age Infotech",
+      Location: "Suri",
+      Date: "31-10-2022",
+      Stipend: "Unpaid",
+      WorkType: "Part Time",
+      Link:"https://www.zedageinfotech.co.in/recruitment.php",
+      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
+      alt:"Logo"
+    },
+    {
+      id: "2",
+      Title: "Documentation Assistant",
+      Company: "DTDC Express Ltd.",
+      Location: "Pan India",
       Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      // Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R123584?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
+      Stipend: "Unpaid",
+      WorkType: "Part Time",
+      Link:"https://www.apprenticeshipindia.gov.in/apprenticeship/opportunity-view/5cc2e2f5af11374ab473b582",
       img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
       alt:"Logo"
     },

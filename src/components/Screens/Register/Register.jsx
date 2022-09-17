@@ -122,7 +122,7 @@ const Register = () => {
           Get started with Fynii
         </h4> */}
 
-        <GoogleButton onClick={onGoogleRegister} style={{"margin":"auto"}}/>
+        <GoogleButton onClick={onGoogleRegister} className="google-button"/>
 
         <div class="my-12 border-b text-center">
               <div
@@ -141,12 +141,15 @@ const Register = () => {
           />
         ))}
         <button className="Style1_button">Next</button>
-        <div className="sign" >Already Registered?<a href="/SignIn" className="botton"> SignIn Here</a></div>
+        Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a>
       </form>
       </div>
       <div className="register-right">
+      <div className="register-ri"> 
         <img src="/images/1.jpeg" alt=""/>
         <div className="onImage">Gain Knowledge & Awareness for a great Career</div>
+      </div>
+       
       </div>
       
     </div>

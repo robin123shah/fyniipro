@@ -11,7 +11,26 @@ export default function Intership() {
   const [WkTypeNGov, setWkTypeNGov] = useState(false)
   const [WkTypeWFH, setWkTypeWFH] = useState(false)
   const [WkTypePT, setWkTypePT] = useState(false)
+  const [Title,setTitle] = useState('');
+  const [Location,setLocation] = useState('');
+  const [Company,setCompany] = useState('');
   
+
+  // const filterMethods = [
+  //   (item => item.Title.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1),
+  //   (item => item.Company.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1),
+  //   ((item) => item.Location.toLowerCase().indexOf(searchTerm.toLowerCase()) != -1)
+  // ]
+  
+  // const filteredArray = arrayToFilter.filter((item) => {
+  //   for (let i = 0; i < filterMethods.length; i++) {
+  //     if (!filterMethods[i](item)) {
+  //       return false
+  //     }
+  //   }
+  //   return true
+  // })
+
   const [showNavTab,setshowNavTab] = useState(false)
   const NavTabRef = useRef();
 
@@ -83,11 +102,11 @@ document.addEventListener('keydown', function(e){
               <div>
                 <input
                   type="search"
+                  onChange={e => setTitle(e.target.value)}
                   class="form-control rounded"
                   placeholder="e.g. Software"
                   aria-label="Search"
                   aria-describedby="search-addon"
-                  s
                 />
                 <i
                   style={{
@@ -106,6 +125,7 @@ document.addEventListener('keydown', function(e){
               <div>
                 <input
                   type="search"
+                  onChange={e => setLocation(e.target.value)}
                   class="form-control rounded"
                   placeholder="e.g. Delhi"
                   aria-label="Search"
@@ -122,58 +142,14 @@ document.addEventListener('keydown', function(e){
                 ></i>
               </div>
 
-              {<br />
-
-              /*<h4>
-                <strong>Experience</strong>
-              </h4>
-              <div>
-              <select class="form-select">
-                <option selected>
-                  <strong>Work Experience</strong>
-                </option>
-                <option value="1">Part time</option>
-                <option value="2">Full time</option>
-              </select> */}
-                {/* <i
-                  style={{
-                    position: "absolute",
-                    right: "5%",
-                    "margin-top": "-20px",
-                  }}
-                  class="fas fa-search"
-                ></i> */}
-              {/* </div>
-
-              <br /> */}
-              {/* <h4>
-                <strong>Subject</strong>
-              </h4>
-              <div>
-                <input
-                  type="search"
-                  class="form-control rounded"
-                  placeholder="e.g. Mathematics"
-                  aria-label="Search"
-                  aria-describedby="search-addon"
-                />
-
-                <i
-                  style={{
-                    position: "absolute",
-                    right: "5%",
-                    marginTop:"-25px",
-                  }}
-                  class="fas fa-search"
-                ></i>
-              </div> */}
-
+              <br />
               <h4>
                 <strong>Company</strong>
               </h4>
               <div>
                 <input
                   type="search"
+                  onChange={e => setCompany(e.target.value)}
                   class="form-control rounded"
                   placeholder="e.g. Google"
                   aria-label="Search"
@@ -191,44 +167,6 @@ document.addEventListener('keydown', function(e){
               </div>
 
               <br />
-
-
-
-              {/* <h4>
-                <strong>Starting Date</strong>
-              </h4>
-              <input type="date" size="30" class="form-control" />
-
-              <br /> */}
-
-              {/* <select class="form-select">
-                <option selected>
-                  <strong>Type</strong>
-                </option>
-                <option value="1">Part time</option>
-                <option value="2">Full time</option>
-              </select>
-
-              <br />
-              <select class="form-select">
-                <option selected>
-                  <strong>Duration</strong>
-                </option>
-                <option value="1">1 Week</option>
-                <option value="2">2 Week</option>
-                <option value="3">3 Week</option>
-                <option value="4">4 Week</option>
-                <option value="5">5 Week</option>
-                <option value="6">6 Week</option>
-                <option value="7">7 Week</option>
-                <option value="8">8 Week</option>
-                <option value="9">9 Week</option>
-                <option value="10">10 Week</option>
-                <option value="11">11 Week</option>
-                <option value="12">12 Week</option>
-              </select>
-
-              <br /> */}
 
               <div class="container">
                 <ul class="ks-cboxtags">
@@ -251,23 +189,6 @@ document.addEventListener('keydown', function(e){
                   </li>
                 </ul>
               </div>
-
-              <br />
-
-              {/* <select class="form-select">
-                <option selected>
-                  <strong>Salary</strong>
-                </option>
-                <option value="0">Rs. 0</option>
-                <option value="100">Rs. 100</option>
-                <option value="1000">Rs. 1000</option>
-                <option value="3000">Rs. 3000</option>
-                <option value="5000">Rs. 5000</option>
-                <option value="7000">Rs. 7000</option>
-                <option value="10000">Rs. 10000</option>
-                <option value="15000">Rs. 15000</option>
-                
-              </select> */}
 
               <br />
 
@@ -409,8 +330,8 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.InternshipData.map((e) => 
-            ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "Remote") || (WkTypePT === true && e.Type === "PT")) 
+            {InternshipData.InternshipData.filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase())).map((e) => 
+              ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "Remote") || (WkTypePT === true && e.Type === "PT")) 
             && 
             (<div class="box2">
               <a href="/Company">
