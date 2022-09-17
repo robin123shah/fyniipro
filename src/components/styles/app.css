@@ -9,20 +9,19 @@
   min-height: 100vh;
 }
 .register-right{
-  flex: 5 1;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: inherit;
-    position: relative;
+    
+    background-color: blue;
     width: 67%;
+  height: 100vh;
+  }
+  .register-ri{
+    display: flex;
+    position: relative;
+    background-color: black;
 }
+
 .onImage {
   font-size: 50px;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
   font-variant: small-caps;
   font-family: 'Roboto Slab', serif;
 
@@ -32,7 +31,7 @@
   align-items: center;  
   margin-left: 100px;
   margin-right: 180px;
-
+  /* background-color: blueviolet; */
   margin-top: 50px;
   /* margin: 70px; */
   color: rgb(8, 47, 61);
@@ -42,6 +41,7 @@
 form{
   padding: 20px 30px;
   border-radius: 10px;
+  height: 100vh;
   }
 
 .Style1_button{
@@ -81,10 +81,27 @@ button{
   align-items: center;
 }
 
-@media screen and (max-width:"500px") {
+/* @media screen and (max-width:"500px") {
   form {
     background-color: white;
     padding: 0px 60px;
     border-radius: 10px;
+} */
+
+/* @media screen and (max-width:768px) {
+  .register-right{
+    display: none;
+  }
+  .register-left{
+    width:100%
+  }
 }
-}
+@media screen and (max-width: 426px) {
+  .register-right{
+    display: none;
+  }
+  .register-left{
+    width: 100%;
+  }
+} */
+
