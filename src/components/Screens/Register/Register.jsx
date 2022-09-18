@@ -1,9 +1,10 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
-import "../../styles/app.css";
+import '../../Screens/Register/register.css'
+// import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
-import "../Courses/course.css";
-import '../../styles/style.css';
+// import "../Courses/course.css";
+// import '../../styles/style.css';
 import GoogleButton from 'react-google-button'
 
 
@@ -23,7 +24,6 @@ const Register = () => {
       id: 1,
       name: "username",
       type: "name",
-      // placeholder: "Name",
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
       label: "Name",
@@ -34,33 +34,14 @@ const Register = () => {
       id: 2,
       name: "email",
       type: "email",
-      // placeholder: "Email",
       errorMessage: "It should be a valid email address!",
       label: "Email",
       required: true,
     },
-    // {
-    //   id: 3,
-    //   name: "number",
-    //   type: "number",
-    //   placeholder: "99999 99999",
-    //   errorMessage: "Number must be Valid!",
-    //   label: "Phone number",
-    //   required: true,
-    // },
-    // {
-    //   id: 4,
-    //   name: "birthday",
-    //   type: "date",
-    //   placeholder: "Birthday",
-    //   label: "DOB",
-    //   required: true
-    // },
     {
       id: 5,
       name: "password",
       type: "password",
-      // placeholder: "Password",
       errorMessage:
         "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
       label: "Create Password",
@@ -71,7 +52,6 @@ const Register = () => {
       id: 6,
       name: "confirmPassword",
       type: "password",
-      // placeholder: "Confirm Password",
       errorMessage: "Passwords don't match!",
       label: "Confirm Password",
       pattern: values.password,
@@ -99,30 +79,13 @@ const Register = () => {
 
   return (
     <div className="app">
-      {/* <img
-          style={{
-            "margin":"15px auto",
-            width: "120px",
-            // height: "38px",
-            // overflow: "hidden",
-
-          }}
-          href="/Home"
-          alt="img"
-          src={require("./logo.png")}
-        /> */}
       <div className="register-left">
         <form onSubmit={handleSubmit}>
-      
-
         <h2 className="Register_h2">
           Create Your Profile
         </h2>
-        {/* <h4 className="Register_h4">
-          Get started with Fynii
-        </h4> */}
-
-        <GoogleButton onClick={onGoogleRegister} className="google-button"/>
+        <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div>
+       
 
         <div class="my-12 border-b text-center">
               <div
@@ -141,7 +104,7 @@ const Register = () => {
           />
         ))}
         <button className="Style1_button">Next</button>
-        Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a>
+        <span>Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a></span>
       </form>
       </div>
       <div className="register-right">

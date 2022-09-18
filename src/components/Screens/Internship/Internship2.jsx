@@ -259,11 +259,17 @@ export default function Intership() {
 
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
-              <div>
-                <div style={{height:"80px"}}><img style={{position:"absolute","width":"80px","max-width":"100%","left":"82%","objectFit":"cover"}} src = {e.img_src} alt = {e.alt} /></div>
-                <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
-                <p class="big">{e.Company}</p>
+              <div style={{ }}>
+              <div style={{display:"flex", justifyContent :'space-between', alignItems: 'center', width: '100%',flexDirection:"row-reverse"}}>
+                <div style={{height:"80px"}}>
+                  <img style={{"width":"80px","max-width":"100%","left":"82%","objectFit":"cover"}} src = {e.img_src} alt = {e.alt} />
+                </div>
 
+                <div>
+                  <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
+                  <p class="big">{e.Company}</p>
+                </div>
+                </div>
                 <hr />
 
                 <div class="row">

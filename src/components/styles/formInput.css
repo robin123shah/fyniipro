@@ -1,45 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
-@media screen and (min-width:700px) {
+
     .formInput {
         display: flex;
-        flex-direction: row;
-        width: 442px;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         margin-top: 10px;
-        flex-wrap: wrap;
     }
-    .formInput>input {
-        border: none;
-        width: 50%;
-    }
+
     .formlabel{
         font-size: 17px;
         color: darkcyan;
-        margin: auto 0;
+        margin-right: 10px;
     }
-
-}
-
-@media screen and (max-width:700px) {
-    .formInput {
+    span{
         display: flex;
-        flex-direction: column;
-        width: 280px;
     }
-    .formlabel{
-        font-size: 17px;
-        color: darkcyan;
-    }
-}
-
 
 input{
     border-radius: 5px;
     border: 1px solid transparent;
     background-color: #E8F0fe;
     font-size: 16px;
-}
+    width: 100%;
 
+}
 
   input[type="submit"] {
     background-color: DodgerBlue;
@@ -79,7 +63,6 @@ input:invalid[focused="true"] ~ span{
 .Register_h2 {
     margin: 50px; 
     text-align: center;
-
     font-family: 'Roboto Slab', serif;
     font-weight:bolder;
     margin-top:45px;
@@ -97,14 +80,12 @@ input:invalid[focused="true"] ~ span{
 
 .sign-button {
     font-style: italic;
-    margin: 70px 70px;
-    display: block;
     text-align: center;
-    margin-top: 20px;
-    border: 2px solid red;
+    margin-left: 10px;
     cursor: pointer;
     color: rgb(82, 133, 43);
 }
+
 .my-12{margin-top:3rem;margin-bottom:3rem}
 
 .border-b{border-bottom-width:1px}
@@ -129,17 +110,43 @@ input:invalid[focused="true"] ~ span{
 
 .translate-y-1{--transform-translate-y:0.25rem}
 
-@media screen and (max-width : 500px) {
-    .formInput{
-        width: 220px;
-
+@media screen and (max-width:480px){
+    form{
+        width: 100%;
     }
-    .Register_h2 {
-        font-size: 25px; 
-        margin: 10px; 
+    .formInput {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: grid;
     }
-    .Register_h4 {
-        margin-top:0px;
+    .formlabel{
+        font-size: 17px;
+        color: darkcyan;
+    }
+    span{
+        position: relative;
+        text-align: center;
     }
 }
+/* @media screen and (max-width:768px) {
+    .formInput {
+        display: flex;
+        flex-direction: row;
+        width: 442px;
+        justify-content: space-between;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .formInput>input {
+        border: none;
+        width: 50%;
+    }
+    .formlabel{
+        font-size: 17px;
+        color: darkcyan;
+        margin: auto 0;
+    }
 
+} */

@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
 import DropFormInput from "./DropFormInput";
 import "./yourself.css";
@@ -32,48 +31,6 @@ const Yourself = () => {
         { label: "Fresher", value: 2 },
       ],
     },
-    // {
-    //   id: 2,
-    //   label: "Your Education*",
-    //   name: "education_level",
-    //   placeholder: "e.g. : Msc(Maths), MBA",
-    //   errorMessage: "Can't be remain None!",
-    //   required: true,
-    //   actions: [
-    //     { label: "Highter Secondary", value: 1 },
-    //     { label: "Undergraduate", value: 2 },
-    //     { label: "Postgraduate", value: 3 },
-    //     { label: "Ph.D.", value: 4 },
-    //   ],
-    // },
-    // {
-    //   id: 3,
-    //   label: "Your Interests*",
-    //   name: "interests",
-    //   placeholder: "eg: Marketing, Teaching, Engineering",
-    //   errorMessage: "Can't be remain None!",
-    //   required: true,
-    //   actions: [
-    //     { label: "Highter Secondary", value: 1 },
-    //     { label: "Undergraduate", value: 2 },
-    //     { label: "Postgraduate", value: 3 },
-    //     { label: "Ph.D.", value: 4 },
-    //   ],
-    // },
-    // {
-    //   id: 3,
-    //   label: "Are you Looking for*",
-    //   name: "looking_for",
-    //   placeholder: "Select",
-    //   errorMessage: "Can't be remain None!",
-    //   required: true,
-    //   actions: [
-    //     { label: "Job", value: 1 },
-    //     { label: "Internship", value: 2 },
-    //     { label: "Course", value: 3 },
-    //     { label: "Guidance", value: 4 },
-    //   ],
-    // },
   ];
 
   const handleSubmit = (e) => {
@@ -132,35 +89,23 @@ const Yourself = () => {
           Tell us about Yourself?
         </h2>
       <div className="formInput">
-        <label className="formlabel">School/University</label>
+        <label className="formlabel">School/ University</label>
         <input
           name= "college_school"
           type= "name"
-          // placeholder= "School/University"
           pattern= "^[A-Za-z0-9 ]*$"
           // onChange={(e)=>{setcollege_school(e)}}
           onBlur="handleFocus"
         />
         <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
       </div>
-      {/* <div className="formInput">
-        <label className="formlabel">Who are you</label>
-        <input
-          name= "college_school"
-          type= "you_are"
-          // placeholder= "School/University"
-          pattern= "^[A-Za-z0-9 ]*$"
-          // onChange={(e)=>{setcollege_school(e)}}
-          onBlur="handleFocus"
-        />
-        <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
-      </div> */}
       {inputs.map((input) => (
           <DropFormInput
             key={input.id}
             {...input}
             // value={values[input.name]}
             onChange={onChange}
+            className='DropFormInput'
           />
         ))}
       <div className="formInput">
@@ -189,11 +134,6 @@ const Yourself = () => {
       <span className="ErrorSpan">Interests should be 3-50 characters and shouldn't include any special character!</span>
     </div>
     
-        
-        {/* <div className="formInput">
-        <label className="droplabel">Career Objective</label>
-        <textarea name="Career Objective"  className="CareerObjective" pattern="^[A-Za-z0-9 ]{3,50}$" style={{"width":"100%","height":"100px"}} placeholder="Write about you dreams."></textarea>
-        </div> */}
         <button className="Style1_button">Register</button>
       </form>
     </div>
