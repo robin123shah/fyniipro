@@ -21,7 +21,7 @@ const Yourself = () => {
   const inputs = [
     {
       id: 1,
-      label: "Who are you?* ",
+      label: "Who are you? ",
       name: "you_are",
       placeholder: "Select",
       errorMessage: "Can't be remain None!",
@@ -29,6 +29,22 @@ const Yourself = () => {
       actions: [
         { label: "Student", value: 1 },
         { label: "Fresher", value: 2 },
+      ],
+    },
+    {
+      id: 2,
+      label: "Your Interests",
+      name: "your_interests",
+      placeholder: "Select",
+      errorMessage: "Can't be remain None!",
+      required: true,
+      actions: [
+        { label: "Engineering", value: 1 },
+        { label: "Business", value: 2 },
+        { label: "Humanities", value: 3 },
+        { label: "Software", value: 4 },
+        { label: "HR", value: 5 },
+        { label: "Graphic", value: 6 },
       ],
     },
   ];
@@ -99,15 +115,12 @@ const Yourself = () => {
         />
         <span className="ErrorSpan">Name should be 3-50 characters and shouldn't include any special character!</span>
       </div>
-      {inputs.map((input) => (
           <DropFormInput
-            key={input.id}
-            {...input}
-            // value={values[input.name]}
+            key={inputs[0].id}
+            {...inputs[0]}
             onChange={onChange}
             className='DropFormInput'
           />
-        ))}
       <div className="formInput">
         <label className="formlabel">Your Education</label>
         <input
@@ -120,8 +133,16 @@ const Yourself = () => {
         />
         <span className="ErrorSpan">Education should be 3-50 characters and shouldn't include any special character!</span>
       </div>
+
+      <DropFormInput
+            key={inputs[1].id}
+            {...inputs[1]}
+            // value={values[input.name]}
+            onChange={onChange}
+            className='DropFormInput'
+          />
     
-    <div className="formInput">
+    {/* <div className="formInput">
     <label className="formlabel">Your Interests</label>
       <input
         name= "your_interest"
@@ -132,7 +153,7 @@ const Yourself = () => {
         onBlur="handleFocus"
       />
       <span className="ErrorSpan">Interests should be 3-50 characters and shouldn't include any special character!</span>
-    </div>
+    </div> */}
     
         <button className="Style1_button">Register</button>
       </form>
