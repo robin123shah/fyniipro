@@ -335,19 +335,14 @@ document.addEventListener('keydown', function(e){
             && 
             (<div class="box2">
               <a href="/Company">
-              <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                marginBottom: '10px',
-              }}
+              <div 
+              className="box-inside"
               >
 
               <div className="img-box"><img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} /></div>
                <div>
                 <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                 <p class="big">{e.Company}</p>
-
                </div>
               </div>
                 
@@ -361,9 +356,6 @@ document.addEventListener('keydown', function(e){
                     <p>
                       <i class="fa-solid fa-briefcase"></i> {e.Experience} Yrs
                     </p>
-                    <p>
-                      {/* <i class="fa-solid fa-building"></i> {e.About} */}
-                    </p>
                   </div>
                   <div class="col-lg-6">
                     <p>
@@ -375,17 +367,18 @@ document.addEventListener('keydown', function(e){
                   </div>
                 </div>
 
-                <div class="grid-container">
-                  
-                  <a  href={e.Link} rel="noreferrer" target="_blank" class="btnn">
-                    <i class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
-                  </a>
+                <div className="grid-container">
+                  <div className="btnn-content" >
+                    <a  href={e.Link} rel="noreferrer" target="_blank" class="btnn">
+                      <i style={{color:"white"}} class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
+                    </a>
+                  </div>
                  
-                  <div class="btnn">
+                  <div className="btnn">
                     <i class="fa-regular fa-bookmark"></i> Save
                   </div>
                   
-                  <div class="btnn">
+                  <div className="btnn">
                     <i class="fa-solid fa-share-nodes"></i> Share
                   </div>
                 </div>

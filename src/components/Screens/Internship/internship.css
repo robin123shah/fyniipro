@@ -497,6 +497,54 @@ ul.ks-cboxtags {
     }
   }
 
-
-
-
+  .btnn-content{
+    flex-direction: column;
+  }
+  .bigg {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .big {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .img-box{
+    height: 80px;
+    width: 20%;
+  }
+  .img_class {
+    position:absolute;
+    width:80px;
+    max-width: 100%;
+    left:82%;
+    object-fit: cover;
+  }
+  .box-inside{
+    display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+  }
+  
+  @media screen and (max-width:480px) {
+    .bigg{
+      display: flex;
+    }
+    .btnn-content{
+      display: grid;
+    }
+    .box-inside{
+      display: flex;
+      flex-direction: column;
+    }
+    .img-box{
+      width: fit-content;
+    }
+  }
+  @media screen and (max-width:770px) {
+    .bigg{
+      font-size: 1rem;
+    }
+  }
+  

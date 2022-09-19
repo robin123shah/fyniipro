@@ -47,7 +47,20 @@
   }
 }
 
-
+@media screen and (max-width:480px) {
+  *{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .box-inside{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-box{
+    width: fit-content;
+  }
+}
 
 .row {
   --bs-gutter-x: 1.5rem;
@@ -108,6 +121,13 @@
   border: 2px solid #96dbe2;
   margin: 1%;
   padding: 2%;
+}
+.box-inside{
+  display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .box2:hover {
@@ -496,6 +516,7 @@ ul.ks-cboxtags {
 
   .img-box{
     height: 80px;
+    width: 20%;
   }
   .img_class {
     position:absolute;
@@ -674,3 +695,4 @@ ul.ks-cboxtags {
  justify-content: center;
  align-items: center;
 }
+

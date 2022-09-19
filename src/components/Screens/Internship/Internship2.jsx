@@ -259,12 +259,13 @@ export default function Intership() {
 
           <div class="col-lg-8">
             {InternshipData.map((e) => (<div class="box2">
-              <div style={{ }}>
-              <div style={{display:"flex", justifyContent :'space-between', alignItems: 'center', width: '100%',flexDirection:"row-reverse"}}>
-                <div style={{height:"80px"}}>
-                  <img style={{"width":"80px","max-width":"100%","left":"82%","objectFit":"cover"}} src = {e.img_src} alt = {e.alt} />
+              <a href="/Company">
+              <div 
+              className="box-inside"
+              >
+                <div className="img-box">
+                  <img className="img_class" src = {e.img_src} alt = {e.alt} />
                 </div>
-
                 <div>
                   <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
                   <p class="big">{e.Company}</p>
@@ -280,9 +281,6 @@ export default function Intership() {
                     <p>
                       <i class="fa-solid fa-briefcase"></i> {e.Stipend}
                     </p>
-                    <p>
-                      {/* <i class="fa-solid fa-building"></i> {e.About} */}
-                    </p>
                   </div>
                   <div class="col-lg-6">
                     <p>
@@ -295,17 +293,19 @@ export default function Intership() {
                 </div>
 
                 <div class="grid-container">
-                <a  href={e.Link} rel="noreferrer" target="_blank" class="btnn">
-                    <i class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
+                <div className="btnn-content">
+                  <a href={e.Link} rel="noreferrer" target="_blank" class="btnn">
+                    <i style={{color:"white"}} class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
                   </a>
-                  <div class="btnn">
+                </div>
+                  <div className="btnn">
                     <i class="fa-regular fa-bookmark"></i> Save
                   </div>
-                  <div onClick={openModal} class="btnn">
+                  <div onClick={openModal} className="btnn">
                     <i class="fa-solid fa-share-nodes"></i> Share
                   </div>
                 </div>
-              </div>
+                </a>
             </div>))}
           </div>
         </div>

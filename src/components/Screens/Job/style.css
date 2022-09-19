@@ -802,10 +802,21 @@ input[type="submit"] {
   background-color: rgba(42, 4, 4, 0.8);
   color: #fff;
   text-align: center;
-  padding: 12px 0;
+  /* padding: 12px 0; */
   border-radius: 5%;
 }
-
+.btnn-content{
+  /* display: flex; */
+  flex-direction: column;
+}
+.btnn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  
+}
 .btnn:hover {
   background-color: rgb(122, 228, 129);
   color: #000;
@@ -914,18 +925,15 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:480px) {
   .bigg{
-
+    display: flex;
+  }
+  .btnn-content{
+    display: grid;
   }
 }
 
-
-@media screen and (max-width:1000px) {
-  .bigg{
-
-  }
-}
 
 @media screen and (max-width:770px) {
   .bigg{
