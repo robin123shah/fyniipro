@@ -658,3 +658,19 @@ ul.ks-cboxtags {
   color: #fff;
   background: #7d2ae8;
 }
+.form-check{
+  display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+
+}
+.form-check-input{
+  width: auto;
+}
+.form-check-label{
+ justify-content: center;
+ align-items: center;
+}
