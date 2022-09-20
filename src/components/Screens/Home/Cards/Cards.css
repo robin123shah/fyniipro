@@ -62,7 +62,7 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
-    /* background-color: rgb(150, 222, 178); */
+    background-color: rgb(150, 222, 178);
   }
   
   .cards__item__pic-wrap {
