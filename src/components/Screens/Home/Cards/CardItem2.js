@@ -26,7 +26,7 @@ function CardItem2(props) {
               <img className="cards__item__img" alt="img" src={props.src} />
             </figure>
             <div
-              style={{ backgroundColor: "#fff" }}
+              style={{ backgroundColor: "#96DEB2" }}
               className="cards__item__info"
             >
               <h5 style={{"whiteSpace":"pre-line"}} className="cards__item__text">{props.text}</h5>

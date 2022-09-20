@@ -303,8 +303,8 @@ document.addEventListener('keydown', function(e){
                 <br />
 
                 <h4>How would you like to get informed?</h4>
-                <div class="container">
-                  <ul class="ks-cboxtags">
+                <div className="container">
+                  <ul className="ks-cboxtags">
                     <li>
                       <input type="checkbox" id="checkboxNine" /><label
                         for="checkboxNine"
@@ -321,7 +321,7 @@ document.addEventListener('keydown', function(e){
                   </ul>
                 </div>
 
-                <div class="action">
+                <div className="action">
                   <button class="btn__purple">Submit</button>
                 </div>
               </div>

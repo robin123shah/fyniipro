@@ -1,7 +1,6 @@
 .cards {
     padding: 4rem;
-    background: #96DEB2;
-    /* border-radius: 0px 0px 30px 30px; */
+    background: #fff;
   }
   .cards__container {
     display: flex;
@@ -86,7 +85,7 @@
     max-width: calc((100%) - 60px);
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
+    color: black;
     background-color: #1f98f4;
     box-sizing: border-box;
   }
