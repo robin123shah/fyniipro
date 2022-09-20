@@ -59,20 +59,19 @@ function Navbar ({showNavTab, setshowNavTab}) {
         style={{ 
           backgroundColor: localStorage.getItem("activeNav") === "Home" ? "rgb(71, 153, 51)" : "",
           padding: localStorage.getItem("activeNav") === "Home" ? "10px": "",
+          width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
           borderRadius: localStorage.getItem("activeNav") === "Home" ?  "5px" : "",
           fontWeight: localStorage.getItem("activeNav") === "Home" ? "bold" : "",
         }}
           
         >
-          <Link to="/Home"><a className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Home")}} style={{ color: localStorage.getItem("activeNav") === "Home" ? "white" :"black"}}>
+          <a href="/home" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Home")}} style={{ color: localStorage.getItem("activeNav") === "Home" ? "white" :"black"}}>
             Home
           </a>
-         </Link>
         </li>
         <li className="nav__item"
                     style={{ 
-            
-                      backgroundColor: localStorage.getItem("activeNav") === "Job" ? "rgb(71, 153, 51)" : "",
+                      // backgroundColor: localStorage.getItem("activeNav") === "Job" ? "rgb(71, 153, 51)" : "",
                       padding: localStorage.getItem("activeNav") === "Job" ? "10px": "",
                       borderRadius: localStorage.getItem("activeNav") === "Job" ?  "5px" : "",
                       fontWeight: localStorage.getItem("activeNav") === "Job" ? "bold" : "",
@@ -89,6 +88,9 @@ function Navbar ({showNavTab, setshowNavTab}) {
             padding: localStorage.getItem("activeNav") === "Internship" ? "10px": "",
             borderRadius: localStorage.getItem("activeNav") === "Internship" ?  "5px" : "",
             fontWeight: localStorage.getItem("activeNav") === "Internship" ? "bold" : "",
+            width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
+            alignitems: localStorage.getItem("activeNav") === "Home" ? "center": "",
+
           }}
         >
           <a href="/Internship" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Internship")}} style={{ color: localStorage.getItem("activeNav") === "Internship" ? "white" :"black"}}>
@@ -127,8 +129,8 @@ function Navbar ({showNavTab, setshowNavTab}) {
           </div>
         </li>
         :
-        <li className="nav_item">
-          <button style={{"margin":"0","backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/Register")}} class="dropbtn">
+        <li className="nav__item">
+          <button style={{"backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/Register")}} class="dropbtn">
             Sign Up
           </button>
         </li>

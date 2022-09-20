@@ -84,6 +84,14 @@
         width: 100%;
 
       }
+      .yourself-left .css-1s2u09g-control{
+        flex-wrap: nowrap;
+
+      }
+      .yourself-left .css-1hb7zxy-IndicatorsContainer{
+        width: auto;
+
+      }
       form{
           width: 100;
       }

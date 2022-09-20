@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef} from "react";
 import "./HeroSection.css";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
-
 import Cards from "./Cards/Cards";
 import Footer from "../Footer/Footer";
-// import Navbar from "../../Navigation/Navbar/Navbar";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
+
+
 
 export default function Home() {
   // let navigation = useNavigate();

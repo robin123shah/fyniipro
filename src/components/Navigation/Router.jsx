@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Suspense} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "../Screens/Register/Register";
 import Yourself from "../Screens/Register/Yourself";
@@ -23,6 +23,9 @@ import NextPage4 from "../Screens/nextpage/nextpage4";
 import NextPage5 from "../Screens/nextpage/nextpage5";
 // import ButtonPage from '../Screens/Internship/Modal/ButtonPage';
 // import About from "../Screens/About/About"
+
+// const Customer = React.lazy(() => import("./Customer.js"));
+// const Admin = React.lazy(() => import("./Admin.js"));
 const Router = () => {
   return (
     <BrowserRouter>

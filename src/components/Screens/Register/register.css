@@ -1,3 +1,5 @@
+
+
 .register-left{
     width: 33%;
     min-height: 100vh;
@@ -78,7 +80,7 @@
 span{
     justify-content: center;
 }
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:480px) {s
     form{
         width: 100;
     }
