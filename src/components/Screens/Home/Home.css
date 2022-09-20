@@ -36,6 +36,11 @@
 .Card-Left {
   flex: 1 1 0;
 }
+.Card-Left-content{
+  height: 50%; 
+  width: 50%;
+  margin-left: 50%;
+}
 
 #slider2 {
   display: inline-flex;
@@ -419,6 +424,20 @@
     border-radius: 24px;
     margin-top: 0px;
   }
+  .Card-Left {
+    flex: 1  0;
+   
+  }
+  .Card-Left-content{
+    height: 50%; 
+    width: 50%;
+    margin-left: 50%;
+  }
+  .Card-Right{
+    width: 100%;
+  }
+  
+
 }
 
 @media screen and (max-width: 400px) {

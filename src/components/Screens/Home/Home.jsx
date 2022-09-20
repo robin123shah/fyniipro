@@ -110,7 +110,7 @@ export default function Home() {
 
         <div className="Card-Left">
           <img
-            style={{ height: "50%", width: "50%", "margin-left": "50%" }}
+            className="Card-Left-content"
             src={require("./logo2.jpg")}
             alt="img"
           />

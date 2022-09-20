@@ -19,14 +19,18 @@ a {
   text-decoration: none;
   color: '#000';
 }
-
-
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px,4px);
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -4px);
+}
 .nav2 {
   display: flex;
   position: absolute;
   align-items: center;
   justify-content: space-around;
-  height: 8vh;
+  height: 10vh;
   background: #fff;
   position: fixed;
   top: 0;
@@ -51,6 +55,7 @@ a {
   border-width: 2px;
   border-color: black;
   outline: none;
+  margin-right: 10%;
 }
 
 /* @media screen and (max-width: 1100px) {
@@ -297,7 +302,7 @@ a.nav__link {
 
 @media screen and (max-width:600px) {
   .top-input1{
-    width: 130px;
+    width: 181px;
   }
   .top-input1{
     margin-left: 17%;
@@ -308,15 +313,14 @@ a.nav__link {
   .top-input1{
     margin-left: 20%;
   }
+  .top-input1 nav__item{
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width:400px) {
   .top-input1{
-    margin-left: 30%;
+    margin-left: 32%;
   }
 }
-@media screen and (max-width:300px) {
-  .top-input1{
-    margin-left: 35%;
-  }
-}
+
