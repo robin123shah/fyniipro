@@ -146,7 +146,7 @@ a.nav__link {
 } */
 
 .dropbtn {
-  width: 75%;
+  /* width: 75%; */
   height: 50px;
   margin: 20px;
   padding: 10px;
@@ -293,13 +293,22 @@ a.nav__link {
   }
 } */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { 
+
   .nav__toggler {
     display: block;
     cursor: pointer;
-    width: auto;
   }
   
+  /* .nav__brand {
+    position: absolute;
+    left: 5%;
+  } */
+  .dropdown-content{
+    bottom: 100px;
+  }
+
+
   .nav2 {
     /* position: relative; */
     padding-right: 2rem;
@@ -309,9 +318,11 @@ a.nav__link {
 }
 .dropbtn{
   width: 70%;
-  margin: 20px;
+  margin: 0;
+    margin-left: 2rem;
 }
   .nav__menu {
+    justify-content: flex-start;
     position: fixed;
     top: 0;
     height: 100vh;
@@ -321,6 +332,9 @@ a.nav__link {
     transform: translateX(100%);
     transition: 0.5s ease-in;
     background-color: #96DEB2;
+  }
+  a.nav__link {
+    padding-left: 3rem;
   }
   .nav__brand {
     position: relative;
@@ -333,11 +347,43 @@ a.nav__link {
   .nav__brand {
     left: 2%;
   }
+  .top-input1{
+    margin-left: 25%;
+  }
 }
 
 @media screen and (max-width:400px) {
   .top-input1{
-    margin-left: 32%;
+    margin-left: 18%;
+  }
+  .nav__menu{
+    align-items: center;
+    justify-content: flex-start;
   }
 }
+@media screen and (max-width:360px) {
+  .nav__brand {
+    left: 5%;
+  }
+  .top-input1{
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width:300px) {
+  .nav__brand {
+    left: 4%;
+  }
+  .top-input1{
+    margin-left: 6%;
+  }
+  
+}
 
+@media screen and (max-width:250px) {
+  .nav__brand {
+    left: 4%;
+  }
+  .top-input1{
+    margin-left: 6%;
+  }
+}

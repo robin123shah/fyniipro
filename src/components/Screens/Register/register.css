@@ -80,7 +80,10 @@
 span{
     justify-content: center;
 }
-  @media screen and (max-width:480px) {s
+  @media screen and (max-width:480px) {
+    *{
+      width:100%;
+    }
     form{
         width: 100;
     }

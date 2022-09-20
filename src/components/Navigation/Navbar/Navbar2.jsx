@@ -59,7 +59,8 @@ function Navbar ({showNavTab, setshowNavTab}) {
         style={{ 
           backgroundColor: localStorage.getItem("activeNav") === "Home" ? "rgb(71, 153, 51)" : "",
           padding: localStorage.getItem("activeNav") === "Home" ? "10px": "",
-          width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
+          // paddingLeft: localStorage.getItem("activeNav") === "Home" ? "0px": "",
+          // width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
           borderRadius: localStorage.getItem("activeNav") === "Home" ?  "5px" : "",
           fontWeight: localStorage.getItem("activeNav") === "Home" ? "bold" : "",
         }}
@@ -71,7 +72,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         </li>
         <li className="nav__item"
                     style={{ 
-                      // backgroundColor: localStorage.getItem("activeNav") === "Job" ? "rgb(71, 153, 51)" : "",
+                      backgroundColor: localStorage.getItem("activeNav") === "Job" ? "rgb(71, 153, 51)" : "",
                       padding: localStorage.getItem("activeNav") === "Job" ? "10px": "",
                       borderRadius: localStorage.getItem("activeNav") === "Job" ?  "5px" : "",
                       fontWeight: localStorage.getItem("activeNav") === "Job" ? "bold" : "",
@@ -88,7 +89,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
             padding: localStorage.getItem("activeNav") === "Internship" ? "10px": "",
             borderRadius: localStorage.getItem("activeNav") === "Internship" ?  "5px" : "",
             fontWeight: localStorage.getItem("activeNav") === "Internship" ? "bold" : "",
-            width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
+            // width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
             alignitems: localStorage.getItem("activeNav") === "Home" ? "center": "",
 
           }}

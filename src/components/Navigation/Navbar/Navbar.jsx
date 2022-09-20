@@ -59,6 +59,7 @@ function Navbar() {
         style={{ 
           backgroundColor: localStorage.getItem("activeNav") === "Home" ? "rgb(71, 153, 51)" : "",
           padding: localStorage.getItem("activeNav") === "Home" ? "10px": "",
+          paddingLeft:  "0px",
           borderRadius: localStorage.getItem("activeNav") === "Home" ?  "5px" : "",
           fontWeight: localStorage.getItem("activeNav") === "Home" ? "bold" : "",
         }}
