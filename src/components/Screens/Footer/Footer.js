@@ -4,7 +4,8 @@ import logo from "./startuplogo.png"
 import {
   Box,
   Container,
-  Row,
+  Row1,
+  Row2,
   Column,
   FooterLink,
   Heading,
@@ -15,34 +16,27 @@ const Footer = () => {
   return (
     <Box>
       <Container>
-        <Row>
-          <Column>
+        <Row1 className="footer">
+          <Column className="">
             <Heading>Company</Heading>
             <FooterLink href="/About">About</FooterLink>
             <FooterLink href="#">Career</FooterLink>
+            <FooterLink href="/Help">Help Center</FooterLink>
             <FooterLink href="#">Privacy Policy</FooterLink>
             <FooterLink href="#">Terms and Conditions</FooterLink>
+
           </Column>
-          {/* <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Blogging</FooterLink>
-            <FooterLink href="#">Jobs</FooterLink>
-            <FooterLink href="#">Internship</FooterLink>
-            <FooterLink href="#">Courses</FooterLink>
-          </Column> */}
+         
           <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink>
+            <Heading>Employer</Heading>
+            {/* <FooterLink>
               <i class="fa fa-phone" aria-hidden="true"></i> +91 9650693384
-            </FooterLink>
-            <FooterLink href="/Help">Help Center</FooterLink>
-
-            {/* <FooterLink style={{"textAlign":"justify","marginTop":"20px"}}>
-              House No. 481, Second Floor, Shiv Market BLK-WP, Village Wazirpur, Ashok Vihar, Delhi-110052
             </FooterLink> */}
+            
 
           </Column>
-
+          </Row1>
+          <Row2>
           <ColumnFollow >
             <Heading  >Follow us</Heading>
             
@@ -108,7 +102,7 @@ const Footer = () => {
           <FooterLink><img class="img_class2" style={{"marginLeft":"-10px"}}src={logo} alt="img" /></FooterLink>
 
           </Column>
-        </Row>
+        </Row2>
       </Container>
       <hr />
       <h1

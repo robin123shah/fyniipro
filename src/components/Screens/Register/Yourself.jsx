@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DropFormInput from "./DropFormInput";
 import "./yourself.css";
+import Select from "react-select";
 
 const Yourself = () => {
   const [values, setValues] = useState({
@@ -9,7 +10,8 @@ const Yourself = () => {
     education_level: "",
     looking_for: "",
   });
-  
+  const [selectedOptions, setSelectedOptions] = useState();
+
   // const [college_school,setcollege_school] = useState("")
 
   // const [carObj,setcarObj] = useState("")
@@ -17,28 +19,7 @@ const Yourself = () => {
   const detail = JSON.parse(localStorage.getItem("details"));
 
   let navigate = useNavigate();
-
-  const inputs = [
-    {
-      id: 1,
-      label: "Who are you? ",
-      name: "you_are",
-      placeholder: "Select",
-      errorMessage: "Can't be remain None!",
-      required: true,
-      actions: [
-        { label: "Student", value: 1 },
-        { label: "Fresher", value: 2 },
-      ],
-    },
-    {
-      id: 2,
-      label: "Your Interests",
-      name: "your_interests",
-      placeholder: "Select",
-      errorMessage: "Can't be remain None!",
-      required: true,
-      actions: [
+  const optionList = [
         { label: "Web Development", value: 1 },
         { label: "Quantum Computing", value: 2 },
         { label: "Teaching", value: 3 },
@@ -124,10 +105,36 @@ const Yourself = () => {
         { label: "Medical Profession", value: 84 },
         { label: "College Professor", value: 85 },
         { label: "Environmental Science", value: 86 },
-      ],
-    },
   ];
 
+  const inputs = [
+    {
+      id: 1,
+      label: "Who are you? ",
+      name: "you_are",
+      placeholder: "Select",
+      errorMessage: "Can't be remain None!",
+      required: true,
+      actions: [
+        { label: "Student", value: 1 },
+        { label: "Fresher", value: 2 },
+      ],
+    },
+    // {
+    //   id: 2,
+    //   label: "Your Interests",
+    //   name: "your_interests",
+    //   placeholder: "Select",
+    //   errorMessage: "Can't be remain None!",
+    //   required: true,
+    //   actions: [
+        
+    //   ],
+    // },
+  ];
+  function handleSelect(data) {
+    setSelectedOptions(data);
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
     var SignUPAPI = "https://fynii.herokuapp.com/insertuser";
@@ -213,13 +220,26 @@ const Yourself = () => {
         <span className="ErrorSpan">Education should be 3-50 characters and shouldn't include any special character!</span>
       </div>
 
-      <DropFormInput
+      {/* <DropFormInput
             key={inputs[1].id}
             {...inputs[1]}
             // value={values[input.name]}
             onChange={onChange}
             className='DropFormInput'
-          />
+          /> */}
+          <div className="drop-app">
+      <h2>Choose your color</h2>
+      <div className="dropdown-app-container">
+        <Select
+          options={optionList}
+          placeholder="Select color"
+          value={selectedOptions}
+          onChange={handleSelect}
+          isSearchable={true}
+          isMulti
+        />
+      </div>
+    </div>
     
     {/* <div className="formInput">
     <label className="formlabel">Your Interests</label>

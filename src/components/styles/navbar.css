@@ -80,7 +80,7 @@ a.nav__link {
   width: 2.5rem;
   height: 0.2rem;
   margin: 0.4rem;
-  background: rgb(204, 204, 204);
+  background: rgb(20, 18, 18);
   transition: 0.3s ease-in;
 }
 
@@ -125,7 +125,7 @@ a.nav__link {
   transform: translateX(0%);
 }
 
- Toggle Icon Animation 
+ Toggle .nav__toggler Animation 
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-4px, 5px);

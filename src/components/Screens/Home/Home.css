@@ -392,14 +392,13 @@
     padding: 4px 29px;
     border-radius: 24px;
     margin-top: 1rem;
-    width: 95%;
+    width: 45%;
   }
   #slider2{
     display: none;
   }
   
 }
-
 @media screen and (max-width: 480px) {
   .msg-col02 {
     width: 160px;
@@ -425,12 +424,9 @@
     font-size: 1.3rem;
     width: 90%;
   } 
-  /* .msg-col02m a {
-    font-size: 12px;
-    padding: 4px 29px;
-    border-radius: 24px;
-    margin-top: 0px;
-  } */
+  .msg-col02m a{
+    width:30%
+  }
   .Card-Left{
     display: none;
   }
@@ -479,12 +475,9 @@
     font-size: 1rem;
     width: 90%;
   } 
-  /* .msg-col02m a {
-    font-size: 10px;
-    padding: 3px 25px;
-    border-radius: 22px;
-    margin-top: 0px;
-  } */
+  .msg-col02m a{
+    width:30%
+  }
   .Card-Left{
     display: none;
   }

@@ -215,7 +215,7 @@
     }
     .cards__item2 {
       display: flex;
-      flex: 0 0 45%;
+      flex: 0 0 35%;
       margin: 0 1rem;
       border-radius: 5px;
       margin-bottom: 5px;
