@@ -385,11 +385,11 @@
     height: auto;
     position: relative;
     margin-top: 0;
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
   .msg-col02m a {
     font-size: 12px;
-    padding: 4px 29px;
+    padding: 4px 15px;
     border-radius: 24px;
     margin-top: 1rem;
     width: 45%;
@@ -425,7 +425,7 @@
     width: 90%;
   } 
   .msg-col02m a{
-    width:30%
+    width:23%
   }
   .Card-Left{
     display: none;

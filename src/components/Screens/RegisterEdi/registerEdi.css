@@ -1,0 +1,109 @@
+
+.registerEdi-left{
+  width: 33%;
+  min-height: auto;
+}
+
+.registerEdi-right{
+    
+    background-color: rgb(233, 33, 123);
+    width: 67%;
+    min-height: auto;
+  }
+
+
+.registerEdi-onImage {
+  font-size: 50px;
+  font-variant: small-caps;
+  font-family: 'Roboto Slab', serif;
+
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;  
+  margin-left: 100px;
+  margin-right: 180px;
+  /* background-color: blueviolet; */
+  margin-top: 50px;
+  /* margin: 70px; */
+  color: rgb(8, 47, 61);
+
+
+}
+.form{
+  padding: 20px 30px;
+  border-radius: 10px;
+  height: auto;
+  }
+
+.registerEdi-Style1_button{
+    width: 80%;
+    margin-left: 40px;
+    margin-right: 10px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+
+}
+.sign{
+  text-align: center;
+  align-items: center;
+}
+span{
+  justify-content: center;
+}
+@media screen and (max-width:480px) {
+  *{
+    width:100%;
+  }
+  form{
+      width: 100%;
+  }
+  .registerEdi-left{
+      width: 100%;
+  }
+  .google{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .google span {
+    display: block;
+    color: white;
+  }
+  .registerEdi-right{
+      display: none;
+  }
+
+}
+
+
+.google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

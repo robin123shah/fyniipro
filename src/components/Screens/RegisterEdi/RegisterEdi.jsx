@@ -1,9 +1,7 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
-import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
-import "../Courses/course.css";
-import "../../styles/style.css";
+import '../RegisterEdi/registerEdi.css'
 import GoogleButton from "react-google-button";
 
 const RegisterEdi = () => {
@@ -13,7 +11,7 @@ const RegisterEdi = () => {
     email: "",
     number: "",
     birthday: "",
-    password: "",
+    createPassword: "",
     confirmPassword: "",
   });
 
@@ -47,21 +45,15 @@ const RegisterEdi = () => {
       label: "Phone number",
       required: true,
     },
-    {
-      id: 4,
-      name: "Birthday",
-      type: "date",
-      placeholder: "Birthday",
-      label: "DOB",
-    },
+    
     {
       id: 5,
-      name: "password",
+      name: "createPassword",
       type: "password",
-      placeholder: "Password",
+      placeholder: "Create Password",
       errorMessage:
         "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
-      label: "Password",
+      label: "Create Password",
       pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
@@ -97,28 +89,16 @@ const RegisterEdi = () => {
 
   return (
     <div className="app">
-      {/* <img
-          style={{
-            "margin":"15px auto",
-            width: "120px",
-            // height: "38px",
-            // overflow: "hidden",
+      <div className="registerEdi-left">
+        <form onSubmit={handleSubmit}>
+        <h2 className="Register_h2">Create Your Expert Profile</h2>
 
-          }}
-          href="/Home"
-          alt="img"
-          src={require("./logo.png")}
-        /> */}
-      <form onSubmit={handleSubmit}>
-        <h2 className="Register_h2">Registration</h2>
-        <h4 className="Register_h4">Get started with Fynii</h4>
-
-        <GoogleButton onClick={onGoogleRegister} style={{ margin: "auto" }} />
+        <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div>
 
         <div class="my-12 border-b text-center">
-          <div class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1">
+          {/* <div class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1">
             Or sign up with e-mail
-          </div>
+          </div> */}
         </div>
 
         {inputs.map((input) => (
@@ -129,11 +109,14 @@ const RegisterEdi = () => {
             onChange={onChange}
           />
         ))}
-        <button className="Style1_button">Next</button>
-        <a href="/SignIn" className="bottoma">
-          New Here? Register Here
-        </a>
+        <button className="registerEdi-Style1_button">Next</button>
+        <span>Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a></span>
       </form>
+      </div>
+      
+      <div className="registerEdi-right">
+        <div className="registerEdi-onImage">Gain Knowledge & Awareness for a great Career</div>       
+      </div>
     </div>
   );
 };

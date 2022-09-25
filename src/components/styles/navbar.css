@@ -30,7 +30,7 @@ a {
   position: absolute;
   align-items: center;
   justify-content: space-around;
-  height: 10vh;
+  height: 8vh;
   background: #fff;
   position: fixed;
   top: 0;
@@ -312,6 +312,7 @@ a.nav__link {
   .nav2 {
     /* position: relative; */
     padding-right: 2rem;
+    height: 6vh;
   }
   .top-input1 {
     margin-left: 0;

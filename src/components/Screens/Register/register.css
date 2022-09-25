@@ -2,14 +2,12 @@
 
 .register-left{
     width: 33%;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 .register-right{
-      
-      background-color: blue;
       width: 67%;
-      min-height: 100vh;
+      min-height: auto;
     }
     .register-ri{
       display: flex;
@@ -38,7 +36,7 @@
   form{
     padding: 20px 30px;
     border-radius: 10px;
-    height: 100vh;
+    height: auto;
     }
   
   .Style1_button{
@@ -85,16 +83,20 @@ span{
       width:100%;
     }
     form{
-        width: 100;
+        width: 100%;
     }
     .register-left{
         width: 100%;
     }
     .google{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .google span {
+    display: block;
+    color: white;
+  }
     .register-right{
         display: none;
     }

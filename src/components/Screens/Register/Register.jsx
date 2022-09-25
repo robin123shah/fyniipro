@@ -104,7 +104,7 @@ const Register = () => {
           />
         ))}
         <button className="Style1_button">Next</button>
-        <span>Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a></span>
+        <span className="span">Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a></span>
       </form>
       </div>
       <div className="register-right">

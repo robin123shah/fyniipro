@@ -4,6 +4,10 @@ import DropFormInput from "./DropFormInput";
 import "./yourself.css";
 import Select from "react-select";
 
+import MultipleSelect from 'react-multiple-select-dropdown';
+import 'react-multiple-select-dropdown/dist/index.css';
+
+
 const Yourself = () => {
   const [values, setValues] = useState({
     you_are: "",

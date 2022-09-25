@@ -1,6 +1,6 @@
 .app {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: space-between;
   padding: 0; 
 }
