@@ -2,7 +2,7 @@ const Jobdata = {
     InternshipData: [
     {
       id: "0",
-      Title: "Engineer",
+      Title: "  software Engineer",
       Company: "Qualcomm",
       Location: "Hyderabad",
       Date: "Not Available",
