@@ -116,7 +116,7 @@ const RegisterEdi = () => {
       
       <div className="registerEdi-right">
         <div className="registerEdi-onImage">Create, Share, Earn, Recognize</div>       
-        <div className="registerEdi-onImage">Create, Share, Earn, Recognize</div>       
+        {/* <div className="registerEdi-onImage">Create, Share, Earn, Recognize</div>        */}
       </div>
     </div>
   );

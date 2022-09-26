@@ -1,5 +1,6 @@
 import React, { useState,useRef } from "react";
 import "./internship.css";
+import InternshipData from "./Internshipdata";
 import Internship from "./Internship";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
@@ -15,190 +16,6 @@ export default function Intership() {
     }
   }
 
-  const InternshipData = [
-
-    {
-      id: "0",
-      Title: "Smart Manufacturing using CNC Router",
-      Company: "Aicte Idea Lab - Guru Nanak Institutions Technical Campus",
-      Location: "WFH",
-      Date: "23-09-2022",
-      Stipend: "Unpaid",
-      WorkType: "Part Time",
-      Link:"https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_16632020596322730b435de",
-      img_src : require("../../Screens/Internship/img/internlogo/gnitc.png"),
-      alt:"Logo"
-    },
-    {
-      id: "1",
-      Title: "Web Development",
-      Company: "Zed Age Infotech",
-      Location: "Suri",
-      Date: "31-10-2022",
-      Stipend: "Unpaid",
-      WorkType: "Part Time",
-      Link:"https://www.zedageinfotech.co.in/recruitment.php",
-      img_src : require("../../Screens/Internship/img/internlogo/zedage.png"),
-      alt:"Logo"
-    },
-    {
-      id: "2",
-      Title: "Documentation Assistant",
-      Company: "DTDC Express Ltd.",
-      Location: "Pan India",
-      Date: "Not Available",
-      Stipend: "Unpaid",
-      WorkType: "Part Time",
-      Link:"https://www.apprenticeshipindia.gov.in/apprenticeship/opportunity-view/5cc2e2f5af11374ab473b582",
-      img_src : require("../../Screens/Internship/img/internlogo/dtdc.png"),
-      alt:"Logo"
-    },
-    {
-      id: "3",
-      Title: "Quality Analyst Intern",
-      Company: "Adobe",
-      Location: "Bangalore",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R123584?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
-      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
-      alt:"Logo"
-    },
-    {
-      id: "4",
-      Title: "C++ Developer",
-      Company: "Adobe",
-      Location: "Noida",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Tech-Intern-BS_R129379?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
-      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
-      alt:"Logo"
-    },
-    {
-      id: "4",
-      Title: "C++ Developer",
-      Company: "Adobe",
-      Location: "Noida",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/SheSparks---C---Developer_R129386?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
-      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
-      alt:"Logo"
-    },
-    {
-      id: "5",
-      Title: "Business Consultant",
-      Company: "Adobe",
-      Location: "Bangalore,Noida",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/SheSparks---Business-Consultant_R129183?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
-      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
-      alt:"Logo"
-    },
-    {
-      id: "6",
-      Title: "Solution Architect",
-      Company: "Adobe",
-      Location: "Bangalore,Noida",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R129182?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
-      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
-      alt:"Logo"
-    },
-    {
-      id: "7",
-      Title: "AEM Intern",
-      Company: "Adobe",
-      Location: "Bangalore,Noida",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/details/Non-Tech-Intern-BS_R129181?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&workerSubType=3ba4ecdf4893100b2f8d08d56d8d6c8e",
-      img_src : require("../../Screens/Internship/img/internlogo/adobe.png"),
-      alt:"Logo"
-    },
-    {
-      id: "8",
-      Title: "Software Engineering Intern",
-      Company: "Google",
-      Location: "Bangalore",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://careers.google.com/jobs/results/80503484702433990-software-engineering-intern-summer-2023/?distance=50&employment_type=INTERN&location=India&q=",
-      img_src : require("../../Screens/Internship/img/internlogo/google.png"),
-      alt:"Logo"
-    },
-    {
-      id: "9",
-      Title: "Intern (Technical-Engineering)",
-      Company: "Synopsys",
-      Location: "Noida",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25235&siteid=5359&PageType=JobDetails&jobid=1970413#jobDetails=1970413_5359",
-      img_src : require("../../Screens/Internship/img/internlogo/synopsys.png"),
-      alt:"Logo"
-    },
-    {
-      id: "10",
-      Title: "Intern (Technical-Engineering)",
-      Company: "Synopsys",
-      Location: "Bangalore",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25235&siteid=5359&PageType=JobDetails&jobid=1971081",
-      img_src : require("../../Screens/Internship/img/internlogo/synopsys.png"),
-      alt:"Logo"
-    },
-    {
-      id: "11",
-      Title: "Intern (Technical-Engineering)",
-      Company: "Synopsys",
-      Location: "Hyderabad",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25235&siteid=5359&PageType=JobDetails&jobid=1970899#jobDetails=1970899_5359",
-      img_src : require("../../Screens/Internship/img/internlogo/synopsys.png"),
-      alt:"Logo"
-    },
-    {
-      id: "12",
-      Title: "Software Engineering",
-      Company: "Microsoft",
-      Location: "US",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://careers.microsoft.com/us/en/job/1370686/Software-Engineering-PhD-Intern-Opportunities",
-      img_src : require("../../Screens/Internship/img/internlogo/microsoft.png"),
-      alt:"Logo"
-    },
-    {
-      id: "13",
-      Title: "Software Engineering",
-      Company: "Microsoft",
-      Location: "Paris, France",
-      Date: "Not Available",
-      Stipend: "Paid",
-      WorkType: "Full Time",
-      Link:"https://careers.microsoft.com/us/en/job/1464936/Software-Engineering-Internship-Opportunities-France-Start-date-Feb-March-2023",
-      img_src : require("../../Screens/Internship/img/internlogo/microsoft.png"),
-      alt:"Logo"
-    },
-    
-  ];
 
   // const [Inttopic, setInttopic] = useState("All");
   // const [location, setlocation] = useState("All");
@@ -402,7 +219,7 @@ export default function Intership() {
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.map((e) => (<div class="box2">
+            {InternshipData.InternshipData.map((e) => (<div class="box2">
               <a href="/Company">
               <div 
               className="box-inside"

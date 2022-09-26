@@ -1,7 +1,6 @@
 import React,{useState,useRef, useEffect} from "react";
 import "./Jobs.css";
-// import "../Courses/course.css"
-import InternshipData from "./Jobdata";
+import JobData from "./Jobdata";
 import "./style.css";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
 import JobsSlider from "./JobsSlider";
@@ -330,7 +329,7 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.InternshipData.filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase())).map((e) => 
+            {JobData.JobData.filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase())).map((e) => 
               ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "Remote") || (WkTypePT === true && e.Type === "PT")) 
             && 
             (<div class="box2">
