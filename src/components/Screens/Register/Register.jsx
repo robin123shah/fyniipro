@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 // import "../Courses/course.css";
 // import '../../styles/style.css';
 import GoogleButton from 'react-google-button'
+import GoogleLogin from "react-google-login"
+
 
 
 const Register = () => {
@@ -69,13 +71,13 @@ const Register = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  const onGoogleRegister = (googleUser) => {
-    var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  }
+  // const onGoogleRegister = (googleUser) => {
+  //   var profile = googleUser.getBasicProfile();
+  //   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  //   console.log('Name: ' + profile.getName());
+  //   console.log('Image URL: ' + profile.getImageUrl());
+  //   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  // }
 
   return (
     <div className="app">
@@ -84,8 +86,23 @@ const Register = () => {
         <h2 className="Register_h2">
           Create Your Profile
         </h2>
-        <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div>
-       
+        {/* <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div> */}
+
+      <div className="google">
+      <GoogleLogin
+    clientId=""
+    render={(renderProps)=>(
+    
+<GoogleButton className="google-button"/>
+
+
+    )}
+
+
+      />
+     
+
+      </div>
 
         <div class="my-12 border-b text-center">
               <div
