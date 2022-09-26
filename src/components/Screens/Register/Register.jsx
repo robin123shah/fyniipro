@@ -5,7 +5,7 @@ import '../../Screens/Register/register.css'
 import { useNavigate } from "react-router-dom";
 // import "../Courses/course.css";
 // import '../../styles/style.css';
-import GoogleButton from 'react-google-button'
+// import GoogleButton from 'react-google-button'
 import GoogleLogin from "react-google-login"
 
 
