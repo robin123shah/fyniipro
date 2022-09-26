@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 // import "../Courses/course.css";
 // import '../../styles/style.css';
 // import GoogleButton from 'react-google-button'
-import GoogleLogin from "react-google-login"
+// import GoogleLogin from "react-google-login"
 
 
 
@@ -89,17 +89,17 @@ const Register = () => {
         {/* <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div> */}
 
       <div className="google">
-      <GoogleLogin
+      {/* <GoogleLogin
     clientId=""
     render={(renderProps)=>(
     
-{/* <GoogleButton className="google-button"/> */}
+ GoogleButton className="google-button"/>  
 
 
     )}
 
 
-      />
+      /> */}
      
 
       </div>
