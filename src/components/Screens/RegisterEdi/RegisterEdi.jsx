@@ -47,7 +47,7 @@ const RegisterEdi = () => {
     },
     
     {
-      id: 5,
+      id: 4,
       name: "createPassword",
       type: "password",
       placeholder: "Create Password",
@@ -58,7 +58,7 @@ const RegisterEdi = () => {
       required: true,
     },
     {
-      id: 6,
+      id: 5,
       name: "confirmPassword",
       type: "password",
       placeholder: "Confirm Password",
@@ -115,7 +115,8 @@ const RegisterEdi = () => {
       </div>
       
       <div className="registerEdi-right">
-        <div className="registerEdi-onImage">Gain Knowledge & Awareness for a great Career</div>       
+        <div className="registerEdi-onImage">Create, Share, Earn, Recognize</div>       
+        <div className="registerEdi-onImage">Create, Share, Earn, Recognize</div>       
       </div>
     </div>
   );
