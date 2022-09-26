@@ -93,7 +93,7 @@ const Register = () => {
     clientId=""
     render={(renderProps)=>(
     
-<GoogleButton className="google-button"/>
+{/* <GoogleButton className="google-button"/> */}
 
 
     )}
