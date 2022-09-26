@@ -124,17 +124,17 @@ const Yourself = () => {
         { label: "Fresher", value: 2 },
       ],
     },
-    // {
-    //   id: 2,
-    //   label: "Your Interests",
-    //   name: "your_interests",
-    //   placeholder: "Select",
-    //   errorMessage: "Can't be remain None!",
-    //   required: true,
-    //   actions: [
+    {
+      id: 2,
+      label: "Your Interests",
+      name: "your_interests",
+      placeholder: "Select",
+      errorMessage: "Can't be remain None!",
+      required: true,
+      actions: [
         
-    //   ],
-    // },
+      ],
+    },
   ];
   function handleSelect(data) {
     setSelectedOptions(data);
@@ -224,13 +224,13 @@ const Yourself = () => {
         <span className="ErrorSpan">Education should be 3-50 characters and shouldn't include any special character!</span>
       </div>
 
-      {/* <DropFormInput
+      <DropFormInput
             key={inputs[1].id}
             {...inputs[1]}
             // value={values[input.name]}
             onChange={onChange}
             className='DropFormInput'
-          /> */}
+          />
           <div className="drop-app">
       <h2>Choose your color</h2>
       <div className="dropdown-app-container">
