@@ -84,7 +84,7 @@ const Register = () => {
       <div className="register-left">
         <form onSubmit={handleSubmit}>
         <h2 className="Register_h2">
-          Create Your Profiles
+          Create Your Profile
         </h2>
         {/* <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div> */}
 
