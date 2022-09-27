@@ -62,7 +62,7 @@ const Yourself = () => {
         { label: "Management", value: 39 },
         { label: "Technology", value: 40 },
         { label: "Software", value: 41 },
-        { label: "Ps", value: 42 },
+        { label: "Psychology", value: 42 },
         { label: "Arts & Humanities", value: 43 },
         { label: "Full Stack Development ", value: 44 },
         { label: "Programming", value: 45 },

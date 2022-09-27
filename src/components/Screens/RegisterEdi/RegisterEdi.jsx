@@ -115,8 +115,9 @@ const RegisterEdi = () => {
       </div>
       
       <div className="registerEdi-right">
-        <div className="registerEdi-onImage">Create, Share, Earn, Recognize</div>       
-        <div className="registerEdi-onText">Write on diverse topics as an bite sized article related to Career Perspective & Insights for Students & Freshers</div>       
+        <div className="registerEdi-onImage">Create,<br/> Share,<br/> Earn,<br/> Recognize</div>
+               
+        <div className="registerEdi-onText"><p>Write on diverse topics as an bite sized article related to Career Perspective & Insights for Students & Freshers</p></div>       
       </div>
     </div>
   );

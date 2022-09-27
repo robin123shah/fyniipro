@@ -29,18 +29,9 @@
 
 }
 .registerEdi-onText {
-  font-size: 50px;
-  font-variant: small-caps;
-  font-family: 'Roboto Slab', serif;
-
   position: absolute;
-  font-weight: 700;
-  text-align: center;
-  align-items: center;  
-  margin-left: 100px;
-  margin-right: 180px;
-  margin-top: 50px;
-  color: rgb(8, 47, 61);
+    bottom: 0;
+    right: 0;
 
 }
 .form{

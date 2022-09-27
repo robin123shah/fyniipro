@@ -932,6 +932,14 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   .btnn-content{
     display: grid;
   }
+  /* .ks-cboxtags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ks-cboxtags li {
+    width:45%;
+    margin:0;
+  } */
 }
 
 

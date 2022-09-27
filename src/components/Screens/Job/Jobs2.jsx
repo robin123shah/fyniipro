@@ -171,16 +171,16 @@ document.addEventListener('keydown', function(e){
                 <ul class="ks-cboxtags">
                   <li style={{"margin":"5px"}}>
                     <input onClick={()=>setWkTypeGov(!WkTypeGov)} type="checkbox" id="checkboxOne" />
-                    <label for="checkboxOne">Government</label>
+                    <label for="checkboxOne">Govt.</label>
                   </li>
 
                   <li style={{"margin":"5px"}}>
                     <input onClick={()=>setWkTypeNGov(!WkTypeNGov)} type="checkbox" id="checkboxTwo" />
-                    <label for="checkboxTwo">Non-Government</label>
+                    <label for="checkboxTwo">Non-Govt.</label>
                   </li>
                   <li style={{"margin":"5px"}}>
                     <input onClick={()=>setWkTypeWFH(!WkTypeWFH)} type="checkbox" id="checkboxThree" />
-                    <label for="checkboxThree">Work From Home</label>
+                    <label for="checkboxThree">WFH</label>
                   </li>
                   <li style={{"margin":"5px"}}>
                     <input onClick={()=>setWkTypePT(!WkTypePT)} type="checkbox" id="checkboxFour" />
