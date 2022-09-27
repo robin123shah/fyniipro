@@ -221,26 +221,26 @@ const Yourself = () => {
         <span className="ErrorSpan">Education should be 3-50 characters and shouldn't include any special character!</span>
       </div>
 
-      <DropFormInput
+      {/* <DropFormInput
             key={inputs[1].id}
             {...inputs[1]}
-            // value={values[input.name]}
+            value={values[input.name]}
             onChange={onChange}
             className='DropFormInput'
-          />
+          /> */}
           <div className="drop-app">
-      <h2>Choose your color</h2>
-      <div className="dropdown-app-container">
-        <Select
-          options={optionList}
-          placeholder="Select color"
-          value={selectedOptions}
-          onChange={handleSelect}
-          isSearchable={true}
-          isMulti
-        />
-      </div>
-    </div>
+            <h2>Your Interests</h2>
+            <div className="DropFormInput">
+              <Select
+                options={optionList}
+                placeholder="e.g. : Teaching, Software"
+                value={selectedOptions}
+                onChange={handleSelect}
+                isSearchable={true}
+                isMulti
+              />
+            </div>
+          </div>
     
     {/* <div className="formInput">
     <label className="formlabel">Your Interests</label>

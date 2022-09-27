@@ -110,12 +110,20 @@
   }
   .drop-app {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 10px;
+ 
   }
   .dropdown-app-container {
     width: 300px;
+  }
+  .drop-app h2{
+    font-size: 17px;
+    color: darkcyan;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
   }
   
