@@ -167,22 +167,22 @@ document.addEventListener('keydown', function(e){
 
               <br />
 
-              <div class="container">
-                <ul class="ks-cboxtags">
-                  <li style={{"margin":"5px"}}>
+              <div className="container">
+                <ul className="ks-cboxtags">
+                <li className="li1">
                     <input onClick={()=>setWkTypeGov(!WkTypeGov)} type="checkbox" id="checkboxOne" />
                     <label for="checkboxOne">Govt.</label>
                   </li>
 
-                  <li style={{"margin":"5px"}}>
+                  <li className="li2">
                     <input onClick={()=>setWkTypeNGov(!WkTypeNGov)} type="checkbox" id="checkboxTwo" />
                     <label for="checkboxTwo">Non-Govt.</label>
                   </li>
-                  <li style={{"margin":"5px"}}>
+                  <li className="li3">
                     <input onClick={()=>setWkTypeWFH(!WkTypeWFH)} type="checkbox" id="checkboxThree" />
                     <label for="checkboxThree">WFH</label>
                   </li>
-                  <li style={{"margin":"5px"}}>
+                  <li className="li4">
                     <input onClick={()=>setWkTypePT(!WkTypePT)} type="checkbox" id="checkboxFour" />
                     <label for="checkboxFour">Part Time</label>
                   </li>
@@ -329,7 +329,10 @@ document.addEventListener('keydown', function(e){
           </div>
 
           <div class="col-lg-8">
-            {JobData.JobData.filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase())).map((e) => 
+            {JobData.JobData
+              .filter(e=>e.Title.toLowerCase().includes(Title.toLowerCase()))
+              .filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase()))
+              .filter(e=>e.Company.toLowerCase().includes(Company.toLowerCase())).map((e) => 
               ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "Remote") || (WkTypePT === true && e.Type === "PT")) 
             && 
             (<div class="box2">

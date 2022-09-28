@@ -15,7 +15,9 @@ export default function Intership() {
       setshowNavTab(false)
     }
   }
-
+  const [Title,setTitle] = useState('');
+  const [Location,setLocation] = useState('');
+  const [Company,setCompany] = useState('');
 
   // const [Inttopic, setInttopic] = useState("All");
   // const [location, setlocation] = useState("All");
@@ -68,6 +70,7 @@ export default function Intership() {
                 <input
                   type="search"
                   class="form-control rounded"
+                  onChange={e => setTitle(e.target.value)}
                   placeholder="e.g. Software"
                   aria-label="Search"
                   aria-describedby="search-addon"
@@ -90,6 +93,7 @@ export default function Intership() {
                 <input
                   type="search"
                   class="form-control rounded"
+                  onChange={e => setLocation(e.target.value)}
                   placeholder="e.g. Delhi"
                   aria-label="Search"
                   aria-describedby="search-addon"
@@ -114,6 +118,7 @@ export default function Intership() {
                 <input
                   type="search"
                   class="form-control rounded"
+                  onChange={e => setCompany(e.target.value)}
                   placeholder="e.g. IBM"
                   aria-label="Search"
                   aria-describedby="search-addon"
@@ -219,7 +224,10 @@ export default function Intership() {
           </div>
 
           <div class="col-lg-8">
-            {InternshipData.InternshipData.map((e) => (<div class="box2">
+            {InternshipData.InternshipData
+              .filter(e=>e.Title.toLowerCase().includes(Title.toLowerCase()))
+              .filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase()))
+              .filter(e=>e.Company.toLowerCase().includes(Company.toLowerCase())).map((e) => (<div class="box2">
               <a href="/Company">
               <div 
               className="box-inside"
