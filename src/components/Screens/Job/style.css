@@ -928,9 +928,13 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
 @media screen and (max-width:480px) {
   .bigg{
     display: flex;
+    font-size: 2rem;
   }
   .btnn-content{
     display: grid;
+  }
+  .big{
+    font-size: 1.5rem;
   }
   /* .ks-cboxtags {
     display: flex;

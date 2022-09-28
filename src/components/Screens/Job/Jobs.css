@@ -64,6 +64,13 @@
   .fa-solid {
     width: 10%;
   }
+  .row{
+    column-gap: 22px;
+  }
+  .col-lg-6{
+    width:45%;
+    margin-left:2px;
+  }
 }
 
 .row {
