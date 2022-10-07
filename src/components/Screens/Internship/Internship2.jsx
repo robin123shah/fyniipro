@@ -1,10 +1,11 @@
 import React, { useState,useRef } from "react";
 import "./internship.css";
 import InternshipData from "./Internshipdata";
+import "../Job/style.css";
+import Navbar2 from "../../Navigation/Navbar/Navbar2";
 import Internship from "./Internship";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
-import Navbar2 from "../../Navigation/Navbar/Navbar2";
 
 export default function Intership() {
   const [showNavTab,setshowNavTab] = useState(false)
@@ -15,6 +16,10 @@ export default function Intership() {
       setshowNavTab(false)
     }
   }
+  const [WkTypeGov, setWkTypeGov] = useState(false)
+  const [WkTypeNGov, setWkTypeNGov] = useState(false)
+  const [WkTypeWFH, setWkTypeWFH] = useState(false)
+  const [WkTypePT, setWkTypePT] = useState(false)
   const [Title,setTitle] = useState('');
   const [Location,setLocation] = useState('');
   const [Company,setCompany] = useState('');
@@ -173,14 +178,22 @@ export default function Intership() {
 
               <div class="container">
                 <ul class="ks-cboxtags">
-                  <li style={{"margin":"5px"}}>
-                    <input type="checkbox" id="checkboxOne" />
-                    <label for="checkboxOne">Government</label>
+                  <li className="li1">
+                    <input onClick={()=>setWkTypeGov(!WkTypeGov)} type="checkbox" id="checkboxOne" />
+                    <label for="checkboxOne">Govt.</label>
                   </li>
 
-                  <li style={{"margin":"5px"}}>
-                    <input type="checkbox" id="checkboxTwo" />
-                    <label for="checkboxTwo">Non-Government</label>
+                  <li className="li2">
+                    <input onClick={()=>setWkTypeNGov(!WkTypeNGov)} type="checkbox" id="checkboxTwo" />
+                    <label for="checkboxTwo">Non-Govt.</label>
+                  </li>
+                  <li className="li3">
+                    <input onClick={()=>setWkTypeWFH(!WkTypeWFH)} type="checkbox" id="checkboxThree" />
+                    <label for="checkboxThree">WFH</label>
+                  </li>
+                  <li className="li4">
+                    <input onClick={()=>setWkTypePT(!WkTypePT)} type="checkbox" id="checkboxFour" />
+                    <label for="checkboxFour">Part Time</label>
                   </li>
                 </ul>
               </div>
@@ -223,59 +236,59 @@ export default function Intership() {
             </div>
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-8 internList">
             {InternshipData.InternshipData
               .filter(e=>e.Title.toLowerCase().includes(Title.toLowerCase()))
               .filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase()))
-              .filter(e=>e.Company.toLowerCase().includes(Company.toLowerCase())).map((e) => (<div class="box2">
-              <a href="/Company">
-              <div 
-              className="box-inside"
-              >
-                <div className="img-box">
-                  <img className="img_class" src = {e.img_src} alt = {e.alt} />
-                </div>
-                <div>
-                  <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
-                  <p class="big">{e.Company}</p>
-                </div>
-                </div>
-                <hr />
+              .filter(e=>e.Company.toLowerCase().includes(Company.toLowerCase())).map((e) => (
+                ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "WFH") || (WkTypePT === true && e.Type === "Part Time")) 
+              &&(<div class="box2">
+              
+                  <div className="internImageContainer" style={{display: "flex"}}>
+                    <div className="intern-text-box" style={{flex: "5"}}>
+                      <h2 className="intern-box-title" style={{flex: "1"}}>{e.Title}</h2>
+                      <p class="intern-box-company">{e.Company}</p>
+                    </div>
+                    <div className="intern-img-box"><img src = {e.img_src} alt=""/></div>
+                  </div>
+                  <hr />
 
-                <div class="row">
-                  <div class="col-lg-6">
-                    <p>
-                      <i class="fa-solid fa-location-dot"></i> {e.Location}
-                    </p>
-                    <p>
-                      <i class="fa-solid fa-briefcase"></i> {e.Stipend}
-                    </p>
+                  <div class="row internMetadata">
+                    <div class="col-lg-6">
+                      <p>
+                        <i class="fa-solid fa-location-dot"></i> {e.Location}
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-briefcase"></i> {e.Stipend}
+                      </p>
+                    </div>
+                    <div class="col-lg-6">
+                      <p>
+                        <i class="fa-solid fa-calendar-check"></i> {e.Date}
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-user"></i> {e.WorkType}
+                      </p>
+                    </div>
                   </div>
-                  <div class="col-lg-6">
-                    <p>
-                      <i class="fa-solid fa-calendar-check"></i> {e.Date}
-                    </p>
-                    <p>
-                      <i class="fa-solid fa-user"></i> {e.WorkType}
-                    </p>
-                  </div>
-                </div>
 
-                <div class="grid-container">
-                <div className="btnn-content">
-                  <a href={e.Link} rel="noreferrer" target="_blank" class="btnn">
-                    <i style={{color:"white"}} class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
-                  </a>
-                </div>
-                  <div className="btnn">
-                    <i class="fa-regular fa-bookmark"></i> Save
+                  <div class="grid-container">
+                    <div className="btnn-content">
+                      <a href={e.Link} rel="noreferrer" target="_blank" class="btnn">
+                        <i style={{color:"white"}} class="fa-regular fa-hand"></i><a style={{color:"white"}} href={e.Link} rel="noreferrer" target="_blank"> Apply  </a>
+                      </a>
+                    </div>
+
+                    <div className="btnn">
+                      <i class="fa-regular fa-bookmark"></i> Save
+                    </div>
+
+                    <div onClick={openModal} className="btnn">
+                      <i class="fa-solid fa-share-nodes"></i> Share
+                    </div>
+
                   </div>
-                  <div onClick={openModal} className="btnn">
-                    <i class="fa-solid fa-share-nodes"></i> Share
-                  </div>
-                </div>
-                </a>
-            </div>))}
+            </div>)))}
           </div>
         </div>
       </div>

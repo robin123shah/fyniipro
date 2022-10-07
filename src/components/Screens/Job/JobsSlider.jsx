@@ -44,7 +44,7 @@ export default function Internship ({openModal}) {
           </div>
           <ul className="slides">
             <li className="slide" style={{ backgroundColor: "#3CB371" }}>
-            <div className="slide-content2" style={{width:"800px"}}>
+            <div className="slide-content2" /*style={{width:"800px"}}*/ >
                 <h2 className="jnui">In Job, choose career growth over everything</h2>
               </div>
               <p className="slide-image2">

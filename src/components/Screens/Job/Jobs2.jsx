@@ -328,29 +328,27 @@ document.addEventListener('keydown', function(e){
             </div>
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-8 jobsList">
             {JobData.JobData
               .filter(e=>e.Title.toLowerCase().includes(Title.toLowerCase()))
               .filter(e=>e.Location.toLowerCase().includes(Location.toLowerCase()))
               .filter(e=>e.Company.toLowerCase().includes(Company.toLowerCase())).map((e) => 
-              ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "Remote") || (WkTypePT === true && e.Type === "PT")) 
+              ((WkTypeGov === false && WkTypeNGov === false && WkTypeWFH === false && WkTypePT === false) || (WkTypeGov === true && e.Type === "Govt.") || (WkTypeNGov === true && e.Type === "Non Govt.") || (WkTypeWFH === true && e.Type === "Remote") || (WkTypePT === true && e.Type === "Part Time")) 
             && 
             (<div class="box2">
-              <a href="/Company">
-              <div 
-              className="box-inside"
-              >
-
-              <div className="img-box"><img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} /></div>
-               <div>
-                <h2 class="bigg" style={{"fontSize":"3rem"}}>{e.Title}</h2>
-                <p class="big">{e.Company}</p>
-               </div>
+              {/* <a href="/"> */}
+              <div className="jobImageContainer">
+                <div className="job-text-box">
+                  <h2 className="job-box-title">{e.Title}</h2>
+                  <p className="job-box-company" style={{"fontSize":"1.4rem"}}>{e.Company}</p>
+                </div>
+                <div className="job-img-box"><img src={e.img_src} alt=""/></div>
+                {/* <div className="img-box"><img class="img_class" src = {e.img_src} style={{"display" : openModal === "modal__wrapper active"?"none" :"block"}} alt = {e.alt} /></div> */}
               </div>
                 
-                <hr />
+                <hr/>
 
-                <div class="row">
+                <div class="row jobMetadata">
                   <div class="col-lg-6">
                     <p>
                       <i class="fa-solid fa-location-dot"></i> {e.Location}
@@ -361,7 +359,7 @@ document.addEventListener('keydown', function(e){
                   </div>
                   <div class="col-lg-6">
                     <p>
-                      <i class="fa-solid fa-clock"></i> {e.Date}
+                      <i class="fa-solid fa-calendar-check"></i> {e.Date}
                     </p>
                     <p>
                       <i class="fa-solid fa-user"></i> {e.WorkType}
@@ -384,7 +382,7 @@ document.addEventListener('keydown', function(e){
                     <i class="fa-solid fa-share-nodes"></i> Share
                   </div>
                 </div>
-              </a>
+              {/* </a> */}
             </div>))}
 
           </div>

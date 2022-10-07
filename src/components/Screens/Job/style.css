@@ -831,8 +831,13 @@ input[type="submit"] {
 
 .col-lg-6 p {
   margin-top: 3%;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
 }
-
+.col-lg-6 p i{
+  margin-top: 5px;
+}
 .bigg {
   font-size: 2rem;
   font-weight: 600;
@@ -855,13 +860,20 @@ a:hover {
 
 
 /* Check Mark */
-
+.ks-cboxtags{
+  display: flex;
+  flex-direction: column;
+}
+.ks-cboxtags li{
+  width: 90%;
+}
 ul.ks-cboxtags {
   list-style: none;
 }
 
 ul.ks-cboxtags li {
   display: inline;
+  width: 180px;
 }
 
 ul.ks-cboxtags li label {
@@ -877,8 +889,11 @@ ul.ks-cboxtags li label {
 }
 
 ul.ks-cboxtags li label {
-  padding: 4px;
-  cursor: pointer;
+      cursor: pointer;
+      width: 177px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
 }
 
 ul.ks-cboxtags li label::before {
@@ -924,6 +939,27 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   height: 350px;
 }
 
+.ks-cboxtags {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-column-gap: 16px;
+  gap: 6px;
+}
+.ks-cboxtags .li1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.ks-cboxtags .li2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.ks-cboxtags .li3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.ks-cboxtags .li4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
 
 @media screen and (max-width:480px) {
   .bigg{
@@ -936,14 +972,37 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   .big{
     font-size: 1.5rem;
   }
-  /* .ks-cboxtags {
-    display: flex;
-    flex-wrap: wrap;
+  .ks-cboxtags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-column-gap: 16px;
+    gap: 6px;
   }
-  .ks-cboxtags li {
-    width:45%;
-    margin:0;
-  } */
+  ul.ks-cboxtags li{
+    width: 135px;
+  }
+  ul.ks-cboxtags li label{
+    width: 135px;
+  }
+  .ks-cboxtags .li1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .ks-cboxtags .li2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .ks-cboxtags .li3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .ks-cboxtags .li4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .filter-box,
+.box {
+  padding: 3%;
+}
 }
 
 

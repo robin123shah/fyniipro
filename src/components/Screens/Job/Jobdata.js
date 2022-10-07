@@ -3,8 +3,8 @@ const Jobdata = {
     { 
       id: "0",
       Title: "Associate Consultant/Analyst",
-      Company: "Ey",
-      Location: "Mumbai",
+      Company: "EY",
+      Location: "New Delhi",
       Date: "N/A",
       Type: "Non Govt.",
       Experience: "2-5",
@@ -16,7 +16,7 @@ const Jobdata = {
     {
       id: "1",
       Title: "Product Manager",
-      Company: "Bharat Pe",
+      Company: "BharatPe",
       Location: "Gurgaon",
       Date: "N/A",
       Type: "Non Govt.",
@@ -28,9 +28,9 @@ const Jobdata = {
     },
     {
       id: "2",
-      Title: "Engineer/Senior Engineer/Assistant Manager",
+      Title: "Engineer/Assistant Manager",
       Company: "Azure power",
-      Location: "Assam/UP/Rajasthan",
+      Location: "Assam/ UP/ Rajasthan",
       Date: "N/A",
       Type: "Non Govt.",
       Experience: "2-7",
@@ -52,19 +52,19 @@ const Jobdata = {
       img_src: require("../../Screens/Job/img/jobLogo/pinelabs.jpg"),
       alt: "Logo",
     },
-    {
-      id: "4",
-      Title: "Multiple Openings",
-      Company: "Dodla Dairy",
-      Location: "Pan India",
-      Date: "N/A",
-      Type: "Non Govt.",
-      Experience: "",
-      WorkType: "Full Time",
-      Link:"https://www.dodladairy.com/current_openings",
-      img_src: require("../../Screens/Job/img/jobLogo/dodla.png"),
-      alt: "Logo",
-    },
+    // {
+    //   id: "4",
+    //   Title: "Multiple Openings",
+    //   Company: "Dodla Dairy",
+    //   Location: "Pan India",
+    //   Date: "N/A",
+    //   Type: "Non Govt.",
+    //   Experience: "",
+    //   WorkType: "Full Time",
+    //   Link:"https://www.dodladairy.com/current_openings",
+    //   img_src: require("../../Screens/Job/img/jobLogo/dodla.png"),
+    //   alt: "Logo",
+    // },
 
 
     {
@@ -368,7 +368,7 @@ const Jobdata = {
     },
     {
       id: "28",
-      Title: "Assistant Professors(Department of English)",
+      Title: "Assistant Professors (Department of English)",
       Company: "Jamia Millia Islamia",
       Location: "Remote, India",
       Date: "N/A",
