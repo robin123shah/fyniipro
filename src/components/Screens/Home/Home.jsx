@@ -136,7 +136,7 @@ export default function Home() {
           <ul>Biotechnology</ul>
           <ul>Machine Learning</ul>
           <ul>Natural Science</ul>
-          <ul>Developer</ul>
+          <ul id="developer">Developer</ul>
         </div>
         <Cards topic={topic} />
       </div>

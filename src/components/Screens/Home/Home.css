@@ -150,8 +150,11 @@
   display: inline-block;
   color: white;
   text-align: center;
+  /* font-size: 12px; */
   padding: 14px;
   text-decoration: none;
+  /* margin-left: 15px;
+  margin-right: 15px; */
 }
 
 .Scrollmenu ul:hover {
@@ -450,6 +453,10 @@
   /* #slider2{
     display: none;
   } */
+  .Scrollmenu ul {
+    font-size: 8px;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 400px) {

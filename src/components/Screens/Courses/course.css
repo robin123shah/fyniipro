@@ -19,7 +19,7 @@ body {
 }
 
 hr {
-  height: 10px;
+  height: 3px;
   /* border: none; */
   background-color: black;
   /* transform: rotate(-10deg);
@@ -42,8 +42,11 @@ p {
   width: 100%;
 }
 .slide-image2 > img {
-  height: 240px;
-  width: 320px;
+  height: 300px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
@@ -1083,11 +1086,11 @@ footer p {
     margin-top: 30px;
 
   }
+ 
   
   .slide-image2 > img {
-    height: 100%;
-    margin-top: 30px;
-    width: 100%;
+    height: 113px;
+    width: 212px;
   }
   .slide-content {
     width: 200px;
