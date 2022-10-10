@@ -61,35 +61,28 @@ const SignIn = () => {
 
   return (
     <div className="app">
-      <form onSubmit={handleSubmit} style={{ height: "60%" }}>
-         {/* <img
-          style={{
-            "margin":"auto",
-            width: "120px",
-            "display":"block"
-
-          }}
-          href="/Home"
-          alt="img"
-          src={require("./logo.png")}
-        /> */}
-        <h2 className="Register_h2"
-        >
-          Already Member?
-        </h2>
-        {inputs.map((input) => (
-          <FormInput
-            key={input.id}
-            {...input}
-            value={values[input.name]}
-            onChange={onChange}
-          />
-        ))}
-        <button className="Style1_button">Sign In</button>
-        <a href="/Register" className="bottoma">
-          New Here? Register Here
-        </a>
-      </form>
+    <div className="signinbox">
+        <form className="signform" onSubmit={handleSubmit}>
+          <h2 className="sign_title"
+          >
+            Already Member?
+          </h2>
+          {inputs.map((input) => (
+            <FormInput
+              key={input.id}
+              {...input}
+              className="sign_input"
+              value={values[input.name]}
+              onChange={onChange}
+            />
+          ))}
+          <button className="signin_button">Sign In</button>
+          <span>New Here? <a href="/Register" className="signin_next">
+            Register Here
+          </a>
+          </span>
+        </form>
+      </div>
     </div>
   );
 };

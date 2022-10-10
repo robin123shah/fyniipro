@@ -3,7 +3,7 @@ import FormInput from "./FormInput";
 import '../RegisterEdi/registerEdi.css'
 import GoogleButton from "react-google-button";
 import { useNavigate } from "react-router-dom";
-
+import toast from 'react-hot-toast';
 
 const RegisterEdi = () => {
 
@@ -75,6 +75,7 @@ const RegisterEdi = () => {
     e.preventDefault();
     localStorage.setItem("details", JSON.stringify(values));
     navigation("/expertEdi");
+    toast.success('Submitted successfully!!')
   };
 
   const onChange = (e) => {

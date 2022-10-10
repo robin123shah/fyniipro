@@ -1,14 +1,7 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
 import '../../Screens/Register/register.css'
-// import "../../styles/app.css";
 import { useNavigate } from "react-router-dom";
-// import "../Courses/course.css";
-// import '../../styles/style.css';
-// import GoogleButton from 'react-google-button'
-// import GoogleLogin from "react-google-login"
-
-
 
 const Register = () => {
   let navigation = useNavigate();

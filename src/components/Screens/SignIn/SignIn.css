@@ -2,23 +2,42 @@
 input{
     border: 1px solid black;
 }
-
-/* 
-.SignInForm {
-    background-color: white;
-    padding: 0px 60px;
-    border-radius: 10px;
-    height: 50rem;
-    width: 45rem;
-} */
-
-/* @media screen and (max-width:900px) {
-    .SignInForm{
-        height: 50rem;
-        width: 75rem;
-    }
-} */
-
+.signinbox{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #b5cece;
+  width: 100%;
+}
+.signform{
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sign_title{
+  margin: 15x; 
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bolder;
+    margin-bottom:75px;
+    font-size:36px;
+    color:darkcyan;
+}
+.signin_button{
+   height: 50px;
+      font-size: 15px;
+      margin-top: 64px;
+      margin-bottom: 30px;
+}
+.signin_next{
+  content: "";
+  
+}
 @media screen and (max-width: 500px) {
     form {
       height: 70%;

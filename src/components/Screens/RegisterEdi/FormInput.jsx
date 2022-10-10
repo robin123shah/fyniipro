@@ -21,7 +21,8 @@ const FormInput = (props) => {
         }
         focused={focused.toString()}
       />
-      <span className="ErrorSpan">{errorMessage}</span>
+      {/* <span className="ErrorSpan">{errorMessage}</span> */}
+      <span class="ErrorSpan">Username should be 3-16 characters and shouldn't include any special character!</span>
     </div>
   );
 };

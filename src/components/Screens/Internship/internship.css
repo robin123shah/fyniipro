@@ -451,9 +451,9 @@ ul.ks-cboxtags {
     transition: all 0.2s;
   }
 
-  ul.ks-cboxtags li input[type="checkbox"] {
+  /* ul.ks-cboxtags li input[type="checkbox"] {
     /* display: absolute; */
-  }
+  
 
   ul.ks-cboxtags li input[type="checkbox"] {
     /* position: absolute; */
