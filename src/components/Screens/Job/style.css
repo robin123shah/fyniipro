@@ -799,7 +799,7 @@ input[type="submit"] {
   border-radius: 5%;
 }
 .grid-container > div {
-  background-color: rgba(42, 4, 4, 0.8);
+  background-color: #05b1a1;
   color: #fff;
   text-align: center;
   /* padding: 12px 0; */
@@ -919,11 +919,11 @@ ul.ks-cboxtags li input[type="checkbox"]:checked + label {
 }
 
 ul.ks-cboxtags li input[type="checkbox"] {
-  display: absolute;
+  /* display: absolute; */
 }
 
 ul.ks-cboxtags li input[type="checkbox"] {
-  position: absolute;
+  /* position: absolute; */
   opacity: 0;
 }
 

@@ -452,11 +452,11 @@ ul.ks-cboxtags {
   }
 
   ul.ks-cboxtags li input[type="checkbox"] {
-    display: absolute;
+    /* display: absolute; */
   }
 
   ul.ks-cboxtags li input[type="checkbox"] {
-    position: absolute;
+    /* position: absolute; */
     opacity: 0;
   }
 
