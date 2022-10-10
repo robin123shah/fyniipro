@@ -4,7 +4,7 @@ import "../../styles/app.css"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-function Navbar ({showNavTab, setshowNavTab}) {
+function Navbar ({showNavTab, setshowNavTab, mentorNavinfo}) {
   const navigate = useNavigate();
 //   const [dropdown, setDropdown] = useState(false);
 
@@ -59,8 +59,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         style={{ 
           backgroundColor: localStorage.getItem("activeNav") === "Home" ? "rgb(71, 153, 51)" : "",
           padding: localStorage.getItem("activeNav") === "Home" ? "10px": "",
-          // paddingLeft: localStorage.getItem("activeNav") === "Home" ? "0px": "",
-          // width: localStorage.getItem("activeNav") === "Home" ? "70%": "",
+          display: mentorNavinfo && "none",
           borderRadius: localStorage.getItem("activeNav") === "Home" ?  "5px" : "",
           fontWeight: localStorage.getItem("activeNav") === "Home" ? "bold" : "",
         }}
@@ -72,6 +71,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         </li>
         <li className="nav__item"
                     style={{ 
+                      display: mentorNavinfo && "none",
                       backgroundColor: localStorage.getItem("activeNav") === "Job" ? "rgb(71, 153, 51)" : "",
                       padding: localStorage.getItem("activeNav") === "Job" ? "10px": "",
                       borderRadius: localStorage.getItem("activeNav") === "Job" ?  "5px" : "",
@@ -84,7 +84,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
         </li>
         <li className="nav__item"
           style={{ 
-            
+            display: mentorNavinfo && "none",
             backgroundColor: localStorage.getItem("activeNav") === "Internship" ? "rgb(71, 153, 51)" : "",
             padding: localStorage.getItem("activeNav") === "Internship" ? "10px": "",
             borderRadius: localStorage.getItem("activeNav") === "Internship" ?  "5px" : "",
@@ -98,22 +98,7 @@ function Navbar ({showNavTab, setshowNavTab}) {
             Internship
           </a>
         </li>
-        {/* <li
-          className="nav__item" 
-          style={{ 
-            
-            backgroundColor: localStorage.getItem("activeNav") === "Course" ? "rgb(71, 153, 51)" : "",
-            padding: localStorage.getItem("activeNav") === "Course" ? "10px": "",
-            borderRadius: localStorage.getItem("activeNav") === "Course" ?  "5px" : "",
-            fontWeight: localStorage.getItem("activeNav") === "Course" ? "bold" : "",
-          }}
 
-        
-        >
-          <a href="/course" className="nav__link" onClick={()=> {localStorage.setItem("activeNav","Course")}} style={{ color: localStorage.getItem("activeNav") === "Course" ? "white" :"black"}}>
-            Course
-          </a>
-        </li> */}
         {localStorage.getItem("login") === "true" ?
         <li className="nav__item">
           <div>
@@ -131,11 +116,17 @@ function Navbar ({showNavTab, setshowNavTab}) {
         </li>
         :
         <li className="nav__item">
-          <button style={{"backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/Register")}} class="dropbtn">
+          <button style={{"backgroundColor":"black","color":"#fff","display": mentorNavinfo && "none"}} onClick={()=> {navigate("/Register")}} class="dropbtn" >
             Sign Up
           </button>
-        </li>
-}
+        </li>}
+
+        {/* <li className="nav__item">
+          <button style={{"backgroundColor":"black","color":"#fff"}} onClick={()=> {navigate("/MentorEditor")}} class="writebtn" >
+            Start Writing
+          </button>
+        </li> */}
+
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>

@@ -1,11 +1,11 @@
 import React from "react";
 import "../Courses/course.css"
 import "../../styles/style.css"
-import Internship1 from "./Internship1.jpg"
-import Internship2 from "./Internship2.jpg"
-import Internship3 from "./Internship3.jpeg"
-import Internship4 from "./Internship4.png"
-import Internship5 from "./Internship5.jpg"
+import Internship1 from "./img/internSlide/Internship1.jpg"
+import Internship2 from "./img/internSlide/Internship2.jpg"
+import Internship3 from "./img/internSlide/Internship3.jpeg"
+import Internship4 from "./img/internSlide/Internship4.png"
+import Internship5 from "./img/internSlide/Internship5.jpg"
 import { useEffect, useState } from "react";
 export default function Internship() {
   const [item1, setitem1] = useState("btn-1");
@@ -51,7 +51,7 @@ export default function Internship() {
             <label htmlFor="btn-5" />
             {/* <label htmlFor="btn-6" /> */}
           </div>
-          <ul className="slides">
+          <ul className="slides" >
             <li className="slide" style={{ backgroundColor: "#3CB371" }}>
               <div className="slide-content2" style={{width:"800px"}}>
                 <h2 className="jnui">In Internship, always choose learning over everything</h2>
