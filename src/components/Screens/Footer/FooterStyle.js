@@ -13,7 +13,8 @@ export const Box = styled.div`
     padding: 30px 30px;
   }
   @media (max-width: 450px) {
-    gap:2px
+    gap:2px;
+    margin-left:3px;
   }
 `;
 
@@ -27,7 +28,8 @@ export const Container = styled.div`
   /* background: red; */
   @media (max-width: 450px) {
     flex-direction: column;
-    gap:2px
+    gap:2px;
+
   }
 `;
 
@@ -56,6 +58,7 @@ export const Row1 = styled.div`
   @media (max-width: 450px){
     display:flex;
     flex-direction: row;
+    gap:125px;
   }
 `;
 export const Row2 = styled.div`
@@ -67,6 +70,7 @@ export const Row2 = styled.div`
   @media (max-width: 450px){
     display:flex;
     flex-direction: row;
+    gap: 80px;
   }
 
   @media (max-width: 1000px) {
