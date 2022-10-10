@@ -1,10 +1,12 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
-import { useNavigate } from "react-router-dom";
 import '../RegisterEdi/registerEdi.css'
 import GoogleButton from "react-google-button";
+import { useNavigate } from "react-router-dom";
+
 
 const RegisterEdi = () => {
+
   let navigation = useNavigate();
   const [values, setValues] = useState({
     username: "",
@@ -72,7 +74,7 @@ const RegisterEdi = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("details", JSON.stringify(values));
-    navigation("/YourselfEdi");
+    navigation("/expertEdi");
   };
 
   const onChange = (e) => {
@@ -89,35 +91,25 @@ const RegisterEdi = () => {
 
   return (
     <div className="app">
-      <div className="registerEdi-left">
-        <form onSubmit={handleSubmit}>
-        <h2 className="Register_h2">Create Your Expert Profile</h2>
+      <div className="expert_signup_box">
+        <form className="expert_signup_form" onSubmit={handleSubmit}>
+          <h2 className="expert_signup_title">Create Your Expert Profile</h2>
 
-        <div className="google"><GoogleButton onClick={onGoogleRegister} className="google-button"/></div>
+          <div className="google"><GoogleButton label='Sign up with Google' onClick={onGoogleRegister} className="google-button"/></div>
 
-        <div class="my-12 border-b text-center">
-          {/* <div class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1">
-            Or sign up with e-mail
-          </div> */}
-        </div>
 
-        {inputs.map((input) => (
-          <FormInput
-            key={input.id}
-            {...input}
-            value={values[input.name]}
-            onChange={onChange}
-          />
-        ))}
-        <button className="registerEdi-Style1_button">Next</button>
-        <span>Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a></span>
-      </form>
-      </div>
-      
-      <div className="registerEdi-right">
-        <div className="registerEdi-onImage">Create,<br/> Share,<br/> Earn,<br/> Recognize</div>
-               
-        <div className="registerEdi-onText"><p>Write on diverse topics as an bite sized article related to Career Perspective & Insights for Students & Freshers</p></div>       
+          {inputs.map((input) => (
+            <FormInput
+              key={input.id}
+              {...input}
+              className="expert_signup_input"
+              value={values[input.name]}
+              onChange={onChange}
+            />
+          ))}
+          <button className="expert_signup_button">Next</button>
+          <span>Already Registered?<a href="/SignIn" className="sign-button"> SignIn Here</a></span>
+        </form>
       </div>
     </div>
   );

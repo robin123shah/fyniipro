@@ -1,41 +1,49 @@
-
-.registerEdi-left{
-  width: 33%;
-  min-height: auto;
+.Edi_top{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
 }
 
-.registerEdi-right{
-    
-    background-color: darkcyan;
-    width: 67%;
-    min-height: auto;
+
+  .Edi_bottom{
+    height: 20%;
+    width: 100%;
+    background-color: red;
   }
 
-
 .registerEdi-onImage {
-  font-size: 50px;
+  font-size: 80px;
   font-variant: small-caps;
   font-family: 'Roboto Slab', serif;
-
-  position: absolute;
-  font-weight: 700;
-  text-align: center;
-  align-items: center;  
-  margin-left: 100px;
-  margin-right: 180px;
-  margin-top: 50px;
-  color: rgb(8, 47, 61);
-
+  font-weight: 900;
+  margin-left: 49px;
+  margin-right: 120px;
+  margin-top: 39px;
+  color: #142c2a;
+  height: auto
 
 }
 .registerEdi-onText {
-  position: absolute;
-    bottom: 0;
     right: 0;
-
+    max-width: 80ch;
+    padding-bottom: 0;
+    padding-left: 29px;
+    padding-right: 29px;
+    width: 80%;
+}
+.registerEdi-onText p{
+  margin-left: 23px;
+  margin-right: 13px;
+  font-size: 2.1rem;
+  margin-top: -64px;
+}
+.registerEdi-form{
+  height: auto;
+  background-color: white;
 }
 .form{
-  padding: 20px 30px;
+  padding: 9px 50px;
   border-radius: 10px;
   height: auto;
   }
@@ -79,6 +87,16 @@ button{
 span{
   justify-content: center;
 }
+
+.RegisterEdi_h2{
+  margin: 15x; 
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bolder;
+    margin-bottom:75px;
+    font-size:36px;
+    color:darkcyan;
+}
 @media screen and (max-width:480px) {
   *{
     width:100%;
@@ -109,5 +127,148 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+}
+.registerEdi{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+.top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.bottom{
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+  bottom: 0;
+  padding: 60px;
+  /* border-top: 2px solid; */
+
+}
+.registerEdi-left{
+  justify-content: space-between;
+  width: 60%;
+  background-color: #ecb8b8;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.registerEdi .right{
+  justify-content: space-between;
+  width: 40%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
+.registerEdi .sign_title {
+  margin-bottom: 35px;
+}
+
+.registerEdi_button {
+  margin-top: 16px;
+    margin-bottom: 17px;
+    height: 43px;
+    margin-left: 70px;
+    align-items: center;
+    font-size: 14px;
+    width: 70%;
+}
+.my-12{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.registerEdi_signin{
+  margin-left: 19px;
+}
+
+
+.section-content{
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+.section-content-li{
+  font-family: 'Soehne web buch', sans-serif;
+  font-size: 13px;
+}
+.section-content-li li{
+  font-size: 2.2rem;
+  line-height: 45px;
+}
+.bottom h2{
+  font-size:3rem;
+}
+.list-arrow{
+  margin-right: 10px;
+}
+
+
+
+input{
+  border: 1px solid black;
+}
+.expert_signup_box{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #b5cece;
+  width: 100%;
+}
+.expert_signup_form{
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.expert_signup_title{
+  margin: 15x; 
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight:bolder;
+  margin-bottom:30px;
+  font-size:36px;
+  color:darkcyan;
+}
+.expert_signup_button{
+  height: 50px;
+     font-size: 15px;
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+.bottom1{
+  background-color: #fff;
+  border: 1px solid black;
+  border-right: 0;
+  height: 260px;
+  display: flex;
+  align-items: center;
+
+}
+.bottom2{
+  background-color: #71ccdf;
+}
+.bottom2 p{
+  font-size: 2.5rem;
+}
+.bottom3{
+  background-color: #cfa6d1;
+}
+.bottom_text p{
+  font-size: 2.5rem;
+  line-height: 51px;
+}
+.expert{
+  overflow-y: hidden;
+}
