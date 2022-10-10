@@ -23,7 +23,7 @@ export const Container = styled.div`
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
-  gap: 60px;
+  gap: 200px;
   /* background: red; */
   @media (max-width: 450px) {
     flex-direction: column;
@@ -51,7 +51,7 @@ export const Row1 = styled.div`
   display: flex;
   flex-direction: row;
   /* grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); */
-  gap: 60px;
+  gap: 200px;
   justify-content: center;
   @media (max-width: 450px){
     display:flex;
@@ -61,7 +61,7 @@ export const Row1 = styled.div`
 export const Row2 = styled.div`
   display: flex;
   /* grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); */
-  gap: 60px;
+  gap: 200px;
   flex-direction: row;
   justify-content: center;
   @media (max-width: 450px){
