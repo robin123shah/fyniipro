@@ -32,19 +32,10 @@ function Navbar() {
   };
   return (
     <nav className="nav2" id="navbar">
-        <img
-        className="nav__brand"
-          style={{
-            width: "100px",
-            // height: "38px",
-            // overflow: "hidden",
-            "margin-top": "15px",
-          }}
+        <img className="nav__brand" style={{width: "100px", marginTop: "15px"}}
           href="/Home"
           alt="img"
-          src={require("./logo.png")}
-        />
-        
+          src={require("./logo.png")} />
       <input
 
         className="top-input12 nav__item"

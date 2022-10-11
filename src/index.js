@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './components/Navigation/Router'
+import Router from './components/Navigation/Router';
+import LazyLoad from 'react-lazy-load';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <LazyLoad height={762}>
+      <Router />
+    </LazyLoad>
   </React.StrictMode>,
   document.getElementById('root')
 );
