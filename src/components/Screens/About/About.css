@@ -5,12 +5,22 @@
   box-sizing: border-box;
 }
 .about{
-  padding: 60px;
+  padding: 30px;
 }
 .about-box{
   display: flex;
   flex-direction: row;
-  margin: 90px;
+  margin: 60px;
+}
+.about-box p{
+  font-size: 1.8rem;
+}
+.about-box li{
+  font-size: 1.8rem;
+}
+.about-box h3{
+  font-size: 2.2rem;
+  margin-bottom: 20px;
 }
 .about-company-content{
   padding: 60px;
