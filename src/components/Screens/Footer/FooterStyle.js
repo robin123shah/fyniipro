@@ -14,7 +14,7 @@ export const Box = styled.div`
   }
   @media (max-width: 450px) {
     gap:2px;
-    margin-left:3px;
+    /* margin-left:3px; */
   }
 `;
 

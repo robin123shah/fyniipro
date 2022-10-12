@@ -1435,6 +1435,97 @@ const Jobdata = {
       img_src : require("../../Screens/Job/img/jobLogo/xiaomi.png"),
       alt:"Logo"
     },
+    {
+      id: "114",
+      Title: "IT Integration Engineer",
+      Company: "Veeva",
+      Location: "Hyderabad",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "0-2",
+      WorkType: "Full Time",
+      Link:"https://careers.veeva.com/job/16734350/it-integration-engineer-hyderabad-in/?lever-origin=applied&lever-source%5B%5D=Veeva-career-site",
+      img_src : require("../../Screens/Job/img/jobLogo/veeva.png"),
+      alt:"Logo"
+    },
+    {
+      id: "115",
+      Title: "IT End-User Support Engineer (Contract)",
+      Company: "Veeva",
+      Location: "Hyderabad",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "0-2",
+      WorkType: "Full Time",
+      Link:"https://careers.veeva.com/job/16682295/it-end-user-support-engineer-contract-hyderabad-in/?lever-origin=applied&lever-source%5B%5D=Veeva-career-site",
+      img_src : require("../../Screens/Job/img/jobLogo/veeva.png"),
+      alt:"Logo"
+    },
+    {
+      id: "116",
+      Title: "Software Engineer - Test Automation",
+      Company: "Veeva",
+      Location: "Hyderabad",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "2",
+      WorkType: "Full Time",
+      Link:"https://careers.veeva.com/job/16349282/software-engineer-test-automation-hyderabad-in/?lever-origin=applied&lever-source%5B%5D=Veeva-career-site",
+      img_src : require("../../Screens/Job/img/jobLogo/veeva.png"),
+      alt:"Logo"
+    },
+    {
+      id: "117",
+      Title: "Salesforce Developer",
+      Company: "Veeva",
+      Location: "Hyderabad",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "1+",
+      WorkType: "Full Time",
+      Link:"https://careers.veeva.com/job/16300805/salesforce-developer-hyderabad-in/?lever-origin=applied&lever-source%5B%5D=Veeva-career-site",
+      img_src : require("../../Screens/Job/img/jobLogo/veeva.png"),
+      alt:"Logo"
+    },
+    {
+      id: "118",
+      Title: "University Talent Recruiter",
+      Company: "Zscaler",
+      Location: "Bengaluru, Karnataka",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "2",
+      WorkType: "Full Time",
+      Link:"https://www.smartrecruiters.com/Zscaler/743999762435998",
+      img_src : require("../../Screens/Job/img/jobLogo/zscaler.png"),
+      alt:"Logo"
+    },
+    {
+      id: "119",
+      Title: "Associate Engineer A2_PPP Service Blr-ME",
+      Company: "Canon",
+      Location: "Bangalore",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "2",
+      WorkType: "Full Time",
+      Link:"https://www.smartrecruiters.com/Zscaler/743999762435998",
+      img_src : require("../../Screens/Job/img/jobLogo/canon.png"),
+      alt:"Logo"
+    },
+    {
+      id: "120",
+      Title: "University Talent Recruiter",
+      Company: "Zscaler",
+      Location: "Bengaluru, Karnataka",
+      Date: "N/A",
+      Type: "Non Govt.",
+      Experience: "2-3",
+      WorkType: "Full Time",
+      Link:"https://www.smartrecruiters.com/Zscaler/743999762435998",
+      img_src : require("../../Screens/Job/img/jobLogo/xiaomi.png"),
+      alt:"Logo"
+    },
   ]
 }
 export default Jobdata;

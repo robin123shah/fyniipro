@@ -153,8 +153,7 @@ document.addEventListener('keydown', function(e){
                   placeholder="e.g. Google"
                   aria-label="Search"
                   aria-describedby="search-addon"
-                />
-
+                /> 
                 <i
                   style={{
                     position: "absolute",
@@ -162,7 +161,7 @@ document.addEventListener('keydown', function(e){
                     "margin-top": "-25px",
                   }}
                   class="fas fa-search"
-                ></i>
+                ></i> 
               </div>
 
               <br />

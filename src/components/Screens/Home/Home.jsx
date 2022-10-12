@@ -5,35 +5,11 @@ import { useNavigate } from "react-router-dom";
 import Cards from "./Cards/Cards";
 import Footer from "../Footer/Footer";
 import Navbar2 from "../../Navigation/Navbar/Navbar2";
+import LazyLoad from 'react-lazy-load';
 
 
 
 export default function Home() {
-  // let navigation = useNavigate();
-
-  // var slider2 = document.getElementById("slider2");
-  // var activeh = document.getElementById("activeh");
-  // var lineh1 = document.getElementById("lineh1");
-  // var lineh2 = document.getElementById("lineh2");
-  // var lineh3 = document.getElementById("lineh3");
-  // var lineh4 = document.getElementById("lineh4");
-  // var lineh5 = document.getElementById("lineh5");
-
-  // lineh1.onclick = function(){
-  //   slider2.style.transform = 'translateX(-20%)';
-  // }
-  // lineh2.onclick = function(){
-  //   slider2.style.transform = 'translateX(-20%)';
-  // }
-  // lineh3.onclick = function(){
-  //   slider2.style.transform = 'translateX(-20%)';
-  // }
-  // lineh4.onclick = function(){
-  //   slider2.style.transform = 'translateX(-20%)';
-  // }
-  // lineh5.onclick = function(){
-  //   slider2.style.transform = 'translateX(-20%)';
-  // }
   const [translate, settranslate] = useState("translate(0%)");
   const [translate1, settranslate1] = useState("translate(0%)");
   const [translate2, settranslate2] = useState("translate(-16.6%)");
@@ -64,59 +40,58 @@ export default function Home() {
     }, 3000);
     return () => clearInterval(interval);
   });
-  // setTimeout(() => {
-  //   navigation('/register')
-  // },5000)
+ 
   return (
     <div>
-      <div className="Container-card" ref={NavTabRef} onClick={closeNavTab}>
-        <div className="Card-Right">
-          <div id="slider2" style={{ transform: translate }}>
-            <div className="msg-col02">
-              <h2 className="ifweeof">How to choose right career for you?</h2>
-              <a href="/">Learn More</a>
+      <LazyLoad>
+        <div className="Container-card" ref={NavTabRef} onClick={closeNavTab}>
+          <div className="Card-Right">
+            <div id="slider2" style={{ transform: translate }}>
+              <div className="msg-col02">
+                <h2 className="ifweeof">How to choose right career for you?</h2>
+                <a href="/">Learn More</a>
+              </div>
+              <div className="msg-col02">
+                <h2 className="ifweeof">700+ professions exist in the world!</h2>
+                <a href="/">Learn More</a>
+              </div>
+              <div className="msg-col02">
+                <h2 className="ifweeof">Which one gives decent salary?</h2>
+                <a href="/">Learn More</a>
+              </div>
+              <div className="msg-col02">
+                <h2 className="ifweeof">Which profession to opt for?</h2>
+                <a href="/">Learn More</a>
+              </div>
+              <div className="msg-col02">
+                <h2 className="ifweeof">Higher education or Job?</h2>
+                <a href="/">Learn More</a>
+              </div>
+              <div className="msg-col02">
+                <h2 className="ifweeof">Confused????</h2>
+                <p>Find all your answer here!</p>
+                <a href="/">Learn More</a>
+              </div>
             </div>
-            <div className="msg-col02">
-              <h2 className="ifweeof">700+ professions exist in the world!</h2>
-              <a href="/">Learn More</a>
-            </div>
-            <div className="msg-col02">
-              <h2 className="ifweeof">Which one gives decent salary?</h2>
-              <a href="/">Learn More</a>
-            </div>
-            <div className="msg-col02">
-              <h2 className="ifweeof">Which profession to opt for?</h2>
-              <a href="/">Learn More</a>
-            </div>
-            <div className="msg-col02">
-              <h2 className="ifweeof">Higher education or Job?</h2>
-              <a href="/">Learn More</a>
-            </div>
-            <div className="msg-col02">
-              <h2 className="ifweeof">Confused????</h2>
-              <p>Find all your answer here!</p>
-              <a href="/">Learn More</a>
-            </div>
+            {/* <div className="controller2">
+            <div id="lineh1"></div>
+            <div  id="lineh2"></div>
+            <div  id="lineh3"></div>
+            <div  id="lineh4"></div>
+            <div  id="lineh5"></div>
+            <div id="activeh"></div>
+          </div>  */}
           </div>
-          {/* <div className="controller2">
-          <div id="lineh1"></div>
-          <div  id="lineh2"></div>
-          <div  id="lineh3"></div>
-          <div  id="lineh4"></div>
-          <div  id="lineh5"></div>
-          <div id="activeh"></div>
-        </div>  */}
-        </div>
 
-        <div className="Card-Left">
-          <img
-            className="Card-Left-content"
-            src={require("./logo2.jpg")}
-            alt="img"
-          />
+          <div className="Card-Left">
+              <img
+                className="Card-Left-content"
+                src={require("./logo2.jpg")}
+                alt="img"
+              />
+          </div>
         </div>
-      </div>
-
+      </LazyLoad>
       <div className="Article-container">
         <div class="Scrollmenu">
           {/* <ul onClick={settopic("All")} >All</ul>

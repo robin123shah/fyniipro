@@ -27,6 +27,7 @@ import NextPage5 from "../Screens/nextpage/nextpage5";
 
 // const Customer = React.lazy(() => import("./Customer.js"));
 // const Admin = React.lazy(() => import("./Admin.js"));
+
 const Router = () => {
   return (
     <BrowserRouter>
@@ -35,7 +36,9 @@ const Router = () => {
         <Route exact path="/SignIn" element={<SignIn />} />
         <Route exact path="/Register" element={<Register />} />
         <Route exact path="/Yourself" element={<Yourself />} />
+
         <Route exact path="/Home" element={<Home />} />
+
         <Route exact path="/Internship" element={<Internship />} />
         {/* <Route exact path="/course" element={<Course />} /> */}
         <Route exact path="/job" element={<Jobs />} />
