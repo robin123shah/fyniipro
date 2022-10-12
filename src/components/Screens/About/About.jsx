@@ -85,7 +85,7 @@ export default function About() {
           <div className="about-mission-box about-box">
             <div className="about-mission-image">
               <img
-                src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80"
+                src={require("./mission.jpg")}
                 alt=""
                 className="about-mission-img"
               />
@@ -121,7 +121,7 @@ export default function About() {
             </div>
             <div className="about-vision-image">
               <img
-                src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                src={require("./vision.jpg")}
                 alt=""
                 className="about-vision-img"
               />
@@ -133,3 +133,6 @@ export default function About() {
     </>
   );
 }
+
+//  https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80
+// https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
