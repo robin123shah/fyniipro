@@ -5,7 +5,6 @@
   background-color: blue;
 }
 
-
   .Edi_bottom{
     height: 20%;
     width: 100%;
@@ -119,6 +118,7 @@ span{
   .registerEdi-right{
       display: none;
   }
+
 
 }
 
@@ -238,14 +238,14 @@ input{
   font-family: 'Roboto Slab', serif;
   font-weight:bolder;
   margin-bottom:30px;
-  font-size:36px;
+  font-size:32px;
   color:darkcyan;
 }
 .expert_signup_button{
   height: 50px;
-     font-size: 15px;
-     margin-top: 30px;
-     margin-bottom: 30px;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .bottom1{
   background-color: #fff;
@@ -272,3 +272,62 @@ input{
 .expert{
   overflow-y: hidden;
 }
+
+@media screen and (max-width:480px) {
+  .registerEdi .right{
+    display: none;
+  }
+  .registerEdi-left{
+    width: 100%;
+  }
+  .registerEdi-onImage{
+    font-size: 65px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .registerEdi-onText{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .registerEdi-onText p{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .bottom{
+    padding: 35px;
+  }
+  .bottom h2{
+    font-size: 2.5rem;
+  }
+  .bottom_text p{
+    font-size: 1.8rem;
+  }
+  .bottom1{
+    height: auto;
+  }
+  .bottom .section-content-li svg{
+    width: auto;
+  }
+  .section-content-li li{
+    font-size: 1.8rem;
+  }
+  .expert_signup_box{
+    background-color: white;
+  }
+  .expert_signup_form{
+    box-shadow: none;
+  }
+  .expert_signup_form .formlabel{
+    font-size: 13px;
+  }
+  .expert_signup_button{
+    width: 70%;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
