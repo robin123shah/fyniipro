@@ -63,7 +63,7 @@ export default function About() {
 
     <>
       <Navbar2/>
-      <div>
+      <div className="about-section-container">
         <section className="about-company about">
           <div className="about-company-box about-box">
             <div className="about-company-content">

@@ -48,6 +48,31 @@
 @media screen and (max-width: 600px) {
 
 }
-@media screen and (max-width: 400px) {
-  
+@media screen and (max-width: 480px) {
+  .about-section-container{
+    padding: 20px 0;
+  }
+  .about{
+    padding: 10px 30px;
+  }
+  .about-box{
+    flex-direction: column;
+    margin: 0;
+  }
+  .about-company-content,
+  .about-mission-content,
+  .about-vision-content{
+    padding: 40px 0 0 0;
+  }
+  .about-mission-box{
+    flex-direction: column-reverse;
+  }
+  .about-company-image, .about-mission-image, .about-vision-image{
+    margin-top: 30px;
+  }
+  .about-box h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
