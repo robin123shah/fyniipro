@@ -77,7 +77,7 @@ const SignIn = () => {
             />
           ))}
           <button className="signin_button">Sign In</button>
-          <span>New Here? <a href="/Register" className="signin_next">
+          <span className="signspan">New Here? <a href="/Register" className="signin_next">
             Register Here
           </a>
           </span>

@@ -25,7 +25,7 @@ input{
     font-family: 'Roboto Slab', serif;
     font-weight:bolder;
     margin-bottom:75px;
-    font-size:36px;
+    font-size:35px;
     color:darkcyan;
 }
 .signin_button{
@@ -38,10 +38,7 @@ input{
   content: "";
   
 }
-@media screen and (max-width: 500px) {
-    form {
-      height: 70%;
-    }
+@media screen and (max-width: 480px) {
     .formlabel {
       font-size: 15px;
     }
@@ -58,5 +55,24 @@ input{
     h2 {
       font-size: 30px;
       margin: 0;
+    }
+    .signinbox{
+      background-color: white;
+    }
+    .signform{
+      box-shadow: none;
+    }
+    .signin_button{
+      margin: 50px auto;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .signspan{
+      display: block;
+    }
+    .signform .formInput{
+      margin-top: 25px;
     }
   }
