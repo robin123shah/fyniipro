@@ -74,7 +74,7 @@ const RegisterEdi = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("details", JSON.stringify(values));
-    navigation("/expertEdi");
+    navigation("/textEditor");
     toast.success('Submitted successfully!!')
   };
 

@@ -1,0 +1,50 @@
+.home-article{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.home-article-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 30px;
+}
+.home-related-article-page{
+    width: 30%;
+}
+.home-article-page-heading{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-article-page-card{
+    width: 100%;
+    background-color: bisque;
+}
+.home-article-page-card-date{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-article-page-card-date h5{
+    color: black;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.home-article-page-card-image img{
+    height: 500px;
+}
+.home-article-page-content{
+    background-color: azure;
+}
+.home-article-page-card-icons{
+    display: flex;
+    flex: row;
+}

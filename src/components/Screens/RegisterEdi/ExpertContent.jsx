@@ -20,10 +20,10 @@ const ExpertContent = () => {
           <div className="registerEdi-left">
             <div className="registerEdi-onImage">Create, Post <br/> Earn, Recognize</div>
             <div className="registerEdi-onText"><p>Write on diverse topics as an bite sized article related to Career Perspective & Insights for Students & Freshers</p></div>       
-            <div><button className='writebtn' onClick={()=> {navigate("/textEditor")}}>Create</button></div>
+            <div><button className='writebtn' onClick={()=> {navigate("/RegisterEdi")}}>Sign Up</button></div>
           </div>
           <div className='right'>
-            <img src={require("./vector1.jpeg")} alt=''/>
+            <img src={require("./vector.jpg")} alt=''/>
           </div>
           </div>
         </section>
